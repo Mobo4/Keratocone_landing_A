@@ -1,0 +1,93 @@
+/**
+ * Email Protection CSS
+ * 
+ * This stylesheet contains anti-scraping measures for email addresses
+ * to help protect them from being harvested by bots and spam crawlers.
+ */
+
+/* Main container class */
+.email-protected {
+  /* Basic protection */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  /* Prevent selection for certain bots */
+  user-select: none;
+}
+
+/* Reset direction for actual display */
+.email-protected span {
+  direction: ltr;
+  display: inline-block;
+  /* Additional obfuscation */
+  unicode-bidi: normal;
+}
+
+/* Component parts styling */
+.ep-username, .ep-domain {
+  /* Hide from bots that parse simple CSS */
+  display: inline-block;
+  color: inherit;
+}
+
+/* Hide @ symbol in non-JS environments */
+.ep-at {
+  /* Only shown with JS enabled */
+  display: none;
+}
+
+/* JS will enable this */
+.js-enabled .ep-at {
+  display: inline-block;
+}
+
+/* Use CSS to reconstruct parts in reverse order */
+.ep-username {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+/* Add noise/honeypot for bots */
+.email-protected::before {
+  content: attr(data-noise);
+  display: none;
+  /* Hidden but might trip up some bots */
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Fake email honeypot (invisible to users) */
+.email-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0.01;
+}
+
+/* Create extra noise for scrapers */
+.email-protection-noise {
+  display: none;
+}
+
+/* Dynamic class names (will be randomly generated) */
+[class^="email-"] span[data-component] {
+  /* This helps scramble the email for bots */
+  display: inline-block;
+}
+
+/* Make the mailto link more resilient against basic scraping */
+a.protected-email[href^="mailto"] {
+  /* Attributes will be populated by JS */
+  direction: ltr;
+  unicode-bidi: normal;
+}
+
+/* Media query to enable additional protections for print */
+@media print {
+  .email-protected {
+    /* Different display for print to avoid scraping from PDFs */
+    unicode-bidi: normal;
+    direction: ltr;
+  }
+}

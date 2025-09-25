@@ -1,0 +1,111 @@
+{
+  "website": {
+    "domain": "eyecarecenteroc.com",
+    "baseUrl": "https://eyecarecenteroc.com",
+    "businessName": "Dr. Bonakdar Eye Care Center",
+    "businessType": "Eye Care Center",
+    "location": {
+      "city": "Orange County",
+      "state": "California",
+      "country": "United States"
+    }
+  },
+  "automation": {
+    "contentUpdate": {
+      "enabled": true,
+      "schedule": "0 2 * * 1",
+      "refreshInterval": 30,
+      "testimonialRotation": true,
+      "seasonalContent": true
+    },
+    "searchEngineNotification": {
+      "enabled": true,
+      "autoSubmit": true,
+      "indexNowEnabled": true,
+      "sitemapAutoUpdate": true,
+      "schedule": "0 3 * * *"
+    },
+    "performanceMonitoring": {
+      "enabled": true,
+      "rankingChecks": "0 6 * * 1",
+      "trafficAnalysis": "0 7 * * *",
+      "conversionTracking": true,
+      "alertThreshold": 20
+    },
+    "technicalSeo": {
+      "coreWebVitals": true,
+      "brokenLinkCheck": "0 4 * * 0",
+      "imageOptimization": true,
+      "mobileResponsive": true,
+      "schedule": "0 1 * * 0"
+    }
+  },
+  "apis": {
+    "googleSearchConsole": {
+      "enabled": true,
+      "siteUrl": "https://eyecarecenteroc.com"
+    },
+    "googleAnalytics": {
+      "enabled": true,
+      "propertyId": "GA_PROPERTY_ID"
+    },
+    "bingWebmaster": {
+      "enabled": true,
+      "siteUrl": "https://eyecarecenteroc.com"
+    },
+    "indexNow": {
+      "enabled": true,
+      "key": "INDEX_NOW_KEY"
+    }
+  },
+  "keywords": {
+    "primary": [
+      "eye doctor orange county",
+      "ophthalmologist orange county",
+      "eye care center orange county",
+      "cataract surgery orange county",
+      "glaucoma treatment orange county"
+    ],
+    "secondary": [
+      "dry eye treatment",
+      "macular degeneration",
+      "diabetic retinopathy",
+      "retinal detachment",
+      "eye exam"
+    ],
+    "local": [
+      "eye doctor near me",
+      "ophthalmologist near me",
+      "eye care near me"
+    ]
+  },
+  "contentTemplates": {
+    "servicePages": {
+      "template": "service-location-template.html",
+      "variables": ["serviceName", "location", "doctorName", "phone"]
+    },
+    "locationPages": {
+      "template": "location-service-template.html",
+      "variables": ["location", "serviceName", "address", "hours"]
+    }
+  },
+  "schemaMarkup": {
+    "organizationSchema": true,
+    "localBusinessSchema": true,
+    "medicalBusinessSchema": true,
+    "breadcrumbSchema": true,
+    "faqSchema": true,
+    "reviewSchema": true
+  },
+  "reporting": {
+    "frequency": "weekly",
+    "recipients": ["admin@eyecarecenteroc.com"],
+    "metrics": [
+      "organic_traffic",
+      "keyword_rankings",
+      "conversion_rate",
+      "core_web_vitals",
+      "indexation_status"
+    ]
+  }
+}

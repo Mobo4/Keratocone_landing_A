@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-09-23T00:26:46.332Z",
+  "website": "https://www.eyecarecenteroc.com",
+  "sitemap": "https://www.eyecarecenteroc.com/sitemap.xml",
+  "submissions": {
+    "indexnow_protocol": {
+      "status": "successful",
+      "response_code": 202
+    },
+    "bing_indexnow": {
+      "status": "successful",
+      "response_code": 202
+    },
+    "search_console": {
+      "status": "manual_setup_required"
+    },
+    "sitemap_verification": {
+      "status": "accessible",
+      "url_count": 254
+    }
+  },
+  "priority_pages": [
+    "/",
+    "/about",
+    "/services",
+    "/contact",
+    "/conditions/keratoconus",
+    "/conditions/dry-eye",
+    "/conditions/cataracts",
+    "/conditions/glaucoma",
+    "/conditions/macular-degeneration",
+    "/conditions/diabetic-retinopathy",
+    "/lasik",
+    "/eyewear",
+    "/es/",
+    "/es/sobre-nosotros",
+    "/es/servicios"
+  ],
+  "next_steps": [
+    "Set up Google Search Console manually",
+    "Verify website ownership",
+    "Submit sitemap in Search Console",
+    "Request indexing for priority pages",
+    "Monitor progress daily"
+  ],
+  "expected_timeline": {
+    "initial_crawling": "24-48 hours",
+    "sitemap_processing": "1-3 days",
+    "full_indexing": "1-2 weeks",
+    "search_visibility": "2-4 weeks"
+  }
+}

@@ -1,0 +1,4695 @@
+{
+  "timestamp": "2025-09-17T22:27:17.777Z",
+  "summary": {
+    "totalPages": 76,
+    "passedPages": 1,
+    "averageScore": 38.48684210526316,
+    "criticalIssues": [
+      {
+        "page": "AngleClosureGlaucomaEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "BacterialConjunctivitisPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "BlockedTearDuctEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "CataractsEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ChalazionStyePage",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "ChalazionStyePage",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "ChalazionStyePage",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "ChalazionStyePage",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "ChalazionStyePage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ChildhoodMyopiaEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ConjunctivitisEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "CornealAbrasionEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "CornealUlcerPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "CrossedEyesStrabismusEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "DemodexBlepharitisPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "DiabeticRetinopathyEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "DoubleVisionEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "DryEyeEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "EpiscleritisPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "GlaucomaEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "KeratoconusEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "LazyEyeAmblyopiaEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "MacularDegenerationEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "MacularHoleEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "MeibomianGlandDysfunctionPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "MyopiaControlPage",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "MyopiaControlPage",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "MyopiaControlPage",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "MyopiaControlPage",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "MyopiaControlPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "NormalTensionGlaucomaEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "OpenAngleGlaucomaEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "OpticNeuritisEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "PresbyopiaEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "RetinalDetachmentEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ScleritisPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ViralConjunctivitisPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "VisualFieldDefectsEducationPage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "acanthamoeba-keratitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "acanthamoeba-keratitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "acanthamoeba-keratitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "acanthamoeba-keratitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "acanthamoeba-keratitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "albinism-ocular",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "albinism-ocular",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "albinism-ocular",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "albinism-ocular",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "albinism-ocular",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "amblyopia",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "amblyopia",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "amblyopia",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "amblyopia",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "amblyopia",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "atopic-keratoconjunctivitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "atopic-keratoconjunctivitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "atopic-keratoconjunctivitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "atopic-keratoconjunctivitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "atopic-keratoconjunctivitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "bacterial-keratitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "bacterial-keratitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "bacterial-keratitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "bacterial-keratitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "bacterial-keratitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "blocked-tear-ducts",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "blocked-tear-ducts",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "blocked-tear-ducts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "blocked-tear-ducts",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "blocked-tear-ducts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "branch-retinal-artery-occlusion",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "branch-retinal-artery-occlusion",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "branch-retinal-artery-occlusion",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "branch-retinal-artery-occlusion",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "branch-retinal-artery-occlusion",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "branch-retinal-vein-occlusion",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "branch-retinal-vein-occlusion",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "branch-retinal-vein-occlusion",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "branch-retinal-vein-occlusion",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "branch-retinal-vein-occlusion",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "central-retinal-artery-occlusion",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "central-retinal-artery-occlusion",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "central-retinal-artery-occlusion",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "central-retinal-artery-occlusion",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "central-retinal-artery-occlusion",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "central-retinal-vein-occlusion",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "central-retinal-vein-occlusion",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "central-retinal-vein-occlusion",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "central-retinal-vein-occlusion",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "central-retinal-vein-occlusion",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "congenital-glaucoma",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "congenital-glaucoma",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "congenital-glaucoma",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "congenital-glaucoma",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "congenital-glaucoma",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "corneal-abrasion",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "corneal-abrasion",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "corneal-abrasion",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "corneal-abrasion",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "corneal-abrasion",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "corneal-dystrophies",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "corneal-dystrophies",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "corneal-dystrophies",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "corneal-dystrophies",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "corneal-dystrophies",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "corneal-endothelial-dysfunction",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "corneal-endothelial-dysfunction",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "corneal-endothelial-dysfunction",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "corneal-endothelial-dysfunction",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "corneal-endothelial-dysfunction",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "epiretinal-membrane",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "epiretinal-membrane",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "epiretinal-membrane",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "epiretinal-membrane",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "epiretinal-membrane",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "fungal-keratitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "fungal-keratitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "fungal-keratitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "fungal-keratitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "fungal-keratitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "giant-papillary-conjunctivitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "giant-papillary-conjunctivitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "giant-papillary-conjunctivitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "giant-papillary-conjunctivitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "giant-papillary-conjunctivitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "granular-corneal-dystrophy",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "granular-corneal-dystrophy",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "granular-corneal-dystrophy",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "granular-corneal-dystrophy",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "granular-corneal-dystrophy",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "idiopathic-intracranial-hypertension",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "idiopathic-intracranial-hypertension",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "idiopathic-intracranial-hypertension",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "idiopathic-intracranial-hypertension",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "idiopathic-intracranial-hypertension",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ischemic-optic-neuropathy",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "ischemic-optic-neuropathy",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "ischemic-optic-neuropathy",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "ischemic-optic-neuropathy",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "ischemic-optic-neuropathy",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "juvenile-idiopathic-arthritis-uveitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "juvenile-idiopathic-arthritis-uveitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "juvenile-idiopathic-arthritis-uveitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "juvenile-idiopathic-arthritis-uveitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "juvenile-idiopathic-arthritis-uveitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "lattice-corneal-dystrophy",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "lattice-corneal-dystrophy",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "lattice-corneal-dystrophy",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "lattice-corneal-dystrophy",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "lattice-corneal-dystrophy",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ligneous-conjunctivitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "ligneous-conjunctivitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "ligneous-conjunctivitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "ligneous-conjunctivitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "ligneous-conjunctivitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "macular-hole",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "macular-hole",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "macular-hole",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "macular-hole",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "macular-hole",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "map-dot-fingerprint-dystrophy",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "map-dot-fingerprint-dystrophy",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "map-dot-fingerprint-dystrophy",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "map-dot-fingerprint-dystrophy",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "map-dot-fingerprint-dystrophy",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "myasthenia-gravis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "myasthenia-gravis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "myasthenia-gravis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "myasthenia-gravis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "myasthenia-gravis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ocular-cicatricial-pemphigoid",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "ocular-cicatricial-pemphigoid",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "ocular-cicatricial-pemphigoid",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "ocular-cicatricial-pemphigoid",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "ocular-cicatricial-pemphigoid",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "optic-neuritis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "optic-neuritis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "optic-neuritis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "optic-neuritis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "optic-neuritis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "papilledema",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "papilledema",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "papilledema",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "papilledema",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "papilledema",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "pediatric-cataracts",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "pediatric-cataracts",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "pediatric-cataracts",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "pediatric-cataracts",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "pediatric-cataracts",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "pediatric-ptosis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "pediatric-ptosis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "pediatric-ptosis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "pediatric-ptosis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "pediatric-ptosis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "pinguecula",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "pinguecula",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "pinguecula",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "pinguecula",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "pinguecula",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "pterygium",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "pterygium",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "pterygium",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "pterygium",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "pterygium",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "ptosis-drooping-eyelid",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "recurrent-corneal-erosion",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "recurrent-corneal-erosion",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "recurrent-corneal-erosion",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "recurrent-corneal-erosion",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "recurrent-corneal-erosion",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "retinal-detachment",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "retinal-detachment",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "retinal-detachment",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "retinal-detachment",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "retinal-detachment",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "retinopathy-of-prematurity",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "retinopathy-of-prematurity",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "retinopathy-of-prematurity",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "retinopathy-of-prematurity",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "retinopathy-of-prematurity",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "sixth-nerve-palsy",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "sixth-nerve-palsy",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "sixth-nerve-palsy",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "sixth-nerve-palsy",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "sixth-nerve-palsy",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "stevens-johnson-syndrome",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "stevens-johnson-syndrome",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "stevens-johnson-syndrome",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "stevens-johnson-syndrome",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "stevens-johnson-syndrome",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "strabismus",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "strabismus",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "strabismus",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "strabismus",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "strabismus",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "subconjunctival-hemorrhage",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "subconjunctival-hemorrhage",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "subconjunctival-hemorrhage",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "subconjunctival-hemorrhage",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "subconjunctival-hemorrhage",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "superior-limbic-keratoconjunctivitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "superior-limbic-keratoconjunctivitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "superior-limbic-keratoconjunctivitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "superior-limbic-keratoconjunctivitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "superior-limbic-keratoconjunctivitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "third-nerve-palsy",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "third-nerve-palsy",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "third-nerve-palsy",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "third-nerve-palsy",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "third-nerve-palsy",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "vernal-keratoconjunctivitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "vernal-keratoconjunctivitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "vernal-keratoconjunctivitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "vernal-keratoconjunctivitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "vernal-keratoconjunctivitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "viral-keratitis",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "viral-keratitis",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "viral-keratitis",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "viral-keratitis",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "viral-keratitis",
+        "issue": "Missing H1 tag"
+      },
+      {
+        "page": "vitreous-hemorrhage",
+        "issue": "Missing page title"
+      },
+      {
+        "page": "vitreous-hemorrhage",
+        "issue": "Missing meta description"
+      },
+      {
+        "page": "vitreous-hemorrhage",
+        "issue": "Missing canonical URL"
+      },
+      {
+        "page": "vitreous-hemorrhage",
+        "issue": "Missing structured data"
+      },
+      {
+        "page": "vitreous-hemorrhage",
+        "issue": "Missing H1 tag"
+      }
+    ],
+    "recommendations": [
+      {
+        "issue": "Missing H1 tag",
+        "affectedPages": 76,
+        "recommendation": "Ensure each page has exactly one H1 tag",
+        "priority": "High"
+      },
+      {
+        "issue": "Missing page title",
+        "affectedPages": 47,
+        "recommendation": "Add descriptive page titles to all condition pages",
+        "priority": "High"
+      },
+      {
+        "issue": "Missing meta description",
+        "affectedPages": 47,
+        "recommendation": "Add compelling meta descriptions (120-160 characters)",
+        "priority": "High"
+      },
+      {
+        "issue": "Missing canonical URL",
+        "affectedPages": 47,
+        "recommendation": "Implement canonical URLs for all pages",
+        "priority": "High"
+      },
+      {
+        "issue": "Missing structured data",
+        "affectedPages": 47,
+        "recommendation": "Add medical condition structured data to all pages",
+        "priority": "High"
+      }
+    ]
+  },
+  "detailedResults": [
+    {
+      "file": "AngleClosureGlaucomaEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/AngleClosureGlaucomaEducationPage.tsx",
+      "seo": {
+        "title": "Angle-Closure Glaucoma: Emergency Eye Condition | Patient Education",
+        "description": "Learn about angle-closure glaucoma, a serious eye emergency requiring immediate treatment. Comprehensive guide to symptoms, risk factors, and urgent treatment options.",
+        "keywords": "angle-closure glaucoma, acute glaucoma, eye emergency, sudden eye pain, vision loss, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/angle-closure-glaucoma",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "MEDICAL EMERGENCY"
+          },
+          {
+            "level": 2,
+            "text": "What is Angle-Closure Glaucoma?"
+          },
+          {
+            "level": 3,
+            "text": "Critical Timing"
+          },
+          {
+            "level": 2,
+            "text": "EMERGENCY SYMPTOMS - Seek Immediate Care"
+          },
+          {
+            "level": 2,
+            "text": "Risk Factors"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Approaches"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Risk Reduction"
+          },
+          {
+            "level": 2,
+            "text": "Know the Signs - Save Your Sight"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "BacterialConjunctivitisPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/BacterialConjunctivitisPage.tsx",
+      "seo": {
+        "title": "Bacterial Conjunctivitis Treatment - Pink Eye Antibiotics | Dr. Bonakdar Orange County",
+        "description": "Expert bacterial conjunctivitis (pink eye) treatment with prescription antibiotics. Dr. Bonakdar provides rapid relief and prevents spread in Orange County families and schools.",
+        "keywords": "bacterial conjunctivitis, pink eye, bacterial pink eye, eye infection, conjunctivitis antibiotics, purulent discharge, sticky eyes, contagious pink eye, pediatric pink eye, Polytrim, ciprofloxacin eye drops, Dr. Bonakdar, Orange County eye infection, Santa Ana conjunctivitis treatment",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/bacterial-conjunctivitis",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "HIGHLY CONTAGIOUS"
+          },
+          {
+            "level": 4,
+            "text": "Good News"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "{category.category}"
+          },
+          {
+            "level": 4,
+            "text": "Treatment Duration"
+          },
+          {
+            "level": 4,
+            "text": "{pop.population}"
+          },
+          {
+            "level": 4,
+            "text": "{comp.complication}"
+          },
+          {
+            "level": 5,
+            "text": "Safe to Return When:"
+          },
+          {
+            "level": 5,
+            "text": "Stay Home If:"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "BlockedTearDuctEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/BlockedTearDuctEducationPage.tsx",
+      "seo": {
+        "title": "Blocked Tear Duct: Symptoms, Causes, and Treatment Options | Patient Education",
+        "description": "Learn about blocked tear ducts, a condition causing excessive tearing and eye infections. Comprehensive guide to symptoms, causes, and treatment options from massage to surgery.",
+        "keywords": "blocked tear duct, dacryostenosis, epiphora, excessive tearing, tear duct surgery, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/blocked-tear-duct",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Experiencing Persistent Tearing?"
+          },
+          {
+            "level": 2,
+            "text": "What is a Blocked Tear Duct?"
+          },
+          {
+            "level": 3,
+            "text": "Did You Know?"
+          },
+          {
+            "level": 2,
+            "text": "Common Signs and Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Blocked Tear Ducts?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to Seek Medical Care"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Care Tips"
+          },
+          {
+            "level": 2,
+            "text": "Don't Let Blocked Tear Ducts Affect Your Comfort"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "CataractsEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CataractsEducationPage.tsx",
+      "seo": {
+        "title": "Cataracts: Symptoms, Causes, and Treatment | Patient Education",
+        "description": "Learn about cataracts, including symptoms, causes, and treatment options. Comprehensive patient education from Orange County cataract specialists.",
+        "keywords": "cataracts, cataract surgery, cloudy vision, lens replacement, patient education, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/cataracts",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Good News About Cataracts"
+          },
+          {
+            "level": 2,
+            "text": "What are Cataracts?"
+          },
+          {
+            "level": 3,
+            "text": "Fast Facts About Cataracts"
+          },
+          {
+            "level": 2,
+            "text": "Types of Cataracts"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Cataracts?"
+          },
+          {
+            "level": 2,
+            "text": "How are Cataracts Diagnosed?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to See an Eye Doctor"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Risk Reduction"
+          },
+          {
+            "level": 2,
+            "text": "Clear Vision is Within Reach"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "ChalazionStyePage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ChalazionStyePage.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 2,
+            "text": "Understanding Chalazia and Styes"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 3,
+            "text": "{treatment.name}"
+          },
+          {
+            "level": 3,
+            "text": "{item.tip}"
+          },
+          {
+            "level": 3,
+            "text": "Patient Success Story"
+          },
+          {
+            "level": 2,
+            "text": "Related Conditions"
+          }
+        ],
+        "images": [],
+        "links": [],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "Improper heading hierarchy",
+        "No internal links found"
+      ],
+      "score": 15
+    },
+    {
+      "file": "ChildhoodMyopiaEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ChildhoodMyopiaEducationPage.tsx",
+      "seo": {
+        "title": "Childhood Myopia: Causes, Prevention, and Control | Orange County",
+        "description": "Learn about childhood myopia (nearsightedness), its causes, and modern myopia control treatments. Expert pediatric eye care in Orange County.",
+        "keywords": "childhood myopia, pediatric myopia, myopia control, children nearsightedness, ortho-k, atropine, Orange County pediatric eye care",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/childhood-myopia",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Early Intervention is Key"
+          },
+          {
+            "level": 2,
+            "text": "What is Childhood Myopia?"
+          },
+          {
+            "level": 3,
+            "text": "Why Progression Matters"
+          },
+          {
+            "level": 2,
+            "text": "Signs Your Child May Have Myopia"
+          },
+          {
+            "level": 2,
+            "text": "Risk Factors for Childhood Myopia"
+          },
+          {
+            "level": 2,
+            "text": "Modern Myopia Control Treatments"
+          },
+          {
+            "level": 2,
+            "text": "When to Schedule an Eye Exam"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Lifestyle Tips"
+          },
+          {
+            "level": 2,
+            "text": "Protect Your Child's Vision for Life"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "ConjunctivitisEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ConjunctivitisEducationPage.tsx",
+      "seo": {
+        "title": "Conjunctivitis (Pink Eye): Symptoms, Types, and Treatment | Patient Education",
+        "description": "Learn about conjunctivitis (pink eye) - causes, symptoms, treatment options, and prevention. Understanding viral, bacterial, and allergic conjunctivitis.",
+        "keywords": "conjunctivitis, pink eye, red eye, eye infection, viral conjunctivitis, bacterial conjunctivitis, allergic conjunctivitis",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/conjunctivitis",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Is it Contagious?"
+          },
+          {
+            "level": 2,
+            "text": "What is Conjunctivitis?"
+          },
+          {
+            "level": 3,
+            "text": "Quick Facts"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "Types of Conjunctivitis"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to See an Eye Doctor"
+          },
+          {
+            "level": 2,
+            "text": "Prevention Tips"
+          },
+          {
+            "level": 2,
+            "text": "Red, Irritated Eyes? Get Expert Care"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "CornealAbrasionEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CornealAbrasionEducationPage.tsx",
+      "seo": {
+        "title": "Corneal Abrasion: Emergency Eye Injury Treatment | Patient Education",
+        "description": "Learn about corneal abrasions - scratches on the eye surface. Get immediate care information, symptoms, treatment, and prevention tips.",
+        "keywords": "corneal abrasion, scratched cornea, eye injury, emergency eye care, foreign object in eye, patient education",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/corneal-abrasion",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Seek Immediate Care"
+          },
+          {
+            "level": 2,
+            "text": "What is a Corneal Abrasion?"
+          },
+          {
+            "level": 3,
+            "text": "Important Warning"
+          },
+          {
+            "level": 2,
+            "text": "Emergency Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "Common Causes"
+          },
+          {
+            "level": 2,
+            "text": "Treatment and Care"
+          },
+          {
+            "level": 2,
+            "text": "When to Seek Emergency Care"
+          },
+          {
+            "level": 2,
+            "text": "Prevention Tips"
+          },
+          {
+            "level": 2,
+            "text": "Eye Emergency? Get Immediate Care"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "CornealUlcerPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CornealUlcerPage.tsx",
+      "seo": {
+        "title": "Corneal Ulcer Emergency Treatment - Infectious Keratitis | Dr. Bonakdar Orange County",
+        "description": "Emergency corneal ulcer treatment and infectious keratitis care. Dr. Bonakdar provides immediate evaluation and aggressive treatment to prevent vision loss in Orange County.",
+        "keywords": "corneal ulcer, infectious keratitis, bacterial keratitis, eye infection emergency, contact lens infection, corneal perforation, eye pain, vision loss, pseudomonas keratitis, fortified antibiotics, Dr. Bonakdar, Orange County emergency eye care, Santa Ana corneal specialist",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/corneal-ulcer",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "MEDICAL EMERGENCY"
+          },
+          {
+            "level": 4,
+            "text": "Time is Critical"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "Call Immediately If You Have:"
+          },
+          {
+            "level": 4,
+            "text": "{organism.type}"
+          },
+          {
+            "level": 5,
+            "text": "DO:"
+          },
+          {
+            "level": 5,
+            "text": "DON'T:"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "CrossedEyesStrabismusEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CrossedEyesStrabismusEducationPage.tsx",
+      "seo": {
+        "title": "Strabismus (Crossed Eyes): Causes, Treatment, and Surgery | Orange County",
+        "description": "Learn about strabismus (crossed eyes) in children and adults. Expert diagnosis and treatment including eye muscle surgery in Orange County.",
+        "keywords": "strabismus, crossed eyes, eye muscle surgery, pediatric eye care, eye alignment, double vision, Orange County eye doctor",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/crossed-eyes-strabismus",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Early Treatment is Important"
+          },
+          {
+            "level": 2,
+            "text": "What is Strabismus?"
+          },
+          {
+            "level": 3,
+            "text": "Critical for Children"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "Types of Strabismus"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Strabismus?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to See an Eye Doctor"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Early Detection"
+          },
+          {
+            "level": 2,
+            "text": "Expert Strabismus Care for All Ages"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "DemodexBlepharitisPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DemodexBlepharitisPage.tsx",
+      "seo": {
+        "title": "Demodex Blepharitis Treatment - Xdemvy & IPL Therapy | Dr. Bonakdar Orange County",
+        "description": "Expert Demodex blepharitis treatment with Xdemvy, the first FDA-approved medication, plus IPL therapy. Dr. Bonakdar specializes in eliminating Demodex mites for lasting relief in Orange County.",
+        "keywords": "Demodex blepharitis, Xdemvy treatment, Demodex mites, lotilaner eye drops, IPL therapy Demodex, cylindrical dandruff, mite blepharitis, ocular demodicosis, eyelash mites treatment, tea tree oil eyes, BlephEx treatment, Dr. Bonakdar, Orange County eye doctor, Santa Ana Demodex specialist",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/demodex-blepharitis",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 4,
+            "text": "Breakthrough Treatment Available!"
+          },
+          {
+            "level": 4,
+            "text": "How Xdemvy Works:"
+          },
+          {
+            "level": 4,
+            "text": "Treatment Benefits:"
+          },
+          {
+            "level": 4,
+            "text": "Treatment Protocol:"
+          },
+          {
+            "level": 4,
+            "text": "Clinical Study Results:"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "{treatment.name}"
+          },
+          {
+            "level": 4,
+            "text": "{diagnostic.method}"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "DiabeticRetinopathyEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DiabeticRetinopathyEducationPage.tsx",
+      "seo": {
+        "title": "Diabetic Retinopathy: Diabetes Eye Complications | Patient Education",
+        "description": "Learn about diabetic retinopathy, a serious diabetes complication affecting the eyes. Understand symptoms, causes, and treatment options.",
+        "keywords": "diabetic retinopathy, diabetes eye disease, blood sugar, retina, patient education, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/diabetic-retinopathy",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Important for People with Diabetes"
+          },
+          {
+            "level": 2,
+            "text": "What is Diabetic Retinopathy?"
+          },
+          {
+            "level": 3,
+            "text": "Critical Facts"
+          },
+          {
+            "level": 2,
+            "text": "Stages of Diabetic Retinopathy"
+          },
+          {
+            "level": 4,
+            "text": "Symptoms (often none in early stages):"
+          },
+          {
+            "level": 4,
+            "text": "Symptoms:"
+          },
+          {
+            "level": 2,
+            "text": "Risk Factors and Prevention"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "Recommended Eye Exam Schedule for Diabetics"
+          },
+          {
+            "level": 4,
+            "text": "Type 1 Diabetes"
+          },
+          {
+            "level": 4,
+            "text": "Type 2 Diabetes"
+          },
+          {
+            "level": 2,
+            "text": "Protect Your Vision with Regular Diabetic Eye Exams"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "DoubleVisionEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DoubleVisionEducationPage.tsx",
+      "seo": {
+        "title": "Double Vision (Diplopia): Causes, Types, and Treatment | Orange County",
+        "description": "Learn about double vision (diplopia), its causes, types, and treatment options. Expert diagnosis and care for diplopia in Orange County.",
+        "keywords": "double vision, diplopia, eye muscle problems, strabismus, neuro-ophthalmology, Orange County eye doctor, binocular vision",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/double-vision",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "When Double Vision Needs Immediate Attention"
+          },
+          {
+            "level": 2,
+            "text": "What is Double Vision (Diplopia)?"
+          },
+          {
+            "level": 3,
+            "text": "Emergency Warning"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "Types of Double Vision"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Double Vision?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to Seek Emergency Care"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Risk Reduction"
+          },
+          {
+            "level": 2,
+            "text": "Don't Live with Double Vision"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "DryEyeEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DryEyeEducationPage.tsx",
+      "seo": {
+        "title": "Dry Eye Syndrome: Symptoms, Causes, and Treatment | Patient Education",
+        "description": "Learn about dry eye syndrome symptoms, causes, and treatment options. Comprehensive patient education from Orange County eye care specialists.",
+        "keywords": "dry eye syndrome, dry eyes, eye symptoms, eye treatment, patient education, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/dry-eye-syndrome",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Quick Action Needed?"
+          },
+          {
+            "level": 2,
+            "text": "What is Dry Eye Syndrome?"
+          },
+          {
+            "level": 3,
+            "text": "Did You Know?"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Dry Eye Syndrome?"
+          },
+          {
+            "level": 2,
+            "text": "How is Dry Eye Syndrome Diagnosed?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to See an Eye Doctor"
+          },
+          {
+            "level": 2,
+            "text": "Prevention Tips"
+          },
+          {
+            "level": 2,
+            "text": "Don't Let Dry Eyes Affect Your Quality of Life"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "EpiscleritisPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/EpiscleritisPage.tsx",
+      "seo": {
+        "title": "Episcleritis Treatment - Eye Inflammation Care | Dr. Bonakdar Orange County",
+        "description": "Expert episcleritis treatment and management. Dr. Bonakdar provides specialized care for episcleral inflammation with focus on comfort and systemic evaluation in Orange County.",
+        "keywords": "episcleritis, episcleral inflammation, red eye, eye inflammation, simple episcleritis, nodular episcleritis, autoimmune eye disease, rheumatoid arthritis eyes, systemic lupus eyes, eye redness, Dr. Bonakdar, Orange County eye inflammation, Santa Ana episcleritis specialist",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/episcleritis",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "GENERALLY BENIGN CONDITION"
+          },
+          {
+            "level": 4,
+            "text": "Key Distinguishing Feature"
+          },
+          {
+            "level": 4,
+            "text": "{type.type}"
+          },
+          {
+            "level": 5,
+            "text": "Characteristics:"
+          },
+          {
+            "level": 5,
+            "text": "Treatment Approach:"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "{category.category}"
+          },
+          {
+            "level": 5,
+            "text": "{treatment.name}"
+          },
+          {
+            "level": 4,
+            "text": "Treatment Principles"
+          },
+          {
+            "level": 4,
+            "text": "{category.category}"
+          },
+          {
+            "level": 4,
+            "text": "{prog.aspect}"
+          },
+          {
+            "level": 5,
+            "text": "Helpful Measures:"
+          },
+          {
+            "level": 5,
+            "text": "When to Return:"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "GlaucomaEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/GlaucomaEducationPage.tsx",
+      "seo": {
+        "title": "Glaucoma: The Silent Thief of Sight | Patient Education",
+        "description": "Learn about glaucoma symptoms, causes, and treatment. Early detection and treatment can prevent vision loss from this ",
+        "keywords": "glaucoma, eye pressure, optic nerve, vision loss, patient education, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/glaucoma",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Why Early Detection Matters"
+          },
+          {
+            "level": 2,
+            "text": "What is Glaucoma?"
+          },
+          {
+            "level": 3,
+            "text": "Key Facts About Glaucoma"
+          },
+          {
+            "level": 2,
+            "text": "Types of Glaucoma and Their Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "Who is at Risk?"
+          },
+          {
+            "level": 2,
+            "text": "How is Glaucoma Diagnosed?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 4,
+            "text": "Lower Eye Pressure"
+          },
+          {
+            "level": 4,
+            "text": "Preserve Vision"
+          },
+          {
+            "level": 4,
+            "text": "Maintain Quality of Life"
+          },
+          {
+            "level": 2,
+            "text": "When to Seek Immediate Care"
+          },
+          {
+            "level": 2,
+            "text": "Protect Your Vision with Early Detection"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 95
+    },
+    {
+      "file": "KeratoconusEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/KeratoconusEducationPage.tsx",
+      "seo": {
+        "title": "Keratoconus: Symptoms, Causes, and Treatment | Patient Education",
+        "description": "Learn about keratoconus, a progressive corneal condition causing vision distortion. Comprehensive information on symptoms, treatments, and management options.",
+        "keywords": "keratoconus, corneal disease, progressive vision, contact lenses, corneal cross-linking, patient education",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/keratoconus",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Early Detection is Key"
+          },
+          {
+            "level": 2,
+            "text": "What is Keratoconus?"
+          },
+          {
+            "level": 3,
+            "text": "Important Facts"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Keratoconus?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to See an Eye Doctor"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Management"
+          },
+          {
+            "level": 2,
+            "text": "Early Detection Can Preserve Your Vision"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "LazyEyeAmblyopiaEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/LazyEyeAmblyopiaEducationPage.tsx",
+      "seo": {
+        "title": "Lazy Eye (Amblyopia) in Children: Early Detection & Treatment",
+        "description": "Learn about amblyopia (lazy eye) in children - causes, symptoms, and treatment options. Early detection is crucial for successful treatment.",
+        "keywords": "lazy eye, amblyopia, children vision, pediatric eye care, eye patching, vision therapy",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/lazy-eye-amblyopia",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Early Detection is Crucial"
+          },
+          {
+            "level": 2,
+            "text": "What is Amblyopia (Lazy Eye)?"
+          },
+          {
+            "level": 3,
+            "text": "Why Early Treatment Matters"
+          },
+          {
+            "level": 2,
+            "text": "Protect Your Child's Vision Development"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "MacularDegenerationEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MacularDegenerationEducationPage.tsx",
+      "seo": {
+        "title": "Macular Degeneration: Causes, Symptoms, and Treatment | Patient Education",
+        "description": "Learn about age-related macular degeneration (AMD), its symptoms, causes, and treatment options. Comprehensive patient education from Orange County specialists.",
+        "keywords": "macular degeneration, AMD, central vision loss, retina, patient education, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/macular-degeneration",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Central Vision Impact"
+          },
+          {
+            "level": 2,
+            "text": "What is Macular Degeneration?"
+          },
+          {
+            "level": 3,
+            "text": "Key Facts About AMD"
+          },
+          {
+            "level": 2,
+            "text": "Types of Macular Degeneration"
+          },
+          {
+            "level": 4,
+            "text": "Symptoms:"
+          },
+          {
+            "level": 4,
+            "text": "Symptoms:"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "Protect Your Central Vision"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "MacularHoleEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MacularHoleEducationPage.tsx",
+      "seo": {
+        "title": "Macular Hole: Symptoms, Surgery, and Treatment | Orange County Retina",
+        "description": "Learn about macular holes, their symptoms, stages, and surgical treatment. Expert retinal surgery for macular holes in Orange County and surrounding areas.",
+        "keywords": "macular hole, macular hole surgery, vitrectomy, retinal surgery Orange County, central vision loss, retina specialist, macular hole treatment",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/macular-hole",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Prompt Treatment Important"
+          },
+          {
+            "level": 2,
+            "text": "What is a Macular Hole?"
+          },
+          {
+            "level": 3,
+            "text": "Good News About Treatment"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "Stages of Macular Holes"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Macular Holes?"
+          },
+          {
+            "level": 2,
+            "text": "Surgical Treatment Process"
+          },
+          {
+            "level": 2,
+            "text": "When to See a Retinal Specialist"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Early Detection"
+          },
+          {
+            "level": 2,
+            "text": "Expert Macular Hole Treatment Available"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "MeibomianGlandDysfunctionPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MeibomianGlandDysfunctionPage.tsx",
+      "seo": {
+        "title": "Meibomian Gland Dysfunction (MGD) Treatment - IPL & Advanced Therapy | Orange County",
+        "description": "Expert MGD treatment with IPL therapy, LipiFlow, and iLux in Orange County. Dr. Bonakdar specializes in advanced meibomian gland dysfunction treatments for lasting dry eye relief.",
+        "keywords": "meibomian gland dysfunction, MGD treatment, IPL therapy eyes, LipiFlow Orange County, iLux treatment, evaporative dry eye, posterior blepharitis, meibomitis, oil gland dysfunction, dry eye specialist, Dr. Bonakdar, Santa Ana eye doctor, Orange County MGD expert, advanced dry eye treatment",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/meibomian-gland-dysfunction",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 4,
+            "text": "Good News: Advanced Treatments Available"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "{treatment.name}"
+          },
+          {
+            "level": 4,
+            "text": "{stage.stage}"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "MyopiaControlPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MyopiaControlPage.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 2,
+            "text": "Why Myopia Control Matters NOW"
+          },
+          {
+            "level": 3,
+            "text": "{reason.title}"
+          },
+          {
+            "level": 2,
+            "text": "Proven Myopia Control Methods"
+          },
+          {
+            "level": 3,
+            "text": "{method.name}"
+          },
+          {
+            "level": 3,
+            "text": "{group.ageGroup}"
+          },
+          {
+            "level": 3,
+            "text": "{item.recommendation}"
+          },
+          {
+            "level": 3,
+            "text": "Parent Success Story"
+          },
+          {
+            "level": 2,
+            "text": "Start Myopia Control Today"
+          },
+          {
+            "level": 2,
+            "text": "Related Information"
+          }
+        ],
+        "images": [],
+        "links": [],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "Improper heading hierarchy",
+        "No internal links found"
+      ],
+      "score": 15
+    },
+    {
+      "file": "NormalTensionGlaucomaEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/NormalTensionGlaucomaEducationPage.tsx",
+      "seo": {
+        "title": "Normal Tension Glaucoma: Symptoms, Causes, and Treatment | Orange County",
+        "description": "Learn about normal tension glaucoma, a silent disease that damages vision despite normal eye pressure. Expert diagnosis and treatment in Orange County.",
+        "keywords": "normal tension glaucoma, low pressure glaucoma, NTG, glaucoma Orange County, silent glaucoma, optic nerve damage, glaucoma specialist",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/normal-tension-glaucoma",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Early Detection is Critical"
+          },
+          {
+            "level": 2,
+            "text": "What is Normal Tension Glaucoma?"
+          },
+          {
+            "level": 3,
+            "text": "Critical Fact"
+          },
+          {
+            "level": 2,
+            "text": "Symptoms and Warning Signs"
+          },
+          {
+            "level": 2,
+            "text": "Causes and Risk Factors"
+          },
+          {
+            "level": 2,
+            "text": "Diagnosis and Testing"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to See an Eye Doctor"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Early Detection"
+          },
+          {
+            "level": 2,
+            "text": "Don't Let Silent Glaucoma Steal Your Sight"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "OpenAngleGlaucomaEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/OpenAngleGlaucomaEducationPage.tsx",
+      "seo": {
+        "title": "Open-Angle Glaucoma: The Silent Thief of Sight | Patient Education",
+        "description": "Learn about open-angle glaucoma, the most common form of glaucoma. Early detection and treatment are crucial for preserving vision.",
+        "keywords": "open-angle glaucoma, glaucoma types, eye pressure, vision loss, patient education",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/open-angle-glaucoma",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Regular Eye Exams are Critical"
+          },
+          {
+            "level": 2,
+            "text": "What is Open-Angle Glaucoma?"
+          },
+          {
+            "level": 3,
+            "text": "Early Detection Saves Sight"
+          },
+          {
+            "level": 2,
+            "text": "Protect Your Vision with Regular Screenings"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "OpticNeuritisEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/OpticNeuritisEducationPage.tsx",
+      "seo": {
+        "title": "Optic Neuritis: Symptoms, Causes, and Treatment | Orange County",
+        "description": "Learn about optic neuritis, its connection to multiple sclerosis, symptoms, and treatment options. Expert neuro-ophthalmology care in Orange County.",
+        "keywords": "optic neuritis, optic nerve inflammation, multiple sclerosis, sudden vision loss, eye pain, neuro-ophthalmology Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/optic-neuritis",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Urgent Medical Attention Required"
+          },
+          {
+            "level": 2,
+            "text": "What is Optic Neuritis?"
+          },
+          {
+            "level": 3,
+            "text": "Connection to Multiple Sclerosis"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Optic Neuritis?"
+          },
+          {
+            "level": 2,
+            "text": "Diagnosis and Testing"
+          },
+          {
+            "level": 2,
+            "text": "Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to Seek Immediate Care"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Risk Awareness"
+          },
+          {
+            "level": 2,
+            "text": "Don't Delay Treatment for Vision Loss"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "PresbyopiaEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/PresbyopiaEducationPage.tsx",
+      "seo": {
+        "title": "Presbyopia: Age-Related Reading Vision Changes | Patient Education",
+        "description": "Learn about presbyopia, the natural age-related condition affecting near vision. Comprehensive guide to symptoms, causes, and treatment options including reading glasses and multifocal lenses.",
+        "keywords": "presbyopia, reading glasses, bifocals, progressive lenses, age-related vision, near vision, Orange County",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/presbyopia",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Need Vision Correction?"
+          },
+          {
+            "level": 2,
+            "text": "What is Presbyopia?"
+          },
+          {
+            "level": 3,
+            "text": "Universal Condition"
+          },
+          {
+            "level": 2,
+            "text": "Common Signs and Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Presbyopia?"
+          },
+          {
+            "level": 2,
+            "text": "Treatment and Correction Options"
+          },
+          {
+            "level": 2,
+            "text": "When to Schedule an Eye Exam"
+          },
+          {
+            "level": 2,
+            "text": "Managing Presbyopia"
+          },
+          {
+            "level": 2,
+            "text": "Ready to See Clearly Again?"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "RetinalDetachmentEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/RetinalDetachmentEducationPage.tsx",
+      "seo": {
+        "title": "Retinal Detachment: Emergency Eye Condition | Patient Education",
+        "description": "Learn about retinal detachment - a serious eye emergency requiring immediate treatment. Symptoms, causes, and treatment options explained.",
+        "keywords": "retinal detachment, detached retina, eye emergency, sudden vision loss, flashing lights, floaters",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/retinal-detachment",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "MEDICAL EMERGENCY"
+          },
+          {
+            "level": 2,
+            "text": "Emergency Warning Signs"
+          },
+          {
+            "level": 2,
+            "text": "What is Retinal Detachment?"
+          },
+          {
+            "level": 3,
+            "text": "Critical Timeline"
+          },
+          {
+            "level": 2,
+            "text": "Don't Wait - Vision Loss May Be Permanent"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "ScleritisPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ScleritisPage.tsx",
+      "seo": {
+        "title": "Scleritis Treatment - Serious Eye Inflammation | Dr. Bonakdar Orange County",
+        "description": "Expert scleritis diagnosis and treatment. Dr. Bonakdar provides urgent care for serious scleral inflammation, systemic evaluation, and immunosuppressive therapy in Orange County.",
+        "keywords": "scleritis, scleral inflammation, necrotizing scleritis, posterior scleritis, severe eye pain, autoimmune eye disease, rheumatoid arthritis eyes, vasculitis eyes, immunosuppressive therapy, prednisone eye treatment, Dr. Bonakdar, Orange County scleritis specialist, Santa Ana eye inflammation emergency",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/scleritis",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "URGENT CONDITION"
+          },
+          {
+            "level": 4,
+            "text": "Critical Difference"
+          },
+          {
+            "level": 5,
+            "text": "Characteristics:"
+          },
+          {
+            "level": 5,
+            "text": "Prognosis:"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "{category.category}"
+          },
+          {
+            "level": 4,
+            "text": "Life-Threatening Associations"
+          },
+          {
+            "level": 4,
+            "text": "{category.category}"
+          },
+          {
+            "level": 4,
+            "text": "{protocol.severity}"
+          },
+          {
+            "level": 5,
+            "text": "First-Line Treatment:"
+          },
+          {
+            "level": 5,
+            "text": "Second-Line/Adjunctive:"
+          },
+          {
+            "level": 4,
+            "text": "Treatment Principles"
+          },
+          {
+            "level": 4,
+            "text": "{comp.complication}"
+          },
+          {
+            "level": 5,
+            "text": "SCLERITIS:"
+          },
+          {
+            "level": 5,
+            "text": "EPISCLERITIS:"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "ViralConjunctivitisPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ViralConjunctivitisPage.tsx",
+      "seo": {
+        "title": "Viral Conjunctivitis Treatment - Supportive Care | Dr. Bonakdar Orange County",
+        "description": "Expert viral conjunctivitis (viral pink eye) care and management. Dr. Bonakdar provides supportive treatment and prevents complications in Orange County.",
+        "keywords": "viral conjunctivitis, viral pink eye, adenovirus conjunctivitis, epidemic keratoconjunctivitis, watery discharge, red eyes, supportive care, artificial tears, cold compresses, contagious pink eye, Dr. Bonakdar, Orange County viral infection, Santa Ana conjunctivitis care",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/viral-conjunctivitis",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "EXTREMELY CONTAGIOUS"
+          },
+          {
+            "level": 4,
+            "text": "No Antibiotic Treatment"
+          },
+          {
+            "level": 4,
+            "text": "{type.type}"
+          },
+          {
+            "level": 5,
+            "text": "Characteristics:"
+          },
+          {
+            "level": 5,
+            "text": "Potential Complications:"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "{treatment.treatment}"
+          },
+          {
+            "level": 5,
+            "text": "Benefits:"
+          },
+          {
+            "level": 4,
+            "text": "Important Notes"
+          },
+          {
+            "level": 4,
+            "text": "{phase.phase}"
+          },
+          {
+            "level": 4,
+            "text": "{comp.complication}"
+          },
+          {
+            "level": 5,
+            "text": "DO:"
+          },
+          {
+            "level": 5,
+            "text": "DON'T:"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "VisualFieldDefectsEducationPage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/VisualFieldDefectsEducationPage.tsx",
+      "seo": {
+        "title": "Visual Field Defects - Understanding Blind Spots & Vision Loss | Dr. Bonakdar",
+        "description": "Learn about visual field defects, including blind spots, tunnel vision, and other types of vision loss. Expert diagnosis and treatment at Eyecare Center of Orange County.",
+        "keywords": "visual field defects, blind spots, scotomas, tunnel vision, peripheral vision loss, hemianopia, visual field test, perimetry, Orange County eye doctor",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/visual-field-defects",
+        "ogType": null,
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 4,
+            "text": "Important Note"
+          },
+          {
+            "level": 4,
+            "text": "{symptom.title}"
+          },
+          {
+            "level": 4,
+            "text": "{type.category}"
+          },
+          {
+            "level": 4,
+            "text": "{test.name}"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Description too long (>160 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 55
+    },
+    {
+      "file": "acanthamoeba-keratitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/acanthamoeba-keratitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "albinism-ocular",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/albinism-ocular.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "amblyopia",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/amblyopia.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "atopic-keratoconjunctivitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/atopic-keratoconjunctivitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "bacterial-keratitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/bacterial-keratitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "blocked-tear-ducts",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/blocked-tear-ducts.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "branch-retinal-artery-occlusion",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/branch-retinal-artery-occlusion.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "branch-retinal-vein-occlusion",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/branch-retinal-vein-occlusion.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "central-retinal-artery-occlusion",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/central-retinal-artery-occlusion.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "central-retinal-vein-occlusion",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/central-retinal-vein-occlusion.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "congenital-glaucoma",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/congenital-glaucoma.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "corneal-abrasion",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/corneal-abrasion.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "corneal-dystrophies",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/corneal-dystrophies.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "corneal-endothelial-dysfunction",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/corneal-endothelial-dysfunction.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "epiretinal-membrane",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/epiretinal-membrane.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "fungal-keratitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/fungal-keratitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "giant-papillary-conjunctivitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/giant-papillary-conjunctivitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "granular-corneal-dystrophy",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/granular-corneal-dystrophy.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "idiopathic-intracranial-hypertension",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/idiopathic-intracranial-hypertension.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "ischemic-optic-neuropathy",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ischemic-optic-neuropathy.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "juvenile-idiopathic-arthritis-uveitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/juvenile-idiopathic-arthritis-uveitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "lattice-corneal-dystrophy",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/lattice-corneal-dystrophy.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "ligneous-conjunctivitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ligneous-conjunctivitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "macular-hole",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/macular-hole.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "map-dot-fingerprint-dystrophy",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/map-dot-fingerprint-dystrophy.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "myasthenia-gravis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/myasthenia-gravis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "ocular-cicatricial-pemphigoid",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ocular-cicatricial-pemphigoid.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "optic-neuritis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/optic-neuritis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "papilledema",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/papilledema.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "pediatric-cataracts",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pediatric-cataracts.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "pediatric-ptosis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pediatric-ptosis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "pinguecula",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pinguecula.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "pterygium",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pterygium.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "ptosis-drooping-eyelid",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ptosis-drooping-eyelid.tsx",
+      "seo": {
+        "title": "Ptosis (Drooping Eyelid): Causes, Symptoms, and Surgery | Orange County",
+        "description": "Learn about ptosis (drooping eyelid) causes, symptoms, and surgical treatment options. Expert ptosis surgery in Orange County, Santa Ana, and surrounding areas.",
+        "keywords": "ptosis Orange County, drooping eyelid treatment, eyelid surgery Santa Ana, ptosis surgery, blepharoptosis, eyelid repair, ptosis doctor",
+        "canonicalUrl": "https://eyecarecenteroc.com/education/conditions/ptosis-drooping-eyelid",
+        "ogType": "article",
+        "structuredData": true,
+        "hasSEOComponent": true
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [
+          {
+            "level": 3,
+            "text": "Expert Ptosis Treatment"
+          },
+          {
+            "level": 2,
+            "text": "What is Ptosis (Drooping Eyelid)?"
+          },
+          {
+            "level": 3,
+            "text": "Important for Parents"
+          },
+          {
+            "level": 2,
+            "text": "Common Symptoms"
+          },
+          {
+            "level": 2,
+            "text": "Types of Ptosis"
+          },
+          {
+            "level": 2,
+            "text": "What Causes Ptosis?"
+          },
+          {
+            "level": 2,
+            "text": "How is Ptosis Diagnosed?"
+          },
+          {
+            "level": 2,
+            "text": "Surgical Treatment Options"
+          },
+          {
+            "level": 2,
+            "text": "When to See an Eye Doctor"
+          },
+          {
+            "level": 2,
+            "text": "Prevention and Care Tips"
+          },
+          {
+            "level": 2,
+            "text": "Restore Function and Confidence with Ptosis Surgery"
+          }
+        ],
+        "images": [],
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/patient-education",
+            "text": "Patient Education"
+          }
+        ],
+        "headingHierarchy": false
+      },
+      "issues": [
+        "Title too long (>60 chars)",
+        "Missing H1 tag",
+        "Improper heading hierarchy"
+      ],
+      "score": 75
+    },
+    {
+      "file": "recurrent-corneal-erosion",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/recurrent-corneal-erosion.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "retinal-detachment",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/retinal-detachment.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "retinopathy-of-prematurity",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/retinopathy-of-prematurity.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "sixth-nerve-palsy",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/sixth-nerve-palsy.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "stevens-johnson-syndrome",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/stevens-johnson-syndrome.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "strabismus",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/strabismus.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "subconjunctival-hemorrhage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/subconjunctival-hemorrhage.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "superior-limbic-keratoconjunctivitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/superior-limbic-keratoconjunctivitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "third-nerve-palsy",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/third-nerve-palsy.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "vernal-keratoconjunctivitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/vernal-keratoconjunctivitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "viral-keratitis",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/viral-keratitis.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    },
+    {
+      "file": "vitreous-hemorrhage",
+      "path": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/vitreous-hemorrhage.tsx",
+      "seo": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "canonicalUrl": null,
+        "ogType": null,
+        "structuredData": null,
+        "hasSEOComponent": false
+      },
+      "structure": {
+        "h1Tags": [],
+        "headings": [],
+        "images": [],
+        "links": [],
+        "headingHierarchy": true
+      },
+      "issues": [
+        "Missing page title",
+        "Missing meta description",
+        "Missing canonical URL",
+        "Missing structured data",
+        "Missing H1 tag",
+        "No internal links found"
+      ],
+      "score": 20
+    }
+  ],
+  "linkValidation": {
+    "totalLinks": 2,
+    "validLinks": [
+      {
+        "to": "`/education/conditions/${condition.slug}`",
+        "type": "dynamic",
+        "source": "Template literal"
+      },
+      {
+        "to": "`/education/conditions/${condition.slug}`",
+        "type": "dynamic",
+        "source": "Template literal"
+      }
+    ],
+    "brokenLinks": [],
+    "categoryLinks": [],
+    "conditionLinks": [
+      {
+        "to": "`/education/conditions/${condition.slug}`",
+        "type": "dynamic",
+        "source": "Template literal"
+      },
+      {
+        "to": "`/education/conditions/${condition.slug}`",
+        "type": "dynamic",
+        "source": "Template literal"
+      }
+    ]
+  },
+  "scoring": {
+    "title": {
+      "weight": 20,
+      "required": true
+    },
+    "description": {
+      "weight": 20,
+      "required": true
+    },
+    "keywords": {
+      "weight": 10,
+      "required": false
+    },
+    "canonicalUrl": {
+      "weight": 15,
+      "required": true
+    },
+    "structuredData": {
+      "weight": 20,
+      "required": true
+    },
+    "h1Tag": {
+      "weight": 10,
+      "required": true
+    },
+    "headingHierarchy": {
+      "weight": 5,
+      "required": true
+    },
+    "imageAltText": {
+      "weight": 5,
+      "required": false
+    },
+    "internalLinks": {
+      "weight": 5,
+      "required": false
+    }
+  }
+}

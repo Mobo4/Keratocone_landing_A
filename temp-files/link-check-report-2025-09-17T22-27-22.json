@@ -1,0 +1,650 @@
+{
+  "summary": {
+    "totalLinks": 2,
+    "validLinks": 2,
+    "brokenLinks": 0,
+    "warnings": 0
+  },
+  "details": {
+    "conditionLinks": [
+      {
+        "to": "`/education/conditions/${condition.slug}`",
+        "slug": "dynamic",
+        "expression": "condition.slug",
+        "line": 203,
+        "dynamic": true,
+        "status": "valid",
+        "note": "Dynamic link from education data"
+      },
+      {
+        "to": "`/education/conditions/${condition.slug}`",
+        "slug": "dynamic",
+        "expression": "condition.slug",
+        "line": 285,
+        "dynamic": true,
+        "status": "valid",
+        "note": "Dynamic link from education data"
+      }
+    ],
+    "categoryLinks": [],
+    "internalLinks": [],
+    "brokenLinks": [],
+    "warnings": []
+  },
+  "files": {
+    "conditionFiles": [
+      {
+        "filename": "AngleClosureGlaucomaEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/AngleClosureGlaucomaEducationPage.tsx",
+        "slug": "angle-closure-glaucoma-education"
+      },
+      {
+        "filename": "BacterialConjunctivitisPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/BacterialConjunctivitisPage.tsx",
+        "slug": "bacterial-conjunctivitis"
+      },
+      {
+        "filename": "BlockedTearDuctEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/BlockedTearDuctEducationPage.tsx",
+        "slug": "blocked-tear-duct-education"
+      },
+      {
+        "filename": "CataractsEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CataractsEducationPage.tsx",
+        "slug": "cataracts-education"
+      },
+      {
+        "filename": "ChalazionStyePage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ChalazionStyePage.tsx",
+        "slug": "chalazion-stye"
+      },
+      {
+        "filename": "ChildhoodMyopiaEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ChildhoodMyopiaEducationPage.tsx",
+        "slug": "childhood-myopia-education"
+      },
+      {
+        "filename": "ConjunctivitisEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ConjunctivitisEducationPage.tsx",
+        "slug": "conjunctivitis-education"
+      },
+      {
+        "filename": "CornealAbrasionEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CornealAbrasionEducationPage.tsx",
+        "slug": "corneal-abrasion-education"
+      },
+      {
+        "filename": "CornealUlcerPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CornealUlcerPage.tsx",
+        "slug": "corneal-ulcer"
+      },
+      {
+        "filename": "CrossedEyesStrabismusEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/CrossedEyesStrabismusEducationPage.tsx",
+        "slug": "crossed-eyes-strabismus-education"
+      },
+      {
+        "filename": "DemodexBlepharitisPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DemodexBlepharitisPage.tsx",
+        "slug": "demodex-blepharitis"
+      },
+      {
+        "filename": "DiabeticRetinopathyEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DiabeticRetinopathyEducationPage.tsx",
+        "slug": "diabetic-retinopathy-education"
+      },
+      {
+        "filename": "DoubleVisionEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DoubleVisionEducationPage.tsx",
+        "slug": "double-vision-education"
+      },
+      {
+        "filename": "DryEyeEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/DryEyeEducationPage.tsx",
+        "slug": "dry-eye-education"
+      },
+      {
+        "filename": "EpiscleritisPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/EpiscleritisPage.tsx",
+        "slug": "episcleritis"
+      },
+      {
+        "filename": "GlaucomaEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/GlaucomaEducationPage.tsx",
+        "slug": "glaucoma-education"
+      },
+      {
+        "filename": "KeratoconusEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/KeratoconusEducationPage.tsx",
+        "slug": "keratoconus-education"
+      },
+      {
+        "filename": "LazyEyeAmblyopiaEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/LazyEyeAmblyopiaEducationPage.tsx",
+        "slug": "lazy-eye-amblyopia-education"
+      },
+      {
+        "filename": "MacularDegenerationEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MacularDegenerationEducationPage.tsx",
+        "slug": "macular-degeneration-education"
+      },
+      {
+        "filename": "MacularHoleEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MacularHoleEducationPage.tsx",
+        "slug": "macular-hole-education"
+      },
+      {
+        "filename": "MeibomianGlandDysfunctionPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MeibomianGlandDysfunctionPage.tsx",
+        "slug": "meibomian-gland-dysfunction"
+      },
+      {
+        "filename": "MyopiaControlPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/MyopiaControlPage.tsx",
+        "slug": "myopia-control"
+      },
+      {
+        "filename": "NormalTensionGlaucomaEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/NormalTensionGlaucomaEducationPage.tsx",
+        "slug": "normal-tension-glaucoma-education"
+      },
+      {
+        "filename": "OpenAngleGlaucomaEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/OpenAngleGlaucomaEducationPage.tsx",
+        "slug": "open-angle-glaucoma-education"
+      },
+      {
+        "filename": "OpticNeuritisEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/OpticNeuritisEducationPage.tsx",
+        "slug": "optic-neuritis-education"
+      },
+      {
+        "filename": "PresbyopiaEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/PresbyopiaEducationPage.tsx",
+        "slug": "presbyopia-education"
+      },
+      {
+        "filename": "RetinalDetachmentEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/RetinalDetachmentEducationPage.tsx",
+        "slug": "retinal-detachment-education"
+      },
+      {
+        "filename": "ScleritisPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ScleritisPage.tsx",
+        "slug": "scleritis"
+      },
+      {
+        "filename": "ViralConjunctivitisPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ViralConjunctivitisPage.tsx",
+        "slug": "viral-conjunctivitis"
+      },
+      {
+        "filename": "VisualFieldDefectsEducationPage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/VisualFieldDefectsEducationPage.tsx",
+        "slug": "visual-field-defects-education"
+      },
+      {
+        "filename": "acanthamoeba-keratitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/acanthamoeba-keratitis.tsx",
+        "slug": "acanthamoeba-keratitis"
+      },
+      {
+        "filename": "albinism-ocular.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/albinism-ocular.tsx",
+        "slug": "albinism-ocular"
+      },
+      {
+        "filename": "amblyopia.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/amblyopia.tsx",
+        "slug": "amblyopia"
+      },
+      {
+        "filename": "atopic-keratoconjunctivitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/atopic-keratoconjunctivitis.tsx",
+        "slug": "atopic-keratoconjunctivitis"
+      },
+      {
+        "filename": "bacterial-keratitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/bacterial-keratitis.tsx",
+        "slug": "bacterial-keratitis"
+      },
+      {
+        "filename": "blocked-tear-ducts.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/blocked-tear-ducts.tsx",
+        "slug": "blocked-tear-ducts"
+      },
+      {
+        "filename": "branch-retinal-artery-occlusion.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/branch-retinal-artery-occlusion.tsx",
+        "slug": "branch-retinal-artery-occlusion"
+      },
+      {
+        "filename": "branch-retinal-vein-occlusion.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/branch-retinal-vein-occlusion.tsx",
+        "slug": "branch-retinal-vein-occlusion"
+      },
+      {
+        "filename": "central-retinal-artery-occlusion.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/central-retinal-artery-occlusion.tsx",
+        "slug": "central-retinal-artery-occlusion"
+      },
+      {
+        "filename": "central-retinal-vein-occlusion.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/central-retinal-vein-occlusion.tsx",
+        "slug": "central-retinal-vein-occlusion"
+      },
+      {
+        "filename": "congenital-glaucoma.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/congenital-glaucoma.tsx",
+        "slug": "congenital-glaucoma"
+      },
+      {
+        "filename": "corneal-abrasion.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/corneal-abrasion.tsx",
+        "slug": "corneal-abrasion"
+      },
+      {
+        "filename": "corneal-dystrophies.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/corneal-dystrophies.tsx",
+        "slug": "corneal-dystrophies"
+      },
+      {
+        "filename": "corneal-endothelial-dysfunction.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/corneal-endothelial-dysfunction.tsx",
+        "slug": "corneal-endothelial-dysfunction"
+      },
+      {
+        "filename": "epiretinal-membrane.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/epiretinal-membrane.tsx",
+        "slug": "epiretinal-membrane"
+      },
+      {
+        "filename": "fungal-keratitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/fungal-keratitis.tsx",
+        "slug": "fungal-keratitis"
+      },
+      {
+        "filename": "giant-papillary-conjunctivitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/giant-papillary-conjunctivitis.tsx",
+        "slug": "giant-papillary-conjunctivitis"
+      },
+      {
+        "filename": "granular-corneal-dystrophy.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/granular-corneal-dystrophy.tsx",
+        "slug": "granular-corneal-dystrophy"
+      },
+      {
+        "filename": "idiopathic-intracranial-hypertension.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/idiopathic-intracranial-hypertension.tsx",
+        "slug": "idiopathic-intracranial-hypertension"
+      },
+      {
+        "filename": "ischemic-optic-neuropathy.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ischemic-optic-neuropathy.tsx",
+        "slug": "ischemic-optic-neuropathy"
+      },
+      {
+        "filename": "juvenile-idiopathic-arthritis-uveitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/juvenile-idiopathic-arthritis-uveitis.tsx",
+        "slug": "juvenile-idiopathic-arthritis-uveitis"
+      },
+      {
+        "filename": "lattice-corneal-dystrophy.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/lattice-corneal-dystrophy.tsx",
+        "slug": "lattice-corneal-dystrophy"
+      },
+      {
+        "filename": "ligneous-conjunctivitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ligneous-conjunctivitis.tsx",
+        "slug": "ligneous-conjunctivitis"
+      },
+      {
+        "filename": "macular-hole.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/macular-hole.tsx",
+        "slug": "macular-hole"
+      },
+      {
+        "filename": "map-dot-fingerprint-dystrophy.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/map-dot-fingerprint-dystrophy.tsx",
+        "slug": "map-dot-fingerprint-dystrophy"
+      },
+      {
+        "filename": "myasthenia-gravis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/myasthenia-gravis.tsx",
+        "slug": "myasthenia-gravis"
+      },
+      {
+        "filename": "ocular-cicatricial-pemphigoid.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ocular-cicatricial-pemphigoid.tsx",
+        "slug": "ocular-cicatricial-pemphigoid"
+      },
+      {
+        "filename": "optic-neuritis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/optic-neuritis.tsx",
+        "slug": "optic-neuritis"
+      },
+      {
+        "filename": "papilledema.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/papilledema.tsx",
+        "slug": "papilledema"
+      },
+      {
+        "filename": "pediatric-cataracts.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pediatric-cataracts.tsx",
+        "slug": "pediatric-cataracts"
+      },
+      {
+        "filename": "pediatric-ptosis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pediatric-ptosis.tsx",
+        "slug": "pediatric-ptosis"
+      },
+      {
+        "filename": "pinguecula.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pinguecula.tsx",
+        "slug": "pinguecula"
+      },
+      {
+        "filename": "pterygium.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/pterygium.tsx",
+        "slug": "pterygium"
+      },
+      {
+        "filename": "ptosis-drooping-eyelid.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/ptosis-drooping-eyelid.tsx",
+        "slug": "ptosis-drooping-eyelid"
+      },
+      {
+        "filename": "recurrent-corneal-erosion.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/recurrent-corneal-erosion.tsx",
+        "slug": "recurrent-corneal-erosion"
+      },
+      {
+        "filename": "retinal-detachment.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/retinal-detachment.tsx",
+        "slug": "retinal-detachment"
+      },
+      {
+        "filename": "retinopathy-of-prematurity.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/retinopathy-of-prematurity.tsx",
+        "slug": "retinopathy-of-prematurity"
+      },
+      {
+        "filename": "sixth-nerve-palsy.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/sixth-nerve-palsy.tsx",
+        "slug": "sixth-nerve-palsy"
+      },
+      {
+        "filename": "stevens-johnson-syndrome.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/stevens-johnson-syndrome.tsx",
+        "slug": "stevens-johnson-syndrome"
+      },
+      {
+        "filename": "strabismus.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/strabismus.tsx",
+        "slug": "strabismus"
+      },
+      {
+        "filename": "subconjunctival-hemorrhage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/subconjunctival-hemorrhage.tsx",
+        "slug": "subconjunctival-hemorrhage"
+      },
+      {
+        "filename": "superior-limbic-keratoconjunctivitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/superior-limbic-keratoconjunctivitis.tsx",
+        "slug": "superior-limbic-keratoconjunctivitis"
+      },
+      {
+        "filename": "third-nerve-palsy.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/third-nerve-palsy.tsx",
+        "slug": "third-nerve-palsy"
+      },
+      {
+        "filename": "vernal-keratoconjunctivitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/vernal-keratoconjunctivitis.tsx",
+        "slug": "vernal-keratoconjunctivitis"
+      },
+      {
+        "filename": "viral-keratitis.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/viral-keratitis.tsx",
+        "slug": "viral-keratitis"
+      },
+      {
+        "filename": "vitreous-hemorrhage.tsx",
+        "fullPath": "/Users/alex/Documents/Documents - MacMiniM4/VSCode_Apps/bonakdar_net_Lovable/src/pages/education/conditions/vitreous-hemorrhage.tsx",
+        "slug": "vitreous-hemorrhage"
+      }
+    ],
+    "missingFiles": [
+      {
+        "slug": "cornea-external-disease",
+        "expectedFiles": [
+          "cornea-external-disease.tsx",
+          "CorneaExternalDisease.tsx",
+          "CorneaExternalDiseasePage.tsx",
+          "CorneaExternalDiseaseEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "dry-eye-syndrome",
+        "expectedFiles": [
+          "dry-eye-syndrome.tsx",
+          "DryEyeSyndrome.tsx",
+          "DryEyeSyndromePage.tsx",
+          "DryEyeSyndromeEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "keratoconus",
+        "expectedFiles": [
+          "keratoconus.tsx",
+          "Keratoconus.tsx",
+          "KeratoconusPage.tsx",
+          "KeratoconusEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "conjunctivitis",
+        "expectedFiles": [
+          "conjunctivitis.tsx",
+          "Conjunctivitis.tsx",
+          "ConjunctivitisPage.tsx",
+          "ConjunctivitisEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "glaucoma",
+        "expectedFiles": [
+          "glaucoma.tsx",
+          "Glaucoma.tsx",
+          "GlaucomaPage.tsx",
+          "GlaucomaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "open-angle-glaucoma",
+        "expectedFiles": [
+          "open-angle-glaucoma.tsx",
+          "OpenAngleGlaucoma.tsx",
+          "OpenAngleGlaucomaPage.tsx",
+          "OpenAngleGlaucomaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "angle-closure-glaucoma",
+        "expectedFiles": [
+          "angle-closure-glaucoma.tsx",
+          "AngleClosureGlaucoma.tsx",
+          "AngleClosureGlaucomaPage.tsx",
+          "AngleClosureGlaucomaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "normal-tension-glaucoma",
+        "expectedFiles": [
+          "normal-tension-glaucoma.tsx",
+          "NormalTensionGlaucoma.tsx",
+          "NormalTensionGlaucomaPage.tsx",
+          "NormalTensionGlaucomaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "retina",
+        "expectedFiles": [
+          "retina.tsx",
+          "Retina.tsx",
+          "RetinaPage.tsx",
+          "RetinaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "macular-degeneration",
+        "expectedFiles": [
+          "macular-degeneration.tsx",
+          "MacularDegeneration.tsx",
+          "MacularDegenerationPage.tsx",
+          "MacularDegenerationEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "diabetic-retinopathy",
+        "expectedFiles": [
+          "diabetic-retinopathy.tsx",
+          "DiabeticRetinopathy.tsx",
+          "DiabeticRetinopathyPage.tsx",
+          "DiabeticRetinopathyEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "pediatric",
+        "expectedFiles": [
+          "pediatric.tsx",
+          "Pediatric.tsx",
+          "PediatricPage.tsx",
+          "PediatricEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "lazy-eye-amblyopia",
+        "expectedFiles": [
+          "lazy-eye-amblyopia.tsx",
+          "LazyEyeAmblyopia.tsx",
+          "LazyEyeAmblyopiaPage.tsx",
+          "LazyEyeAmblyopiaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "crossed-eyes-strabismus",
+        "expectedFiles": [
+          "crossed-eyes-strabismus.tsx",
+          "CrossedEyesStrabismus.tsx",
+          "CrossedEyesStrabismusPage.tsx",
+          "CrossedEyesStrabismusEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "childhood-myopia",
+        "expectedFiles": [
+          "childhood-myopia.tsx",
+          "ChildhoodMyopia.tsx",
+          "ChildhoodMyopiaPage.tsx",
+          "ChildhoodMyopiaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "neuro-ophthalmology",
+        "expectedFiles": [
+          "neuro-ophthalmology.tsx",
+          "NeuroOphthalmology.tsx",
+          "NeuroOphthalmologyPage.tsx",
+          "NeuroOphthalmologyEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "double-vision-diplopia",
+        "expectedFiles": [
+          "double-vision-diplopia.tsx",
+          "DoubleVisionDiplopia.tsx",
+          "DoubleVisionDiplopiaPage.tsx",
+          "DoubleVisionDiplopiaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "visual-field-defects",
+        "expectedFiles": [
+          "visual-field-defects.tsx",
+          "VisualFieldDefects.tsx",
+          "VisualFieldDefectsPage.tsx",
+          "VisualFieldDefectsEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "oculoplastics",
+        "expectedFiles": [
+          "oculoplastics.tsx",
+          "Oculoplastics.tsx",
+          "OculoplasticsPage.tsx",
+          "OculoplasticsEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "blocked-tear-duct",
+        "expectedFiles": [
+          "blocked-tear-duct.tsx",
+          "BlockedTearDuct.tsx",
+          "BlockedTearDuctPage.tsx",
+          "BlockedTearDuctEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "lens-cataract",
+        "expectedFiles": [
+          "lens-cataract.tsx",
+          "LensCataract.tsx",
+          "LensCataractPage.tsx",
+          "LensCataractEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "cataracts",
+        "expectedFiles": [
+          "cataracts.tsx",
+          "Cataracts.tsx",
+          "CataractsPage.tsx",
+          "CataractsEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      },
+      {
+        "slug": "presbyopia",
+        "expectedFiles": [
+          "presbyopia.tsx",
+          "Presbyopia.tsx",
+          "PresbyopiaPage.tsx",
+          "PresbyopiaEducationPage.tsx"
+        ],
+        "note": "Defined in education data but no file found"
+      }
+    ]
+  }
+}

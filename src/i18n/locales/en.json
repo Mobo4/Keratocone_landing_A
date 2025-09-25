@@ -1,0 +1,1030 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "eyewear": "Eyewear",
+    "fashion": "Fashion",
+    "conditions": "Conditions",
+    "keratoconus": "Keratoconus",
+    "dryEye": "Dry Eye",
+    "headache": "Headache & Eye Fatigue",
+    "orthoK": "Ortho-K",
+    "lasik": "LASIK",
+    "cataract": "Cataract",
+    "schedule": "Schedule"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "switchLanguage": "Switch Language"
+  },
+  "hero": {
+    "title": "Orange County's Leading Keratoconus Authority",
+    "subtitle": "Advanced scleral lens fitting specialist serving Newport Beach's most discerning patients. Revolutionary corneal crosslinking treatments and custom lens solutions that restore crystal-clear vision when others say 'nothing can be done.'",
+    "button": "Expert Consultation"
+  },
+  "whyChooseUs": {
+    "title": "Why Orange County's Elite Choose",
+    "highlight": "Our Keratoconus Expertise",
+    "subtitle": "When Beverly Hills celebrities and Newport Beach executives need keratoconus treatment, they trust our advanced scleral lens technology and proven corneal crosslinking expertise.",
+    "expertise": {
+      "title": "Keratoconus Authority",
+      "description": "Orange County's most experienced keratoconus specialist with over 5,000 successful scleral lens fittings and corneal crosslinking procedures."
+    },
+    "technology": {
+      "title": "Cutting-Edge Scleral Lenses",
+      "description": "Revolutionary custom scleral lens technology that provides crystal-clear 20/20 vision when glasses and regular contacts have failed."
+    },
+    "treatment": {
+      "title": "Corneal Crosslinking Expert",
+      "description": "Advanced FDA-approved corneal crosslinking to halt keratoconus progression - the same treatment used by top medical centers worldwide."
+    },
+    "care": {
+      "title": "Premium Patient Experience",
+      "description": "Concierge-level care with extended consultation times, personalized attention, and direct access to Dr. Bonakdar - no rushing, no assembly line."
+    },
+    "approach": {
+      "title": "Proven Track Record",
+      "description": "When other doctors say 'nothing can be done,' our patients achieve life-changing vision improvement. 98% success rate with advanced keratoconus cases."
+    },
+    "relationships": {
+      "title": "Long-term Relationships",
+      "description": "We build lasting relationships with our patients, supporting their eye health throughout their lives."
+    },
+    "ctaButton": "Schedule Your Consultation"
+  },
+  "seo": {
+    "title": "Eye Care Center of OC - Dr. Alexander Bonakdar"
+  },
+  "about": {
+    "hero": {
+      "title": "Orange County's Premier Eye Care Legacy Since 1995",
+      "subtitle": "Three decades serving Orange County's 3.2 million residents. From UCI partnerships to CHOC collaborations, Dr. Bonakdar has built Orange County's most trusted eye care practice with 50,000+ patients treated across every community from Irvine to Newport Beach.",
+      "button": "Contact Us"
+    },
+    "doctor": {
+      "titlePrefix": "Meet",
+      "name": "Dr. Alexander Bonakdar",
+      "bio1": "Dr. Alexander Bonakdar chose Orange County in 1995 specifically for its diverse population and unique environmental eye health challenges. After completing his Doctor of Optometry degree at UC Berkeley, he established his practice to serve Orange County's Mediterranean climate-related conditions, from Santa Ana winds dry eye to marine layer effects.",
+      "bio2": "In 30 years serving Orange County, Dr. Bonakdar has treated over 50,000 residents, specializing in environmental adaptations for OC's climate. His expertise in keratoconus management, dry eye treatment, and contact lens fittings has made him the referral choice for UCI Health, CHOC, and three generations of Orange County families from tech workers to retirees.",
+      "learnMore": "Learn More",
+      "schedule": "Schedule Appointment",
+      "imageAlt": "Dr. Alexander Bonakdar - Orange County Optometrist",
+      "uploadPrompt": "Upload doctor image"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Comprehensive Eye Care Services",
+      "subtitle": "From routine eye exams to specialized treatments, we provide complete vision care for all ages",
+      "button": "Schedule Consultation"
+    },
+    "overview": {
+      "title": "Comprehensive",
+      "highlight": "Vision Care",
+      "subtitle": "Solutions",
+      "description": "Our comprehensive approach combines cutting-edge technology with personalized care to deliver exceptional visual health outcomes for every patient.",
+      "diagnosticTitle": "Advanced Diagnostic Technology",
+      "diagnosticDescription": "State-of-the-art equipment and techniques for precise diagnosis and treatment planning."
+    },
+    "features": {
+      "personalizedCare": {
+        "title": "Personalized Care Plans",
+        "description": "Every patient receives a customized treatment approach tailored to their unique vision needs and lifestyle requirements."
+      },
+      "specializedTreatment": {
+        "title": "Specialized Treatment Options",
+        "description": "Advanced therapies for complex conditions including dry eye, keratoconus, and specialized contact lens fittings."
+      },
+      "comprehensiveCorrection": {
+        "title": "Comprehensive Vision Correction",
+        "description": "Complete vision solutions from routine eye care to advanced surgical co-management and specialized eyewear."
+      }
+    },
+    "specializedTreatments": {
+      "title": "Advanced",
+      "highlight": "Treatment Options",
+      "description": "Discover our specialized treatment options designed to address complex eye conditions with the latest medical innovations.",
+      "ipl": {
+        "title": "IPL Therapy for Dry Eye",
+        "description": "Intense Pulsed Light therapy to treat chronic dry eye syndrome and meibomian gland dysfunction."
+      },
+      "scleral": {
+        "title": "Scleral Contact Lenses",
+        "description": "Large-diameter custom-designed lenses for keratoconus, irregular corneas, and severe dry eye conditions."
+      },
+      "crossLinking": {
+        "title": "Corneal Cross-Linking",
+        "description": "Advanced procedure to strengthen corneal tissue and halt keratoconus progression."
+      }
+    },
+    "testimonials": {
+      "title": "Patient",
+      "highlight": "Success Stories",
+      "subtitle": "",
+      "description": "Hear from patients who have experienced life-changing results with our specialized eye care treatments."
+    },
+    "cta": {
+      "title": "Ready to Transform Your Vision?",
+      "description": "Schedule your comprehensive consultation today and discover how our advanced treatments can improve your eye health and quality of life.",
+      "scheduleOnline": {
+        "title": "Schedule Online",
+        "description": "Book your appointment through our convenient online scheduling system.",
+        "button": "Book Appointment"
+      },
+      "callDirect": {
+        "title": "Call Directly",
+        "description": "Speak with our team directly to schedule or ask questions about our services.",
+        "button": "Call Now"
+      },
+      "insurance": {
+        "title": "Insurance & Payment Options",
+        "description": "We accept most major insurance plans and offer flexible payment options to make quality eye care accessible.",
+        "link": "View Insurance Information"
+      }
+    }
+  },
+  "dryEye": {
+    "hero": {
+      "title": "Advanced Dry Eye Treatment",
+      "description": "Comprehensive diagnosis and treatment for dry eye syndrome using the latest technology including IPL therapy, LipiFlow, and personalized treatment plans.",
+      "buttonText": "Schedule Dry Eye Consultation"
+    },
+    "understanding": {
+      "title": "Understanding",
+      "highlight": "Dry Eye",
+      "paragraph1": "Dry eye syndrome is a common condition that occurs when tears aren't able to provide adequate lubrication for your eyes. This can happen when your eyes don't produce enough tears or when the tears evaporate too quickly.",
+      "paragraph2": "Modern lifestyle factors such as increased screen time, environmental conditions, and certain medications can contribute to dry eye symptoms. The condition can range from mild irritation to severe discomfort that significantly impacts daily activities.",
+      "paragraph3": "At Eye Care Center of OC, we use advanced diagnostic technology to identify the specific type and underlying cause of your dry eye condition, allowing us to create a personalized treatment plan that addresses your unique needs.",
+      "imageAlt": "Dry eye condition illustration showing tear film dysfunction",
+      "subtitle": "What You Need to Know",
+      "description": "Dry eye syndrome is a common condition that occurs when tears aren't able to provide adequate lubrication for your eyes.",
+      "types": {
+        "evaporative": {
+          "title": "Evaporative Dry Eye",
+          "description": "Most common type caused by blocked meibomian glands"
+        },
+        "aqueous": {
+          "title": "Aqueous Deficient",
+          "description": "Insufficient tear production by lacrimal glands"
+        },
+        "mixed": {
+          "title": "Mixed Type",
+          "description": "Combination of both evaporative and aqueous deficient"
+        }
+      }
+    },
+    "treatments": {
+      "title": "Comprehensive",
+      "highlight": "Treatment Options",
+      "subtitle": "We offer a range of effective treatments tailored to your specific dry eye condition and symptoms.",
+      "options": [
+        {
+          "title": "Artificial Tears",
+          "description": "Premium lubricating drops to supplement natural tear production and provide temporary relief."
+        },
+        {
+          "title": "Prescription Medications",
+          "description": "Specialized medications to increase tear production or reduce inflammation associated with dry eye."
+        },
+        {
+          "title": "Punctal Plugs",
+          "description": "Tiny devices inserted into tear ducts to prevent drainage, keeping eyes moist longer."
+        }
+      ]
+    },
+    "treatment": {
+      "title": "Advanced Treatment Options",
+      "description": "Our comprehensive approach addresses the root causes of dry eye syndrome with proven therapies.",
+      "options": {
+        "artificial": {
+          "title": "Artificial Tears",
+          "description": "Premium lubricating drops to supplement natural tear production and provide temporary relief."
+        },
+        "prescription": {
+          "title": "Prescription Medications",
+          "description": "Specialized medications to increase tear production or reduce inflammation associated with dry eye."
+        },
+        "punctal": {
+          "title": "Punctal Plugs",
+          "description": "Tiny devices inserted into tear ducts to prevent drainage, keeping eyes moist longer."
+        }
+      }
+    },
+    "ipl": {
+      "title": "Intense Pulsed Light (IPL) Therapy",
+      "description1": "IPL is a revolutionary treatment for dry eye disease that targets the underlying causes rather than just the symptoms. Using specific wavelengths of light, IPL reduces inflammation around the eyelids and improves meibomian gland function.",
+      "description2": "This non-invasive procedure takes only minutes to perform and provides lasting relief for many patients suffering from chronic dry eye disease.",
+      "benefits": [
+        {
+          "title": "Long-lasting Relief",
+          "description": "Unlike eye drops that provide temporary comfort, IPL addresses the root causes for sustained relief from dry eye symptoms."
+        },
+        {
+          "title": "Reduced Inflammation",
+          "description": "IPL therapy effectively reduces inflammation around the eyelids, helping to restore normal tear film function."
+        },
+        {
+          "title": "Quick & Comfortable",
+          "description": "Treatment sessions take only minutes to complete with minimal discomfort and no downtime required."
+        }
+      ],
+      "benefitsTitle": "Benefits of IPL Treatment",
+      "whatToExpectTitle": "What To Expect",
+      "glandImaging": "Meibomian Gland Imaging",
+      "glandImagingDescription": "Advanced imaging technology allows us to examine the structure of your meibomian glands and identify any dysfunction or blockages.",
+      "tearFilmAnalysis": "Tear Film Analysis",
+      "tearFilmDescription": "We evaluate tear quality, quantity, and evaporation rate using specialized equipment to determine the specific type of dry eye you're experiencing.",
+      "testimonialSectionTitle": "Patient Success Stories",
+      "testimonialQuote1": "After struggling with dry eyes for years, the comprehensive testing at Eye Care Center of OC finally pinpointed my specific problem. Now I'm getting treatment that actually works!",
+      "testimonialAuthor1": "Maria S.",
+      "testimonialQuote2": "The IPL treatment has been life-changing. My eyes feel more comfortable than they have in years, and I'm not constantly reaching for eye drops anymore.",
+      "testimonialAuthor2": "David L.",
+      "imageAlt": "IPL Treatment Procedure"
+    },
+    "diagnostics": {
+      "titleHighlight": "Advanced",
+      "titleRest": "Dry Eye Diagnosis",
+      "subtitle": "Our advanced diagnostic approach allows us to precisely identify the cause and severity of your dry eye condition.",
+      "description": "No more generic treatments. Our comprehensive testing reveals the exact factors contributing to your dry eye symptoms, allowing for truly personalized care.",
+      "whatToExpectTitle": "What to Expect During Your Comprehensive Evaluation",
+      "pathToReliefTitle": "Your Path to Dry Eye Relief",
+      "pathToReliefDescription": "At Eye Care Center of OC, we believe that accurate diagnosis is the foundation of effective dry eye treatment. Our state-of-the-art diagnostic process combines the latest technology with clinical expertise to identify the specific factors contributing to your dry eye symptoms.",
+      "processTitle": "Our Diagnostic Journey",
+      "testsTitle": "Our Comprehensive Testing Suite",
+      "testimonialTitle": "Patient Experiences",
+      "tests": [
+        {
+          "title": "Tear Film Analysis",
+          "description": "Comprehensive evaluation of tear quality, quantity, and stability using advanced diagnostic equipment."
+        },
+        {
+          "title": "Meibomian Gland Imaging",
+          "description": "High-resolution imaging to assess the structure and function of your oil-producing glands."
+        },
+        {
+          "title": "Corneal Surface Assessment",
+          "description": "Detailed examination of the corneal surface to identify areas of damage or inflammation."
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The detailed testing showed me exactly why my eyes were so uncomfortable. Now I finally have a treatment plan that works!",
+          "author": "Sarah M."
+        },
+        {
+          "quote": "I never knew there were so many different types of dry eye. Dr. Bonakdar's thorough evaluation changed everything.",
+          "author": "Robert K."
+        }
+      ],
+      "processSteps": [
+        {
+          "step": "1",
+          "title": "Initial Assessment",
+          "description": "Comprehensive review of your symptoms, medical history, and lifestyle factors."
+        },
+        {
+          "step": "2",
+          "title": "Advanced Testing",
+          "description": "State-of-the-art diagnostic tests to measure tear production, quality, and evaporation."
+        },
+        {
+          "step": "3",
+          "title": "Personalized Analysis",
+          "description": "Detailed analysis of results to create your customized treatment plan."
+        }
+      ]
+    },
+    "results": {
+      "title": "Treatment",
+      "highlight": "Results",
+      "subtitle": "See the dramatic improvements our patients experience with our advanced dry eye treatments.",
+      "beforeLabel": "Before Treatment",
+      "afterLabel": "After Treatment",
+      "imageCaption": "Meibomian gland imaging showing improved function after IPL treatment",
+      "stats": {
+        "satisfaction": "Patient Satisfaction",
+        "sessions": "Average Sessions Needed",
+        "reduction": "Symptom Reduction"
+      }
+    },
+    "cta": {
+      "title": "Ready to Find Relief from Dry Eye Symptoms?",
+      "description": "Take the first step toward comfortable, healthy eyes with our comprehensive dry eye evaluation and personalized treatment plan.",
+      "scheduleButton": "Schedule Dry Eye Consultation",
+      "callButton": "Call Us:"
+    }
+  },
+  "keratoconus": {
+    "hero": {
+      "title": "Keratoconus Treatment & Management",
+      "subtitle": "Advanced diagnosis and treatment options for keratoconus including specialty contact lenses and surgical interventions",
+      "button": "Learn More About Treatment"
+    },
+    "understanding": {
+      "title": "Understanding",
+      "highlight": "Keratoconus",
+      "paragraph1": "Keratoconus is a progressive eye condition where the cornea gradually thins and bulges outward into a cone-like shape. This irregular corneal shape causes light to scatter as it enters the eye, resulting in distorted and blurred vision.",
+      "paragraph2": "Early detection and treatment are crucial for managing keratoconus effectively. Our advanced diagnostic technology allows us to identify the condition in its earliest stages, when treatment options are most effective.",
+      "paragraph3": "With proper management, most patients with keratoconus can maintain good vision and quality of life. Our comprehensive approach combines cutting-edge treatments with personalized care to achieve the best possible outcomes.",
+      "imageAlt": "Keratoconus eye condition illustration"
+    },
+    "treatment": {
+      "title": "Corneal Cross-Linking Treatment",
+      "subtitle": "Our advanced corneal cross-linking treatment is designed to halt the progression of keratoconus and preserve your vision for the long term.",
+      "benefits": {
+        "title": "Benefits of Corneal Cross-Linking",
+        "list": [
+          "Halts the progression of keratoconus in over 95% of cases",
+          "Reduces the need for corneal transplantation",
+          "Minimally invasive outpatient procedure",
+          "FDA-approved treatment",
+          "May improve vision in some patients",
+          "Preserves long-term visual function"
+        ]
+      },
+      "howItWorks": {
+        "title": "How Corneal Cross-Linking Works",
+        "description": "Corneal cross-linking (CXL) is a minimally invasive procedure that strengthens the corneal tissue to prevent further bulging of the cornea. The procedure combines the use of ultraviolet (UV) light and riboflavin (vitamin B2) eye drops to create new bonds between collagen fibers within the cornea.",
+        "button": "Learn if Cross-Linking is Right for You"
+      }
+    },
+    "stats": {
+      "title": "Keratoconus Treatment",
+      "highlight": "Success",
+      "subtitle": "Our specialized approach to keratoconus management has helped thousands of patients achieve better vision and improved quality of life.",
+      "successRate": "Success Rate",
+      "patientsHealed": "Patients Treated",
+      "yearsExperience": "Years Experience"
+    },
+    "scleralLenses": {
+      "title": "Scleral Lenses for Keratoconus",
+      "subtitle": "Custom-designed scleral lenses provide exceptional comfort and vision for patients with keratoconus.",
+      "howTheyWork": {
+        "title": "How Scleral Lenses Work",
+        "description": "Scleral lenses are specially designed to vault over the cornea, creating a fluid-filled reservoir between the lens and the corneal surface. This design offers several advantages: the fluid layer compensates for corneal irregularities, creating a smooth optical surface; the lens rests on the less sensitive sclera rather than the cornea, improving comfort; the fluid reservoir continuously bathes the cornea, providing relief for dry eye symptoms that often accompany keratoconus; and the rigid material provides superior optics compared to soft lenses."
+      },
+      "fittingProcess": {
+        "title": "The Scleral Lens Fitting Process",
+        "description": "Fitting scleral lenses requires specialized expertise and technology. Our process includes comprehensive corneal mapping using advanced topography, custom lens design based on your unique corneal shape, trial lens evaluation to assess fit and vision, detailed training on insertion, removal, and care, and follow-up appointments to ensure optimal fit and comfort."
+      },
+      "benefits": {
+        "title": "Benefits of Scleral Lenses",
+        "list": [
+          "Dramatically improved vision quality - Creates a smooth optical surface that corrects irregular astigmatism",
+          "All-day comfort - Even for patients who couldn't tolerate other contact lenses",
+          "Protection of the corneal surface - The fluid reservoir provides a cushioning effect",
+          "Reduced progression of keratoconus - In some cases by preventing mechanical trauma",
+          "Relief from dryness and irritation - The fluid reservoir continuously bathes the eye",
+          "May delay or avoid corneal transplant - For patients with advanced keratoconus"
+        ]
+      },
+      "button": "Learn if Scleral Lenses are Right for You"
+    },
+    "intacs": {
+      "title": "Intacs Corneal Implants",
+      "subtitle": "Tiny, clear inserts placed in the periphery of the cornea to reshape its surface and improve vision in keratoconus patients.",
+      "howTheyWork": {
+        "title": "How Intacs Work",
+        "description": "The procedure works by mechanically reshaping the cornea from within. When strategically placed in the periphery of the cornea, Intacs flatten the steep area of the cornea, improving the cornea's overall shape and reducing visual distortions caused by keratoconus."
+      },
+      "benefits": {
+        "title": "Benefits of Intacs",
+        "list": [
+          "Minimally invasive procedure with quick recovery",
+          "Reversible – implants can be removed if necessary",
+          "Can significantly improve vision in suitable candidates",
+          "May delay or prevent the need for corneal transplant",
+          "Can be combined with other treatments like corneal cross-linking",
+          "Often allows patients to wear contact lenses more comfortably"
+        ]
+      },
+      "button": "Learn if Intacs are Right for You"
+    },
+    "diagnostics": {
+      "title": "Advanced Diagnosis",
+      "subtitle": "We use state-of-the-art technology to accurately diagnose and monitor keratoconus.",
+      "technology": {
+        "title": "Diagnostic Technology",
+        "description": "Our comprehensive keratoconus evaluation includes:",
+        "list": [
+          "Corneal Topography: Creates detailed 3D maps of the corneal surface",
+          "Anterior Segment OCT: Captures high-resolution cross-sectional images of the cornea",
+          "Pachymetry: Measures corneal thickness at various points",
+          "Wavefront Aberrometry: Measures optical aberrations affecting vision quality",
+          "Biomechanical Assessment: Evaluates the strength and resilience of corneal tissue"
+        ]
+      },
+      "stages": {
+        "title": "Stages of Keratoconus",
+        "description": "Our diagnostic process can determine your stage of keratoconus:",
+        "list": [
+          "Early Stage: Mild corneal thinning, slight visual distortion",
+          "Moderate Stage: Increased corneal steepening, more noticeable vision changes",
+          "Advanced Stage: Significant corneal thinning and protrusion",
+          "Severe Stage: Extreme thinning, scarring, and pronounced corneal distortion"
+        ],
+        "conclusion": "Early diagnosis is crucial—the sooner keratoconus is detected, the more treatment options are available to preserve your vision."
+      }
+    },
+    "treatmentOptions": {
+      "title": "Complete Treatment Solutions",
+      "subtitle": "At Eyecare Center of OC, we offer comprehensive keratoconus management tailored to your specific needs and condition severity.",
+      "options": [
+        {
+          "title": "Corneal Cross-Linking",
+          "description": "FDA-approved procedure that strengthens corneal tissue to halt keratoconus progression using UV light and riboflavin drops."
+        },
+        {
+          "title": "Specialty Contact Lenses",
+          "description": "Custom-designed rigid gas permeable (RGP), scleral, or hybrid lenses that provide clear vision by creating a new optical surface."
+        },
+        {
+          "title": "Intacs Corneal Implants",
+          "description": "Tiny, clear inserts placed within the cornea to reshape its surface and improve vision in patients with keratoconus."
+        },
+        {
+          "title": "Custom Prescription Eyewear",
+          "description": "Specialized glasses with unique prescriptions can help manage mild cases or provide supplementary vision correction."
+        },
+        {
+          "title": "Topography-Guided PRK",
+          "description": "Advanced laser procedure that reshapes the cornea based on detailed topographic measurements for improved vision."
+        },
+        {
+          "title": "Corneal Transplantation",
+          "description": "For advanced cases, surgical replacement of the central cornea with healthy donor tissue to restore corneal function."
+        }
+      ]
+    },
+    "treatmentComparison": {
+      "title": "Treatment Comparison",
+      "subtitle": "Compare the different treatment options for keratoconus to understand which approach might be best for your specific condition.",
+      "crossLinking": {
+        "title": "Corneal Cross-Linking",
+        "description": "A minimally invasive procedure that strengthens corneal tissue to halt keratoconus progression.",
+        "benefits": [
+          "Stops progression of keratoconus",
+          "FDA-approved procedure",
+          "Outpatient procedure",
+          "May prevent need for corneal transplant",
+          "Most effective in early to moderate stages"
+        ]
+      },
+      "scleralLenses": {
+        "title": "Scleral Lenses",
+        "description": "Specialized contact lenses that vault over the cornea, providing clear vision for keratoconus patients.",
+        "benefits": [
+          "Improves vision quality",
+          "Does not touch the cornea",
+          "Can be worn for long periods",
+          "Custom fitted to each eye",
+          "Works for all stages of keratoconus"
+        ]
+      },
+      "intacs": {
+        "title": "Intacs",
+        "description": "Micro-thin inserts placed in the cornea to flatten the cone and reduce distortion.",
+        "benefits": [
+          "Reshapes the cornea",
+          "Reversible procedure",
+          "May improve contact lens wear",
+          "Quick recovery time",
+          "Can be combined with cross-linking"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Take Control of Your Keratoconus",
+      "subtitle": "Don't let keratoconus compromise your vision quality. Our specialized treatments can help preserve your sight and improve your visual clarity.",
+      "scheduleButton": "Schedule Your Evaluation",
+      "callButton": "Call Us:"
+    },
+    "seo": {
+      "title": "Keratoconus Treatment & Management | Orange County Eye Care",
+      "description": "Advanced keratoconus diagnosis and treatment including corneal cross-linking, specialty contact lenses, and comprehensive management. Expert care for all stages of keratoconus in Orange County.",
+      "keywords": "keratoconus treatment, corneal cross-linking, scleral lenses, intacs, keratoconus management, Orange County, eye doctor, optometrist"
+    }
+  },
+  "cataract": {
+    "understanding": {
+      "title": "Understanding",
+      "highlight": "Cataracts"
+    },
+    "hero": {
+      "title": "Orange County Cataract Evaluation & Surgical Co-Management Since 1995",
+      "subtitle": "30 years co-managing cataracts for Orange County families. Over 2,000 patients guided through cataract surgery with UCI Health, CHOC, and premier Orange County ophthalmologists.",
+      "button": "Schedule Cataract Evaluation"
+    },
+    "seo": {
+      "title": "Cataract Surgery Consultation & Co-Management | Orange County",
+      "description": "Expert cataract evaluation and co-management in Orange County. Comprehensive diagnosis and coordination with leading cataract surgeons.",
+      "keywords": "cataract surgery consultation, cataract evaluation, Orange County cataract, IOL consultation, cataract co-management"
+    }
+  },
+  "orthoK": {
+    "hero": {
+      "title": "Orthokeratology (Ortho-K)",
+      "subtitle": "Non-surgical vision correction and myopia control using overnight contact lenses",
+      "button": "Discover Ortho-K"
+    },
+    "understanding": {
+      "title": "Understanding",
+      "highlight": "Orthokeratology",
+      "paragraph1": "Orthokeratology, or Ortho-K, is a revolutionary non-surgical vision correction treatment that uses specially designed contact lenses worn overnight to gently reshape your cornea while you sleep. When you wake up and remove the lenses, you can see clearly throughout the day without glasses or contact lenses.",
+      "paragraph2": "This FDA-approved treatment is particularly effective for myopia (nearsightedness) control in children and teenagers, helping to slow the progression of nearsightedness. It's also an excellent option for adults who want freedom from glasses and daytime contact lenses.",
+      "benefits": {
+        "title": "Benefits of Ortho-K",
+        "item1": "Clear vision all day without glasses or contacts",
+        "item2": "Slows myopia progression in children",
+        "item3": "Reversible - stop anytime to return to original vision",
+        "item4": "Great for active lifestyles and sports"
+      },
+      "imageAlt": "Orthokeratology contact lens treatment illustration"
+    },
+    "process": {
+      "title": "The Ortho-K Process",
+      "subtitle": "Orthokeratology is a multi-step process that requires precise measurements and custom lens fitting to achieve optimal results.",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Comprehensive Exam",
+          "description": "We perform a detailed corneal topography mapping and comprehensive eye examination to determine if you're a good candidate for Ortho-K."
+        },
+        {
+          "number": "2", 
+          "title": "Custom Lens Design",
+          "description": "Your Ortho-K lenses are custom-designed based on the unique shape of your cornea and your specific vision correction needs."
+        },
+        {
+          "number": "3",
+          "title": "Lens Fitting", 
+          "description": "We ensure your lenses fit perfectly and provide detailed instructions on how to insert, remove, and care for your Ortho-K lenses."
+        },
+        {
+          "number": "4",
+          "title": "Overnight Wear",
+          "description": "You'll wear your Ortho-K lenses while sleeping. The lenses gently reshape your cornea to correct your vision while you rest."
+        },
+        {
+          "number": "5",
+          "title": "Clear Daytime Vision",
+          "description": "Remove the lenses in the morning and enjoy clear vision throughout the day without glasses or contact lenses."
+        },
+        {
+          "number": "6",
+          "title": "Follow-up Care",
+          "description": "Regular check-ups ensure your Ortho-K treatment is working effectively and make adjustments as needed for optimal results."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Benefits of Orthokeratology",
+      "subtitle": "Ortho-K offers numerous advantages over traditional vision correction methods.",
+      "list": [
+        {
+          "title": "Freedom From Daytime Eyewear",
+          "description": "Enjoy clear vision throughout the day without wearing glasses or contact lenses, perfect for active lifestyles."
+        },
+        {
+          "title": "Slows Myopia Progression", 
+          "description": "Clinical studies show Ortho-K can significantly slow the progression of nearsightedness in children and young adults."
+        },
+        {
+          "title": "Non-Surgical Solution",
+          "description": "Achieve vision correction without the risks associated with laser eye surgery. Ortho-K is completely reversible."
+        },
+        {
+          "title": "Comfortable and Convenient",
+          "description": "Lenses are only worn while sleeping, eliminating daytime discomfort that some contact lens wearers experience."
+        },
+        {
+          "title": "Excellent for Sports & Activities",
+          "description": "Ideal for swimmers, athletes, and people working in dusty or dry environments where glasses or contacts are problematic."
+        },
+        {
+          "title": "Cost-Effective Long-Term",
+          "description": "While the initial investment is higher than regular contacts, Ortho-K can be more cost-effective over time compared to daily disposable lenses."
+        }
+      ]
+    },
+    "myopiaManagement": {
+      "title": "Myopia Management",
+      "highlight": "For Children",
+      "subtitle": "Ortho-K is one of the most effective treatments for slowing myopia progression in children and teenagers.",
+      "description": "Myopia (nearsightedness) is becoming increasingly common in children. Studies show that Ortho-K can slow myopia progression by 50-90%, reducing the risk of serious eye problems later in life.",
+      "benefits": [
+        "Slows myopia progression by 50-90%",
+        "Reduces risk of retinal detachment",
+        "Decreases chance of glaucoma",
+        "Lowers risk of macular degeneration",
+        "Provides clear daytime vision without glasses"
+      ],
+      "whyImportant": {
+        "title": "Why Myopia Control is Important",
+        "description": "High myopia increases the risk of serious eye conditions including retinal detachment, glaucoma, and macular degeneration. By controlling myopia progression early, we can help protect your child's long-term eye health and vision."
+      }
+    },
+    "cta": {
+      "title": "Take Control of Your Child's Myopia Today",
+      "subtitle": "Don't wait until your child's prescription gets stronger. Early intervention with Ortho-K can help slow myopia progression and reduce the risk of eye problems later in life.",
+      "scheduleButton": "Schedule a Consultation",
+      "callButton": "Call Us:"
+    }
+  },
+  "lasik": {
+    "hero": {
+      "title": "Orange County LASIK Consultation & Surgical Co-Management",
+      "subtitle": "30 years guiding Orange County professionals through LASIK surgery. Specialized evaluation for tech workers, pilots, and active OC lifestyle. Co-management with Orange County's premier refractive surgeons.",
+      "button": "Schedule LASIK Consultation"
+    },
+    "seo": {
+      "title": "LASIK Consultation & Co-Management | Orange County Eye Care",
+      "description": "Expert LASIK consultation and co-management in Orange County. Pre and post-operative care with trusted surgical partners for optimal results.",
+      "keywords": "LASIK consultation, LASIK co-management, laser eye surgery, Orange County LASIK, vision correction surgery"
+    }
+  },
+  "eyewear": {
+    "hero": {
+      "title": "Premium Eyewear & Advanced Lenses",
+      "subtitle": "Discover our extensive collection of designer frames and cutting-edge lens technologies for optimal vision and style",
+      "button": "Browse Our Collection"
+    }
+  },
+  "fashion": {
+    "hero": {
+      "title": "Designer",
+      "highlight": "Eyewear Collection",
+      "subtitle": "Find your perfect frames from our curated selection of luxury and designer eyewear brands",
+      "button": "Browse Our Collection"
+    },
+    "overview": {
+      "title": "Premium",
+      "highlight": "Designer Eyewear",
+      "description": "Discover our comprehensive collection of designer frames and advanced lens technologies, expertly fitted to enhance both your vision and style.",
+      "designerFrames": {
+        "title": "Designer Frames & Premium Lenses",
+        "description": "Our extensive collection features the latest styles from world-renowned designers, paired with cutting-edge lens technologies for the ultimate in both fashion and function."
+      },
+      "features": {
+        "title": "What Sets Us Apart",
+        "item1": "Exclusive designer collections from luxury brands",
+        "item2": "Advanced lens technologies for optimal vision",
+        "item3": "Expert fitting and personalized styling",
+        "item4": "Comprehensive eye exams and vision assessment"
+      },
+      "styleConsultation": "Schedule a Style Consultation",
+      "modelImageAlt": "Designer eyewear model",
+      "lensTech": {
+        "title": "Advanced Lens Technologies",
+        "description": "Enhance your vision with our state-of-the-art lens options, designed for comfort, clarity, and protection in every situation.",
+        "option1": {
+          "title": "Progressive Lenses",
+          "description": "Seamless transition between near, intermediate, and distance vision"
+        },
+        "option2": {
+          "title": "Blue Light Protection",
+          "description": "Reduce digital eye strain from screens and devices"
+        },
+        "option3": {
+          "title": "Photochromic Lenses",
+          "description": "Automatically adjust to changing light conditions"
+        },
+        "option4": {
+          "title": "High-Index Lenses",
+          "description": "Thinner, lighter lenses for stronger prescriptions"
+        }
+      },
+      "lensImageAlt": "Advanced lens technology showcase"
+    }
+  },
+  "headache": {
+    "hero": {
+      "title": "Headache & Eye Fatigue",
+      "subtitle": "Relief from Digital Eye Strain",
+      "button": "Get Relief Today"
+    },
+    "understanding": {
+      "title": "Understanding Headaches",
+      "highlight": "& Eye Fatigue",
+      "paragraph1": "Eye strain and vision-related headaches are increasingly common in our digital age. These uncomfortable symptoms can significantly impact your daily productivity, comfort, and overall quality of life.",
+      "paragraph2": "Understanding the connection between your eyes and headaches is crucial for finding effective relief. Our comprehensive approach addresses both the symptoms and underlying causes to provide lasting solutions.",
+      "didYouKnow": {
+        "title": "Did You Know?",
+        "fact": "Up to 90% of people who work on computers experience some form of eye strain, which can lead to headaches and reduced productivity."
+      },
+      "imageAlt": "Person experiencing headache and eye strain"
+    },
+    "prevention": {
+      "title": "Prevention",
+      "highlight": "Tips",
+      "description": "Implement these practical strategies in your daily routine to reduce eye fatigue and prevent related headaches.",
+      "tips": {
+        "rule2020": {
+          "title": "The 20-20-20 Rule",
+          "description": "Every 20 minutes, look at something 20 feet away for at least 20 seconds to reduce eye strain during extended screen time."
+        },
+        "lighting": {
+          "title": "Proper Lighting",
+          "description": "Ensure your workspace has adequate, non-glare lighting that doesn't create reflections on your screen or cause you to squint."
+        },
+        "ergonomic": {
+          "title": "Ergonomic Setup",
+          "description": "Position your screen about arm's length away and slightly below eye level. Use an ergonomic chair that supports good posture."
+        },
+        "hydration": {
+          "title": "Stay Hydrated",
+          "description": "Drinking plenty of water helps maintain moisture in your eyes and can reduce symptoms of eye fatigue."
+        },
+        "blinking": {
+          "title": "Regular Blinking",
+          "description": "Consciously remind yourself to blink regularly during screen time, as we tend to blink less when focusing on digital devices."
+        },
+        "screenSettings": {
+          "title": "Screen Settings",
+          "description": "Adjust brightness, contrast, and text size on your devices to comfortable levels. Enable blue light filters, especially in the evening."
+        }
+      },
+      "eyewear": {
+        "title": "Specialized Eyewear Solutions",
+        "description": "Consider specialized eyewear solutions like computer glasses with blue light filtering, anti-reflective coatings, and optimized prescriptions specifically for digital device use. Our opticians can help you find the perfect eyewear to reduce strain and prevent headaches.",
+        "button": "Explore Eyewear Options"
+      }
+    },
+    "cta": {
+      "title": "Get Relief from Headaches and Eye Fatigue",
+      "subtitle": "Don't let eye strain and headaches impact your productivity and quality of life. Our specialized care can help you find lasting relief.",
+      "scheduleButton": "Schedule Your Consultation",
+      "callButton": "Call Us:"
+    }
+  },
+  "eyewearOverview": {
+    "title": {
+      "prefix": "Premium",
+      "highlight": "Eyewear",
+      "suffix": "Solutions"
+    },
+    "description": "Discover our comprehensive collection of designer frames and advanced lens technologies, expertly fitted to enhance both your vision and style.",
+    "designerFrames": {
+      "title": "Designer Frames & Premium Lenses",
+      "description": "Our extensive collection features the latest styles from world-renowned designers, paired with cutting-edge lens technologies for the ultimate in both fashion and function."
+    },
+    "features": {
+      "title": "What Sets Us Apart",
+      "item1": "Exclusive designer collections from luxury brands",
+      "item2": "Advanced lens technologies for optimal vision",
+      "item3": "Expert fitting and personalized styling",
+      "item4": "Comprehensive eye exams and vision assessment"
+    },
+    "styleConsultation": "Schedule a Style Consultation",
+    "modelImageAlt": "Designer eyewear model",
+    "lensTech": {
+      "title": "Advanced Lens Technologies",
+      "description": "Enhance your vision with our state-of-the-art lens options, designed for comfort, clarity, and protection in every situation.",
+      "option1": {
+        "title": "Progressive Lenses",
+        "description": "Seamless transition between near, intermediate, and distance vision"
+      },
+      "option2": {
+        "title": "Blue Light Protection",
+        "description": "Reduce digital eye strain from screens and devices"
+      },
+      "option3": {
+        "title": "Photochromic Lenses",
+        "description": "Automatically adjust to changing light conditions"
+      },
+      "option4": {
+        "title": "High-Index Lenses",
+        "description": "Thinner, lighter lenses for stronger prescriptions"
+      }
+    },
+    "lensImageAlt": "Advanced lens technology showcase"
+  },
+  "eyewearCategories": {
+    "title": "Explore Our",
+    "highlight": "Eyewear Collection",
+    "description": "From everyday optical frames to specialty sports eyewear, we offer comprehensive solutions for every vision need and lifestyle.",
+    "options": {
+      "optical": {
+        "name": "Prescription Glasses",
+        "description": "Stylish frames with advanced lens technologies for clear, comfortable vision in work, leisure, and everyday activities."
+      },
+      "sunglasses": {
+        "name": "Designer Sunglasses",
+        "description": "Premium sun protection with polarized lenses and UV filtering from top luxury brands for outdoor activities."
+      },
+      "sports": {
+        "name": "Sports & Active Eyewear",
+        "description": "Specialized eyewear designed for athletes and active lifestyles with impact resistance and performance features."
+      },
+      "children": {
+        "name": "Children's Eyewear",
+        "description": "Durable, comfortable frames designed specifically for growing children with safety features and fun designs."
+      }
+    },
+    "findFit": {
+      "title": "Find Your Perfect Fit",
+      "description": "Our expert frame stylists will help you discover eyewear that complements your face shape, lifestyle, and personal style preferences.",
+      "ctaButton": "Book Style Consultation"
+    }
+  },
+  "featuredBrands": {
+    "title": "Featured",
+    "highlight": "Designer",
+    "subtitle": "Brands",
+    "description": "We carry an extensive collection of premium designer eyewear from the world's most prestigious brands.",
+    "exploreStyles": "Explore All Styles"
+  },
+  "tryOnExperience": {
+    "title": {
+      "prefix": "The Perfect",
+      "highlight": "Fit",
+      "suffix": "Experience"
+    },
+    "description": "At Eyecare Center of OC, we believe finding the perfect eyewear should be an enjoyable and rewarding experience. Our expert frame stylists guide you through our curated collection to find frames that complement your unique features and lifestyle.",
+    "steps": {
+      "consultation": {
+        "title": "Personal Style Consultation",
+        "description": "Our specialists analyze your face shape, skin tone, and personal style to recommend frames that enhance your natural features."
+      },
+      "tryBefore": {
+        "title": "Try Before You Buy",
+        "description": "Sample a wide range of frames in our comfortable showroom with expert guidance and honest feedback from our experienced staff."
+      },
+      "fitting": {
+        "title": "Precision Fitting & Adjustments",
+        "description": "Our certified opticians ensure your new eyewear fits perfectly with professional measurements and adjustments for optimal comfort."
+      }
+    },
+    "buttonText": "Book Styling Appointment",
+    "showcase": {
+      "title": "Virtual Try-On Experience",
+      "description": "Experience our frames before you buy"
+    }
+  },
+  "eyewearCTA": {
+    "title": "Find Your Perfect Eyewear Today",
+    "description": "Experience our comprehensive eyewear services with expert fitting, premium designer frames, and advanced lens technologies tailored to your unique vision needs.",
+    "stylingTitle": "Personal Style Consultation",
+    "stylingDescription": "Our certified opticians will help you find frames that perfectly complement your face shape, lifestyle, and personal style preferences.",
+    "bookAppointment": "Book Appointment",
+    "showroomTitle": "Visit Our Showroom",
+    "showroomDescription": "Explore our extensive collection of designer frames and advanced lens technologies in our comfortable, modern showroom setting.",
+    "getDirections": "Get Directions",
+    "promise": "Our Promise to You",
+    "warranty": "1-year warranty on all frames and lenses",
+    "adjustments": "Free lifetime adjustments and cleanings",
+    "satisfaction": "100% satisfaction guarantee",
+    "insurance": "Most insurance plans accepted"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "scheduleAppointment": "Schedule Appointment",
+    "contactUs": "Contact Us"
+  },
+  "appointment": {
+    "title": "Request Appointment",
+    "description": "We will send an email to our office to schedule your appointment. Please include the information below in your email.",
+    "includeTitle": "Please Include:",
+    "include": {
+      "name": "Your full name",
+      "phone": "Cell phone number",
+      "insurance": "Insurance information",
+      "contact": "Best way to contact you"
+    },
+    "cancel": "Cancel",
+    "sendEmail": "Send Email Request",
+    "emailSubject": "Appointment Request",
+    "emailBody": "Hello,\n\nI would like to schedule an appointment.\n\nMy Information:\nName: [Your Full Name]\nPhone: [Your Cell Phone]\nInsurance: [Your Insurance Information]\nBest Contact Method: [Phone/Email/Text]\nPreferred Date/Time: [Your Preference]\n\nThank you!",
+    "patientInfo": {
+      "title": "Patient Information",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phone": "Phone",
+      "phonePlaceholder": "Phone number",
+      "email": "Email",
+      "emailPlaceholder": "Email address"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us - Schedule Your Appointment",
+      "subtitle": "Schedule your appointment or get in touch with our team. We're here to answer your questions and provide the eye care you deserve.",
+      "buttonText": "Schedule Your Appointment Today"
+    },
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "phone": "Phone Number",
+      "phonePlaceholder": "(555) 123-4567",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "reason": "Reason for Contact",
+      "reasonGeneral": "General Inquiry",
+      "reasonAppointment": "Schedule Appointment",
+      "reasonGlasses": "Glasses/Contact Lenses",
+      "reasonBilling": "Billing Question",
+      "reasonFeedback": "Feedback",
+      "reasonOther": "Other",
+      "message": "Your Message",
+      "messagePlaceholder": "How can we help you today?",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "sent": "Sent Successfully",
+      "successTitle": "Message Sent!",
+      "successDescription": "We've received your message and will respond soon."
+    },
+    "scheduleOnline": "Schedule Online",
+    "scheduleDesc": "Book your appointment instantly through our convenient online scheduling system.",
+    "bookAppointment": "Book Appointment",
+    "callDirectly": "Call Us Directly",
+    "callDesc": "Speak with our friendly staff to schedule your appointment or ask any questions.",
+    "emergency": {
+      "title": "Eye Emergency?",
+      "description": "If you are experiencing an eye emergency, please call our office immediately or go to the nearest emergency room."
+    }
+  },
+  "home": {
+    "seo": {
+      "title": "Orange County Eye Care Center | Dr. Bonakdar | Advanced Vision Care",
+      "description": "Leading eye care center in Orange County offering comprehensive eye exams, dry eye treatment, keratoconus management, specialty contact lenses, and advanced vision therapy. Dr. Alexander Bonakdar provides expert eye care in Santa Ana, North Tustin, Irvine, and surrounding areas.",
+      "keywords": "eye doctor Orange County, optometrist Santa Ana, eye exam North Tustin, dry eye treatment Orange County, keratoconus specialist California, scleral lenses Orange County, IPL therapy eye treatment, LipiFlow dry eye treatment, vision therapy Orange County, contact lens fitting specialist, eye care clinic Santa Ana, comprehensive eye exam Orange County, vision correction Orange County, eye doctor near me Santa Ana, best optometrist Orange County, advanced eye care California, specialty contact lenses Orange County, corneal cross linking Orange County, myopia management Orange County, orthokeratology Orange County, eye strain treatment Orange County, computer vision syndrome treatment, glaucoma screening Orange County, cataract evaluation Orange County, diabetic eye exam Orange County, macular degeneration treatment, retinal imaging Orange County, OCT scan Orange County, visual field testing Orange County, eye pressure check Orange County, prescription glasses Orange County, designer frames Orange County, progressive lenses Orange County, bifocal lenses Orange County, anti-reflective coating Orange County, blue light protection glasses, sports vision Orange County, pediatric eye care Orange County, geriatric eye care Orange County, low vision aids Orange County, emergency eye care Orange County, red eye treatment Orange County, eye infection treatment, foreign body removal eye, eye injury treatment, vision insurance Orange County, VSP Orange County, EyeMed Orange County, Blue Cross vision, Aetna vision, Medicare vision, Medi-Cal vision"
+    },
+    "hero": {
+      "title": "Advanced Vision Care for",
+      "titleHighlight": "Orange County",
+      "subtitle": "Dr. Alexander Bonakdar | Leading Eye Care Center",
+      "description": "Experience the future of eye care with innovative treatments for dry eye, keratoconus, and comprehensive visual health.",
+      "serving": "Serving",
+      "cities": "Santa Ana, Irvine, Newport Beach, Tustin, Costa Mesa and all of Orange County",
+      "cta": "Request Consultation"
+    },
+    "services": {
+      "titleHighlight": "Specialized Eye Care",
+      "title": "Services",
+      "description": "Our comprehensive approach combines cutting-edge technology with personalized care to address all your vision needs.",
+      "service1": {
+        "title": "Comprehensive Eye Exams",
+        "description": "Complete vision evaluations using advanced diagnostic technology to detect and prevent eye conditions early."
+      },
+      "service2": {
+        "title": "Advanced Treatments",
+        "description": "State-of-the-art therapies for dry eye, keratoconus, and other complex eye conditions using the latest medical innovations."
+      },
+      "service3": {
+        "title": "Personalized Care",
+        "description": "Customized treatment plans tailored to your unique vision needs and lifestyle requirements."
+      }
+    },
+    "results": {
+      "title": "Real Treatment",
+      "titleHighlight": "Results",
+      "titleEnd": "",
+      "description": "See the remarkable improvements our patients experience with our advanced eye care treatments and specialized therapies.",
+      "beforeLabel": "Before Treatment",
+      "afterLabel": "After Treatment"
+    },
+    "stats": {
+      "title": "Our Impact in Numbers",
+      "patients": "Patients Served",
+      "years": "Years of Experience",
+      "satisfaction": "Patient Satisfaction",
+      "treatments": "Treatment Options"
+    },
+    "testimonials": {
+      "title": "Patient Success",
+      "titleHighlight": "Stories",
+      "titleEnd": "",
+      "description": "Discover how our specialized treatments have transformed the lives of patients throughout Orange County.",
+      "testimonial1": {
+        "quote": "Dr. Bonakdar's expertise in dry eye treatment has completely transformed my quality of life. After years of discomfort, I finally found relief with the specialized therapies at Eye Care Center of OC.",
+        "name": "Sarah L.",
+        "date": "March 2023",
+        "location": "Irvine, CA"
+      },
+      "testimonial2": {
+        "quote": "The advanced diagnostic testing at Eye Care Center of OC detected my keratoconus in early stages, allowing for proactive treatment that saved my vision. I can't thank Dr. Bonakdar and his team enough!",
+        "name": "Michael T.",
+        "date": "January 2023",
+        "location": "Santa Ana, CA"
+      },
+      "testimonial3": {
+        "quote": "From the comprehensive eye exam to the personalized care plan, every aspect of my experience at Eye Care Center of OC has been exceptional. Their approach to vision care is truly unmatched.",
+        "name": "David R.",
+        "date": "April 2023",
+        "location": "Newport Beach, CA"
+      }
+    },
+    "vendors": {
+      "title": "Trusted Technology Partners",
+      "description": "We collaborate with leading manufacturers to bring you the most advanced eye care solutions available."
+    },
+    "locations": {
+      "title": "Serving All of",
+      "titleHighlight": "Orange County",
+      "services": "Eye Care Services"
+    }
+  }
+}

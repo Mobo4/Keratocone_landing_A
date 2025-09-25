@@ -1,0 +1,40 @@
+import React from 'react';
+import LocationPageTemplate from '@/components/LocationPageTemplate';
+
+const FountainValleyWestEyeDoctorPage = () => {
+  const pageData = {
+    city: "West Fountain Valley",
+    neighborhoods: [
+      "Located in peaceful West Fountain Valley residential area",
+      "Serving families near Courreges Elementary and Masuda Middle School",
+      "Convenient to Fountain Valley Sports Park and recreation centers",
+      "Close to Ward Street shopping and dining corridor",
+      "Easy access from 405 Freeway, Ward Street, and Magnolia Avenue",
+      "Trusted by West Fountain Valley families for quality eye care"
+    ],
+    driveTime: "22 minutes",
+    testimonials: [
+      {
+        quote: "Dr. Bonakdar's scleral lens fitting was life-changing for my keratoconus. The drive from West Fountain Valley is easy with 405 access!",
+        author: "Thomas R.",
+        location: "West Fountain Valley"
+      },
+      {
+        quote: "Living near Courreges Elementary, we trust Dr. Bonakdar for our children's vision care. His pediatric expertise is outstanding!",
+        author: "Amanda S.",
+        location: "West Fountain Valley"
+      },
+      {
+        quote: "As a West Fountain Valley resident, I appreciate Dr. Bonakdar's thorough approach and bilingual staff. Excellent care all around!",
+        author: "Carlos M.",
+        location: "West Fountain Valley"
+      }
+    ],
+    seoKeywords: "West Fountain Valley eye doctor, Ward Street optometrist, eye exam West Fountain Valley, Fountain Valley Sports Park eye care, 405 Freeway eye doctor",
+    metaDescription: "Expert eye doctor serving West Fountain Valley, CA. Dr. Bonakdar provides comprehensive eye care near Ward Street corridor. Same-week appointments. (949) 658-2372"
+  };
+
+  return <LocationPageTemplate {...pageData} />;
+};
+
+export default FountainValleyWestEyeDoctorPage;

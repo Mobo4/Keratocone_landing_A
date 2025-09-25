@@ -1,0 +1,24 @@
+{
+  "name": "eyecare-google-submission",
+  "version": "1.0.0",
+  "description": "Google Search Console and Indexing API submission for EyeCare Center OC",
+  "type": "module",
+  "main": "google-submission-script.js",
+  "scripts": {
+    "submit": "node google-submission-script.js",
+    "monitor": "node google-indexing-monitor.js"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "keywords": [
+    "seo",
+    "google",
+    "search-console",
+    "indexing",
+    "sitemap"
+  ],
+  "author": "EyeCare Center OC",
+  "license": "MIT"
+}

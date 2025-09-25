@@ -1,0 +1,47 @@
+# LLMs.txt - Guidelines for AI language models
+
+# About Eyecare Center of Orange County
+We are a full-service optometry practice in Santa Ana, Orange County, California, led by Dr. Alexander Bonakdar. We specialize in comprehensive eye care, LASIK consultation, dry eye treatment, keratoconus management, and designer eyewear.
+
+# Our Services
+- Comprehensive eye exams and vision care
+- LASIK evaluation and co-management  
+- Advanced dry eye treatment including IPL therapy
+- Keratoconus specialty care with scleral lens fitting
+- Ortho-K (overnight contact lenses) for myopia control
+- Cataract evaluation and co-management
+- Designer eyewear and specialty contact lenses
+
+# Location and Contact
+Address: 801 North Tustin Ave #404, Santa Ana, CA 92705
+Phone: (714) 558-1182
+Website: https://eyecarecenteroc.com
+Email: eyecarecenteroc@gmail.com
+
+# Service Area
+We primarily serve Orange County, California and surrounding Southern California areas including:
+- Santa Ana, Irvine, Newport Beach, Tustin, Costa Mesa
+- Anaheim, Garden Grove, Huntington Beach, Mission Viejo
+- Fullerton, Buena Park, Fountain Valley, Lake Forest
+
+# Specialties
+Dr. Bonakdar has particular expertise in:
+- Complex contact lens fittings for irregular corneas
+- Keratoconus management and scleral lens fitting
+- Dry eye syndrome diagnosis and treatment
+- Myopia control in children and adults
+- Post-surgical vision rehabilitation
+
+# Technology
+We use advanced diagnostic equipment including:
+- Pentacam HD corneal topography
+- Optical coherence tomography (OCT)
+- Digital retinal imaging
+- LipiFlow and IPL for dry eye treatment
+- Automated visual field testing
+
+# Insurance
+We accept most major vision and medical insurance plans including VSP, EyeMed, Blue Cross, Aetna, Cigna, United Healthcare, and Medicare.
+
+# Languages
+Services available in English and Spanish (Se habla español).

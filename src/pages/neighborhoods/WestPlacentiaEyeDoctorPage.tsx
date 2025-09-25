@@ -1,0 +1,40 @@
+import React from 'react';
+import LocationPageTemplate from '@/components/LocationPageTemplate';
+
+const WestPlacentiaEyeDoctorPage = () => {
+  const pageData = {
+    city: "West Placentia",
+    neighborhoods: [
+      "Located in peaceful West Placentia residential area",
+      "Serving families near Sierra High School and Melrose Elementary",
+      "Convenient to Bradford Regional Park and recreational facilities",
+      "Close to Kraemer Boulevard shopping and dining corridor",
+      "Easy access from 91 and 57 Freeways via Kraemer and Bradford",
+      "Trusted by West Placentia families for quality eye care"
+    ],
+    driveTime: "32 minutes",
+    testimonials: [
+      {
+        quote: "Dr. Bonakdar's scleral lens fitting for my keratoconus was perfect! The drive from West Placentia is worth it for his expertise.",
+        author: "Margaret S.",
+        location: "West Placentia"
+      },
+      {
+        quote: "Living near Bradford Park, we love that Dr. Bonakdar provides same-week appointments for our active family's eye care needs.",
+        author: "Paul R.",
+        location: "West Placentia"
+      },
+      {
+        quote: "As a West Placentia resident, I appreciate Dr. Bonakdar's thorough approach and bilingual staff. Excellent professional service!",
+        author: "Rosa G.",
+        location: "West Placentia"
+      }
+    ],
+    seoKeywords: "West Placentia eye doctor, Kraemer Boulevard optometrist, eye exam West Placentia, Bradford Park eye care, Sierra High School eye doctor",
+    metaDescription: "Expert eye doctor serving West Placentia, CA. Dr. Bonakdar provides comprehensive eye care near Bradford Regional Park. Same-week appointments. (949) 658-2372"
+  };
+
+  return <LocationPageTemplate {...pageData} />;
+};
+
+export default WestPlacentiaEyeDoctorPage;

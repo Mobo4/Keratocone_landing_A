@@ -1,0 +1,73 @@
+User-agent: *
+Allow: /
+
+# Priority medical eye care content for search engines
+Allow: /services/
+Allow: /conditions/
+Allow: /locations/
+Allow: /neighborhoods/
+Allow: /education/
+Allow: /es/
+
+# High-priority ophthalmology services
+Allow: /services/dry-eye-doctor-near-me/
+Allow: /services/optometrist-near-me/
+Allow: /services/keratoconus-specialist-near-me/
+Allow: /services/scleral-lens-specialist-near-me/
+Allow: /services/myopia-control/
+Allow: /services/orthokeratology/
+Allow: /services/headache-eye-fatigue/
+
+# Critical medical conditions
+Allow: /conditions/keratoconus
+Allow: /conditions/dry-eye
+Allow: /conditions/myopia
+Allow: /conditions/floaters-flashes
+Allow: /conditions/headache-eye-fatigue
+
+# Orange County geographic targeting
+Allow: /locations/irvine-eye-doctor
+Allow: /locations/newport-beach-eye-doctor
+Allow: /locations/costa-mesa-eye-doctor
+Allow: /locations/santa-ana-eye-doctor
+Allow: /locations/tustin-eye-doctor
+Allow: /locations/anaheim-eye-doctor
+
+# Sitemap declaration (primary SEO signal)
+Sitemap: https://eyecarecenteroc.com/sitemap.xml
+
+# Block admin interfaces while allowing SEO tools
+Disallow: /admin/
+Allow: /admin/tools
+
+# Medical practice protection
+Disallow: /private/
+Disallow: /patient-portal/
+Disallow: /internal/
+
+# Search engine optimization settings
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+User-agent: Bingbot
+Crawl-delay: 1
+Allow: /
+
+User-agent: DuckDuckBot
+Crawl-delay: 1
+Allow: /
+
+# Medical/health content indexing
+User-agent: *
+Crawl-delay: 1
+
+# Block malicious crawlers while preserving medical content access
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

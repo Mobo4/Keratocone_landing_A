@@ -1,0 +1,101 @@
+
+Link Validation Report - 9/17/2025, 3:27:22 PM
+============================================================
+
+SUMMARY
+-------
+Total Links Checked: 2
+✅ Valid Links: 2
+❌ Broken Links: 0
+⚠️  Warnings: 0
+
+Success Rate: 100.0%
+
+CONDITION LINKS (2)
+---------------
+✅ `/education/conditions/${condition.slug}` (line 203)
+✅ `/education/conditions/${condition.slug}` (line 285)
+
+BROKEN LINKS (0)
+------------
+
+
+WARNINGS (0)
+--------
+
+
+MISSING FILES (23)
+-------------
+📄 cornea-external-disease
+   Expected: cornea-external-disease.tsx, CorneaExternalDisease.tsx, CorneaExternalDiseasePage.tsx, CorneaExternalDiseaseEducationPage.tsx
+
+📄 dry-eye-syndrome
+   Expected: dry-eye-syndrome.tsx, DryEyeSyndrome.tsx, DryEyeSyndromePage.tsx, DryEyeSyndromeEducationPage.tsx
+
+📄 keratoconus
+   Expected: keratoconus.tsx, Keratoconus.tsx, KeratoconusPage.tsx, KeratoconusEducationPage.tsx
+
+📄 conjunctivitis
+   Expected: conjunctivitis.tsx, Conjunctivitis.tsx, ConjunctivitisPage.tsx, ConjunctivitisEducationPage.tsx
+
+📄 glaucoma
+   Expected: glaucoma.tsx, Glaucoma.tsx, GlaucomaPage.tsx, GlaucomaEducationPage.tsx
+
+📄 open-angle-glaucoma
+   Expected: open-angle-glaucoma.tsx, OpenAngleGlaucoma.tsx, OpenAngleGlaucomaPage.tsx, OpenAngleGlaucomaEducationPage.tsx
+
+📄 angle-closure-glaucoma
+   Expected: angle-closure-glaucoma.tsx, AngleClosureGlaucoma.tsx, AngleClosureGlaucomaPage.tsx, AngleClosureGlaucomaEducationPage.tsx
+
+📄 normal-tension-glaucoma
+   Expected: normal-tension-glaucoma.tsx, NormalTensionGlaucoma.tsx, NormalTensionGlaucomaPage.tsx, NormalTensionGlaucomaEducationPage.tsx
+
+📄 retina
+   Expected: retina.tsx, Retina.tsx, RetinaPage.tsx, RetinaEducationPage.tsx
+
+📄 macular-degeneration
+   Expected: macular-degeneration.tsx, MacularDegeneration.tsx, MacularDegenerationPage.tsx, MacularDegenerationEducationPage.tsx
+
+📄 diabetic-retinopathy
+   Expected: diabetic-retinopathy.tsx, DiabeticRetinopathy.tsx, DiabeticRetinopathyPage.tsx, DiabeticRetinopathyEducationPage.tsx
+
+📄 pediatric
+   Expected: pediatric.tsx, Pediatric.tsx, PediatricPage.tsx, PediatricEducationPage.tsx
+
+📄 lazy-eye-amblyopia
+   Expected: lazy-eye-amblyopia.tsx, LazyEyeAmblyopia.tsx, LazyEyeAmblyopiaPage.tsx, LazyEyeAmblyopiaEducationPage.tsx
+
+📄 crossed-eyes-strabismus
+   Expected: crossed-eyes-strabismus.tsx, CrossedEyesStrabismus.tsx, CrossedEyesStrabismusPage.tsx, CrossedEyesStrabismusEducationPage.tsx
+
+📄 childhood-myopia
+   Expected: childhood-myopia.tsx, ChildhoodMyopia.tsx, ChildhoodMyopiaPage.tsx, ChildhoodMyopiaEducationPage.tsx
+
+📄 neuro-ophthalmology
+   Expected: neuro-ophthalmology.tsx, NeuroOphthalmology.tsx, NeuroOphthalmologyPage.tsx, NeuroOphthalmologyEducationPage.tsx
+
+📄 double-vision-diplopia
+   Expected: double-vision-diplopia.tsx, DoubleVisionDiplopia.tsx, DoubleVisionDiplopiaPage.tsx, DoubleVisionDiplopiaEducationPage.tsx
+
+📄 visual-field-defects
+   Expected: visual-field-defects.tsx, VisualFieldDefects.tsx, VisualFieldDefectsPage.tsx, VisualFieldDefectsEducationPage.tsx
+
+📄 oculoplastics
+   Expected: oculoplastics.tsx, Oculoplastics.tsx, OculoplasticsPage.tsx, OculoplasticsEducationPage.tsx
+
+📄 blocked-tear-duct
+   Expected: blocked-tear-duct.tsx, BlockedTearDuct.tsx, BlockedTearDuctPage.tsx, BlockedTearDuctEducationPage.tsx
+
+📄 lens-cataract
+   Expected: lens-cataract.tsx, LensCataract.tsx, LensCataractPage.tsx, LensCataractEducationPage.tsx
+
+📄 cataracts
+   Expected: cataracts.tsx, Cataracts.tsx, CataractsPage.tsx, CataractsEducationPage.tsx
+
+📄 presbyopia
+   Expected: presbyopia.tsx, Presbyopia.tsx, PresbyopiaPage.tsx, PresbyopiaEducationPage.tsx
+
+RECOMMENDATIONS
+---------------
+📄 Create missing condition page files or remove from education data
+✨ All links are valid! Great job maintaining link integrity

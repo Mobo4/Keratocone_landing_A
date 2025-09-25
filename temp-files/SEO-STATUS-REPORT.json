@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-09-16T17:12:52.961Z",
+  "domain": "https://eyecarecenteroc.com",
+  "pages": {
+    "total": 231,
+    "services": 7,
+    "locations": 31,
+    "serviceLocations": 217,
+    "neighborhoods": 40
+  },
+  "tracking": {
+    "googleAnalytics": "G-CT7WS4307Z",
+    "googleTagManager": "GTM-K4XG7ZJ4",
+    "googleAds": "AW-1068394845",
+    "callRail": "453122914",
+    "facebookPixel": "395306154557054",
+    "microsoftClarity": "tbq0ecz52d"
+  },
+  "lastUpdate": "2025-09-16T17:12:52.961Z"
+}

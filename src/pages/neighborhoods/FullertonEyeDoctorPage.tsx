@@ -1,0 +1,40 @@
+import React from 'react';
+import LocationPageTemplate from '@/components/LocationPageTemplate';
+
+const FullertonEyeDoctorPage = () => {
+  const pageData = {
+    city: "Fullerton",
+    neighborhoods: [
+      "Located in central Fullerton community",
+      "Serving families near Cal State Fullerton and Fullerton College",
+      "Convenient to Downtown Fullerton and entertainment district",
+      "Close to Hillcrest Park and recreational facilities",
+      "Easy access from 57 and 91 Freeways via Harbor Boulevard",
+      "Trusted by Fullerton families for comprehensive eye care"
+    ],
+    driveTime: "25 minutes",
+    testimonials: [
+      {
+        quote: "Dr. Bonakdar's keratoconus expertise is amazing! The drive from Fullerton is worth it for his specialized scleral lens fittings.",
+        author: "Michelle P.",
+        location: "Fullerton"
+      },
+      {
+        quote: "Living near Cal State Fullerton, we love that Dr. Bonakdar provides same-week appointments for our busy college student schedule.",
+        author: "Steven K.",
+        location: "Fullerton"
+      },
+      {
+        quote: "As a Fullerton resident, I appreciate Dr. Bonakdar's thorough exams and modern technology. He diagnosed my dry eyes perfectly!",
+        author: "Carol R.",
+        location: "Fullerton"
+      }
+    ],
+    seoKeywords: "Fullerton eye doctor, Fullerton optometrist, eye exam Fullerton, Cal State Fullerton eye care, Downtown Fullerton eye doctor",
+    metaDescription: "Expert eye doctor serving Fullerton, CA. Dr. Bonakdar provides comprehensive eye care near Cal State Fullerton. Same-week appointments. (949) 658-2372"
+  };
+
+  return <LocationPageTemplate {...pageData} />;
+};
+
+export default FullertonEyeDoctorPage;

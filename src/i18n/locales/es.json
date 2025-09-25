@@ -1,0 +1,1030 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "eyewear": "Anteojos",
+    "fashion": "Moda",
+    "conditions": "Condiciones",
+    "keratoconus": "Queratocono",
+    "dryEye": "Ojo Seco",
+    "headache": "Dolor de Cabeza y Fatiga Ocular",
+    "orthoK": "Orto-K",
+    "lasik": "LASIK",
+    "cataract": "Cataratas",
+    "schedule": "Programar Cita"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "switchLanguage": "Cambiar Idioma"
+  },
+  "hero": {
+    "title": "Cuidado Ocular Experto en Orange County",
+    "subtitle": "Soluciones de visión integrales con tecnología avanzada y cuidado personalizado",
+    "button": "Programar Consulta"
+  },
+  "whyChooseUs": {
+    "title": "Por Qué Elegir",
+    "highlight": "Nuestra Práctica",
+    "subtitle": "Experimente cuidado ocular excepcional con nuestro equipo de profesionales dedicados utilizando la última tecnología y enfoques de tratamiento personalizados.",
+    "expertise": {
+      "title": "Cuidado Experto",
+      "description": "Nuestros optometristas experimentados proporcionan exámenes oculares completos y tratamientos especializados para todas las edades."
+    },
+    "technology": {
+      "title": "Tecnología Avanzada",
+      "description": "Utilizamos equipos de diagnóstico y métodos de tratamiento de vanguardia para asegurar los mejores resultados posibles."
+    },
+    "treatment": {
+      "title": "Tratamiento Personalizado",
+      "description": "Cada paciente recibe cuidado personalizado adaptado a sus necesidades específicas de visión y requisitos de estilo de vida."
+    },
+    "care": {
+      "title": "Cuidado Compasivo",
+      "description": "Priorizamos la comodidad y satisfacción del paciente, creando un ambiente acogedor para todos nuestros pacientes."
+    },
+    "approach": {
+      "title": "Enfoque Integral",
+      "description": "Desde exámenes oculares de rutina hasta condiciones complejas, proporcionamos soluciones completas de cuidado ocular bajo un mismo techo."
+    },
+    "relationships": {
+      "title": "Relaciones a Largo Plazo",
+      "description": "Construimos relaciones duraderas con nuestros pacientes, apoyando su salud ocular a lo largo de sus vidas."
+    },
+    "ctaButton": "Programar Su Consulta"
+  },
+  "seo": {
+    "title": "Centro de Cuidado Ocular de OC - Dr. Alexander Bonakdar"
+  },
+  "about": {
+    "hero": {
+      "title": "Acerca de Nuestra Práctica",
+      "subtitle": "Conozca a nuestro equipo experimentado de cuidado ocular y aprenda sobre nuestro compromiso con el cuidado excepcional de la visión",
+      "button": "Contáctenos"
+    },
+    "doctor": {
+      "titlePrefix": "Conozca al",
+      "name": "Dr. Alexander Bonakdar",
+      "bio1": "El Dr. Alexander Bonakdar es un optometrista dedicado con amplia experiencia en cuidado ocular integral y tratamientos especializados. Completó su título de Doctor en Optometría en la Escuela de Optometría de la Universidad de California, Berkeley, donde desarrolló experiencia en técnicas de diagnóstico avanzadas y modalidades de tratamiento.",
+      "bio2": "Con una pasión por mantenerse a la vanguardia de la tecnología del cuidado ocular, el Dr. Bonakdar se especializa en tratamiento de ojo seco, manejo de queratocono y adaptaciones complejas de lentes de contacto. Su compromiso con el cuidado personalizado del paciente y enfoques de tratamiento innovadores lo ha convertido en un proveedor de cuidado ocular de confianza en todo Orange County.",
+      "learnMore": "Aprende Más",
+      "schedule": "Programar Cita",
+      "imageAlt": "Dr. Alexander Bonakdar - Optometrista de Orange County",
+      "uploadPrompt": "Subir imagen del doctor"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Servicios Integrales de Cuidado Ocular",
+      "subtitle": "Desde exámenes oculares de rutina hasta tratamientos especializados, proporcionamos cuidado completo de la visión para todas las edades",
+      "button": "Programar Consulta"
+    },
+    "overview": {
+      "title": "Soluciones de",
+      "highlight": "Cuidado Visual",
+      "subtitle": "Completas",
+      "description": "Nuestro enfoque integral combina tecnología de vanguardia con cuidado personalizado para brindar resultados excepcionales de salud visual para cada paciente.",
+      "diagnosticTitle": "Tecnología de Diagnóstico Avanzada",
+      "diagnosticDescription": "Equipo y técnicas de última generación para diagnóstico preciso y planificación de tratamiento."
+    },
+    "features": {
+      "personalizedCare": {
+        "title": "Planes de Cuidado Personalizados",
+        "description": "Cada paciente recibe un enfoque de tratamiento personalizado adaptado a sus necesidades únicas de visión y requisitos de estilo de vida."
+      },
+      "specializedTreatment": {
+        "title": "Opciones de Tratamiento Especializado",
+        "description": "Terapias avanzadas para condiciones complejas incluyendo ojo seco, queratocono y adaptaciones de lentes de contacto especializados."
+      },
+      "comprehensiveCorrection": {
+        "title": "Corrección Visual Integral",
+        "description": "Soluciones completas de visión desde cuidado ocular rutinario hasta co-manejo quirúrgico avanzado y anteojos especializados."
+      }
+    },
+    "specializedTreatments": {
+      "title": "Opciones de",
+      "highlight": "Tratamiento Avanzado",
+      "description": "Descubra nuestras opciones de tratamiento especializado diseñadas para abordar condiciones oculares complejas con las últimas innovaciones médicas.",
+      "ipl": {
+        "title": "Terapia IPL para Ojo Seco",
+        "description": "Terapia de Luz Pulsada Intensa para tratar el síndrome de ojo seco crónico y la disfunción de las glándulas de Meibomio."
+      },
+      "scleral": {
+        "title": "Lentes de Contacto Esclerales",
+        "description": "Lentes de gran diámetro diseñados a medida para queratocono, córneas irregulares y condiciones severas de ojo seco."
+      },
+      "crossLinking": {
+        "title": "Cross-Linking Corneal",
+        "description": "Procedimiento avanzado para fortalecer el tejido corneal y detener la progresión del queratocono."
+      }
+    },
+    "testimonials": {
+      "title": "Historias de",
+      "highlight": "Éxito de Pacientes",
+      "subtitle": "",
+      "description": "Escuche de pacientes que han experimentado resultados que cambian la vida con nuestros tratamientos especializados de cuidado ocular."
+    },
+    "cta": {
+      "title": "¿Listo para Transformar Su Visión?",
+      "description": "Programe su consulta integral hoy y descubra cómo nuestros tratamientos avanzados pueden mejorar su salud ocular y calidad de vida.",
+      "scheduleOnline": {
+        "title": "Programar en Línea",
+        "description": "Reserve su cita a través de nuestro conveniente sistema de programación en línea.",
+        "button": "Reservar Cita"
+      },
+      "callDirect": {
+        "title": "Llamar Directamente",
+        "description": "Hable con nuestro equipo directamente para programar o hacer preguntas sobre nuestros servicios.",
+        "button": "Llamar Ahora"
+      },
+      "insurance": {
+        "title": "Opciones de Seguro y Pago",
+        "description": "Aceptamos la mayoría de los principales planes de seguro y ofrecemos opciones de pago flexibles para hacer accesible el cuidado ocular de calidad.",
+        "link": "Ver Información de Seguro"
+      }
+    }
+  },
+  "dryEye": {
+    "hero": {
+      "title": "Tratamiento Avanzado de Ojo Seco",
+      "description": "Diagnóstico integral y tratamiento para el síndrome de ojo seco utilizando la última tecnología incluyendo terapia IPL, LipiFlow y planes de tratamiento personalizados.",
+      "buttonText": "Programar Consulta de Ojo Seco"
+    },
+    "understanding": {
+      "title": "Entendiendo el",
+      "highlight": "Ojo Seco",
+      "paragraph1": "El síndrome de ojo seco es una condición común que ocurre cuando las lágrimas no pueden proporcionar lubricación adecuada para sus ojos. Esto puede suceder cuando sus ojos no producen suficientes lágrimas o cuando las lágrimas se evaporan demasiado rápido.",
+      "paragraph2": "Los factores del estilo de vida moderno como el aumento del tiempo frente a pantallas, las condiciones ambientales y ciertos medicamentos pueden contribuir a los síntomas de ojo seco. La condición puede variar desde irritación leve hasta molestias severas que impactan significativamente las actividades diarias.",
+      "paragraph3": "En Eye Care Center of OC, utilizamos tecnología de diagnóstico avanzada para identificar el tipo específico y la causa subyacente de su condición de ojo seco, permitiéndonos crear un plan de tratamiento personalizado que aborde sus necesidades únicas.",
+      "imageAlt": "Ilustración de la condición de ojo seco mostrando disfunción de la película lagrimal",
+      "subtitle": "Lo Que Necesita Saber",
+      "description": "El síndrome de ojo seco es una condición común que ocurre cuando las lágrimas no pueden proporcionar lubricación adecuada para sus ojos.",
+      "types": {
+        "evaporative": {
+          "title": "Ojo Seco Evaporativo",
+          "description": "Tipo más común causado por glándulas de Meibomio bloqueadas"
+        },
+        "aqueous": {
+          "title": "Deficiente Acuoso",
+          "description": "Producción insuficiente de lágrimas por las glándulas lagrimales"
+        },
+        "mixed": {
+          "title": "Tipo Mixto",
+          "description": "Combinación de ambos tipos evaporativo y deficiente acuoso"
+        }
+      }
+    },
+    "treatments": {
+      "title": "Opciones de",
+      "highlight": "Tratamiento Integral",
+      "subtitle": "Ofrecemos una gama de tratamientos efectivos adaptados a su condición específica de ojo seco y síntomas.",
+      "options": [
+        {
+          "title": "Lágrimas Artificiales",
+          "description": "Gotas lubricantes premium para complementar la producción natural de lágrimas y proporcionar alivio temporal."
+        },
+        {
+          "title": "Medicamentos Recetados",
+          "description": "Medicamentos especializados para aumentar la producción de lágrimas o reducir la inflamación asociada con el ojo seco."
+        },
+        {
+          "title": "Tapones Lagrimales",
+          "description": "Dispositivos pequeños insertados en los conductos lagrimales para prevenir el drenaje, manteniendo los ojos húmedos por más tiempo."
+        }
+      ]
+    },
+    "treatment": {
+      "title": "Opciones de Tratamiento Avanzado",
+      "description": "Nuestro enfoque integral aborda las causas raíz del síndrome de ojo seco con terapias probadas.",
+      "options": {
+        "artificial": {
+          "title": "Lágrimas Artificiales",
+          "description": "Gotas lubricantes premium para complementar la producción natural de lágrimas y proporcionar alivio temporal."
+        },
+        "prescription": {
+          "title": "Medicamentos Recetados",
+          "description": "Medicamentos especializados para aumentar la producción de lágrimas o reducir la inflamación asociada con el ojo seco."
+        },
+        "punctal": {
+          "title": "Tapones Lagrimales",
+          "description": "Dispositivos pequeños insertados en los conductos lagrimales para prevenir el drenaje, manteniendo los ojos húmedos por más tiempo."
+        }
+      }
+    },
+    "ipl": {
+      "title": "Terapia de Luz Pulsada Intensa (IPL)",
+      "description1": "IPL es un tratamiento revolucionario para la enfermedad del ojo seco que se dirige a las causas subyacentes en lugar de solo los síntomas. Usando longitudes de onda específicas de luz, IPL reduce la inflamación alrededor de los párpados y mejora la función de las glándulas de Meibomio.",
+      "description2": "Este procedimiento no invasivo toma solo minutos para realizar y proporciona alivio duradero para muchos pacientes que sufren de enfermedad crónica de ojo seco.",
+      "benefits": [
+        {
+          "title": "Alivio Duradero",
+          "description": "A diferencia de las gotas para los ojos que proporcionan comodidad temporal, IPL aborda las causas raíz para un alivio sostenido de los síntomas de ojo seco."
+        },
+        {
+          "title": "Inflamación Reducida",
+          "description": "La terapia IPL reduce efectivamente la inflamación alrededor de los párpados, ayudando a restaurar la función normal de la película lagrimal."
+        },
+        {
+          "title": "Rápido y Cómodo",
+          "description": "Las sesiones de tratamiento toman solo minutos para completarse con molestia mínima y sin tiempo de inactividad requerido."
+        }
+      ],
+      "benefitsTitle": "Beneficios del Tratamiento IPL",
+      "whatToExpectTitle": "Qué Esperar",
+      "glandImaging": "Imagen de Glándulas de Meibomio",
+      "glandImagingDescription": "La tecnología de imagen avanzada nos permite examinar la estructura de sus glándulas de Meibomio e identificar cualquier disfunción o bloqueos.",
+      "tearFilmAnalysis": "Análisis de Película Lagrimal",
+      "tearFilmDescription": "Evaluamos la calidad, cantidad y tasa de evaporación lagrimal usando equipo especializado para determinar el tipo específico de ojo seco que está experimentando.",
+      "testimonialSectionTitle": "Historias de Éxito de Pacientes",
+      "testimonialQuote1": "Después de luchar con ojos secos durante años, las pruebas integrales en el Centro de Cuidado Ocular de OC finalmente identificaron mi problema específico. ¡Ahora estoy recibiendo tratamiento que realmente funciona!",
+      "testimonialAuthor1": "María S.",
+      "testimonialQuote2": "El tratamiento IPL ha sido transformador. Mis ojos se sienten más cómodos de lo que han estado en años, y ya no estoy alcanzando constantemente las gotas para los ojos.",
+      "testimonialAuthor2": "David L.",
+      "imageAlt": "Procedimiento de Tratamiento IPL"
+    },
+    "diagnostics": {
+      "titleHighlight": "Avanzado",
+      "titleRest": "Diagnóstico de Ojo Seco",
+      "subtitle": "Nuestro enfoque de diagnóstico avanzado nos permite identificar con precisión la causa y gravedad de su condición de ojo seco.",
+      "description": "No más tratamientos genéricos. Nuestras pruebas exhaustivas revelan los factores exactos que contribuyen a sus síntomas de ojo seco, permitiendo cuidado verdaderamente personalizado.",
+      "whatToExpectTitle": "Qué Esperar Durante Su Evaluación Integral",
+      "pathToReliefTitle": "Su Camino al Alivio del Ojo Seco",
+      "pathToReliefDescription": "En Eye Care Center of OC, creemos que el diagnóstico preciso es la base del tratamiento efectivo del ojo seco. Nuestro proceso de diagnóstico de última generación combina la tecnología más avanzada con experiencia clínica para identificar los factores específicos que contribuyen a sus síntomas de ojo seco.",
+      "processTitle": "Nuestro Viaje de Diagnóstico",
+      "testsTitle": "Nuestra Suite de Pruebas Integrales",
+      "testimonialTitle": "Experiencias de Pacientes",
+      "tests": [
+        {
+          "title": "Análisis de Película Lagrimal",
+          "description": "Evaluación integral de la calidad, cantidad y estabilidad de las lágrimas usando equipo de diagnóstico avanzado."
+        },
+        {
+          "title": "Imagen de Glándulas de Meibomio",
+          "description": "Imagen de alta resolución para evaluar la estructura y función de sus glándulas productoras de aceite."
+        },
+        {
+          "title": "Evaluación de Superficie Corneal",
+          "description": "Examen detallado de la superficie corneal para identificar áreas de daño o inflamación."
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Las pruebas detalladas me mostraron exactamente por qué mis ojos estaban tan incómodos. ¡Ahora finalmente tengo un plan de tratamiento que funciona!",
+          "author": "Sarah M."
+        },
+        {
+          "quote": "Nunca supe que había tantos tipos diferentes de ojo seco. La evaluación exhaustiva del Dr. Bonakdar cambió todo.",
+          "author": "Robert K."
+        }
+      ],
+      "processSteps": [
+        {
+          "step": "1",
+          "title": "Evaluación Inicial",
+          "description": "Revisión integral de sus síntomas, historial médico y factores de estilo de vida."
+        },
+        {
+          "step": "2",
+          "title": "Pruebas Avanzadas",
+          "description": "Pruebas de diagnóstico de última generación para medir la producción, calidad y evaporación de lágrimas."
+        },
+        {
+          "step": "3",
+          "title": "Análisis Personalizado",
+          "description": "Análisis detallado de resultados para crear su plan de tratamiento personalizado."
+        }
+      ]
+    },
+    "results": {
+      "title": "Resultados del",
+      "highlight": "Tratamiento",
+      "subtitle": "Vea las mejoras dramáticas que nuestros pacientes experimentan con nuestros tratamientos avanzados de ojo seco.",
+      "beforeLabel": "Antes del Tratamiento",
+      "afterLabel": "Después del Tratamiento",
+      "imageCaption": "Imagen de glándulas de Meibomio mostrando función mejorada después del tratamiento IPL",
+      "stats": {
+        "satisfaction": "Satisfacción del Paciente",
+        "sessions": "Sesiones Promedio Necesarias",
+        "reduction": "Reducción de Síntomas"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Encontrar Alivio de los Síntomas de Ojo Seco?",
+      "description": "Tome el primer paso hacia ojos cómodos y saludables con nuestra evaluación integral de ojo seco y plan de tratamiento personalizado.",
+      "scheduleButton": "Programar Consulta de Ojo Seco",
+      "callButton": "Llámenos:"
+    }
+  },
+  "keratoconus": {
+    "hero": {
+      "title": "Tratamiento y Manejo de Queratocono",
+      "subtitle": "Diagnóstico avanzado y opciones de tratamiento para queratocono incluyendo lentes de contacto especializados e intervenciones quirúrgicas",
+      "button": "Aprender Más Sobre el Tratamiento"
+    },
+    "understanding": {
+      "title": "Entendiendo el",
+      "highlight": "Queratocono",
+      "paragraph1": "El queratocono es una condición ocular progresiva donde la córnea se adelgaza gradualmente y se abulta hacia afuera en forma de cono. Esta forma corneal irregular causa que la luz se disperse al entrar al ojo, resultando en visión distorsionada y borrosa.",
+      "paragraph2": "La detección y tratamiento tempranos son cruciales para manejar el queratocono efectivamente. Nuestra tecnología de diagnóstico avanzada nos permite identificar la condición en sus etapas más tempranas, cuando las opciones de tratamiento son más efectivas.",
+      "paragraph3": "Con el manejo adecuado, la mayoría de los pacientes con queratocono pueden mantener buena visión y calidad de vida. Nuestro enfoque integral combina tratamientos de vanguardia con cuidado personalizado para lograr los mejores resultados posibles.",
+      "imageAlt": "Ilustración de la condición ocular queratocono"
+    },
+    "treatment": {
+      "title": "Tratamiento de Cross-Linking Corneal",
+      "subtitle": "Nuestro tratamiento avanzado de cross-linking corneal está diseñado para detener la progresión del queratocono y preservar su visión a largo plazo.",
+      "benefits": {
+        "title": "Beneficios del Cross-Linking Corneal",
+        "list": [
+          "Detiene la progresión del queratocono en más del 95% de los casos",
+          "Reduce la necesidad de trasplante corneal",
+          "Procedimiento ambulatorio mínimamente invasivo",
+          "Tratamiento aprobado por la FDA",
+          "Puede mejorar la visión en algunos pacientes",
+          "Preserva la función visual a largo plazo"
+        ]
+      },
+      "howItWorks": {
+        "title": "Cómo Funciona el Cross-Linking Corneal",
+        "description": "El cross-linking corneal (CXL) es un procedimiento mínimamente invasivo que fortalece el tejido corneal para prevenir mayor abultamiento de la córnea. El procedimiento combina el uso de luz ultravioleta (UV) y gotas de riboflavina (vitamina B2) para crear nuevos enlaces entre las fibras de colágeno dentro de la córnea.",
+        "button": "Aprenda si el Cross-Linking es Adecuado para Usted"
+      }
+    },
+    "stats": {
+      "title": "Éxito en el Tratamiento",
+      "highlight": "de Queratocono",
+      "subtitle": "Nuestro enfoque especializado en el manejo del queratocono ha ayudado a miles de pacientes a lograr mejor visión y calidad de vida mejorada.",
+      "successRate": "Tasa de Éxito",
+      "patientsHealed": "Pacientes Tratados",
+      "yearsExperience": "Años de Experiencia"
+    },
+    "scleralLenses": {
+      "title": "Lentes Esclerales para Queratocono",
+      "subtitle": "Lentes esclerales diseñados a medida proporcionan comodidad excepcional y visión para pacientes con queratocono.",
+      "howTheyWork": {
+        "title": "Cómo Funcionan los Lentes Esclerales",
+        "description": "Los lentes esclerales están especialmente diseñados para arquearse sobre la córnea, creando un reservorio lleno de fluido entre el lente y la superficie corneal. Este diseño ofrece varias ventajas: la capa de fluido compensa las irregularidades corneales, creando una superficie óptica suave; el lente descansa en la esclera menos sensible en lugar de la córnea, mejorando la comodidad; el reservorio de fluido continuamente baña la córnea, proporcionando alivio para los síntomas de ojo seco que a menudo acompañan al queratocono; y el material rígido proporciona ópticas superiores comparado con lentes blandos."
+      },
+      "fittingProcess": {
+        "title": "El Proceso de Adaptación de Lentes Esclerales",
+        "description": "La adaptación de lentes esclerales requiere experiencia especializada y tecnología. Nuestro proceso incluye mapeo corneal integral usando topografía avanzada, diseño de lente personalizado basado en la forma única de su córnea, evaluación de lente de prueba para evaluar ajuste y visión, entrenamiento detallado en inserción, remoción y cuidado, y citas de seguimiento para asegurar ajuste y comodidad óptimos."
+      },
+      "benefits": {
+        "title": "Beneficios de los Lentes Esclerales",
+        "list": [
+          "Calidad de visión dramáticamente mejorada - Crea una superficie óptica suave que corrige el astigmatismo irregular",
+          "Comodidad todo el día - Incluso para pacientes que no pudieron tolerar otros lentes de contacto",
+          "Protección de la superficie corneal - El reservorio de fluido proporciona un efecto de amortiguación",
+          "Progresión reducida del queratocono - En algunos casos previniendo trauma mecánico",
+          "Alivio de sequedad e irritación - El reservorio de fluido continuamente baña el ojo",
+          "Puede retrasar o evitar el trasplante corneal - Para pacientes con queratocono avanzado"
+        ]
+      },
+      "button": "Aprenda si los Lentes Esclerales son Adecuados para Usted"
+    },
+    "intacs": {
+      "title": "Implantes Corneales Intacs",
+      "subtitle": "Insertos pequeños y transparentes colocados en la periferia de la córnea para remodelar su superficie y mejorar la visión en pacientes con queratocono.",
+      "howTheyWork": {
+        "title": "Cómo Funcionan los Intacs",
+        "description": "El procedimiento funciona remodelando mecánicamente la córnea desde adentro. Cuando se colocan estratégicamente en la periferia de la córnea, los Intacs aplanan el área empinada de la córnea, mejorando la forma general de la córnea y reduciendo las distorsiones visuales causadas por el queratocono."
+      },
+      "benefits": {
+        "title": "Beneficios de los Intacs",
+        "list": [
+          "Procedimiento mínimamente invasivo con recuperación rápida",
+          "Reversible – los implantes pueden ser removidos si es necesario",
+          "Puede mejorar significativamente la visión en candidatos adecuados",
+          "Puede retrasar o prevenir la necesidad de trasplante corneal",
+          "Puede ser combinado con otros tratamientos como cross-linking corneal",
+          "A menudo permite a los pacientes usar lentes de contacto más cómodamente"
+        ]
+      },
+      "button": "Aprenda si los Intacs son Adecuados para Usted"
+    },
+    "diagnostics": {
+      "title": "Diagnóstico Avanzado",
+      "subtitle": "Utilizamos tecnología de vanguardia para diagnosticar y monitorear con precisión el queratocono.",
+      "technology": {
+        "title": "Tecnología de Diagnóstico",
+        "description": "Nuestra evaluación integral de queratocono incluye:",
+        "list": [
+          "Topografía Corneal: Crea mapas 3D detallados de la superficie corneal",
+          "OCT del Segmento Anterior: Captura imágenes de sección transversal de alta resolución de la córnea",
+          "Paquimetría: Mide el espesor corneal en varios puntos",
+          "Aberrometría de Frente de Onda: Mide aberraciones ópticas que afectan la calidad de la visión",
+          "Evaluación Biomecánica: Evalúa la fuerza y resistencia del tejido corneal"
+        ]
+      },
+      "stages": {
+        "title": "Etapas del Queratocono",
+        "description": "Nuestro proceso de diagnóstico puede determinar su etapa de queratocono:",
+        "list": [
+          "Etapa Temprana: Adelgazamiento corneal leve, ligera distorsión visual",
+          "Etapa Moderada: Aumento del empinamiento corneal, cambios de visión más notorios",
+          "Etapa Avanzada: Adelgazamiento y protrusión corneal significativos",
+          "Etapa Severa: Adelgazamiento extremo, cicatrización y distorsión corneal pronunciada"
+        ],
+        "conclusion": "El diagnóstico temprano es crucial—entre más pronto se detecte el queratocono, más opciones de tratamiento están disponibles para preservar su visión."
+      }
+    },
+    "treatmentOptions": {
+      "title": "Soluciones de Tratamiento Completas",
+      "subtitle": "En el Centro de Cuidado Ocular de OC, ofrecemos manejo integral de queratocono adaptado a sus necesidades específicas y severidad de la condición.",
+      "options": [
+        {
+          "title": "Cross-Linking Corneal",
+          "description": "Procedimiento aprobado por la FDA que fortalece el tejido corneal para detener la progresión del queratocono usando luz UV y gotas de riboflavina."
+        },
+        {
+          "title": "Lentes de Contacto Especializados",
+          "description": "Lentes rígidos gas permeables (RGP), esclerales o híbridos diseñados a medida que proporcionan visión clara creando una nueva superficie óptica."
+        },
+        {
+          "title": "Implantes Corneales Intacs",
+          "description": "Insertos pequeños y transparentes colocados dentro de la córnea para remodelar su superficie y mejorar la visión en pacientes con queratocono."
+        },
+        {
+          "title": "Anteojos de Prescripción Personalizada",
+          "description": "Anteojos especializados con prescripciones únicas pueden ayudar a manejar casos leves o proporcionar corrección visual suplementaria."
+        },
+        {
+          "title": "PRK Guiado por Topografía",
+          "description": "Procedimiento láser avanzado que remodela la córnea basado en mediciones topográficas detalladas para mejorar la visión."
+        },
+        {
+          "title": "Trasplante Corneal",
+          "description": "Para casos avanzados, reemplazo quirúrgico de la córnea central con tejido donante saludable para restaurar la función corneal."
+        }
+      ]
+    },
+    "treatmentComparison": {
+      "title": "Comparación de Tratamientos",
+      "subtitle": "Compare las diferentes opciones de tratamiento para queratocono para entender qué enfoque podría ser mejor para su condición específica.",
+      "crossLinking": {
+        "title": "Cross-Linking Corneal",
+        "description": "Un procedimiento mínimamente invasivo que fortalece el tejido corneal para detener la progresión del queratocono.",
+        "benefits": [
+          "Detiene la progresión del queratocono",
+          "Procedimiento aprobado por la FDA",
+          "Procedimiento ambulatorio",
+          "Puede prevenir la necesidad de trasplante corneal",
+          "Más efectivo en etapas tempranas a moderadas"
+        ]
+      },
+      "scleralLenses": {
+        "title": "Lentes Esclerales",
+        "description": "Lentes de contacto especializados que se arquean sobre la córnea, proporcionando visión clara para pacientes con queratocono.",
+        "benefits": [
+          "Mejora la calidad de la visión",
+          "No toca la córnea",
+          "Puede usarse por períodos largos",
+          "Ajustado a medida para cada ojo",
+          "Funciona para todas las etapas del queratocono"
+        ]
+      },
+      "intacs": {
+        "title": "Intacs",
+        "description": "Insertos micro-delgados colocados en la córnea para aplanar el cono y reducir la distorsión.",
+        "benefits": [
+          "Remodela la córnea",
+          "Procedimiento reversible",
+          "Puede mejorar el uso de lentes de contacto",
+          "Tiempo de recuperación rápido",
+          "Puede ser combinado con cross-linking"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Tome Control de Su Queratocono",
+      "subtitle": "No permita que el queratocono comprometa la calidad de su visión. Nuestros tratamientos especializados pueden ayudar a preservar su vista y mejorar su claridad visual.",
+      "scheduleButton": "Programar Su Evaluación",
+      "callButton": "Llámenos:"
+    },
+    "seo": {
+      "title": "Tratamiento y Manejo de Queratocono | Cuidado Ocular Orange County",
+      "description": "Diagnóstico avanzado de queratocono y tratamiento incluyendo cross-linking corneal, lentes de contacto especializados y manejo integral. Cuidado experto para todas las etapas del queratocono en Orange County.",
+      "keywords": "tratamiento queratocono, cross-linking corneal, lentes esclerales, intacs, manejo queratocono, Orange County, doctor de ojos, optometrista"
+    }
+  },
+  "cataract": {
+    "understanding": {
+      "title": "Entendiendo las",
+      "highlight": "Cataratas"
+    },
+    "hero": {
+      "title": "Evaluación y Co-manejo de Cataratas",
+      "subtitle": "Diagnóstico integral de cataratas y co-manejo con especialistas quirúrgicos líderes",
+      "button": "Programar Evaluación de Cataratas"
+    },
+    "seo": {
+      "title": "Consulta de Cirugía de Cataratas y Co-manejo | Orange County",
+      "description": "Evaluación experta de cataratas y co-manejo en Orange County. Diagnóstico integral y coordinación con cirujanos de cataratas líderes.",
+      "keywords": "consulta cirugía cataratas, evaluación cataratas, cataratas Orange County, consulta IOL, co-manejo cataratas"
+    }
+  },
+  "orthoK": {
+    "hero": {
+      "title": "Ortoqueratología (Orto-K)",
+      "subtitle": "Corrección de visión no quirúrgica y control de miopía usando lentes de contacto nocturnos",
+      "button": "Descubrir Orto-K"
+    },
+    "understanding": {
+      "title": "Entendiendo la",
+      "highlight": "Ortoqueratología",
+      "paragraph1": "La ortoqueratología, u Orto-K, es un tratamiento revolucionario de corrección de visión no quirúrgica que usa lentes de contacto especialmente diseñados que se usan durante la noche para remodelar suavemente su córnea mientras duerme. Cuando se despierta y se quita los lentes, puede ver claramente durante todo el día sin anteojos o lentes de contacto.",
+      "paragraph2": "Este tratamiento aprobado por la FDA es particularmente efectivo para el control de miopía (miopía) en niños y adolescentes, ayudando a ralentizar la progresión de la miopía. También es una excelente opción para adultos que quieren libertad de anteojos y lentes de contacto durante el día.",
+      "benefits": {
+        "title": "Beneficios del Orto-K",
+        "item1": "Visión clara todo el día sin anteojos o lentes de contacto",
+        "item2": "Ralentiza la progresión de miopía en niños",
+        "item3": "Reversible - pare en cualquier momento para volver a la visión original",
+        "item4": "Excelente para estilos de vida activos y deportes"
+      },
+      "imageAlt": "Ilustración del tratamiento de lentes de contacto de ortoqueratología"
+    },
+    "process": {
+      "title": "El Proceso Orto-K",
+      "subtitle": "La ortoqueratología es un proceso de múltiples pasos que requiere mediciones precisas y adaptación de lentes personalizados para lograr resultados óptimos.",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Examen Integral",
+          "description": "Realizamos un mapeo detallado de topografía corneal y examen ocular integral para determinar si es un buen candidato para Orto-K."
+        },
+        {
+          "number": "2",
+          "title": "Diseño de Lente Personalizado",
+          "description": "Sus lentes Orto-K se diseñan a medida basados en la forma única de su córnea y sus necesidades específicas de corrección de visión."
+        },
+        {
+          "number": "3",
+          "title": "Adaptación de Lentes",
+          "description": "Aseguramos que sus lentes se ajusten perfectamente y proporcionamos instrucciones detalladas sobre cómo insertar, quitar y cuidar sus lentes Orto-K."
+        },
+        {
+          "number": "4",
+          "title": "Uso Nocturno",
+          "description": "Usará sus lentes Orto-K mientras duerme. Los lentes remodelan suavemente su córnea para corregir su visión mientras descansa."
+        },
+        {
+          "number": "5",
+          "title": "Visión Clara Durante el Día",
+          "description": "Quítese los lentes por la mañana y disfrute de visión clara durante todo el día sin anteojos o lentes de contacto."
+        },
+        {
+          "number": "6",
+          "title": "Cuidado de Seguimiento",
+          "description": "Revisiones regulares aseguran que su tratamiento Orto-K esté funcionando efectivamente y hacer ajustes según sea necesario para resultados óptimos."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Beneficios de la Ortoqueratología",
+      "subtitle": "Orto-K ofrece numerosas ventajas sobre los métodos tradicionales de corrección de visión.",
+      "list": [
+        {
+          "title": "Libertad de Anteojos Durante el Día",
+          "description": "Disfrute de visión clara durante todo el día sin usar anteojos o lentes de contacto, perfecto para estilos de vida activos."
+        },
+        {
+          "title": "Ralentiza la Progresión de Miopía",
+          "description": "Los estudios clínicos muestran que Orto-K puede ralentizar significativamente la progresión de la miopía en niños y adultos jóvenes."
+        },
+        {
+          "title": "Solución No Quirúrgica",
+          "description": "Logre corrección de visión sin los riesgos asociados con la cirugía láser ocular. Orto-K es completamente reversible."
+        },
+        {
+          "title": "Cómodo y Conveniente",
+          "description": "Los lentes solo se usan mientras duerme, eliminando la incomodidad durante el día que algunos usuarios de lentes de contacto experimentan."
+        },
+        {
+          "title": "Excelente para Deportes y Actividades",
+          "description": "Ideal para nadadores, atletas y personas que trabajan en ambientes polvorientos o secos donde los anteojos o lentes de contacto son problemáticos."
+        },
+        {
+          "title": "Costo-Efectivo a Largo Plazo",
+          "description": "Aunque la inversión inicial es mayor que los lentes regulares, Orto-K puede ser más costo-efectivo con el tiempo comparado con lentes desechables diarios."
+        }
+      ]
+    },
+    "myopiaManagement": {
+      "title": "Manejo de Miopía",
+      "highlight": "Para Niños",
+      "subtitle": "Orto-K es uno de los tratamientos más efectivos para ralentizar la progresión de miopía en niños y adolescentes.",
+      "description": "La miopía (miopía) está volviéndose cada vez más común en niños. Los estudios muestran que Orto-K puede ralentizar la progresión de miopía en 50-90%, reduciendo el riesgo de problemas oculares serios más adelante en la vida.",
+      "benefits": [
+        "Ralentiza la progresión de miopía en 50-90%",
+        "Reduce el riesgo de desprendimiento de retina",
+        "Disminuye la posibilidad de glaucoma",
+        "Reduce el riesgo de degeneración macular",
+        "Proporciona visión clara durante el día sin anteojos"
+      ],
+      "whyImportant": {
+        "title": "Por Qué el Control de Miopía es Importante",
+        "description": "La miopía alta aumenta el riesgo de condiciones oculares serias incluyendo desprendimiento de retina, glaucoma y degeneración macular. Al controlar la progresión de miopía temprano, podemos ayudar a proteger la salud ocular y visión a largo plazo de su hijo."
+      }
+    },
+    "cta": {
+      "title": "Tome Control de la Miopía de Su Hijo Hoy",
+      "subtitle": "No espere hasta que la prescripción de su hijo se vuelva más fuerte. La intervención temprana con Orto-K puede ayudar a ralentizar la progresión de miopía y reducir el riesgo de problemas oculares más adelante en la vida.",
+      "scheduleButton": "Programar una Consulta",
+      "callButton": "Llámenos:"
+    }
+  },
+  "lasik": {
+    "hero": {
+      "title": "Consulta y Co-manejo de LASIK",
+      "subtitle": "Cuidado experto pre y post-operatorio para cirugía LASIK con socios quirúrgicos de confianza",
+      "button": "Programar Consulta LASIK"
+    },
+    "seo": {
+      "title": "Consulta y Co-manejo de LASIK | Cuidado Ocular Orange County",
+      "description": "Consulta experta de LASIK y co-manejo en Orange County. Cuidado pre y post-operatorio con socios quirúrgicos de confianza para resultados óptimos.",
+      "keywords": "consulta LASIK, co-manejo LASIK, cirugía láser ocular, LASIK Orange County, cirugía corrección visión"
+    }
+  },
+  "eyewear": {
+    "hero": {
+      "title": "Anteojos Premium y Lentes Avanzados",
+      "subtitle": "Descubra nuestra extensa colección de monturas de diseñador y tecnologías de lentes de vanguardia para visión y estilo óptimos",
+      "button": "Explorar Nuestra Colección"
+    }
+  },
+  "fashion": {
+    "hero": {
+      "title": "Colección de",
+      "highlight": "Anteojos de Diseñador",
+      "subtitle": "Encuentre sus monturas perfectas de nuestra selección curada de marcas de anteojos de lujo y diseñador",
+      "button": "Explorar Nuestra Colección"
+    },
+    "overview": {
+      "title": "Colección Premium de",
+      "highlight": "Anteojos de Diseñador",
+      "description": "Descubra nuestra amplia colección de monturas de diseñador y tecnologías de lentes avanzadas, ajustadas por expertos para mejorar tanto su visión como su estilo.",
+      "designerFrames": {
+        "title": "Monturas de Diseñador y Lentes Premium",
+        "description": "Nuestra extensa colección presenta los últimos estilos de diseñadores de renombre mundial, combinados con tecnologías de lentes de vanguardia para lo último en moda y función."
+      },
+      "features": {
+        "title": "Lo Que Nos Distingue",
+        "item1": "Colecciones exclusivas de diseñador de marcas de lujo",
+        "item2": "Tecnologías de lentes avanzadas para visión óptima",
+        "item3": "Ajuste experto y estilismo personalizado",
+        "item4": "Exámenes oculares completos y evaluación de la visión"
+      },
+      "styleConsultation": "Programar una Consulta de Estilo",
+      "modelImageAlt": "Modelo de anteojos de diseñador",
+      "lensTech": {
+        "title": "Tecnologías de Lentes Avanzadas",
+        "description": "Mejore su visión con nuestras opciones de lentes de última generación, diseñadas para comodidad, claridad y protección en cada situación.",
+        "option1": {
+          "title": "Lentes Progresivos",
+          "description": "Transición perfecta entre visión de cerca, intermedia y de distancia"
+        },
+        "option2": {
+          "title": "Protección de Luz Azul",
+          "description": "Reduzca la fatiga ocular digital de pantallas y dispositivos"
+        },
+        "option3": {
+          "title": "Lentes Fotocromáticos",
+          "description": "Se ajustan automáticamente a las condiciones cambiantes de luz"
+        },
+        "option4": {
+          "title": "Lentes de Índice Alto",
+          "description": "Lentes más delgados y ligeros para prescripciones más fuertes"
+        }
+      },
+      "lensImageAlt": "Exhibición de tecnología de lentes avanzada"
+    }
+  },
+  "headache": {
+    "hero": {
+      "title": "Dolor de Cabeza y Fatiga Ocular",
+      "subtitle": "Alivio de la Fatiga Ocular Digital",
+      "button": "Obtener Alivio Hoy"
+    },
+    "understanding": {
+      "title": "Entendiendo los Dolores de Cabeza",
+      "highlight": "y la Fatiga Ocular",
+      "paragraph1": "La fatiga ocular y los dolores de cabeza relacionados con la visión son cada vez más comunes en nuestra era digital. Estos síntomas incómodos pueden impactar significativamente su productividad diaria, comodidad y calidad de vida en general.",
+      "paragraph2": "Entender la conexión entre sus ojos y los dolores de cabeza es crucial para encontrar alivio efectivo. Nuestro enfoque integral aborda tanto los síntomas como las causas subyacentes para proporcionar soluciones duraderas.",
+      "didYouKnow": {
+        "title": "¿Sabía Que?",
+        "fact": "Hasta el 90% de las personas que trabajan en computadoras experimentan algún tipo de fatiga ocular, lo que puede llevar a dolores de cabeza y productividad reducida."
+      },
+      "imageAlt": "Persona experimentando dolor de cabeza y fatiga ocular"
+    },
+    "prevention": {
+      "title": "Consejos de",
+      "highlight": "Prevención",
+      "description": "Implemente estas estrategias prácticas en su rutina diaria para reducir la fatiga ocular y prevenir dolores de cabeza relacionados.",
+      "tips": {
+        "rule2020": {
+          "title": "La Regla 20-20-20",
+          "description": "Cada 20 minutos, mire algo a 20 pies de distancia durante al menos 20 segundos para reducir la fatiga ocular durante el tiempo prolongado frente a la pantalla."
+        },
+        "lighting": {
+          "title": "Iluminación Adecuada",
+          "description": "Asegúrese de que su espacio de trabajo tenga iluminación adecuada sin deslumbramiento que no cree reflejos en su pantalla o le haga entrecerrar los ojos."
+        },
+        "ergonomic": {
+          "title": "Configuración Ergonómica",
+          "description": "Posicione su pantalla aproximadamente a la distancia de un brazo y ligeramente por debajo del nivel de los ojos. Use una silla ergonómica que apoye una buena postura."
+        },
+        "hydration": {
+          "title": "Manténgase Hidratado",
+          "description": "Beber mucha agua ayuda a mantener la humedad en sus ojos y puede reducir los síntomas de fatiga ocular."
+        },
+        "blinking": {
+          "title": "Parpadeo Regular",
+          "description": "Recuérdese conscientemente parpadear regularmente durante el tiempo frente a la pantalla, ya que tendemos a parpadear menos cuando nos enfocamos en dispositivos digitales."
+        },
+        "screenSettings": {
+          "title": "Configuración de Pantalla",
+          "description": "Ajuste el brillo, contraste y tamaño del texto en sus dispositivos a niveles cómodos. Active filtros de luz azul, especialmente por la noche."
+        }
+      },
+      "eyewear": {
+        "title": "Soluciones de Anteojos Especializados",
+        "description": "Considere soluciones de anteojos especializados como anteojos para computadora con filtrado de luz azul, recubrimientos antirreflejo y prescripciones optimizadas específicamente para el uso de dispositivos digitales. Nuestros ópticos pueden ayudarle a encontrar los anteojos perfectos para reducir la fatiga y prevenir dolores de cabeza.",
+        "button": "Explorar Opciones de Anteojos"
+      }
+    },
+    "cta": {
+      "title": "Obtenga Alivio de Dolores de Cabeza y Fatiga Ocular",
+      "subtitle": "No permita que la fatiga ocular y los dolores de cabeza impacten su productividad y calidad de vida. Nuestro cuidado especializado puede ayudarle a encontrar alivio duradero.",
+      "scheduleButton": "Programar Su Consulta",
+      "callButton": "Llámenos:"
+    }
+  },
+  "eyewearOverview": {
+    "title": {
+      "prefix": "Soluciones",
+      "highlight": "Premium",
+      "suffix": "de Anteojos"
+    },
+    "description": "Descubra nuestra completa colección de monturas de diseñador y tecnologías avanzadas de lentes, ajustadas por expertos para mejorar tanto su visión como su estilo.",
+    "designerFrames": {
+      "title": "Monturas de Diseñador y Lentes Premium",
+      "description": "Nuestra extensa colección presenta los últimos estilos de diseñadores de renombre mundial, combinados con tecnologías de lentes de vanguardia para lo último en moda y función."
+    },
+    "features": {
+      "title": "Lo Que Nos Distingue",
+      "item1": "Colecciones exclusivas de diseñador de marcas de lujo",
+      "item2": "Tecnologías de lentes avanzadas para visión óptima",
+      "item3": "Ajuste experto y estilismo personalizado",
+      "item4": "Exámenes oculares completos y evaluación de la visión"
+    },
+    "styleConsultation": "Programar una Consulta de Estilo",
+    "modelImageAlt": "Modelo con anteojos de diseñador",
+    "lensTech": {
+      "title": "Tecnologías Avanzadas de Lentes",
+      "description": "Mejore su visión con nuestras opciones de lentes de última generación, diseñadas para comodidad, claridad y protección en cada situación.",
+      "option1": {
+        "title": "Lentes Progresivos",
+        "description": "Transición perfecta entre visión de cerca, intermedia y de distancia"
+      },
+      "option2": {
+        "title": "Protección de Luz Azul",
+        "description": "Reduce la fatiga ocular digital de pantallas y dispositivos"
+      },
+      "option3": {
+        "title": "Lentes Fotocromáticos",
+        "description": "Se ajustan automáticamente a las condiciones cambiantes de luz"
+      },
+      "option4": {
+        "title": "Lentes de Índice Alto",
+        "description": "Lentes más delgados y ligeros para prescripciones más fuertes"
+      }
+    },
+    "lensImageAlt": "Muestra de tecnología avanzada de lentes"
+  },
+  "eyewearCategories": {
+    "title": "Explore Nuestra",
+    "highlight": "Colección de Anteojos",
+    "description": "Desde monturas ópticas cotidianas hasta anteojos deportivos especializados, ofrecemos soluciones integrales para cada necesidad de visión y estilo de vida.",
+    "options": {
+      "optical": {
+        "name": "Anteojos Recetados",
+        "description": "Monturas elegantes con tecnologías de lentes avanzadas para visión clara y cómoda en trabajo, ocio y actividades cotidianas."
+      },
+      "sunglasses": {
+        "name": "Gafas de Sol de Diseñador",
+        "description": "Protección solar premium con lentes polarizados y filtrado UV de las mejores marcas de lujo para actividades al aire libre."
+      },
+      "sports": {
+        "name": "Anteojos Deportivos y Activos",
+        "description": "Anteojos especializados diseñados para atletas y estilos de vida activos con resistencia al impacto y características de rendimiento."
+      },
+      "children": {
+        "name": "Anteojos para Niños",
+        "description": "Monturas duraderas y cómodas diseñadas específicamente para niños en crecimiento con características de seguridad y diseños divertidos."
+      }
+    },
+    "findFit": {
+      "title": "Encuentre Su Ajuste Perfecto",
+      "description": "Nuestros estilistas expertos en monturas le ayudarán a descubrir anteojos que complementen la forma de su cara, estilo de vida y preferencias de estilo personal.",
+      "ctaButton": "Reservar Consulta de Estilo"
+    }
+  },
+  "featuredBrands": {
+    "title": "Marcas",
+    "highlight": "de Diseñador",
+    "subtitle": "Destacadas",
+    "description": "Llevamos una extensa colección de anteojos de diseñador premium de las marcas más prestigiosas del mundo.",
+    "exploreStyles": "Explorar Todos los Estilos"
+  },
+  "tryOnExperience": {
+    "title": {
+      "prefix": "La Experiencia del",
+      "highlight": "Ajuste",
+      "suffix": "Perfecto"
+    },
+    "description": "En el Centro de Cuidado Ocular de OC, creemos que encontrar los anteojos perfectos debe ser una experiencia agradable y gratificante. Nuestros estilistas expertos en monturas le guían a través de nuestra colección curada para encontrar monturas que complementen sus características únicas y estilo de vida.",
+    "steps": {
+      "consultation": {
+        "title": "Consulta de Estilo Personal",
+        "description": "Nuestros especialistas analizan la forma de su cara, tono de piel y estilo personal para recomendar monturas que realcen sus características naturales."
+      },
+      "tryBefore": {
+        "title": "Pruebe Antes de Comprar",
+        "description": "Pruebe una amplia gama de monturas en nuestro showroom cómodo con orientación experta y comentarios honestos de nuestro personal experimentado."
+      },
+      "fitting": {
+        "title": "Ajuste y Ajustes de Precisión",
+        "description": "Nuestros ópticos certificados aseguran que sus nuevos anteojos se ajusten perfectamente con mediciones profesionales y ajustes para comodidad óptima."
+      }
+    },
+    "buttonText": "Reservar Cita de Estilismo",
+    "showcase": {
+      "title": "Experiencia de Prueba Virtual",
+      "description": "Experimente nuestras monturas antes de comprar"
+    }
+  },
+  "eyewearCTA": {
+    "title": "Encuentre Sus Anteojos Perfectos Hoy",
+    "description": "Experimente nuestros servicios integrales de anteojos con ajuste experto, monturas de diseñador premium y tecnologías de lentes avanzadas adaptadas a sus necesidades únicas de visión.",
+    "stylingTitle": "Consulta de Estilo Personal",
+    "stylingDescription": "Nuestros ópticos certificados le ayudarán a encontrar monturas que complementen perfectamente la forma de su cara, estilo de vida y preferencias de estilo personal.",
+    "bookAppointment": "Reservar Cita",
+    "showroomTitle": "Visite Nuestro Showroom",
+    "showroomDescription": "Explore nuestra extensa colección de monturas de diseñador y tecnologías de lentes avanzadas en nuestro entorno de showroom cómodo y moderno.",
+    "getDirections": "Obtener Direcciones",
+    "promise": "Nuestra Promesa para Usted",
+    "warranty": "Garantía de 1 año en todas las monturas y lentes",
+    "adjustments": "Ajustes y limpiezas gratuitos de por vida",
+    "satisfaction": "Garantía de satisfacción del 100%",
+    "insurance": "Se aceptan la mayoría de planes de seguro"
+  },
+  "common": {
+    "learnMore": "Aprende Más",
+    "scheduleAppointment": "Programar Cita",
+    "contactUs": "Contáctanos"
+  },
+  "appointment": {
+    "title": "Solicitar Cita",
+    "description": "Enviaremos un correo a nuestra oficina para programar su cita. Por favor incluya la información a continuación en su correo.",
+    "includeTitle": "Por Favor Incluya:",
+    "include": {
+      "name": "Su nombre completo",
+      "phone": "Número de teléfono celular",
+      "insurance": "Información del seguro",
+      "contact": "Mejor forma de contactarle"
+    },
+    "cancel": "Cancelar",
+    "sendEmail": "Enviar Solicitud por Correo",
+    "emailSubject": "Solicitud de Cita",
+    "emailBody": "Hola,\n\nMe gustaría programar una cita.\n\nMi Información:\nNombre: [Su Nombre Completo]\nTeléfono: [Su Teléfono Celular]\nSeguro: [Información de Su Seguro]\nMejor Método de Contacto: [Teléfono/Correo/Texto]\nFecha/Hora Preferida: [Su Preferencia]\n\n¡Gracias!",
+    "patientInfo": {
+      "title": "Información del Paciente",
+      "fullName": "Nombre Completo",
+      "fullNamePlaceholder": "Ingrese su nombre completo",
+      "phone": "Teléfono",
+      "phonePlaceholder": "Número de teléfono",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "Dirección de correo electrónico"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contáctenos - Programe Su Cita",
+      "subtitle": "Programe su cita o póngase en contacto con nuestro equipo. Estamos aquí para responder sus preguntas y brindar el cuidado ocular que merece.",
+      "buttonText": "Programe Su Cita Hoy"
+    },
+    "form": {
+      "name": "Su Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "(555) 123-4567",
+      "email": "Dirección de Correo",
+      "emailPlaceholder": "sunombre@ejemplo.com",
+      "reason": "Motivo de Contacto",
+      "reasonGeneral": "Consulta General",
+      "reasonAppointment": "Programar Cita",
+      "reasonGlasses": "Anteojos/Lentes de Contacto",
+      "reasonBilling": "Pregunta de Facturación",
+      "reasonFeedback": "Comentarios",
+      "reasonOther": "Otro",
+      "message": "Su Mensaje",
+      "messagePlaceholder": "¿Cómo podemos ayudarle hoy?",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "sent": "Enviado Exitosamente",
+      "successTitle": "¡Mensaje Enviado!",
+      "successDescription": "Hemos recibido su mensaje y le responderemos pronto."
+    },
+    "scheduleOnline": "Programar en Línea",
+    "scheduleDesc": "Reserve su cita instantáneamente a través de nuestro conveniente sistema de programación en línea.",
+    "bookAppointment": "Reservar Cita",
+    "callDirectly": "Llámenos Directamente",
+    "callDesc": "Hable con nuestro personal amigable para programar su cita o hacer cualquier pregunta.",
+    "emergency": {
+      "title": "¿Emergencia Ocular?",
+      "description": "Si está experimentando una emergencia ocular, por favor llame a nuestra oficina inmediatamente o vaya a la sala de emergencias más cercana."
+    }
+  },
+  "home": {
+    "seo": {
+      "title": "Centro de Cuidado Ocular de Orange County | Dr. Bonakdar | Cuidado de Visión Avanzado",
+      "description": "Centro líder de cuidado ocular en Orange County que ofrece exámenes oculares completos, tratamiento de ojo seco, manejo de queratocono, lentes de contacto especializados y terapia de visión avanzada. Dr. Alexander Bonakdar proporciona cuidado ocular experto en Santa Ana, North Tustin, Irvine y áreas circundantes.",
+      "keywords": "oculista Orange County, optometrista Santa Ana, examen ocular North Tustin, tratamiento ojo seco Orange County, especialista queratocono California, lentes esclerales Orange County, terapia IPL tratamiento ocular, tratamiento LipiFlow ojo seco, terapia visual Orange County, especialista adaptación lentes contacto, clínica cuidado ocular Santa Ana, examen ocular completo Orange County, corrección visión Orange County, oculista cerca de mi Santa Ana, mejor optometrista Orange County, cuidado ocular avanzado California, lentes contacto especializados Orange County, cross linking corneal Orange County, manejo miopía Orange County, ortoqueratología Orange County, tratamiento fatiga ocular Orange County, tratamiento síndrome visión computadora, detección glaucoma Orange County, evaluación cataratas Orange County, examen ocular diabético Orange County, tratamiento degeneración macular, imagen retinal Orange County, escaneo OCT Orange County, prueba campo visual Orange County, revisión presión ocular Orange County, anteojos recetados Orange County, monturas diseñador Orange County, lentes progresivos Orange County, lentes bifocales Orange County, recubrimiento antirreflejo Orange County, protección luz azul anteojos, visión deportiva Orange County, cuidado ocular pediátrico Orange County, cuidado ocular geriátrico Orange County, ayudas baja visión Orange County, cuidado ocular emergencia Orange County, tratamiento ojo rojo Orange County, tratamiento infección ocular, remoción cuerpo extraño ojo, tratamiento lesión ocular, seguro visión Orange County, VSP Orange County, EyeMed Orange County, Blue Cross visión, Aetna visión, Medicare visión, Medi-Cal visión"
+    },
+    "hero": {
+      "title": "Cuidado de Visión Avanzado para",
+      "titleHighlight": "Orange County",
+      "subtitle": "Dr. Alexander Bonakdar | Centro Líder de Cuidado Ocular",
+      "description": "Experimente el futuro del cuidado ocular con tratamientos innovadores para ojo seco, queratocono y salud visual integral.",
+      "serving": "Sirviendo",
+      "cities": "Santa Ana, Irvine, Newport Beach, Tustin, Costa Mesa y todo Orange County",
+      "cta": "Solicitar Consulta"
+    },
+    "services": {
+      "titleHighlight": "Servicios Especializados",
+      "title": "de Cuidado Ocular",
+      "description": "Nuestro enfoque integral combina tecnología de vanguardia con cuidado personalizado para abordar todas sus necesidades de visión.",
+      "service1": {
+        "title": "Exámenes Oculares Completos",
+        "description": "Evaluaciones completas de visión utilizando tecnología de diagnóstico avanzada para detectar y prevenir condiciones oculares temprano."
+      },
+      "service2": {
+        "title": "Tratamientos Avanzados",
+        "description": "Terapias de última generación para ojo seco, queratocono y otras condiciones oculares complejas usando las últimas innovaciones médicas."
+      },
+      "service3": {
+        "title": "Cuidado Personalizado",
+        "description": "Planes de tratamiento personalizados adaptados a sus necesidades únicas de visión y requisitos de estilo de vida."
+      }
+    },
+    "results": {
+      "title": "Resultados Reales",
+      "titleHighlight": "de Tratamiento",
+      "titleEnd": "",
+      "description": "Vea las mejoras notables que experimentan nuestros pacientes con nuestros tratamientos avanzados de cuidado ocular y terapias especializadas.",
+      "beforeLabel": "Antes del Tratamiento",
+      "afterLabel": "Después del Tratamiento"
+    },
+    "stats": {
+      "title": "Nuestro Impacto en Números",
+      "patients": "Pacientes Atendidos",
+      "years": "Años de Experiencia",
+      "satisfaction": "Satisfacción del Paciente",
+      "treatments": "Opciones de Tratamiento"
+    },
+    "testimonials": {
+      "title": "Historias de Éxito",
+      "titleHighlight": "de Pacientes",
+      "titleEnd": "",
+      "description": "Descubra cómo nuestros tratamientos especializados han transformado las vidas de pacientes en todo Orange County.",
+      "testimonial1": {
+        "quote": "La experiencia del Dr. Bonakdar en el tratamiento de ojo seco ha transformado completamente mi calidad de vida. Después de años de incomodidad, finalmente encontré alivio con las terapias especializadas en el Centro de Cuidado Ocular de OC.",
+        "name": "Sarah L.",
+        "date": "Marzo 2023",
+        "location": "Irvine, CA"
+      },
+      "testimonial2": {
+        "quote": "Las pruebas de diagnóstico avanzadas en el Centro de Cuidado Ocular de OC detectaron mi queratocono en etapa temprana, permitiendo un tratamiento proactivo que salvó mi visión. ¡No puedo agradecer lo suficiente al Dr. Bonakdar y su equipo!",
+        "name": "Michael T.",
+        "date": "Enero 2023",
+        "location": "Santa Ana, CA"
+      },
+      "testimonial3": {
+        "quote": "Desde el examen ocular completo hasta el plan de cuidado personalizado, cada aspecto de mi experiencia en el Centro de Cuidado Ocular de OC ha sido excepcional. Su enfoque del cuidado de la visión es verdaderamente inigualable.",
+        "name": "David R.",
+        "date": "Abril 2023",
+        "location": "Newport Beach, CA"
+      }
+    },
+    "vendors": {
+      "title": "Socios Tecnológicos de Confianza",
+      "description": "Colaboramos con fabricantes líderes para brindarle las soluciones de cuidado ocular más avanzadas disponibles."
+    },
+    "locations": {
+      "title": "Sirviendo Todo",
+      "titleHighlight": "Orange County",
+      "services": "Servicios de Cuidado Ocular"
+    }
+  }
+}

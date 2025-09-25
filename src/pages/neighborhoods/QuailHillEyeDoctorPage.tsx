@@ -1,0 +1,40 @@
+import React from 'react';
+import LocationPageTemplate from '@/components/LocationPageTemplate';
+
+const QuailHillEyeDoctorPage = () => {
+  const pageData = {
+    city: "Quail Hill, Irvine",
+    neighborhoods: [
+      "Located in the heart of Quail Hill",
+      "Serving families near Shady Canyon Golf Club and Quail Hill Shopping Center",
+      "Convenient to Bonita Canyon Elementary and Jeffrey Trail Middle School",
+      "Close to Quail Hill Community Center and Strawberry Farms Golf Club",
+      "Easy access from Sand Canyon Avenue, Culver Drive, and Bake Parkway",
+      "Trusted by Quail Hill families for over 30 years"
+    ],
+    driveTime: "10 minutes",
+    testimonials: [
+      {
+        quote: "Dr. Bonakdar diagnosed my keratoconus when other doctors missed it. His scleral contact lenses transformed my quality of life. I can now enjoy golf at Shady Canyon with crystal clear vision.",
+        author: "Robert Johnson",
+        location: "Quail Hill"
+      },
+      {
+        quote: "The comprehensive eye exam revealed early signs of macular degeneration. Dr. Bonakdar's proactive treatment plan has preserved my vision and given me peace of mind.",
+        author: "Linda Chang",
+        location: "Quail Hill"
+      },
+      {
+        quote: "My teenage son needed specialty contact lenses for his irregular astigmatism. Dr. Bonakdar's expertise and patience made all the difference in finding the perfect fit.",
+        author: "Patricia Miller",
+        location: "Quail Hill"
+      }
+    ],
+    seoKeywords: "quail hill eye doctor, quail hill optometrist, eye exam quail hill irvine, quail hill keratoconus specialist",
+    metaDescription: "Expert eye doctor serving Quail Hill, Irvine. Dr. Bonakdar provides comprehensive eye care near Shady Canyon Golf Club. Same-week appointments. (949) 658-2372"
+  };
+
+  return <LocationPageTemplate {...pageData} />;
+};
+
+export default QuailHillEyeDoctorPage;

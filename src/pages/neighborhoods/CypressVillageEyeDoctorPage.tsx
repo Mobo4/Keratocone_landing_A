@@ -1,0 +1,40 @@
+import React from 'react';
+import LocationPageTemplate from '@/components/LocationPageTemplate';
+
+const CypressVillageEyeDoctorPage = () => {
+  const pageData = {
+    city: "Cypress Village, Irvine",
+    neighborhoods: [
+      "Located in the heart of Cypress Village",
+      "Serving families near Jeffrey Open Space Trail and Cypress Village Community Center",
+      "Convenient to Cypress Village Elementary and Jeffrey Trail Middle School",
+      "Close to Woodbury Town Center and Irvine Spectrum Center",
+      "Easy access from Jeffrey Road, Irvine Center Drive, and Portola Parkway",
+      "Trusted by Cypress Village families for over 30 years"
+    ],
+    driveTime: "15 minutes",
+    testimonials: [
+      {
+        quote: "My corneal transplant required specialty contact lens fitting that only Dr. Bonakdar could provide. His post-surgical care and lens expertise restored my vision beautifully.",
+        author: "Catherine Davis",
+        location: "Cypress Village"
+      },
+      {
+        quote: "Dr. Bonakdar's keratoconus management with scleral lenses changed everything. I can now enjoy cycling on Jeffrey Trail with perfect clarity and comfort.",
+        author: "Brian Johnson",
+        location: "Cypress Village"
+      },
+      {
+        quote: "The comprehensive glaucoma screening caught my condition early. Dr. Bonakdar's proactive monitoring and treatment have preserved my sight.",
+        author: "Nancy Chen",
+        location: "Cypress Village"
+      }
+    ],
+    seoKeywords: "cypress village eye doctor, cypress village optometrist, eye exam cypress village irvine, cypress village keratoconus specialist",
+    metaDescription: "Expert eye doctor serving Cypress Village, Irvine. Dr. Bonakdar provides comprehensive eye care near Jeffrey Open Space. Same-week appointments. (949) 658-2372"
+  };
+
+  return <LocationPageTemplate {...pageData} />;
+};
+
+export default CypressVillageEyeDoctorPage;

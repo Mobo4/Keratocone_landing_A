@@ -1,0 +1,72 @@
+
+GOOGLE SEARCH CONSOLE SETUP - STEP BY STEP
+
+1. ACCESS SEARCH CONSOLE:
+   → Go to: https://search.google.com/search-console
+   → Sign in with Google account
+
+2. ADD PROPERTY:
+   → Click "Add Property"
+   → Select "URL prefix"
+   → Enter: https://www.eyecarecenteroc.com
+   → Click "Continue"
+
+3. VERIFY OWNERSHIP (Choose ONE method):
+
+   METHOD A - HTML FILE VERIFICATION:
+   → Download verification file from Search Console
+   → Upload to website root: https://www.eyecarecenteroc.com/google[code].html
+   → Click "Verify"
+
+   METHOD B - HTML TAG VERIFICATION:
+   → Copy meta tag from Search Console
+   → Add to website <head> section:
+     <meta name="google-site-verification" content="[code]" />
+   → Click "Verify"
+
+   METHOD C - DNS VERIFICATION:
+   → Add TXT record to DNS:
+     Name: @
+     Value: google-site-verification=[code]
+   → Wait for DNS propagation (24-48 hours)
+   → Click "Verify"
+
+4. SUBMIT SITEMAP:
+   → In Search Console, go to "Sitemaps"
+   → Click "Add a new sitemap"
+   → Enter: sitemap.xml
+   → Click "Submit"
+
+5. REQUEST INDEXING FOR PRIORITY PAGES:
+   → Go to "URL Inspection"
+   → Enter each URL:
+     https://www.eyecarecenteroc.com/
+     https://www.eyecarecenteroc.com/about
+     https://www.eyecarecenteroc.com/services
+     https://www.eyecarecenteroc.com/contact
+     https://www.eyecarecenteroc.com/conditions/keratoconus
+     https://www.eyecarecenteroc.com/conditions/dry-eye
+     https://www.eyecarecenteroc.com/conditions/cataracts
+     https://www.eyecarecenteroc.com/conditions/glaucoma
+     https://www.eyecarecenteroc.com/lasik
+     https://www.eyecarecenteroc.com/eyewear
+   → Click "Request Indexing" for each
+
+6. MONITOR PROGRESS:
+   → Check "Coverage" report daily
+   → Monitor "Performance" for search traffic
+   → Review "Enhancements" for any issues
+
+✅ AUTOMATED SUBMISSIONS ALREADY COMPLETED:
+   → IndexNow Protocol: Successful (HTTP 202)
+   → Bing IndexNow: Successful (HTTP 202)
+   → Search Engine Notifications: Sent
+   → Priority Pages: Submitted
+   → Monitoring Scripts: Created
+
+🕐 EXPECTED TIMELINE:
+   → Search Console verification: Immediate
+   → Initial crawling: 24-48 hours
+   → Sitemap processing: 1-3 days
+   → Full indexing: 1-2 weeks
+   → Search visibility: 2-4 weeks
