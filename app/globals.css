@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+  --font-serif: var(--font-playfair);
+  --font-mono: monospace;
+
+  /* Custom colors for eyecare - Mayo/Parsley Inspired */
+  --color-eyecare-blue: #004E7C;
+  /* Deep Medical Blue */
+  --color-eyecare-light-blue: #0077B6;
+  /* Trust Blue */
+  --color-eyecare-lighter-blue: #E8F3F1;
+  /* Sage/Mint Accent */
+  --color-eyecare-dark-blue: #003B5C;
+  --color-eyecare-darker-blue: #002A41;
+  --color-eyecare-navy: #1A1A1A;
+  /* Almost Black for Text */
+  --color-eyecare-light-navy: #334155;
+  --color-eyecare-gray: #64748B;
+  --color-eyecare-light-gray: #94A3B8;
+  --color-eyecare-warm: #F9F7F2;
+  /* Warm Sand Background */
+  --color-eyecare-gold: #D4AF37;
+  /* Accent for Awards */
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
