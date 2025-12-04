@@ -37,7 +37,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
                                 Keratoconus Vision Center
                             </span>
                             <span className="text-xs font-medium text-eyecare-blue tracking-widest uppercase mt-0.5">
-                                Dr. Alexander Bonakdar
+                                A Keratoconus Center of Excellence
                             </span>
                         </div>
                     </Link>
@@ -71,7 +71,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
             {/* Footer */}
             <footer className="bg-eyecare-navy text-white py-12 border-t border-white/10 pb-24 lg:pb-12">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left mb-8">
                         <div>
                             <p className="font-bold text-lg mb-2 font-serif">Keratoconus Vision Center</p>
                             <p className="text-white/60 text-sm">
@@ -89,6 +89,23 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
                             <p className="text-white/40 text-xs">
                                 © {new Date().getFullYear()} Dr. Alexander Bonakdar. All rights reserved.
                             </p>
+                        </div>
+                    </div>
+
+                    {/* Payment Options */}
+                    <div className="border-t border-white/10 pt-8 flex flex-col items-center justify-center">
+                        <p className="text-white/40 text-xs mb-4 uppercase tracking-widest">Accepted Payment Methods</p>
+                        <div className="flex flex-wrap justify-center gap-4 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
+                            {/* Simple text/icon placeholders for now as we don't have SVGs, but styled nicely */}
+                            <div className="flex gap-3 items-center">
+                                <span className="bg-white text-eyecare-navy px-2 py-1 rounded text-xs font-bold">VISA</span>
+                                <span className="bg-white text-eyecare-navy px-2 py-1 rounded text-xs font-bold">MC</span>
+                                <span className="bg-white text-eyecare-navy px-2 py-1 rounded text-xs font-bold">AMEX</span>
+                                <span className="bg-white text-eyecare-navy px-2 py-1 rounded text-xs font-bold">DISCOVER</span>
+                                <span className="bg-white text-eyecare-navy px-2 py-1 rounded text-xs font-bold">CARECREDIT</span>
+                                <span className="bg-white text-eyecare-navy px-2 py-1 rounded text-xs font-bold">ALIPAY</span>
+                                <span className="bg-white text-eyecare-navy px-2 py-1 rounded text-xs font-bold">WECHAT</span>
+                            </div>
                         </div>
                     </div>
                 </div>

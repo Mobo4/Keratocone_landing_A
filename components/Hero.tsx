@@ -27,8 +27,11 @@ export default function LandingHero({
     phoneHref = 'tel:+17145580641'
 }: HeroProps) {
     return (
-        <section className="relative bg-gradient-to-br from-blue-50 to-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-            <div className="container mx-auto px-4">
+        <section className="relative bg-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+            {/* Animated Background Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50 opacity-70 animate-pulse-slow"></div>
+
+            <div className="container mx-auto px-4 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
                     <div className="relative z-10">
                         <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-1.5 rounded-full text-sm font-bold mb-6">

@@ -6,6 +6,8 @@ import KeratoconusQuiz from '@/components/KeratoconusQuiz';
 
 import LandingLayout from '@/components/LandingLayout';
 import FadeIn from '@/components/FadeIn';
+import InsuranceSection from '@/components/InsuranceSection';
+import Testimonials from '@/components/Testimonials';
 
 export default function LandingPage() {
   return (
@@ -109,6 +111,64 @@ export default function LandingPage() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Real Patient Stories - Video Placeholder */}
+      <Testimonials />
+
+      {/* Advanced Technology - Topography Placeholder */}
+      <section className="py-24 bg-eyecare-lighter-blue">
+        <div className="container mx-auto px-4">
+          <FadeIn>
+            <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+              <div>
+                <h2 className="text-3xl font-bold text-eyecare-navy font-serif mb-6">Precision Mapping Technology</h2>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                  We don't guess. We map your cornea with microscopic precision using advanced topography. This allows us to design a lens that vaults over the irregular "cone" shape of your eye, providing a new, perfectly smooth optical surface.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-eyecare-blue rounded-full"></div>
+                    <span className="text-gray-700 font-medium">Detailed Corneal Elevation Maps</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-eyecare-blue rounded-full"></div>
+                    <span className="text-gray-700 font-medium">Custom Wavefront Optics</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-eyecare-blue rounded-full"></div>
+                    <span className="text-gray-700 font-medium">Sub-Micron Fitting Accuracy</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="relative">
+                <div className="bg-white p-4 rounded-2xl shadow-xl border border-eyecare-blue/10 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                  <div className="aspect-[4/3] bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden relative">
+                    {/* Placeholder for Topography Image */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-green-500 opacity-20"></div>
+                    <p className="text-gray-500 font-semibold z-10">Corneal Topography Map</p>
+                    <p className="text-xs text-gray-400 absolute bottom-4">(Visualizing the irregular cone)</p>
+                  </div>
+                  <p className="text-center mt-4 text-sm font-bold text-eyecare-navy">Advanced Diagnostic Mapping</p>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      import InsuranceSection from '@/components/InsuranceSection';
+
+      // ... (imports)
+
+      // ... (inside component)
+
+      {/* Advanced Technology - Topography Placeholder */}
+      <section className="py-24 bg-eyecare-lighter-blue">
+        {/* ... (existing content) ... */}
+      </section>
+
+      {/* Insurance Section */}
+      <InsuranceSection />
 
       {/* Why Choose Us / Medical Credibility */}
       <section className="bg-eyecare-warm py-24 px-4 sm:px-6 lg:px-8">
