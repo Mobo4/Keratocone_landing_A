@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CheckCircle, Star, Phone, ArrowRight } from 'lucide-react';
+import { Phone, Calendar, CheckCircle } from 'lucide-react';
 
 interface HeroProps {
     headline: string;
@@ -16,111 +16,186 @@ interface HeroProps {
     phoneHref?: string;
 }
 
-export default function LandingHero({
+// Custom Center/Tech Badge Component
+const CenterBadge = ({ centered = false, darkText = false }: { centered?: boolean, darkText?: boolean }) => (
+    <div className={`flex items-center gap-3 md:gap-4 mb-6 md:mb-8 animate-fade-in-up-delay-1 ${centered ? 'justify-center' : ''}`}>
+        <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0 shadow-lg border-[1px] ${darkText ? 'bg-eyecare-blue/5 border-eyecare-blue/20' : 'bg-white/10 backdrop-blur-md border-white/30'}`}>
+            <CheckCircle className={`w-6 h-6 md:w-7 md:h-7 ${darkText ? 'text-eyecare-blue' : 'text-white'}`} />
+        </div>
+        <div>
+            <p className={`text-xs md:text-sm uppercase tracking-wider font-medium ${darkText ? 'text-eyecare-light-navy' : 'text-white/70'}`}>Official Designation</p>
+            <p className={`text-sm md:text-base font-bold ${darkText ? 'text-eyecare-navy' : 'text-white'}`}>Keratoconus Vision Center</p>
+        </div>
+    </div>
+);
+
+// --- Mobile Hero (Light Theme // 2025 Best Practices) ---
+function MobileHero({
     headline,
     subheadline,
     imageSrc,
-    ctaText = "Schedule Your Assessment",
-    ctaLink = "#appointment",
-    benefits = [],
-    phoneNumber = '(714) 558-0641',
-    phoneHref = 'tel:+17145580641'
+    ctaText,
+    ctaLink,
+    benefits,
+    phoneNumber,
+    phoneHref
 }: HeroProps) {
     return (
-        <section className="relative bg-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-            {/* Animated Background Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50 opacity-70 animate-pulse-slow"></div>
+        <section className="relative w-full bg-gradient-to-b from-blue-50 to-white overflow-hidden pb-48 pt-40 md:hidden">
+            <div className="container mx-auto px-4">
 
-            <div className="container mx-auto px-4 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-                    <div className="relative z-10">
-                        <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
-                            <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-                            </span>
-                            Limited New Patients This Month
+                {/* 1. Header & Trust (Top of Thumb Zone) */}
+                <div className="text-center mb-6">
+                    <h1 className="text-3xl font-bold text-eyecare-navy mb-3 leading-tight font-serif tracking-tight">
+                        {headline}
+                    </h1>
+                    <CenterBadge centered darkText />
+                </div>
+
+                {/* 2. Visual Anchor (Middle, constrained height) */}
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl mb-6 border-4 border-white">
+                    <Image
+                        src={imageSrc}
+                        alt="Keratoconus Treatment Context"
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: '75% center' }}
+                        priority
+                    />
+                    {/* Floating Badge - Technology Focus */}
+                    <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur px-3 py-2 rounded-lg shadow-md border border-gray-100 flex items-center gap-2">
+                        <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+                            <CheckCircle className="w-3.5 h-3.5" />
                         </div>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                            {headline}
-                        </h1>
-                        <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                            {subheadline}
-                        </p>
-
-                        {benefits.length > 0 && (
-                            <ul className="space-y-3 mb-8">
-                                {benefits.map((benefit, idx) => (
-                                    <li key={idx} className="flex items-center gap-3 text-gray-700 font-medium">
-                                        <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
-                                        {benefit}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <Link
-                                href={ctaLink}
-                                className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 transition-all"
-                            >
-                                {ctaText}
-                                <ArrowRight className="ml-2 w-5 h-5" />
-                            </Link>
-                            <a
-                                href={phoneHref}
-                                className="inline-flex items-center justify-center bg-white text-slate-900 border-2 border-gray-200 px-8 py-4 rounded-full font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition-all"
-                            >
-                                <Phone className="mr-2 w-5 h-5" />
-                                {phoneNumber}
-                            </a>
-                        </div>
-
-                        <div className="mt-8 flex items-center gap-4 text-sm text-gray-500">
-                            <div className="flex -space-x-2">
-                                {[1, 2, 3, 4].map((i) => (
-                                    <div key={i} className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center overflow-hidden">
-                                        <span className="text-xs">👤</span>
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="flex flex-col">
-                                <div className="flex text-yellow-400">
-                                    {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-current" />)}
-                                </div>
-                                <span>Trusted by 10,000+ Patients</span>
-                            </div>
-                        </div>
+                        <span className="text-xs font-bold text-eyecare-navy">Advanced Scleral Tech</span>
                     </div>
+                </div>
 
-                    <div className="relative">
-                        <div className="absolute inset-0 bg-blue-600/5 rounded-[2rem] transform rotate-3 scale-105"></div>
-                        <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
-                            <Image
-                                src={imageSrc}
-                                alt="Treatment result"
-                                width={600}
-                                height={500}
-                                className="w-full h-full object-cover"
-                                priority
-                            />
+                {/* 3. Availability & Benefits Alert (New Content) */}
+                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-8">
+                    <p className="text-sm font-bold text-amber-800 mb-1">⚠️ Limited New Patient Availability</p>
+                    <p className="text-xs text-amber-700 leading-relaxed">
+                        Don't let your benefits expire. Take advantage of our financing specials before end of year.
+                    </p>
+                </div>
 
-                            {/* Floating Badge */}
-                            <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur px-6 py-4 rounded-xl shadow-lg border border-gray-100 max-w-xs">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                                        <CheckCircle className="w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-slate-900">Proven Results</p>
-                                        <p className="text-xs text-gray-500">FDA-Approved Technology</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                {/* 4. Value Proposition (Scannable list) */}
+                {benefits && benefits.length > 0 && (
+                    <ul className="grid grid-cols-1 gap-2 mb-8 px-2">
+                        {benefits.slice(0, 4).map((benefit, idx) => (
+                            <li key={idx} className="flex items-center gap-2.5 text-eyecare-light-navy">
+                                <CheckCircle className="w-4 h-4 text-eyecare-blue shrink-0" />
+                                <span className="text-sm font-medium">{benefit}</span>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+
+                {/* 4. Action Area (Bottom of Thumb Zone) */}
+                <div className="flex flex-col gap-3">
+                    <Link
+                        href={ctaLink || "#appointment"}
+                        className="flex items-center justify-center bg-eyecare-blue text-white w-full py-4 rounded-xl font-bold text-lg shadow-lg active:scale-[0.98] transition-all"
+                    >
+                        <Calendar className="w-5 h-5 mr-2" />
+                        {ctaText}
+                    </Link>
+
+                    <a
+                        href={phoneHref}
+                        className="flex items-center justify-center bg-white text-eyecare-navy border-2 border-gray-200 w-full py-3.5 rounded-xl font-bold text-base active:bg-gray-50 transition-all"
+                    >
+                        <Phone className="w-4 h-4 mr-2" />
+                        {phoneNumber}
+                    </a>
+                </div>
+
+                {/* Subheadline as reassuring footer text */}
+                <p className="mt-6 text-sm text-center text-gray-500 leading-relaxed px-2">
+                    {subheadline}
+                </p>
+
+            </div>
+        </section>
+    );
+}
+
+
+// --- Desktop Hero (Dark Theme // Existing Immersive) ---
+function DesktopHero({
+    headline,
+    subheadline,
+    imageSrc,
+    ctaText,
+    ctaLink,
+    benefits,
+    phoneNumber,
+    phoneHref
+}: HeroProps) {
+    return (
+        <section className="relative hidden md:block md:h-[600px] lg:h-[700px] overflow-hidden group">
+            {/* Background Image with Overlay and Slow Zoom */}
+            <div className="absolute inset-0 overflow-hidden">
+                <Image
+                    src={imageSrc}
+                    alt="Keratoconus Treatment"
+                    fill
+                    className="object-cover animate-slow-zoom"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/30 md:to-transparent"></div>
+            </div>
+
+            {/* Content */}
+            <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+                <div className="max-w-xl lg:max-w-2xl">
+                    <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up font-serif tracking-tight">
+                        {headline}
+                    </h1>
+                    <p className="text-2xl text-white/90 mb-8 leading-relaxed animate-fade-in-up-delay-1 font-light">
+                        {subheadline}
+                    </p>
+
+                    <CenterBadge />
+
+                    {benefits && benefits.length > 0 && (
+                        <ul className="grid grid-cols-2 gap-3 mb-10 animate-fade-in-up-delay-2">
+                            {benefits.map((benefit, idx) => (
+                                <li key={idx} className="flex items-center gap-2.5 text-white/95">
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0 drop-shadow-md" />
+                                    <span className="text-base font-medium">{benefit}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+
+                    <div className="flex gap-4 animate-fade-in-up-delay-2">
+                        <a
+                            href={phoneHref}
+                            className="inline-flex items-center justify-center bg-white text-eyecare-blue px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                        >
+                            <Phone className="w-5 h-5 mr-2.5" />
+                            {phoneNumber}
+                        </a>
+                        <Link
+                            href={ctaLink || "#appointment"}
+                            className="inline-flex items-center justify-center bg-eyecare-blue/90 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-eyecare-blue hover:scale-105 transition-all duration-300 shadow-lg"
+                        >
+                            <Calendar className="w-5 h-5 mr-2.5" />
+                            {ctaText}
+                        </Link>
                     </div>
                 </div>
             </div>
         </section>
+    );
+}
+
+export default function LandingHero(props: HeroProps) {
+    return (
+        <>
+            <MobileHero {...props} />
+            <DesktopHero {...props} />
+        </>
     );
 }

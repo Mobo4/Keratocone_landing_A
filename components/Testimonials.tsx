@@ -31,7 +31,7 @@ export default function Testimonials() {
                     </div>
 
                     {/* Mobile: Horizontal Scroll / Desktop: Grid */}
-                    <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-2 md:overflow-visible md:pb-0 max-w-5xl mx-auto scrollbar-hide">
+                    <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-2 md:overflow-visible md:pb-0 max-w-5xl mx-auto scrollbar-hide -mx-4 px-4 md:mx-auto md:px-0">
                         {testimonials.map((t, idx) => (
                             <div key={idx} className="min-w-[85vw] md:min-w-0 snap-center">
                                 <div className="bg-gray-100 rounded-2xl aspect-video flex items-center justify-center relative group cursor-pointer overflow-hidden shadow-lg border border-gray-200 transform transition-transform hover:scale-[1.02] active:scale-95">

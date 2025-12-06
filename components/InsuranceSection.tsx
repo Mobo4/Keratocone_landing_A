@@ -25,7 +25,7 @@ const medicalInsurances = [
 
 export default function InsuranceSection() {
     return (
-        <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <section className="py-16 bg-eyecare-warm border-t border-eyecare-blue/10">
             <div className="container mx-auto px-4">
                 <FadeIn>
                     <div className="text-center mb-12">
