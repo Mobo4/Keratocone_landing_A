@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "National Keratoconus Center of Excellence | Dr. Alexander Bonakdar",
   description: "Specialized scleral lens treatment for keratoconus in Santa Ana, CA. Trusted referral center for CHOC and UCI Medical Center.",
   keywords: "Keratoconus, Scleral Lenses, Dr. Alexander Bonakdar, Keratoconus Specialist, Santa Ana, Orange County",
+  verification: {
+    google: "F5X39sjVBm4JdkKpMca-KHFHorfanDdj9v80GLYhtA8",
+  },
 };
 
 export default function RootLayout({

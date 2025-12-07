@@ -25,7 +25,7 @@ export default function LeadForm() {
                         <>
                             <iframe
                                 src="https://api.leadconnectorhq.com/widget/form/S46Hm1vAonUtBdqghoGW"
-                                style={{ width: '100%', height: '100%', border: 'none', minHeight: '600px' }}
+                                style={{ width: '100%', height: '100%', border: 'none', minHeight: '1700px' }}
                                 id="inline-S46Hm1vAonUtBdqghoGW"
                                 data-layout="{'id':'INLINE'}"
                                 data-trigger-type="alwaysShow"

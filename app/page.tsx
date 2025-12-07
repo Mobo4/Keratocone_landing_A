@@ -27,16 +27,17 @@ export default function LandingPage() {
         ctaLink="#lead-form"
         imageSrc="/images/keratoconus-main.webp"
         phoneNumber="(714) 558-0641"
+        priority={true}
       />
 
       {/* Credentials & Authority Section */}
-      <section className="py-24 bg-eyecare-navy text-white">
+      <section className="py-24 bg-gradient-to-br from-[#faf9f6] via-[#f0eadd] to-[#e6dfd1]">
         <div className="container mx-auto px-4">
           <FadeIn>
             <div className="max-w-5xl mx-auto">
               <div className="grid md:grid-cols-3 gap-12 items-center">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-eyecare-blue mb-6 shadow-2xl">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-eyecare-navy mb-6 shadow-2xl">
                     <img
                       src="/images/drbonakdar.webp"
                       alt="Dr. Alexander Bonakdar"
@@ -44,23 +45,23 @@ export default function LandingPage() {
                       style={{ objectPosition: 'center 30%' }}
                     />
                   </div>
-                  <p className="text-base md:text-sm text-eyecare-light-blue font-bold tracking-widest uppercase mb-2">Keratoconus Vision Center</p>
-                  <h3 className="text-2xl font-bold mb-1 font-serif">Dr. Alexander Bonakdar</h3>
-                  <p className="text-base md:text-sm text-gray-400">20+ Years Experience</p>
+                  <p className="text-base md:text-sm text-eyecare-navy font-bold tracking-widest uppercase mb-2">Keratoconus Vision Center</p>
+                  <h3 className="text-2xl font-bold mb-1 font-serif text-eyecare-navy">Dr. Alexander Bonakdar</h3>
+                  <p className="text-base md:text-sm text-gray-700">20+ Years Experience</p>
                 </div>
 
                 <div className="md:col-span-2 space-y-6">
                   <div className="flex items-start gap-3 md:gap-4">
-                    <div className="w-2 h-2 bg-eyecare-blue rounded-full mt-2 md:mt-2.5 shrink-0"></div>
-                    <p className="text-base md:text-lg text-gray-300 leading-relaxed"><span className="text-white font-semibold">Trusted Medical Referral Source</span> for CHOC (Children's Hospital of Orange County) and UCI Medical Center for complex keratoconus cases</p>
+                    <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2 md:mt-2.5 shrink-0"></div>
+                    <p className="text-base md:text-lg text-gray-800 leading-relaxed"><span className="text-eyecare-navy font-bold">Trusted Medical Referral Source</span> for CHOC (Children's Hospital of Orange County) and UCI Medical Center for complex keratoconus cases</p>
                   </div>
                   <div className="flex items-start gap-3 md:gap-4">
-                    <div className="w-2 h-2 bg-eyecare-blue rounded-full mt-2 md:mt-2.5 shrink-0"></div>
-                    <p className="text-base md:text-lg text-gray-300 leading-relaxed"><span className="text-white font-semibold">Advanced Technology:</span> State-of-the-art corneal topography and diagnostic equipment for the most challenging fits</p>
+                    <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2 md:mt-2.5 shrink-0"></div>
+                    <p className="text-base md:text-lg text-gray-800 leading-relaxed"><span className="text-eyecare-navy font-bold">Advanced Technology:</span> State-of-the-art corneal topography and diagnostic equipment for the most challenging fits</p>
                   </div>
                   <div className="flex items-start gap-3 md:gap-4">
-                    <div className="w-2 h-2 bg-eyecare-blue rounded-full mt-2 md:mt-2.5 shrink-0"></div>
-                    <p className="text-base md:text-lg text-gray-300 leading-relaxed"><span className="text-white font-semibold">Specialized Expertise:</span> When other doctors say your case is "too difficult," that's where our expertise begins</p>
+                    <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2 md:mt-2.5 shrink-0"></div>
+                    <p className="text-base md:text-lg text-gray-800 leading-relaxed"><span className="text-eyecare-navy font-bold">Specialized Expertise:</span> When other doctors say your case is "too difficult," that's where our expertise begins</p>
                   </div>
                 </div>
               </div>
@@ -209,33 +210,9 @@ export default function LandingPage() {
       <section id="lead-form" className="py-12 md:py-24 bg-eyecare-lighter-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden border border-eyecare-blue/10">
-              <div className="grid lg:grid-cols-2">
-                {/* Form first on mobile (order reversed) */}
-                <div className="p-6 md:p-12 lg:p-16 order-1 lg:order-2">
-                  <LeadForm />
-                </div>
-                {/* Info panel second on mobile */}
-                <div className="p-6 md:p-12 lg:p-16 bg-eyecare-navy text-white flex flex-col justify-center order-2 lg:order-1">
-                  <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-6 font-serif">Schedule Your Consultation</h2>
-                  <p className="text-sm md:text-base lg:text-lg text-gray-300 mb-4 md:mb-8 leading-relaxed">
-                    Don't let keratoconus limit your life. Start your journey to clear vision today.
-                  </p>
-                  <ul className="space-y-2 md:space-y-4">
-                    <li className="flex items-center gap-2 md:gap-3">
-                      <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-500 flex items-center justify-center text-white text-xs md:text-sm shrink-0">✓</div>
-                      <span className="text-sm md:text-base lg:text-lg">Comprehensive Corneal Analysis</span>
-                    </li>
-                    <li className="flex items-center gap-2 md:gap-3">
-                      <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-500 flex items-center justify-center text-white text-xs md:text-sm shrink-0">✓</div>
-                      <span className="text-sm md:text-base lg:text-lg">Custom Scleral Lens Trial</span>
-                    </li>
-                    <li className="flex items-center gap-2 md:gap-3">
-                      <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-500 flex items-center justify-center text-white text-xs md:text-sm shrink-0">✓</div>
-                      <span className="text-sm md:text-base lg:text-lg">Personalized Treatment Plan</span>
-                    </li>
-                  </ul>
-                </div>
+            <div className="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden border border-eyecare-blue/10 max-w-3xl mx-auto">
+              <div className="p-6 md:p-12 lg:p-16">
+                <LeadForm />
               </div>
             </div>
           </FadeIn>
