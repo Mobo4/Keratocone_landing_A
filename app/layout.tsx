@@ -1,8 +1,10 @@
+
 import type { Metadata } from "next";
 import { Poppins, Playfair_Display } from 'next/font/google';
 import "./globals.css";
 import ChatWidget from "@/components/ChatWidget";
 import GoogleTag from "@/components/GoogleTag";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -82,7 +84,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
         <GoogleTag />
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
         <ChatWidget />
       </body>
     </html>
