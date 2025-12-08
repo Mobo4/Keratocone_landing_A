@@ -172,6 +172,46 @@ export default function CityPage({ params }: Props) {
                 </div>
             </section>
 
+            {/* Insurance & Financing Section */}
+            <section className="py-16 bg-white border-t border-gray-100">
+                <div className="container mx-auto px-4 text-center">
+                    <h2 className="text-3xl font-serif font-bold text-eyecare-navy mb-4">Flexible Payment & Insurance Options</h2>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+                        We believe clear vision should be accessible. Our office accepts PPO Vision Plans and offers financing solutions for scleral lenses.
+                    </p>
+
+                    <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                        {/* Card 1: HSA/FSA */}
+                        <div className="p-6 bg-blue-50 rounded-xl border border-blue-100">
+                            <h3 className="font-bold text-xl text-eyecare-navy mb-2">HSA & FSA Accepted</h3>
+                            <p className="text-sm text-gray-600">
+                                Use your Health Savings Account (HSA) or Flexible Spending Account (FSA) pre-tax dollars for medically necessary contact lenses.
+                            </p>
+                        </div>
+
+                        {/* Card 2: Financing */}
+                        <div className="p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
+                            <h3 className="font-bold text-xl text-eyecare-navy mb-2">CareCredit Financing</h3>
+                            <p className="text-sm text-gray-600">
+                                We offer 0% interest financing options through CareCredit® to help make your dedicated keratoconus treatment affordable.
+                            </p>
+                        </div>
+
+                        {/* Card 3: Credit Cards */}
+                        <div className="p-6 bg-gray-50 rounded-xl border border-gray-200">
+                            <h3 className="font-bold text-xl text-eyecare-navy mb-2">Major Cards Accepted</h3>
+                            <div className="flex justify-center gap-3 mt-3 opacity-70">
+                                {/* Text representation for SEO, icons can be added if available */}
+                                <span className="font-bold text-slate-500">VISA</span>
+                                <span className="font-bold text-slate-500">MC</span>
+                                <span className="font-bold text-slate-500">AMEX</span>
+                                <span className="font-bold text-slate-500">DISCOVER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <LeadForm />
 
