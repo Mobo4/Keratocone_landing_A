@@ -22,9 +22,6 @@ export const metadata: Metadata = {
   title: "National Keratoconus Center of Excellence | Dr. Alexander Bonakdar",
   description: "Specialized scleral lens treatment for keratoconus in Santa Ana, CA. Trusted referral center for CHOC and UCI Medical Center.",
   keywords: "Keratoconus, Scleral Lenses, Dr. Alexander Bonakdar, Keratoconus Specialist, Santa Ana, Orange County",
-  verification: {
-    google: "F5X39sjVBm4JdkKpMca-KHFHorfanDdj9v80GLYhtA8",
-  },
 };
 
 export default function RootLayout({
@@ -35,7 +32,7 @@ export default function RootLayout({
   const schema = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "Keratoconus Vision Center",
+    "name": "Keratoconus Vision Center | Dr. Alexander Bonakdar",
     "image": "https://keratocones.com/images/drbonakdar.webp",
     "telephone": "(714) 558-0641",
     "address": {
@@ -46,9 +43,33 @@ export default function RootLayout({
       "postalCode": "92705",
       "addressCountry": "US"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "33.7599",
+      "longitude": "-117.8357"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/eyecarecenteroc",
+      "https://www.instagram.com/eyecarecenteroc",
+      "https://www.yelp.com/biz/alexander-bonakdar-od-santa-ana"
+    ],
     "url": "https://keratocones.com",
     "priceRange": "$$$",
-    "medicalSpecialty": "Optometry"
+    "medicalSpecialty": ["Optometry", "Keratoconus Treatment", "Scleral Lenses"]
   };
 
   return (
