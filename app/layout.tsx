@@ -28,12 +28,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Schema: "Specialty Site" Configuration (Strictly following Prompt 2)
   const schema = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "Keratoconus Vision Center | Dr. Alexander Bonakdar",
+    "@id": "https://keratocones.com/#organization",
+    "name": "Keratoconus Specialist Orange County",
+    "alternateName": "Keratoconus Vision Center",
+    "description": "Orange County's leading keratoconus treatment center. Expert scleral lens fitting, corneal cross-linking consultations, and specialized care for keratoconus patients.",
+    "url": "https://keratocones.com",
+    "logo": "https://keratocones.com/images/icon.png",
     "image": "https://keratocones.com/images/drbonakdar.webp",
-    "telephone": "(714) 558-0641",
+    "telephone": "+1-714-558-0641",
+    "email": "info@eyecarecenteroc.com",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "801 N Tustin Ave #401",
@@ -59,16 +67,48 @@ export default function RootLayout({
         "dayOfWeek": "Friday",
         "opens": "09:00",
         "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "14:00"
       }
     ],
+    "medicalSpecialty": [
+      "Optometry",
+      "Cornea and External Diseases"
+    ],
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "Keratoconus Diagnosis" },
+      { "@type": "MedicalProcedure", "name": "Keratoconus Treatment" },
+      { "@type": "MedicalProcedure", "name": "Scleral Lens Fitting" },
+      { "@type": "MedicalProcedure", "name": "Corneal Cross-Linking Consultation" },
+      { "@type": "MedicalProcedure", "name": "Corneal Topography" },
+      { "@type": "MedicalProcedure", "name": "Emergency Keratoconus Care" }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Irvine" },
+      { "@type": "City", "name": "Newport Beach" },
+      { "@type": "City", "name": "Costa Mesa" },
+      { "@type": "City", "name": "Tustin" },
+      { "@type": "City", "name": "Santa Ana" },
+      { "@type": "City", "name": "Orange" },
+      { "@type": "county", "name": "Orange County, California" }
+    ],
+    "paymentAccepted": ["Cash", "Credit Card", "VSP", "Medical Insurance", "CareCredit"],
+    "currenciesAccepted": "USD",
     "sameAs": [
       "https://www.facebook.com/eyecarecenteroc",
       "https://www.instagram.com/eyecarecenteroc",
       "https://www.yelp.com/biz/alexander-bonakdar-od-santa-ana"
     ],
-    "url": "https://keratocones.com",
-    "priceRange": "$$$",
-    "medicalSpecialty": ["Optometry", "Keratoconus Treatment", "Scleral Lenses"]
+    "parentOrganization": {
+      "@type": "MedicalBusiness",
+      "name": "Eye Care Center of Orange County",
+      "url": "https://eyecarecenteroc.com",
+      "@id": "https://eyecarecenteroc.com/#organization"
+    }
   };
 
   return (
