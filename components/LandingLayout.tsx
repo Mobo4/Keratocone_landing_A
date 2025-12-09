@@ -145,7 +145,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
                             <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm">
                                 <li className="flex items-start gap-1.5">
                                     <MapPin className="w-3 h-3 md:w-4 md:h-4 text-eyecare-light-blue mt-0.5 shrink-0" />
-                                    <span className="text-gray-300 text-xs">801 N Tustin Ave #404<br />Santa Ana, CA 92705</span>
+                                    <span className="text-gray-300 text-xs">801 N Tustin Ave #401<br />Santa Ana, CA 92705</span>
                                 </li>
                                 <li className="flex items-center gap-1.5">
                                     <Phone className="w-3 h-3 md:w-4 md:h-4 text-eyecare-light-blue shrink-0" />
