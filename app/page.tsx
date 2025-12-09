@@ -107,15 +107,6 @@ export default function LandingPage() {
         </FadeIn>
       </section>
 
-      {/* Vision Simulator Section - 10x Feature */}
-      <section className="py-24 bg-eyecare-navy overflow-hidden">
-        <div className="container mx-auto px-4">
-          <FadeIn>
-            <VisionSimulator />
-          </FadeIn>
-        </div>
-      </section>
-
       {/* Real Patient Stories - Video Placeholder */}
       <Testimonials />
 
