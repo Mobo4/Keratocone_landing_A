@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import GoogleTag from "@/components/GoogleTag";
 import TrackingScripts from "@/components/TrackingScripts";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -129,6 +130,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <ChatWidget />
+        <Analytics />
       </body>
     </html>
   );
