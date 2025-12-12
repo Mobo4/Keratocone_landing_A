@@ -1,5 +1,11 @@
 
 import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Keratoconus Vision Center | Dr. Alexander Bonakdar",
+  description: "Orange County's leading keratoconus specialist. Advanced scleral lens fitting and non-surgical vision restoration.",
+  keywords: ["medical doctors", "keratoconus treatment", "eye disease", "clinical training", "scleral lenses", "diagnosis", "optometrist specialist", "corneal disease"],
+};
 import { Poppins, Playfair_Display } from 'next/font/google';
 import "./globals.css";
 import Footer from "@/components/Footer";

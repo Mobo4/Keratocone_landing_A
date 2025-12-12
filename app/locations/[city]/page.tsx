@@ -53,7 +53,17 @@ export default function CityPage({ params }: Props) {
             {
                 "@type": "MedicalBusiness",
                 "name": "Keratoconus Vision Center | Dr. Alexander Bonakdar",
+                "image": "https://keratocones.com/images/drbonakdar.webp",
+                "priceRange": "$$",
                 "telephone": "(714) 558-0641",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "801 N Tustin Ave #401",
+                    "addressLocality": "Santa Ana",
+                    "addressRegion": "CA",
+                    "postalCode": "92705",
+                    "addressCountry": "US"
+                },
                 "areaServed": {
                     "@type": "City",
                     "name": city.name,

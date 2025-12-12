@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/contact',
         '/services/keratoconus-treatment',
         '/keratoconus-resources',
+        '/privacy-policy',
+        '/terms-of-service',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
