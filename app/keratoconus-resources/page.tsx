@@ -28,6 +28,25 @@ export default function ResourcesPage() {
                 </div>
             </div>
 
+            {/* Educational Intro Section */}
+            <div className="bg-white border-b border-gray-100 py-12">
+                <div className="container mx-auto px-4 max-w-4xl">
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                        Living with keratoconus can feel isolating, especially when you're told that "nothing more can be done" or that you'll eventually need a corneal transplant.
+                        The truth is that modern scleral lens technology has revolutionized treatment for this progressive corneal condition. Our resource library is designed to empower you
+                        with the knowledge you need to make informed decisions about your vision care.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                        Each article in this library is written from Dr. Bonakdar's 20+ years of clinical experience fitting complex corneal cases. You'll find evidence-based information
+                        on everything from understanding the 4 stages of keratoconus progression to navigating insurance coverage for medically necessary contact lenses. We cut through the myths
+                        and provide you with actionable insights that can help you avoid unnecessary surgery and achieve the clear vision you deserve.
+                    </p>
+                    <p className="text-gray-600 italic">
+                        Whether you're newly diagnosed or have been struggling with keratoconus for years, this knowledge hub is your starting point for understanding what's possible with modern treatment.
+                    </p>
+                </div>
+            </div>
+
             <div className="container mx-auto px-4 py-12">
                 {/* Featured Post */}
                 <div className="mb-16">

@@ -45,11 +45,14 @@ export default function AboutPage() {
                             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                                 For over 20 years, Dr. Bonakdar has dedicated his practice to the "impossible" cases. While many eye doctors shy away from complex corneas, Dr. Bonakdar runs toward them.
                             </p>
-                            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                                 He is a trusted referral source for <strong>CHOC (Children's Hospital of Orange County)</strong> and <strong>UCI Medical Center</strong>, who send him their most difficult keratoconus and post-surgical patients. His philosophy is simple: <em>"If there is a way to restore vision, we will find it."</em>
                             </p>
+                            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                                What sets Dr. Bonakdar apart is his commitment to staying at the forefront of scleral lens technology. He regularly attends advanced training seminars, maintains close relationships with leading lens manufacturers, and has invested in state-of-the-art diagnostic equipment that most general optometry practices don't have. This dedication means that when you come to our practice, you're not just getting a contact lens fitting—you're getting access to the latest innovations in corneal rehabilitation.
+                            </p>
 
-                            <div className="grid grid-cols-2 gap-6">
+                            <div className="grid grid-cols-2 gap-6 mb-8">
                                 <div className="flex items-start gap-3">
                                     <Award className="w-6 h-6 text-eyecare-blue mt-1 shrink-0" />
                                     <div>
@@ -78,6 +81,15 @@ export default function AboutPage() {
                                         <p className="text-sm text-gray-600">Personalized 1-on-1 care</p>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div className="bg-eyecare-lighter-blue/30 p-6 rounded-xl border border-eyecare-blue/10">
+                                <h3 className="font-bold text-eyecare-navy mb-3">Why Patients Travel to See Dr. Bonakdar</h3>
+                                <p className="text-gray-700 leading-relaxed">
+                                    Many of our patients have been to multiple eye doctors before finding us. They've been told their corneas are "too irregular," that they need a transplant, or that "nothing more can be done."
+                                    Dr. Bonakdar specializes in these exact cases. His expertise in advanced scleral lens designs, combined with cutting-edge topography mapping, allows him to achieve successful fits
+                                    in situations where others have failed. Patients from across California—and even out of state—seek his care because they know that if there's a non-surgical solution, he'll find it.
+                                </p>
                             </div>
                         </div>
                     </div>

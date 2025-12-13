@@ -7,25 +7,26 @@ export interface CityData {
         lat: number;
         lng: number;
     };
+    neighborhoods?: string[]; // Optional array of major neighborhoods
 }
 
 export const soCalCities: CityData[] = [
-    // Orange County (Core)
-    { slug: 'irvine', name: 'Irvine', county: 'Orange County', coordinates: { lat: 33.6846, lng: -117.8265 } },
-    { slug: 'newport-beach', name: 'Newport Beach', county: 'Orange County', coordinates: { lat: 33.6189, lng: -117.9289 } },
-    { slug: 'santa-ana', name: 'Santa Ana', county: 'Orange County', coordinates: { lat: 33.7455, lng: -117.8677 } },
-    { slug: 'anaheim', name: 'Anaheim', county: 'Orange County', coordinates: { lat: 33.8366, lng: -117.9143 } },
-    { slug: 'costa-mesa', name: 'Costa Mesa', county: 'Orange County', coordinates: { lat: 33.6411, lng: -117.9187 } },
-    { slug: 'huntington-beach', name: 'Huntington Beach', county: 'Orange County', coordinates: { lat: 33.6595, lng: -117.9988 } },
-    { slug: 'laguna-beach', name: 'Laguna Beach', county: 'Orange County', coordinates: { lat: 33.5427, lng: -117.7854 } },
-    { slug: 'mission-viejo', name: 'Mission Viejo', county: 'Orange County', coordinates: { lat: 33.6000, lng: -117.6719 } },
-    { slug: 'lake-forest', name: 'Lake Forest', county: 'Orange County', coordinates: { lat: 33.6471, lng: -117.6892 } },
-    { slug: 'tustin', name: 'Tustin', county: 'Orange County', coordinates: { lat: 33.7458, lng: -117.8262 } },
-    { slug: 'orange', name: 'Orange', county: 'Orange County', coordinates: { lat: 33.7879, lng: -117.8531 } },
+    // Orange County (Core) - WITH NEIGHBORHOODS
+    { slug: 'irvine', name: 'Irvine', county: 'Orange County', coordinates: { lat: 33.6846, lng: -117.8265 }, neighborhoods: ['Woodbridge', 'Northwood', 'University Park'] },
+    { slug: 'newport-beach', name: 'Newport Beach', county: 'Orange County', coordinates: { lat: 33.6189, lng: -117.9289 }, neighborhoods: ['Corona del Mar', 'Balboa Island', 'Lido Isle'] },
+    { slug: 'santa-ana', name: 'Santa Ana', county: 'Orange County', coordinates: { lat: 33.7455, lng: -117.8677 }, neighborhoods: ['Downtown', 'Floral Park', 'French Park'] },
+    { slug: 'anaheim', name: 'Anaheim', county: 'Orange County', coordinates: { lat: 33.8366, lng: -117.9143 }, neighborhoods: ['Anaheim Hills', 'Downtown Anaheim', 'Platinum Triangle'] },
+    { slug: 'costa-mesa', name: 'Costa Mesa', county: 'Orange County', coordinates: { lat: 33.6411, lng: -117.9187 }, neighborhoods: ['Eastside', 'Westside', 'South Coast Metro'] },
+    { slug: 'huntington-beach', name: 'Huntington Beach', county: 'Orange County', coordinates: { lat: 33.6595, lng: -117.9988 }, neighborhoods: ['Downtown', 'Huntington Harbour', 'Sunset Beach'] },
+    { slug: 'laguna-beach', name: 'Laguna Beach', county: 'Orange County', coordinates: { lat: 33.5427, lng: -117.7854 }, neighborhoods: ['Village', 'Top of the World', 'South Laguna'] },
+    { slug: 'mission-viejo', name: 'Mission Viejo', county: 'Orange County', coordinates: { lat: 33.6000, lng: -117.6719 }, neighborhoods: ['Lake Mission Viejo', 'Oso Creek', 'Casta del Sol'] },
+    { slug: 'lake-forest', name: 'Lake Forest', county: 'Orange County', coordinates: { lat: 33.6471, lng: -117.6892 }, neighborhoods: ['Foothill Ranch', 'Portola Hills', 'Baker Ranch'] },
+    { slug: 'tustin', name: 'Tustin', county: 'Orange County', coordinates: { lat: 33.7458, lng: -117.8262 }, neighborhoods: ['Old Town', 'Tustin Ranch', 'Tustin Legacy'] },
+    { slug: 'orange', name: 'Orange', county: 'Orange County', coordinates: { lat: 33.7879, lng: -117.8531 }, neighborhoods: ['Old Towne', 'Orange Park Acres', 'East Orange'] },
     { slug: 'villa-park', name: 'Villa Park', county: 'Orange County', coordinates: { lat: 33.8144, lng: -117.8131 } },
     { slug: 'placentia', name: 'Placentia', county: 'Orange County', coordinates: { lat: 33.8710, lng: -117.8628 } },
     { slug: 'brea', name: 'Brea', county: 'Orange County', coordinates: { lat: 33.9166, lng: -117.9000 } },
-    { slug: 'fullerton', name: 'Fullerton', county: 'Orange County', coordinates: { lat: 33.8704, lng: -117.9242 } },
+    { slug: 'fullerton', name: 'Fullerton', county: 'Orange County', coordinates: { lat: 33.8704, lng: -117.9242 }, neighborhoods: ['Downtown', 'Sunny Hills', 'Amerige Heights'] },
     { slug: 'cypress', name: 'Cypress', county: 'Orange County', coordinates: { lat: 33.8169, lng: -118.0374 } },
     { slug: 'los-alamitos', name: 'Los Alamitos', county: 'Orange County', coordinates: { lat: 33.8031, lng: -118.0728 } },
     { slug: 'garden-grove', name: 'Garden Grove', county: 'Orange County', coordinates: { lat: 33.7743, lng: -117.9379 } },
@@ -33,7 +34,7 @@ export const soCalCities: CityData[] = [
     { slug: 'westminster', name: 'Westminster', county: 'Orange County', coordinates: { lat: 33.7513, lng: -117.9939 } },
     { slug: 'fountain-valley', name: 'Fountain Valley', county: 'Orange County', coordinates: { lat: 33.7090, lng: -117.9544 } },
     { slug: 'yorba-linda', name: 'Yorba Linda', county: 'Orange County', coordinates: { lat: 33.8885, lng: -117.8133 } },
-    { slug: 'san-clemente', name: 'San Clemente', county: 'Orange County', coordinates: { lat: 33.4274, lng: -117.6120 } },
+    { slug: 'san-clemente', name: 'San Clemente', county: 'Orange County', coordinates: { lat: 33.4274, lng: -117.6120 }, neighborhoods: ['North Beach', 'Pier Bowl', 'Talega'] },
     { slug: 'dana-point', name: 'Dana Point', county: 'Orange County', coordinates: { lat: 33.4665, lng: -117.6981 } },
     { slug: 'laguna-niguel', name: 'Laguna Niguel', county: 'Orange County', coordinates: { lat: 33.5225, lng: -117.7076 } },
     { slug: 'aliso-viejo', name: 'Aliso Viejo', county: 'Orange County', coordinates: { lat: 33.5750, lng: -117.7256 } },

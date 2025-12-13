@@ -85,6 +85,17 @@ export default function ContactPage() {
                                         </div>
                                     </div>
                                 </div>
+
+                                {/* Directions Section */}
+                                <div className="mt-8 pt-8 border-t border-eyecare-blue/10">
+                                    <h3 className="font-bold text-eyecare-navy mb-4">Directions from Major Areas</h3>
+                                    <div className="space-y-3 text-sm text-gray-600">
+                                        <p><strong>From Irvine:</strong> Take I-5 North to CA-55 North. Exit at 17th Street and turn right. Turn left on N Tustin Ave. Our office is on the right.</p>
+                                        <p><strong>From Newport Beach:</strong> Take CA-55 North toward Santa Ana. Exit at 17th Street and follow directions above.</p>
+                                        <p><strong>From Los Angeles:</strong> Take I-5 South to CA-55 South. Exit at 17th Street and turn left. Turn left on N Tustin Ave.</p>
+                                        <p className="text-xs text-gray-500 mt-4">Parking: Free parking is available in the building lot. Suite 401 is on the 4th floor.</p>
+                                    </div>
+                                </div>
                             </div>
 
                             {/* Google Map Embed */}

@@ -136,6 +136,34 @@ export default function CityPage({ params }: Props) {
                 </div>
             </section>
 
+            {/* Neighborhoods Section (if applicable) */}
+            {city.neighborhoods && city.neighborhoods.length > 0 && (
+                <section className="py-16 bg-white border-t border-gray-100">
+                    <div className="container mx-auto px-4">
+                        <h2 className="text-3xl font-serif font-bold text-eyecare-navy mb-6 text-center">Serving Neighborhoods Throughout {city.name}</h2>
+                        <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
+                            Whether you live in {city.neighborhoods[0]}, {city.neighborhoods[1]}, or anywhere else in {city.name}, our specialized keratoconus care is just a short drive away.
+                            We understand that finding a true scleral lens specialist can be challenging—many patients from {city.name} have been told to "just live with it" by general optometrists.
+                            Dr. Bonakdar's practice exists specifically for complex corneal cases, and patients from across {city.county} trust us with their vision restoration journey.
+                        </p>
+                        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                            {city.neighborhoods.map((neighborhood) => (
+                                <div key={neighborhood} className="bg-eyecare-lighter-blue/30 p-6 rounded-xl border border-eyecare-blue/10 text-center hover:border-eyecare-blue/30 transition-colors">
+                                    <h3 className="font-bold text-eyecare-navy mb-2">{neighborhood}</h3>
+                                    <p className="text-sm text-gray-600">Expert keratoconus care for {neighborhood} residents</p>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-gray-600 max-w-3xl mx-auto text-center mt-12 leading-relaxed">
+                            Living with keratoconus in {city.name} doesn't mean you have to settle for subpar vision. While many eye doctors in {city.county} can diagnose the condition,
+                            very few have the specialized training and equipment required for advanced scleral lens fitting. Our practice has invested in state-of-the-art corneal topography systems
+                            and maintains relationships with the leading scleral lens manufacturers to ensure you get the best possible outcome. Patients from {city.name} appreciate that we take the time
+                            to perfect each fit—this isn't a "one size fits all" approach. Your cornea is unique, and your treatment should be too.
+                        </p>
+                    </div>
+                </section>
+            )}
+
             {/* Why Travel Section */}
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4">

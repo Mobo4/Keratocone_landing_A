@@ -49,12 +49,27 @@ export default function PrivacyPolicy() {
                         In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know.
                     </p>
 
-                    <h2>5. Your Legal Rights</h2>
+                    <h2>5. HIPAA Compliance & Medical Data Protection</h2>
+                    <p>
+                        As a healthcare provider, we are committed to complying with the Health Insurance Portability and Accountability Act (HIPAA).
+                        All Protected Health Information (PHI) collected during your consultation or treatment is stored securely and transmitted using industry-standard encryption protocols.
+                        We maintain strict administrative, physical, and technical safeguards to protect your medical information from unauthorized access or disclosure.
+                    </p>
+                    <p>
+                        Your medical records, including corneal topography scans, scleral lens fitting data, and clinical notes, are maintained in HIPAA-compliant electronic health record systems.
+                        We will never share your PHI with third parties without your explicit written consent, except as required by law or for treatment, payment, and healthcare operations purposes.
+                    </p>
+
+                    <h2>6. Your Legal Rights</h2>
                     <p>
                         Under certain circumstances, you have rights under data protection laws in relation to your personal data, including the right to request access, correction, erasure, restriction, transfer, to object to processing, to portability of data and (where the lawful ground of processing is consent) to withdraw consent.
                     </p>
+                    <p>
+                        Under HIPAA, you also have the right to: (1) request a copy of your medical records, (2) request amendments to your records if you believe they are incorrect,
+                        (3) receive an accounting of disclosures of your PHI, and (4) request restrictions on certain uses and disclosures of your information.
+                    </p>
 
-                    <h2>6. Contact Us</h2>
+                    <h2>7. Contact Us</h2>
                     <p>
                         If you have any questions about this privacy policy or our privacy practices, please contact us at:
                         <br />

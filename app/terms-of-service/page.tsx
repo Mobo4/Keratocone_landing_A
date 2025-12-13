@@ -41,7 +41,24 @@ export default function TermsOfService() {
                         and (5) your use of the Site will not violate any applicable law or regulation.
                     </p>
 
-                    <h2>5. Contact Us</h2>
+                    <h2>5. Appointment and Consultation Terms</h2>
+                    <p>
+                        When you request a consultation through our website, you acknowledge that: (1) appointment requests are subject to availability and confirmation by our office staff,
+                        (2) we reserve the right to refuse service to anyone for any lawful reason, (3) cancellations must be made at least 24 hours in advance to avoid a cancellation fee,
+                        and (4) specialized scleral lens fittings may require multiple visits and are subject to separate professional fees.
+                    </p>
+                    <p>
+                        Our services are provided on a professional fee-for-service basis. While we accept many vision insurance plans, coverage for medically necessary contact lenses varies by carrier.
+                        We will provide you with a detailed cost estimate and insurance verification prior to beginning treatment. Payment is due at the time of service unless other arrangements have been made in advance.
+                    </p>
+
+                    <h2>6. Limitation of Liability</h2>
+                    <p>
+                        To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues,
+                        whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your use of the Site.
+                    </p>
+
+                    <h2>7. Contact Us</h2>
                     <p>
                         If you have questions or comments about this Site, please write to us at:
                         <br />
