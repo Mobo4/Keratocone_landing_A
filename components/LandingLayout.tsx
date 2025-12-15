@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Phone, User, Stethoscope, Globe, MapPin, Clock, Mail, ChevronDown } from 'lucide-react';
 import StickyCTA from './StickyCTA';
+import LanguageSwitcher from './LanguageSwitcher';
 
 interface LandingLayoutProps {
     children: React.ReactNode;
@@ -27,6 +28,10 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
                         <Phone className="h-3.5 w-3.5 mr-1.5" />
                         <span className="font-semibold">{phoneNumber}</span>
                     </a>
+                    {/* Language Switcher */}
+                    <div className="text-eyecare-navy">
+                        <LanguageSwitcher />
+                    </div>
                 </div>
             </div>
 
