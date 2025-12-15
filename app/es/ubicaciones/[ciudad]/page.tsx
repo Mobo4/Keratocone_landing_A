@@ -10,9 +10,9 @@ import InsuranceSection from '@/components/InsuranceSection';
 import FadeIn from '@/components/FadeIn';
 
 interface Props {
-    params: {
+    params: Promise<{
         ciudad: string;
-    };
+    }>;
 }
 
 // Generate static paths for all cities
@@ -24,7 +24,8 @@ export async function generateStaticParams() {
 
 // Generate dynamic metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const city = soCalCitiesEs.find((c) => c.slug === params.ciudad);
+    const resolvedParams = await params;
+    const city = soCalCitiesEs.find((c) => c.slug === resolvedParams.ciudad);
     if (!city) return {};
 
     return {
@@ -46,8 +47,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default function SpanishCityPage({ params }: Props) {
-    const city = soCalCitiesEs.find((c) => c.slug === params.ciudad);
+export default async function SpanishCityPage({ params }: Props) {
+    const resolvedParams = await params;
+    const city = soCalCitiesEs.find((c) => c.slug === resolvedParams.ciudad);
 
     if (!city) {
         notFound();

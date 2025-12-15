@@ -5,9 +5,9 @@ import { ArrowLeft, Clock, User } from 'lucide-react';
 import { articlesEs } from '@/data/articles-es';
 
 interface Props {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 }
 
 export async function generateStaticParams() {
@@ -17,7 +17,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const article = articlesEs.find((a) => a.slug === params.slug);
+    const resolvedParams = await params;
+    const article = articlesEs.find((a) => a.slug === resolvedParams.slug);
     if (!article) return {};
 
     return {
@@ -37,8 +38,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default function SpanishArticlePage({ params }: Props) {
-    const article = articlesEs.find((a) => a.slug === params.slug);
+export default async function SpanishArticlePage({ params }: Props) {
+    const resolvedParams = await params;
+    const article = articlesEs.find((a) => a.slug === resolvedParams.slug);
 
     if (!article) {
         notFound();
