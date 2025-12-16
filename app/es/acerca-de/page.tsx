@@ -1,14 +1,25 @@
+
 import { Metadata } from 'next';
 import LandingLayout from '@/components/LandingLayout';
 import FadeIn from '@/components/FadeIn';
 import Link from 'next/link';
+import esMessages from '@/messages/es.json';
+
+function t(key: string) {
+    const keys = ('About.' + key).split('.');
+    let value: any = esMessages;
+    for (const k of keys) {
+        value = value?.[k as keyof typeof value];
+    }
+    return (value as string) || key;
+}
 
 export const metadata: Metadata = {
-    title: 'Dr. Alexander Bonakdar | Especialista en Queratocono',
-    description: 'Conoce al Dr. Bonakdar, experto en queratocono con 20+ años de experiencia. Referencia de confianza de CHOC y UCI para casos complejos.',
+    title: t('Metadata.title'),
+    description: t('Metadata.description'),
     openGraph: {
-        title: 'Dr. Bonakdar | Especialista en Queratocono',
-        description: 'Más de 20 años de experiencia en tratamiento de queratocono y lentes esclerales.',
+        title: t('Metadata.title'),
+        description: t('Metadata.description'),
         locale: 'es_MX',
     },
     alternates: {
@@ -50,12 +61,12 @@ export default function AboutPageEs() {
                     <FadeIn>
                         {/* Hero Section */}
                         <div className="text-center mb-16">
-                            <span className="text-eyecare-blue font-bold tracking-widest uppercase text-sm mb-4 block">Conoce a Tu Especialista</span>
+                            <span className="text-eyecare-blue font-bold tracking-widest uppercase text-sm mb-4 block">{t('Hero.label')}</span>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold text-eyecare-navy mb-6">
-                                Dr. Alexander Bonakdar, O.D.
+                                {t('Hero.headline')}
                             </h1>
                             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                                Especialista en Queratocono y Lentes Esclerales con Más de 20 Años de Experiencia
+                                {t('Hero.subheadline')}
                             </p>
                         </div>
 
@@ -70,20 +81,16 @@ export default function AboutPageEs() {
                                         style={{ objectPosition: 'center 30%' }}
                                     />
                                 </div>
-                                <h2 className="text-2xl font-bold mb-2 font-serif text-eyecare-navy">Dr. Alexander Bonakdar</h2>
-                                <p className="text-eyecare-blue font-medium">Doctor en Optometría</p>
+                                <h2 className="text-2xl font-bold mb-2 font-serif text-eyecare-navy">{t('Bio.name')}</h2>
+                                <p className="text-eyecare-blue font-medium">{t('Bio.title')}</p>
                             </div>
 
                             <div className="md:col-span-2 space-y-6">
                                 <p className="text-lg text-gray-700 leading-relaxed">
-                                    El Dr. Alexander Bonakdar ha dedicado su carrera a ayudar a pacientes con condiciones corneales complejas
-                                    a recuperar su visión. Como especialista líder en queratocono en el Condado de Orange, ha ajustado exitosamente
-                                    miles de lentes esclerales para pacientes a quienes se les dijo que no tenían opciones.
+                                    {t('Bio.p1')}
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed">
-                                    Su experiencia le ha ganado la confianza de las principales instituciones médicas de la región.
-                                    CHOC (Hospital de Niños del Condado de Orange) y UCI Medical Center refieren regularmente sus casos
-                                    más desafiantes de queratocono al Dr. Bonakdar, sabiendo que sus pacientes recibirán atención del más alto nivel.
+                                    {t('Bio.p2')}
                                 </p>
                             </div>
                         </div>
@@ -91,10 +98,10 @@ export default function AboutPageEs() {
                         {/* Credentials */}
                         <div className="grid md:grid-cols-4 gap-6 mb-16">
                             {[
-                                { stat: '20+', label: 'Años de Experiencia' },
-                                { stat: 'CHOC', label: 'Fuente de Referencia' },
-                                { stat: 'UCI', label: 'Consultor Médico' },
-                                { stat: '99%', label: 'Tasa de Éxito' },
+                                { stat: t('Stats.experienceStat'), label: t('Stats.experienceLabel') },
+                                { stat: t('Stats.referralStat'), label: t('Stats.referralLabel') },
+                                { stat: t('Stats.consultantStat'), label: t('Stats.consultantLabel') },
+                                { stat: t('Stats.successStat'), label: t('Stats.successLabel') },
                             ].map((item, idx) => (
                                 <div key={idx} className="text-center p-6 bg-eyecare-lighter-blue rounded-2xl">
                                     <p className="text-3xl font-bold text-eyecare-navy mb-2">{item.stat}</p>
@@ -105,28 +112,24 @@ export default function AboutPageEs() {
 
                         {/* Why Patients Travel */}
                         <div className="bg-gradient-to-r from-eyecare-navy to-blue-900 text-white rounded-3xl p-8 md:p-12 mb-16">
-                            <h2 className="text-2xl font-bold mb-6 font-serif">Por Qué los Pacientes Viajan para Ver al Dr. Bonakdar</h2>
+                            <h2 className="text-2xl font-bold mb-6 font-serif">{t('Travel.title')}</h2>
                             <p className="text-lg text-blue-100 mb-6 leading-relaxed">
-                                Lo que distingue al Dr. Bonakdar es su compromiso de mantenerse a la vanguardia de la tecnología de lentes esclerales.
-                                Asiste regularmente a seminarios de capacitación avanzada, mantiene relaciones cercanas con los principales fabricantes
-                                de lentes y ha invertido en equipos de diagnóstico de última generación que la mayoría de las prácticas de optometría
-                                general no tienen.
+                                {t('Travel.p1')}
                             </p>
                             <p className="text-lg text-blue-100 leading-relaxed">
-                                Esta dedicación significa que cuando vienes a nuestra práctica, no solo recibes un ajuste de lentes de contacto—
-                                estás accediendo a las últimas innovaciones en rehabilitación corneal.
+                                {t('Travel.p2')}
                             </p>
                         </div>
 
                         {/* CTA */}
                         <div className="text-center">
-                            <h2 className="text-2xl font-bold text-eyecare-navy mb-4 font-serif">¿Listo para Ver con Claridad?</h2>
-                            <p className="text-gray-600 mb-8">Agenda una consulta con el Dr. Bonakdar hoy.</p>
+                            <h2 className="text-2xl font-bold text-eyecare-navy mb-4 font-serif">{t('CTA.title')}</h2>
+                            <p className="text-gray-600 mb-8">{t('CTA.description')}</p>
                             <Link
                                 href="/es#lead-form"
                                 className="inline-block bg-eyecare-blue hover:bg-eyecare-dark-blue text-white px-8 py-4 rounded-xl font-bold transition-colors"
                             >
-                                Agendar Consulta
+                                {t('CTA.button')}
                             </Link>
                         </div>
                     </FadeIn>

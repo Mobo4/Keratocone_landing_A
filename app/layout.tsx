@@ -1,18 +1,20 @@
 
 import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Keratoconus Vision Center | Dr. Alexander Bonakdar",
-  description: "Orange County's leading keratoconus specialist. Advanced scleral lens fitting and non-surgical vision restoration.",
-  keywords: ["medical doctors", "keratoconus treatment", "eye disease", "clinical training", "scleral lenses", "diagnosis", "optometrist specialist", "corneal disease"],
-};
 import { Poppins, Playfair_Display } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import enMessages from '@/messages/en.json';
 import "./globals.css";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import GoogleTag from "@/components/GoogleTag";
 import TrackingScripts from "@/components/TrackingScripts";
 import { Analytics } from "@vercel/analytics/next";
+
+export const metadata: Metadata = {
+  title: "Keratoconus Vision Center | Dr. Alexander Bonakdar",
+  description: "Orange County's leading keratoconus specialist. Advanced scleral lens fitting and non-surgical vision restoration.",
+  keywords: ["medical doctors", "keratoconus treatment", "eye disease", "clinical training", "scleral lenses", "diagnosis", "optometrist specialist", "corneal disease"],
+};
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -27,8 +29,6 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
   display: 'swap',
 });
-
-// ... (existing imports)
 
 export default function RootLayout({
   children,
@@ -120,23 +120,23 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}
-      >
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <GoogleTag />
-        <TrackingScripts />
-        <div className="flex flex-col min-h-screen">
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </div>
-        <ChatWidget />
-        <Analytics />
+      <body className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}>
+        <NextIntlClientProvider locale="en" messages={enMessages}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+          <GoogleTag />
+          <TrackingScripts />
+          <div className="flex flex-col min-h-screen">
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </div>
+          <ChatWidget />
+          <Analytics />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

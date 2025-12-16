@@ -11,5 +11,26 @@ export const metadata: Metadata = {
 };
 
 export default function KeratoconusScleralPage() {
-    return <KeratoconusScleralContent />;
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Keratoconus Scleral Lenses Center",
+        "description": "Specialized scleral lens fitting for keratoconus patients in Orange County.",
+        "url": "https://keratocones.com/lp/keratoconus-scleral",
+        "mainEntity": {
+            "@type": "MedicalSpecialty",
+            "name": "Keratoconus Treatment",
+            "medicalCode": "ICD-10-CM H18.6"
+        }
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
+            <KeratoconusScleralContent />
+        </>
+    );
 }

@@ -2,9 +2,14 @@
 import React from 'react';
 import LandingLayout from '@/components/LandingLayout';
 
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
     title: 'Terms of Service | Keratoconus Vision Center',
-    description: 'Terms of Service for Keratoconus Vision Center and Dr. Alexander Bonakdar.',
+    description: 'Review the Terms of Service for Keratoconus Vision Center. By using our site, you agree to these terms regarding medical advice and appointments.',
+    alternates: {
+        canonical: 'https://keratocones.com/terms-of-service',
+    },
 };
 
 export default function TermsOfService() {

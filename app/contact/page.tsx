@@ -4,9 +4,14 @@ import LandingLayout from '@/components/LandingLayout';
 import LeadForm from '@/components/LeadForm';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
     title: 'Contact Us | Keratoconus Vision Center',
     description: 'Book your consultation at the Keratoconus Vision Center in Santa Ana, CA. Serving Irvine, Newport Beach, and all Orange County.',
+    alternates: {
+        canonical: 'https://keratocones.com/contact',
+    },
 };
 
 export default function ContactPage() {

@@ -1,10 +1,13 @@
-
 import React from 'react';
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Phone, Mail, MapPin, CreditCard } from 'lucide-react';
+import { soCalCities } from '@/data/cities';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
+
+    // Sort cities alphabetically
+    const sortedCities = [...soCalCities].sort((a, b) => a.name.localeCompare(b.name));
 
     return (
         <footer className="bg-eyecare-navy text-white text-sm">
@@ -53,16 +56,24 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Column 3: Locations */}
+                    {/* Column 3: Locations (Dynamic) */}
                     <div>
                         <h4 className="font-bold text-white mb-6">Serving Southern CA</h4>
-                        <ul className="space-y-3 text-gray-400">
-                            <li><Link href="/locations/irvine" className="hover:text-eyecare-blue">Irvine Keratoconus</Link></li>
-                            <li><Link href="/locations/newport-beach" className="hover:text-eyecare-blue">Newport Beach</Link></li>
-                            <li><Link href="/locations/los-angeles" className="hover:text-eyecare-blue">Los Angeles</Link></li>
-                            <li><Link href="/locations/anaheim" className="hover:text-eyecare-blue">Anaheim</Link></li>
-                            <li><Link href="/locations/santa-ana" className="hover:text-eyecare-blue">Santa Ana</Link></li>
-                        </ul>
+                        <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                            {sortedCities.map((city) => (
+                                <Link
+                                    key={city.slug}
+                                    href={`/locations/${city.slug}`}
+                                    className="text-gray-400 hover:text-eyecare-blue text-xs block truncate"
+                                    title={`Keratoconus treatment in ${city.name}`}
+                                >
+                                    {city.name}
+                                </Link>
+                            ))}
+                        </div>
+                        <p className="mt-4 text-xs text-gray-500 italic">
+                            Serving all of Orange County & surrounding areas.
+                        </p>
                     </div>
 
                     {/* Column 4: Contact */}

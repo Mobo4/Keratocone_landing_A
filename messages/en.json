@@ -1,0 +1,36 @@
+{
+    "About": {
+        "Metadata": {
+            "title": "About Dr. Alexander Bonakdar | Keratoconus Specialist",
+            "description": "Meet the specialist trusted by CHOC and UCI Medical Center. Dr. Bonakdar has dedicated 20+ years to treating complex corneal conditions with scleral lenses."
+        },
+        "Hero": {
+            "headline": "Meet Your Specialist",
+            "subheadline": "Dr. Alexander Bonakdar is Orange County's leading expert in non-surgical vision restoration for Keratoconus."
+        },
+        "Bio": {
+            "name": "Dr. Alexander Bonakdar, O.D.",
+            "p1": "For over 20 years, Dr. Bonakdar has dedicated his practice to the \"impossible\" cases. While many eye doctors shy away from complex corneas, Dr. Bonakdar runs toward them.",
+            "p2": "He is a trusted referral source for <strong>CHOC (Children's Hospital of Orange County)</strong> and <strong>UCI Medical Center</strong>, who send him their most difficult keratoconus and post-surgical patients. His philosophy is simple: <em>\"If there is a way to restore vision, we will find it.\"</em>",
+            "p3": "What sets Dr. Bonakdar apart is his commitment to staying at the forefront of scleral lens technology. He regularly attends advanced training seminars, maintains close relationships with leading lens manufacturers, and has invested in state-of-the-art diagnostic equipment that most general optometry practices don't have. This dedication means that when you come to our practice, you're not just getting a contact lens fitting—you're getting access to the latest innovations in corneal rehabilitation."
+        },
+        "Stats": {
+            "specialistTitle": "Scleral Specialist",
+            "specialistDesc": "Advanced custom lens fitting",
+            "experienceTitle": "20+ Years",
+            "experienceDesc": "Clinical experience",
+            "educatorTitle": "Educator",
+            "educatorDesc": "Lectures on corneal disease",
+            "patientTitle": "Patient Focused",
+            "patientDesc": "Personalized 1-on-1 care"
+        },
+        "Travel": {
+            "title": "Why Patients Travel to See Dr. Bonakdar",
+            "description": "Many of our patients have been to multiple eye doctors before finding us. They've been told their corneas are \"too irregular,\" that they need a transplant, or that \"nothing more can be done.\" Dr. Bonakdar specializes in these exact cases. His expertise in advanced scleral lens designs, combined with cutting-edge topography mapping, allows him to achieve successful fits in situations where others have failed. Patients from across California—and even out of state—seek his care because they know that if there's a non-surgical solution, he'll find it."
+        },
+        "CTA": {
+            "title": "Why Trust Anyone Else?",
+            "description": "Your vision is too important to risk. Schedule a consultation with a true specialist."
+        }
+    }
+}

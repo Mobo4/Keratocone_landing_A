@@ -2,9 +2,14 @@
 import React from 'react';
 import LandingLayout from '@/components/LandingLayout';
 
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
     title: 'Privacy Policy | Keratoconus Vision Center',
-    description: 'Privacy Policy for Keratoconus Vision Center and Dr. Alexander Bonakdar.',
+    description: 'Read our Privacy Policy to understand how Keratoconus Vision Center collects, uses, and protects your personal and medical information.',
+    alternates: {
+        canonical: 'https://keratocones.com/privacy-policy',
+    },
 };
 
 export default function PrivacyPolicy() {

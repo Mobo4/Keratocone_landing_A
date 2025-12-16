@@ -3,9 +3,14 @@ import Link from 'next/link';
 import { ArrowRight, BookOpen, Clock } from 'lucide-react';
 import { articles } from '@/data/articles';
 
-export const metadata = {
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
     title: 'Keratoconus Resource Library | Dr. Bonakdar',
     description: 'Expert articles, guides, and research on Keratoconus, Scleral Lenses, and vision restoration options.',
+    alternates: {
+        canonical: 'https://keratocones.com/keratoconus-resources',
+    },
 };
 
 export default function ResourcesPage() {

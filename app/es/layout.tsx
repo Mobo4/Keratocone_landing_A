@@ -1,11 +1,20 @@
+
 import type { Metadata } from "next";
 import { Poppins, Playfair_Display } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import esMessages from '@/messages/es.json';
 import "../globals.css";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import GoogleTag from "@/components/GoogleTag";
 import TrackingScripts from "@/components/TrackingScripts";
 import { Analytics } from "@vercel/analytics/next";
+
+export const metadata: Metadata = {
+    title: "Centro de Visión para Queratocono | Dr. Alexander Bonakdar",
+    description: "Centro líder en Orange County para tratamiento de queratocono. Ajuste experto de lentes esclerales y restauración de visión sin cirugía.",
+    keywords: ["queratocono tratamiento", "lentes esclerales", "especialista queratocono", "doctor queratocono orange county", "córnea irregular", "lentes de contacto especializados"],
+};
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -20,12 +29,6 @@ const playfair = Playfair_Display({
     variable: '--font-playfair',
     display: 'swap',
 });
-
-export const metadata: Metadata = {
-    title: "Centro de Visión para Queratocono | Dr. Alexander Bonakdar",
-    description: "Centro líder en Orange County para tratamiento de queratocono. Ajuste experto de lentes esclerales y restauración de visión sin cirugía.",
-    keywords: ["queratocono tratamiento", "lentes esclerales", "especialista queratocono", "doctor queratocono orange county", "córnea irregular", "lentes de contacto especializados"],
-};
 
 export default function SpanishLayout({
     children,
@@ -118,12 +121,12 @@ export default function SpanishLayout({
     };
 
     return (
-        <>
+        <NextIntlClientProvider locale="es" messages={esMessages}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             {children}
-        </>
+        </NextIntlClientProvider>
     );
 }

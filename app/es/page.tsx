@@ -21,5 +21,27 @@ export const metadata: Metadata = {
 };
 
 export default function SpanishLandingPage() {
-    return <SpanishHomeContent />;
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Centro de Visión para Queratocono",
+        "description": "Especialista líder en queratocono en Orange County. Ajuste avanzado de lentes esclerales y restauración de visión no quirúrgica.",
+        "url": "https://keratocones.com/es",
+        "inLanguage": "es-MX",
+        "mainEntity": {
+            "@type": "MedicalSpecialty",
+            "name": "Tratamiento de Queratocono",
+            "medicalCode": "ICD-10-CM H18.6"
+        }
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
+            <SpanishHomeContent />
+        </>
+    );
 }

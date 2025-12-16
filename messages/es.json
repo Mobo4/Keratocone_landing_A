@@ -1,0 +1,39 @@
+{
+    "About": {
+        "Metadata": {
+            "title": "Dr. Alexander Bonakdar | Especialista en Queratocono",
+            "description": "Conoce al Dr. Bonakdar, experto en queratocono con 20+ años de experiencia. Referencia de confianza de CHOC y UCI para casos complejos."
+        },
+        "Hero": {
+            "headline": "Dr. Alexander Bonakdar, O.D.",
+            "subheadline": "Especialista en Queratocono y Lentes Esclerales con Más de 20 Años de Experiencia",
+            "label": "Conoce a Tu Especialista"
+        },
+        "Bio": {
+            "name": "Dr. Alexander Bonakdar",
+            "title": "Doctor en Optometría",
+            "p1": "El Dr. Alexander Bonakdar ha dedicado su carrera a ayudar a pacientes con condiciones corneales complejas a recuperar su visión. Como especialista líder en queratocono en el Condado de Orange, ha ajustado exitosamente miles de lentes esclerales para pacientes a quienes se les dijo que no tenían opciones.",
+            "p2": "Su experiencia le ha ganado la confianza de las principales instituciones médicas de la región. CHOC (Hospital de Niños del Condado de Orange) y UCI Medical Center refieren regularmente sus casos más desafiantes de queratocono al Dr. Bonakdar, sabiendo que sus pacientes recibirán atención del más alto nivel."
+        },
+        "Stats": {
+            "experienceStat": "20+",
+            "experienceLabel": "Años de Experiencia",
+            "referralStat": "CHOC",
+            "referralLabel": "Fuente de Referencia",
+            "consultantStat": "UCI",
+            "consultantLabel": "Consultor Médico",
+            "successStat": "99%",
+            "successLabel": "Tasa de Éxito"
+        },
+        "Travel": {
+            "title": "Por Qué los Pacientes Viajan para Ver al Dr. Bonakdar",
+            "p1": "Lo que distingue al Dr. Bonakdar es su compromiso de mantenerse a la vanguardia de la tecnología de lentes esclerales. Asiste regularmente a seminarios de capacitación avanzada, mantiene relaciones cercanas con los principales fabricantes de lentes y ha invertido en equipos de diagnóstico de última generación que la mayoría de las prácticas de optometría general no tienen.",
+            "p2": "Esta dedicación significa que cuando vienes a nuestra práctica, no solo recibes un ajuste de lentes de contacto—estás accediendo a las últimas innovaciones en rehabilitación corneal."
+        },
+        "CTA": {
+            "title": "¿Listo para Ver con Claridad?",
+            "description": "Agenda una consulta con el Dr. Bonakdar hoy.",
+            "button": "Agendar Consulta"
+        }
+    }
+}
