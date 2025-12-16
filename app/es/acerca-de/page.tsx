@@ -4,10 +4,10 @@ import FadeIn from '@/components/FadeIn';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Acerca del Dr. Alexander Bonakdar | Especialista en Queratocono',
-    description: 'Conoce al Dr. Alexander Bonakdar, especialista en queratocono con más de 20 años de experiencia. Referencia de confianza de CHOC y UCI Medical Center para casos complejos de córnea.',
+    title: 'Dr. Alexander Bonakdar | Especialista en Queratocono',
+    description: 'Conoce al Dr. Bonakdar, experto en queratocono con 20+ años de experiencia. Referencia de confianza de CHOC y UCI para casos complejos.',
     openGraph: {
-        title: 'Acerca del Dr. Bonakdar | Especialista en Queratocono',
+        title: 'Dr. Bonakdar | Especialista en Queratocono',
         description: 'Más de 20 años de experiencia en tratamiento de queratocono y lentes esclerales.',
         locale: 'es_MX',
     },
@@ -21,8 +21,30 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPageEs() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Perfil del Dr. Alexander Bonakdar",
+        "inLanguage": "es-MX",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Dr. Alexander Bonakdar",
+            "jobTitle": "Optometrista",
+            "medicalSpecialty": "Especialista en Queratocono",
+            "worksFor": {
+                "@type": "MedicalBusiness",
+                "name": "Centro de Visión para Queratocono"
+            },
+            "description": "Especialista líder en Orange County en restauración de visión no quirúrgica para Queratocono con más de 20 años de experiencia."
+        }
+    };
+
     return (
         <LandingLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             <div className="bg-white py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto">
                     <FadeIn>

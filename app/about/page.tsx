@@ -11,8 +11,28 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Dr. Alexander Bonakdar",
+            "jobTitle": "Optometrist",
+            "medicalSpecialty": "Keratoconus Specialist",
+            "worksFor": {
+                "@type": "MedicalBusiness",
+                "name": "Keratoconus Vision Center"
+            },
+            "description": "Orange County's leading expert in non-surgical vision restoration for Keratoconus with 20+ years of experience."
+        }
+    };
+
     return (
         <LandingLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             {/* Hero Section */}
             <section className="bg-eyecare-navy text-white py-20">
                 <div className="container mx-auto px-4 text-center">

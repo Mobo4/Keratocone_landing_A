@@ -10,9 +10,36 @@ import LeadForm from '@/components/LeadForm';
 import KeratoconusQuiz from '@/components/KeratoconusQuiz';
 import FadeIn from '@/components/FadeIn';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Keratoconus Scleral Lenses | Expert Fitting in Orange County",
+    description: "Scleral lens specialists for difficult keratoconus cases. Non-surgical vision restoration when other contacts fail. Book your consultation.",
+    alternates: {
+        canonical: 'https://keratocones.com/lp/keratoconus-scleral',
+    },
+};
+
 export default function KeratoconusScleralPage() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Keratoconus Scleral Lens Treatment",
+        "description": "Specialized scleral lens fitting for keratoconus patients in Orange County.",
+        "url": "https://keratocones.com/lp/keratoconus-scleral",
+        "mainEntity": {
+            "@type": "MedicalSpecialty",
+            "name": "Scleral Lenses",
+            "medicalCode": "HCPCS V2531"
+        }
+    };
+
     return (
         <LandingLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             {/* 1. Hero Section */}
             <LandingHero
                 headline="Keratoconus Treatment in Orange County"

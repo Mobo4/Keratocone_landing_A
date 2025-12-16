@@ -9,12 +9,33 @@ export const metadata = {
 };
 
 export default function ResourcesPage() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Keratoconus Resources & Articles",
+        "description": "Comprehensive library of articles about Keratoconus, Scleral Lenses, and non-surgical treatment options.",
+        "url": "https://keratocones.com/keratoconus-resources",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": articles.slice(0, 5).map((article, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": `https://keratocones.com/keratoconus-resources/${article.slug}`,
+                "name": article.title
+            }))
+        }
+    };
+
     // Featured Article (The First One)
     const featuredArticle = articles[0];
     const recentArticles = articles.slice(1);
 
     return (
         <div className="min-h-screen bg-gray-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             {/* Header */}
             <div className="bg-white border-b border-gray-100 py-16">
                 <div className="container mx-auto px-4">

@@ -25,8 +25,30 @@ export default function ResourcesPageEs() {
     const featuredArticle = articlesEs[0];
     const recentArticles = articlesEs.slice(1);
 
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Recursos de Queratocono",
+        "description": "Biblioteca completa de artículos sobre Queratocono, Lentes Esclerales y opciones de tratamiento.",
+        "url": "https://keratocones.com/es/recursos-queratocono",
+        "inLanguage": "es-MX",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": articlesEs.slice(0, 5).map((article, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": `https://keratocones.com/es/recursos-queratocono/${article.slug}`,
+                "name": article.title
+            }))
+        }
+    };
+
     return (
         <div className="min-h-screen bg-gray-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             {/* Header */}
             <div className="bg-white border-b border-gray-100 py-16">
                 <div className="container mx-auto px-4">

@@ -8,8 +8,19 @@ export const metadata = {
 };
 
 export default function TermsOfService() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Terms of Service",
+        "url": "https://keratocones.com/terms-of-service"
+    };
+
     return (
         <LandingLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             <div className="bg-white py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto prose prose-blue">
                     <h1>Terms of Service</h1>

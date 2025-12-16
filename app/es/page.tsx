@@ -9,11 +9,11 @@ import Testimonials from '@/components/Testimonials';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Especialista en Queratocono Orange County | Dr. Alexander Bonakdar',
-    description: 'Centro líder en tratamiento de queratocono en Orange County. Lentes esclerales, restauración de visión sin cirugía. Más de 20 años de experiencia. Hablamos español.',
+    title: 'Especialista en Queratocono OC | Dr. Bonakdar',
+    description: 'Líder en tratamiento de queratocono en Orange County. Lentes esclerales y restauración de visión sin cirugía. 20+ años exp. Hablamos español.',
     keywords: ['queratocono tratamiento', 'lentes esclerales', 'especialista queratocono', 'doctor queratocono orange county', 'córnea irregular', 'lentes de contacto especializados', 'queratocono en español', 'doctor ojos habla español'],
     openGraph: {
-        title: 'Especialista en Queratocono Orange County | Dr. Bonakdar',
+        title: 'Especialista en Queratocono OC | Dr. Bonakdar',
         description: 'Centro líder en tratamiento de queratocono. Lentes esclerales y restauración de visión sin cirugía. Hablamos español.',
         locale: 'es_MX',
         type: 'website',
@@ -28,8 +28,26 @@ export const metadata: Metadata = {
 };
 
 export default function SpanishLandingPage() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Centro de Visión para Queratocono",
+        "description": "Centro líder en tratamiento de queratocono en Orange County. Lentes esclerales, restauración de visión sin cirugía.",
+        "url": "https://keratocones.com/es",
+        "inLanguage": "es-MX",
+        "mainEntity": {
+            "@type": "MedicalSpecialty",
+            "name": "Tratamiento de Queratocono",
+            "medicalCode": "ICD-10-CM H18.6"
+        }
+    };
+
     return (
         <LandingLayout>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             <LandingHero
                 headline="Vuelve a Ver la Vida con Claridad"
                 subheadline="Atención Experta para Queratocono y Lentes Esclerales. Cuando Otros Dicen No, Nosotros Decimos Sí. Confianza de CHOC y UCI Medical Center."

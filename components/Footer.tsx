@@ -47,7 +47,7 @@ export default function Footer() {
                         <h4 className="font-bold text-white mb-6">Patient Resources</h4>
                         <ul className="space-y-3">
                             <li><Link href="/about" className="text-gray-400 hover:text-eyecare-blue transition-colors">About Dr. Bonakdar</Link></li>
-                            <li><Link href="/services/keratoconus-treatment" className="text-gray-400 hover:text-eyecare-blue transition-colors">Scleral Lenses</Link></li>
+                            <li><Link href="/lp/keratoconus-scleral" className="text-gray-400 hover:text-eyecare-blue transition-colors">Scleral Lenses</Link></li>
                             <li><Link href="/keratoconus-resources" className="text-gray-400 hover:text-eyecare-blue transition-colors">Keratoconus Library</Link></li>
                             <li><Link href="/contact" className="text-gray-400 hover:text-eyecare-blue transition-colors">Contact Us</Link></li>
                         </ul>

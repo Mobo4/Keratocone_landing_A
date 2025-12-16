@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-12-16T02:02:38.758Z",
+  "projectRoot": "/Users/alex/Documents/Projects/keratocones_website/keratocones",
+  "pagesScanned": 15,
+  "componentsScanned": 34,
+  "issues": {
+    "missingMetadata": [],
+    "missingAltText": [
+      {
+        "file": "components/TrackingScripts.tsx",
+        "severity": "MEDIUM",
+        "tag": "<img height=\"1\" width=\"1\" style={{ display: 'none' }}\n          src=\"https://www...",
+        "message": "Image is missing alt text. This affects accessibility and image SEO."
+      }
+    ],
+    "missingSchema": [],
+    "brokenLinks": [
+      {
+        "file": "app/es/acerca-de/page.tsx",
+        "severity": "HIGH",
+        "href": "/es#lead-form",
+        "message": "Link to \"/es#lead-form\" may be broken. No matching page.tsx found."
+      },
+      {
+        "file": "app/es/recursos-queratocono/[slug]/page.tsx",
+        "severity": "HIGH",
+        "href": "/es#lead-form",
+        "message": "Link to \"/es#lead-form\" may be broken. No matching page.tsx found."
+      }
+    ],
+    "keywordGaps": [],
+    "h1Usage": [],
+    "metadataQuality": [
+      {
+        "file": "app/lp/keratoconus-scleral/page.tsx",
+        "severity": "LOW",
+        "message": "Missing Open Graph social sharing data."
+      },
+      {
+        "file": "app/page.tsx",
+        "severity": "LOW",
+        "message": "Missing Open Graph social sharing data."
+      }
+    ],
+    "brokenImages": [],
+    "globalFiles": [],
+    "sitemapCoverage": []
+  },
+  "summary": {
+    "totalIssues": 5,
+    "high": 2,
+    "medium": 1,
+    "low": 2
+  }
+}

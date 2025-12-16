@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/contact',
         '/services/keratoconus-treatment',
         '/keratoconus-resources',
+        '/lp/keratoconus-scleral',
         '/privacy-policy',
         '/terms-of-service',
     ].map((route) => ({

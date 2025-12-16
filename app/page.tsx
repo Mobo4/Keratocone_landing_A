@@ -9,9 +9,36 @@ import FadeIn from '@/components/FadeIn';
 import InsuranceSection from '@/components/InsuranceSection';
 import Testimonials from '@/components/Testimonials';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Keratoconus Specialist | Dr. Alexander Bonakdar",
+  description: "Advanced non-surgical keratoconus treatment in Orange County. Expert scleral lens fitting and vision restoration for complex corneas.",
+  alternates: {
+    canonical: 'https://keratocones.com',
+  },
+};
+
 export default function LandingPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Keratoconus Vision Center Homepage",
+    "description": "Orange County's leading keratoconus specialist. Advanced scleral lens fitting and non-surgical vision restoration.",
+    "url": "https://keratocones.com",
+    "mainEntity": {
+      "@type": "MedicalSpecialty",
+      "name": "Keratoconus Treatment",
+      "medicalCode": "ICD-10-CM H18.6"
+    }
+  };
+
   return (
     <LandingLayout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <LandingHero
         headline="See Life Clearly Again"
         subheadline="Expert Keratoconus & Scleral Lens Care. When Others Say No, We Say Yes. Trusted by CHOC & UCI Medical Center."
