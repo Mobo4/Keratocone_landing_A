@@ -198,13 +198,52 @@ export default async function CityPage({ params }: Props) {
                             </div>
                         </div>
 
-                        {/* Map / Visual Placeholder */}
-                        <div className="bg-white p-2 rounded-2xl shadow-lg -rotate-1">
-                            <div className="bg-gray-200 rounded-xl h-[400px] flex items-center justify-center relative overflow-hidden">
-                                {/* Placeholder for Dynamic Map showing route from City to Clinic */}
-                                <div className="text-center p-8">
-                                    <p className="font-bold text-xl text-gray-400 mb-2">Map from {city.name}</p>
-                                    <p className="text-sm text-gray-400">801 N Tustin Ave #401, Santa Ana, CA 92705</p>
+                        {/* Map & Commute Info Card */}
+                        <div className="bg-white p-4 rounded-3xl shadow-xl border border-gray-100 rotate-1 hover:rotate-0 transition-transform duration-500">
+                            <div className="bg-gray-100 rounded-2xl h-[300px] w-full overflow-hidden relative mb-6">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.598687798369!2d-117.83789092449734!3d33.75990597326887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd95130700001%3A0x6c6e6e6e6e6e6e6e!2s801%20N%20Tustin%20Ave%20%23401%2C%20Santa%20Ana%2C%20CA%2092705!5e0!3m2!1sen!2sus!4v1709234567890!5m2!1sen!2sus"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title={`Map from ${city.name} to Keratoconus Vision Center`}
+                                ></iframe>
+                            </div>
+
+                            <div className="space-y-4 px-2 pb-2">
+                                <div className="flex items-start gap-3">
+                                    <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-eyecare-blue shrink-0 mt-1">
+                                        <MapPin className="w-4 h-4" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-eyecare-navy text-sm">Easy Commute from {city.name}</h4>
+                                        <p className="text-xs text-gray-600 mt-1">
+                                            Located just off the I-5 and SR-55 freeways, our office is a straightforward drive from {city.name}.
+                                            Free parking is available immediately adjacent to the building.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-eyecare-blue shrink-0 mt-1">
+                                        <ArrowRight className="w-4 h-4" />
+                                    </div>
+                                    <div className="w-full">
+                                        <h4 className="font-bold text-eyecare-navy text-sm">Address & Directions</h4>
+                                        <p className="text-xs text-gray-600 mt-1">
+                                            801 N Tustin Ave #401, Santa Ana, CA 92705
+                                        </p>
+                                        <a
+                                            href="https://www.google.com/maps/dir/?api=1&destination=801+N+Tustin+Ave+%23401,+Santa+Ana,+CA+92705"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="block w-full mt-3 py-2 bg-eyecare-navy text-white text-center rounded-lg text-xs font-bold hover:bg-eyecare-blue transition-colors"
+                                        >
+                                            Get Driving Directions
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
