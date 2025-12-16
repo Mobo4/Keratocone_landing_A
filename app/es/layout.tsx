@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     keywords: ["queratocono tratamiento", "lentes esclerales", "especialista queratocono", "doctor queratocono orange county", "córnea irregular", "lentes de contacto especializados"],
 };
 
-export default function SpanishRootLayout({
+export default function SpanishLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
@@ -118,31 +118,12 @@ export default function SpanishRootLayout({
     };
 
     return (
-        <html lang="es">
-            <head>
-                {/* Hreflang tags */}
-                <link rel="alternate" hrefLang="en" href="https://keratocones.com/" />
-                <link rel="alternate" hrefLang="es" href="https://keratocones.com/es/" />
-                <link rel="alternate" hrefLang="x-default" href="https://keratocones.com/" />
-            </head>
-            <body
-                className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}
-            >
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-                />
-                <GoogleTag />
-                <TrackingScripts />
-                <div className="flex flex-col min-h-screen">
-                    <main className="flex-grow">
-                        {children}
-                    </main>
-                    <Footer />
-                </div>
-                <ChatWidget />
-                <Analytics />
-            </body>
-        </html>
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
+            {children}
+        </>
     );
 }
