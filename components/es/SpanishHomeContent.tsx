@@ -5,7 +5,7 @@ import LandingLayout from '@/components/LandingLayout';
 import LandingHero from '@/components/Hero';
 import LeadForm from '@/components/LeadForm';
 import VisionSimulator from '@/components/VisionSimulator';
-import KeratoconusQuiz from '@/components/KeratoconusQuiz';
+import KeratoconusQuizEs from '@/components/es/KeratoconusQuizEs';
 import InsuranceSection from '@/components/InsuranceSection';
 import Testimonials from '@/components/Testimonials';
 import FadeIn from '@/components/FadeIn';
@@ -210,7 +210,7 @@ export default function SpanishHomeContent() {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <FadeIn>
-                        <KeratoconusQuiz />
+                        <KeratoconusQuizEs />
                     </FadeIn>
                 </div>
             </section>

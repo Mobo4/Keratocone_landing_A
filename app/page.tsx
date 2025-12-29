@@ -1,4 +1,5 @@
 import LandingHero from '@/components/Hero';
+import FAQSection from '@/components/FAQSection';
 import LeadForm from '@/components/LeadForm';
 import PamphletDownload from '@/components/PamphletDownload';
 import VisionSimulator from '@/components/VisionSimulator';
@@ -20,25 +21,8 @@ export const metadata: Metadata = {
 };
 
 export default function LandingPage() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Keratoconus Vision Center Homepage",
-    "description": "Orange County's leading keratoconus specialist. Advanced scleral lens fitting and non-surgical vision restoration.",
-    "url": "https://keratocones.com",
-    "mainEntity": {
-      "@type": "MedicalSpecialty",
-      "name": "Keratoconus Treatment",
-      "medicalCode": "ICD-10-CM H18.6"
-    }
-  };
-
   return (
     <LandingLayout>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
       <LandingHero
         headline="See Life Clearly Again"
         subheadline="Expert Keratoconus & Scleral Lens Care. When Others Say No, We Say Yes. Trusted by CHOC & UCI Medical Center."
@@ -46,7 +30,7 @@ export default function LandingPage() {
           "Advanced Scleral Lens Technology",
           "Non-Surgical Vision Restoration",
           "Complex Case Specialists",
-          "20+ Years Experience",
+          "35+ Years Experience",
           "Proven Results",
           "Insurance Accepted"
         ]}
@@ -74,7 +58,7 @@ export default function LandingPage() {
                   </div>
                   <p className="text-base md:text-sm text-eyecare-navy font-bold tracking-widest uppercase mb-2">Keratoconus Vision Center</p>
                   <h3 className="text-2xl font-bold mb-1 font-serif text-eyecare-navy">Dr. Alexander Bonakdar</h3>
-                  <p className="text-base md:text-sm text-gray-700">20+ Years Experience</p>
+                  <p className="text-base md:text-sm text-gray-700">35+ Years Experience</p>
                 </div>
 
                 <div className="md:col-span-2 space-y-6">
@@ -223,6 +207,9 @@ export default function LandingPage() {
           </FadeIn>
         </div>
       </section>
+
+      {/* FAQ Section for SEO & User Value */}
+      <FAQSection />
 
       {/* Lead Form Section */}
       <section id="lead-form" className="py-12 md:py-24 bg-eyecare-lighter-blue">

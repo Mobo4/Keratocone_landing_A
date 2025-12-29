@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Keratoconus Resource Library | Dr. Bonakdar',
-    description: 'Expert articles, guides, and research on Keratoconus, Scleral Lenses, and vision restoration options.',
+    description: "Comprehensive resources for keratoconus patients. Learn about causes, symptoms, progression stages, and advanced scleral lens treatment options available in Orange County.",
     alternates: {
         canonical: 'https://keratocones.com/keratoconus-resources',
     },

@@ -142,7 +142,7 @@ export default function Hero({
                         src={imageSrc}
                         alt="Keratoconus Treatment"
                         fill
-                        className="object-cover"
+                        className="object-cover animate-slow-zoom"
                         style={{ objectPosition: '80% center' }}
                         priority={priority}
                         sizes="100vw"
@@ -156,15 +156,15 @@ export default function Hero({
                     <div className="max-w-2xl text-white pt-20 pb-20">
                         <TrustBadge />
 
-                        <h1 className="text-5xl lg:text-6xl font-bold font-serif leading-tight mb-6 drop-shadow-sm">
+                        <h1 className="text-5xl lg:text-6xl font-bold font-serif leading-tight mb-6 drop-shadow-sm animate-fade-in-up">
                             {headline}
                         </h1>
 
-                        <p className="text-xl lg:text-2xl text-blue-50 font-light leading-relaxed mb-10 max-w-xl">
+                        <p className="text-xl lg:text-2xl text-blue-50 font-light leading-relaxed mb-10 max-w-xl animate-fade-in-up-delay-1">
                             {subheadline}
                         </p>
 
-                        <div className="flex flex-wrap gap-4 mb-12">
+                        <div className="flex flex-wrap gap-4 mb-12 animate-fade-in-up-delay-1">
                             <Link
                                 href={ctaLink}
                                 className="inline-flex items-center bg-eyecare-blue hover:bg-eyecare-dark-blue text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
@@ -183,7 +183,7 @@ export default function Hero({
 
                         {/* Desktop Benefits grid */}
                         {benefits.length > 0 && (
-                            <div className="grid grid-cols-2 gap-x-8 gap-y-4 max-w-lg">
+                            <div className="grid grid-cols-2 gap-x-8 gap-y-4 max-w-lg animate-fade-in-up-delay-2">
                                 {benefits.map((benefit, i) => (
                                     <div key={i} className="flex items-center gap-3 text-sm font-medium text-white/90">
                                         <div className="w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />
