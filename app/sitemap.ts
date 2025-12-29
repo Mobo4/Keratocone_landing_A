@@ -6,7 +6,7 @@ import { articles } from '@/data/articles'
 import { articlesEs } from '@/data/articles-es'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://keratocones.com'
+    const baseUrl = 'https://www.keratocones.com'
 
     // Core static pages (English)
     const staticRoutes = [
