@@ -9,9 +9,9 @@ import { ArrowLeft, Clock, Calendar, Tag } from 'lucide-react';
 import Script from 'next/script';
 
 interface Props {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 }
 
 // 1. Static Generation (SSG) for SEO speed
@@ -23,7 +23,8 @@ export async function generateStaticParams() {
 
 // 2. Dynamic Metadata
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const article = articles.find((a) => a.slug === params.slug);
+    const { slug } = await params;
+    const article = articles.find((a) => a.slug === slug);
     if (!article) return {};
 
     return {
@@ -40,8 +41,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // 3. Article Component
-export default function ArticlePage({ params }: Props) {
-    const article = articles.find((a) => a.slug === params.slug);
+export default async function ArticlePage({ params }: Props) {
+    const { slug } = await params;
+    const article = articles.find((a) => a.slug === slug);
 
     if (!article) {
         notFound();
