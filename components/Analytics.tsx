@@ -63,17 +63,6 @@ export default function Analytics() {
         `}
             </Script>
 
-            {/* ============================================================
-                CALLRAIL (Dynamic Number Insertion)
-                IMPORTANT: This ensures your NAP (Name, Address, Phone) remains
-                consistent for Google Local SEO bots, while swapping the number
-                for real human visitors to track calls.
-                
-                Replace YOUR_CALLRAIL_ID with your actual script source.
-               ============================================================ */}
-            {/* 
-            <Script id="callrail" strategy="afterInteractive" src="//cdn.callrail.com/companies/YOUR_CALLRAIL_ID/loader.js" />
-            */}
         </>
     );
 }
