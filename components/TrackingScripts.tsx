@@ -53,13 +53,9 @@ export default function TrackingScripts() {
         ------------------------------------------------------------
         CallRail (Dynamic Number Insertion)
         ------------------------------------------------------------
-        Account ID: 484975895
+        Now managed via GTM (GTM-NS6QTKN) - Account ID: 484975895
+        Removed from code to avoid duplicate loading
       */}
-      <Script
-        id="callrail"
-        strategy="afterInteractive"
-        src="//cdn.callrail.com/companies/484975895/cc1efe44e3700333f095/12/swap.js"
-      />
 
     </>
   );
