@@ -49,6 +49,18 @@ export default function TrackingScripts() {
         />
       </noscript>
 
+      {/*
+        ------------------------------------------------------------
+        CallRail (Dynamic Number Insertion)
+        ------------------------------------------------------------
+        Account ID: 484975895
+      */}
+      <Script
+        id="callrail"
+        strategy="afterInteractive"
+        src="//cdn.callrail.com/companies/484975895/cc1efe44e3700333f095/12/swap.js"
+      />
+
     </>
   );
 }
