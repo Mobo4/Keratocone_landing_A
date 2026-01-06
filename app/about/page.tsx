@@ -26,15 +26,21 @@ export default function AboutPage() {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
         "mainEntity": {
-            "@type": "Person",
+            "@type": "Physician",
             "name": "Dr. Alexander Bonakdar",
-            "jobTitle": "Optometrist",
-            "medicalSpecialty": "Keratoconus Specialist",
+            "jobTitle": "Keratoconus Specialist",
+            "medicalSpecialty": ["Keratoconus Treatment", "Scleral Lens Fitting", "Corneal Disease"],
             "worksFor": {
                 "@type": "MedicalBusiness",
-                "name": "Keratoconus Vision Center"
+                "name": "Keratoconus Vision Center",
+                "url": "https://keratocones.com"
             },
-            "description": "Orange County's leading expert in non-surgical vision restoration for Keratoconus with 20+ years of experience."
+            "description": "Orange County's leading keratoconus doctor specializing in non-surgical keratoconus treatment with 35+ years of experience. Trusted keratoconus specialist for complex corneal cases.",
+            "knowsAbout": ["Keratoconus", "Scleral Lenses", "Corneal Disease", "Non-surgical Vision Restoration"],
+            "areaServed": {
+                "@type": "State",
+                "name": "California"
+            }
         }
     };
 

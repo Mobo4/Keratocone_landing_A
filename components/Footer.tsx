@@ -33,7 +33,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-serif font-bold text-white mb-6">Keratoconus Vision Center</h3>
                         <p className="text-gray-400 leading-relaxed mb-6">
-                            Specialized scleral lens treatment and visual restoration for patients in Orange County, Los Angeles, and across Southern California.
+                            Orange County's leading <Link href="/" className="text-eyecare-blue hover:text-white transition-colors">keratoconus specialist</Link> offering expert scleral lens treatment and visual restoration. Trusted <Link href="/about" className="text-eyecare-blue hover:text-white transition-colors">keratoconus doctor</Link> serving patients across Southern California.
                         </p>
                         <div className="flex gap-4">
                             <Link href="https://www.facebook.com/eyecarecenteroc" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-eyecare-blue transition-colors">
@@ -47,12 +47,14 @@ export default function Footer() {
 
                     {/* Column 2: Quick Links */}
                     <div>
-                        <h4 className="font-bold text-white mb-6">Patient Resources</h4>
+                        <h4 className="font-bold text-white mb-6">Keratoconus Treatment Resources</h4>
                         <ul className="space-y-3">
-                            <li><Link href="/about" className="text-gray-400 hover:text-eyecare-blue transition-colors">About Dr. Bonakdar</Link></li>
-                            <li><Link href="/lp/keratoconus-scleral" className="text-gray-400 hover:text-eyecare-blue transition-colors">Scleral Lenses</Link></li>
-                            <li><Link href="/keratoconus-resources" className="text-gray-400 hover:text-eyecare-blue transition-colors">Keratoconus Library</Link></li>
-                            <li><Link href="/contact" className="text-gray-400 hover:text-eyecare-blue transition-colors">Contact Us</Link></li>
+                            <li><Link href="/about" className="text-gray-400 hover:text-eyecare-blue transition-colors">About Our Keratoconus Doctor</Link></li>
+                            <li><Link href="/lp/keratoconus-scleral" className="text-gray-400 hover:text-eyecare-blue transition-colors">Scleral Lenses for Keratoconus</Link></li>
+                            <li><Link href="/keratoconus-resources" className="text-gray-400 hover:text-eyecare-blue transition-colors">Keratoconus Treatment Library</Link></li>
+                            <li><Link href="/keratoconus-resources/ultimate-guide-to-keratoconus" className="text-gray-400 hover:text-eyecare-blue transition-colors">Keratoconus Guide</Link></li>
+                            <li><Link href="/keratoconus-resources/4-stages-of-keratoconus" className="text-gray-400 hover:text-eyecare-blue transition-colors">Stages of Keratoconus</Link></li>
+                            <li><Link href="/contact" className="text-gray-400 hover:text-eyecare-blue transition-colors">Contact Keratoconus Specialist</Link></li>
                         </ul>
                     </div>
 

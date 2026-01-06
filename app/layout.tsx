@@ -12,9 +12,9 @@ import { Analytics } from "@vercel/analytics/next";
 import BusinessSchema from "@/components/BusinessSchema";
 
 export const metadata: Metadata = {
-  title: "Keratoconus Vision Center | Dr. Alexander Bonakdar",
-  description: "Orange County's leading keratoconus specialist. Advanced scleral lens fitting and non-surgical vision restoration.",
-  keywords: ["medical doctors", "keratoconus treatment", "eye disease", "clinical training", "scleral lenses", "diagnosis", "optometrist specialist", "corneal disease"],
+  title: "Keratoconus Vision Center | Dr. Alexander Bonakdar - Keratoconus Specialist",
+  description: "Orange County's leading keratoconus specialist and cornea doctor. Advanced scleral lens fitting and non-surgical vision restoration for keratoconus treatment.",
+  keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "cornea specialist", "keratoconus specialist near me", "best keratoconus doctor", "keratoconus treatment without surgery", "corneal disease specialist", "irregular astigmatism doctor"],
 };
 
 const poppins = Poppins({
