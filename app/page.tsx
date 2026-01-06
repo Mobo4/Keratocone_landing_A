@@ -14,7 +14,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Keratoconus Specialist Orange County | Dr. Alexander Bonakdar",
-  description: "Best keratoconus doctor near you in Orange County, CA. Expert keratoconus treatment without surgery using advanced scleral lenses. 35+ years experience. Call (714) 558-0641.",
+  description: "Orange County keratoconus specialist. Expert treatment without surgery using scleral lenses. 35+ years experience. Call (714) 558-0641.",
   keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "keratoconus specialist near me", "keratoconus doctor orange county", "cornea specialist", "keratoconus treatment without surgery"],
   alternates: {
     canonical: 'https://keratocones.com',
