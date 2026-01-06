@@ -17,22 +17,6 @@ export default function GoogleTag() {
             </Script>
             {/* End Google Tag Manager */}
 
-            {/* Google Analytics 4 & Ads (Hybrid Implementation) */}
-            <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-E7VSPDXLF3"
-                strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-                {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-
-                  gtag('config', 'G-E7VSPDXLF3'); // GA4
-                  gtag('config', 'GT-TXX6TLW'); // Google Ads
-                `}
-            </Script>
-
             {/* Google Tag Manager (noscript) */}
             <noscript>
                 <iframe
