@@ -87,9 +87,9 @@ export default function Hero({
                 <div className="px-5 py-8">
                     <TrustBadge darkText={true} centered />
 
-                    <h1 className="text-3xl font-bold text-eyecare-navy leading-tight mb-4 font-serif text-center drop-shadow-sm">
+                    <span className="block text-3xl font-bold text-eyecare-navy leading-tight mb-4 font-serif text-center drop-shadow-sm" aria-hidden="true">
                         {headline}
-                    </h1>
+                    </span>
 
                     <p className="text-lg text-gray-600 leading-relaxed mb-6 text-center font-light">
                         {subheadline}
