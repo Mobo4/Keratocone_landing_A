@@ -17,7 +17,54 @@ export const metadata: Metadata = {
   description: "Orange County keratoconus specialist. Expert treatment without surgery using scleral lenses. 35+ years experience. Call (714) 558-0641.",
   keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "keratoconus specialist near me", "keratoconus doctor orange county", "cornea specialist", "keratoconus treatment without surgery"],
   alternates: {
-    canonical: 'https://keratocones.com',
+    canonical: 'https://www.keratocones.com',
+  },
+  openGraph: {
+    title: "Keratoconus Specialist Orange County | Dr. Alexander Bonakdar",
+    description: "Orange County's leading keratoconus specialist. Expert non-surgical treatment using advanced scleral lenses. 35+ years experience. Trusted by CHOC & UCI Medical Center.",
+    url: 'https://www.keratocones.com',
+    siteName: 'Keratoconus Vision Center',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.keratocones.com/images/keratoconus-main.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Keratoconus Vision Center - Dr. Alexander Bonakdar',
+      },
+      {
+        url: 'https://www.keratocones.com/images/drbonakdar.webp',
+        width: 800,
+        height: 800,
+        alt: 'Dr. Alexander Bonakdar - Keratoconus Specialist Orange County',
+      },
+    ],
+    videos: [
+      {
+        url: 'https://www.youtube.com/watch?v=jGBsy13yk7c',
+        width: 1280,
+        height: 720,
+        type: 'text/html',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Keratoconus Specialist Orange County | Dr. Alexander Bonakdar",
+    description: "Expert keratoconus treatment without surgery. Advanced scleral lenses. 35+ years experience. Call (714) 558-0641.",
+    images: ['https://www.keratocones.com/images/keratoconus-main.webp'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
