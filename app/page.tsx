@@ -151,8 +151,8 @@ export default function LandingPage() {
                 <div className="bg-white p-4 rounded-2xl shadow-xl border border-eyecare-blue/10 transform rotate-2 hover:rotate-0 transition-transform duration-500">
                   <div className="aspect-[4/3] bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden relative">
                     <img
-                      src="/images/topography.jpg"
-                      alt="Corneal Topography"
+                      src="https://res.cloudinary.com/broadcastmed/image/fetch/q_auto,f_auto/dpr_auto/https://ophthalmologymanagement.com/media/bx5jmelz/omd_jun_6301.jpg"
+                      alt="Corneal Topography Map showing keratoconus diagnosis with elevation and curvature data"
                       className="w-full h-full object-cover"
                     />
                   </div>
