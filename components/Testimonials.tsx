@@ -11,8 +11,8 @@ export default function Testimonials() {
     const videoSchema = {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Dr. Bonakdar: 'We Don't Give Up' - Keratoconus Patient Story",
-        "description": "Real patient testimonial about keratoconus treatment at Keratoconus Vision Center with Dr. Alexander Bonakdar in Orange County, CA.",
+        "name": "Understanding Your Keratoconus Diagnosis - What You Need to Know",
+        "description": "Dr. Alexander Bonakdar explains keratoconus diagnosis, treatment options, and how scleral lenses can restore clear vision. Learn what to expect from your keratoconus specialist in Orange County, CA.",
         "thumbnailUrl": `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
         "uploadDate": "2024-01-01",
         "contentUrl": `https://www.youtube.com/watch?v=${videoId}`,
@@ -50,7 +50,7 @@ export default function Testimonials() {
                                 <iframe
                                     className="absolute top-0 left-0 w-full h-full"
                                     src={`https://www.youtube.com/embed/${videoId}?rel=0`}
-                                    title="Dr. Bonakdar: 'We Don't Give Up' - Keratoconus Patient Story"
+                                    title="Understanding Your Keratoconus Diagnosis - What You Need to Know"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
@@ -58,7 +58,7 @@ export default function Testimonials() {
                             </div>
                         </div>
                         <p className="text-center mt-4 text-gray-600 text-sm">
-                            Dr. Bonakdar: "We Don't Give Up" - Keratoconus Patient Success Story
+                            Understanding Your Keratoconus Diagnosis: Causes, Symptoms & Treatment Options
                         </p>
                     </div>
                 </FadeIn>
