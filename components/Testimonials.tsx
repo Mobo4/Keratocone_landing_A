@@ -2,25 +2,38 @@
 
 import React from 'react';
 import FadeIn from './FadeIn';
-
-const testimonials = [
-    {
-        quote: "I can see my kids' faces again",
-        author: "Maria S.",
-        role: "Keratoconus Patient",
-        image: null // Placeholder for now
-    },
-    {
-        quote: "Dr. Bonakdar: 'We Don't Give Up'",
-        author: "James T.",
-        role: "Scleral Lens Patient",
-        image: null
-    }
-];
+import Script from 'next/script';
 
 export default function Testimonials() {
+    const videoId = 'jGBsy13yk7c';
+
+    // VideoObject schema for SEO
+    const videoSchema = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Dr. Bonakdar: 'We Don't Give Up' - Keratoconus Patient Story",
+        "description": "Real patient testimonial about keratoconus treatment at Keratoconus Vision Center with Dr. Alexander Bonakdar in Orange County, CA.",
+        "thumbnailUrl": `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+        "uploadDate": "2024-01-01",
+        "contentUrl": `https://www.youtube.com/watch?v=${videoId}`,
+        "embedUrl": `https://www.youtube.com/embed/${videoId}`,
+        "publisher": {
+            "@type": "Organization",
+            "name": "Keratoconus Vision Center",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.keratocones.com/images/logo.png"
+            }
+        }
+    };
+
     return (
         <section className="py-24 bg-white overflow-hidden">
+            <Script
+                id="video-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+            />
             <div className="container mx-auto px-4">
                 <FadeIn>
                     <div className="lg:text-center mb-12">
@@ -30,30 +43,23 @@ export default function Testimonials() {
                         </p>
                     </div>
 
-                    {/* Mobile: Horizontal Scroll / Desktop: Grid */}
-                    <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-2 md:overflow-visible md:pb-0 max-w-5xl mx-auto scrollbar-hide -mx-4 px-4 md:mx-auto md:px-0">
-                        {testimonials.map((t, idx) => (
-                            <div key={idx} className="min-w-[85vw] md:min-w-0 snap-center">
-                                <div className="bg-gray-100 rounded-2xl aspect-video flex items-center justify-center relative group cursor-pointer overflow-hidden shadow-lg border border-gray-200 transform transition-transform hover:scale-[1.02] active:scale-95">
-                                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
-                                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform z-10">
-                                        <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-eyecare-blue border-b-8 border-b-transparent ml-1"></div>
-                                    </div>
-                                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                                        <p className="text-white font-bold text-lg drop-shadow-md">"{t.quote}"</p>
-                                        <p className="text-white/80 text-sm mt-1">{t.author}</p>
-                                    </div>
-                                </div>
+                    {/* Centered YouTube Video */}
+                    <div className="max-w-4xl mx-auto">
+                        <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                                <iframe
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+                                    title="Dr. Bonakdar: 'We Don't Give Up' - Keratoconus Patient Story"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
                             </div>
-                        ))}
-
-                        {/* Add a "More" card for mobile scroll hint if needed, or just CSS hint */}
-                    </div>
-
-                    {/* Mobile Scroll Hint */}
-                    <div className="md:hidden flex justify-center gap-2 mt-4">
-                        <div className="w-2 h-2 rounded-full bg-eyecare-blue"></div>
-                        <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+                        </div>
+                        <p className="text-center mt-4 text-gray-600 text-sm">
+                            Dr. Bonakdar: "We Don't Give Up" - Keratoconus Patient Success Story
+                        </p>
                     </div>
                 </FadeIn>
             </div>
