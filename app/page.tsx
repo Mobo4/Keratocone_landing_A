@@ -4,6 +4,7 @@ import LeadForm from '@/components/LeadForm';
 import PamphletDownload from '@/components/PamphletDownload';
 import VisionSimulator from '@/components/VisionSimulator';
 import KeratoconusQuiz from '@/components/KeratoconusQuiz';
+import VideoSection from '@/components/VideoSection';
 
 import LandingLayout from '@/components/LandingLayout';
 import FadeIn from '@/components/FadeIn';
@@ -82,6 +83,8 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Video Section - What Is Keratoconus */}
+      <VideoSection />
 
       {/* Problem/Agitation Section */}
       <section id="learn-more" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
