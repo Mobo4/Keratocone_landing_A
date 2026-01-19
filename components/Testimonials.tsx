@@ -14,7 +14,7 @@ export default function Testimonials() {
         "name": "Understanding Your Keratoconus Diagnosis - What You Need to Know",
         "description": "Dr. Alexander Bonakdar explains keratoconus diagnosis, treatment options, and how scleral lenses can restore clear vision. Learn what to expect from your keratoconus specialist in Orange County, CA.",
         "thumbnailUrl": `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
-        "uploadDate": "2024-01-01",
+        "uploadDate": "2024-01-01T00:00:00-08:00",
         "contentUrl": `https://www.youtube.com/watch?v=${videoId}`,
         "embedUrl": `https://www.youtube.com/embed/${videoId}`,
         "publisher": {
