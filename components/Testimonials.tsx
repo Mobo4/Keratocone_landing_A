@@ -37,9 +37,9 @@ export default function Testimonials() {
             <div className="container mx-auto px-4">
                 <FadeIn>
                     <div className="lg:text-center mb-12">
-                        <h2 className="text-4xl font-bold text-eyecare-navy font-serif mb-6">Real Patient Stories</h2>
+                        <h2 className="text-4xl font-bold text-eyecare-navy font-serif mb-6">Understanding Keratoconus</h2>
                         <p className="max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed">
-                            See the life-changing results for yourself. Hear from patients who were told their vision couldn't be saved.
+                            Learn about keratoconus diagnosis, treatment options, and what to expect from specialty contact lens management.
                         </p>
                     </div>
 

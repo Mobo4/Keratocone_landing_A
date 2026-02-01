@@ -1,27 +1,28 @@
 import LandingHero from '@/components/Hero';
 import FAQSection from '@/components/FAQSection';
 import LeadForm from '@/components/LeadForm';
-import PamphletDownload from '@/components/PamphletDownload';
 import VisionSimulator from '@/components/VisionSimulator';
 import KeratoconusQuiz from '@/components/KeratoconusQuiz';
+import KeratoconusContent from '@/components/KeratoconusContent';
 
 import LandingLayout from '@/components/LandingLayout';
 import FadeIn from '@/components/FadeIn';
 import InsuranceSection from '@/components/InsuranceSection';
 import Testimonials from '@/components/Testimonials';
+import GoogleReviews from '@/components/GoogleReviews';
 
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Keratoconus Specialist Orange County | Dr. Alexander Bonakdar",
-  description: "Orange County keratoconus specialist. Expert treatment without surgery using scleral lenses. 35+ years experience. Call (714) 558-0641.",
-  keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "keratoconus specialist near me", "keratoconus doctor orange county", "cornea specialist", "keratoconus treatment without surgery"],
+  title: "Keratoconus: Symptoms, Treatment & Scleral Lenses | Dr. Alexander Bonakdar, Orange County",
+  description: "Keratoconus is a progressive eye condition where the cornea thins and bulges. Learn about symptoms, contact lens options including scleral lenses, and management from a keratoconus specialist in Orange County, CA.",
+  keywords: ["keratoconus", "keratoconus symptoms", "keratoconus treatment", "scleral lenses for keratoconus", "keratoconus specialist", "keratoconus doctor orange county", "cornea specialist", "keratoconus contact lenses", "is keratoconus progressive", "keratoconus vision loss"],
   alternates: {
     canonical: 'https://www.keratocones.com',
   },
   openGraph: {
-    title: "Keratoconus Specialist Orange County | Dr. Alexander Bonakdar",
-    description: "Orange County's leading keratoconus specialist. Expert non-surgical treatment using advanced scleral lenses. 35+ years experience. Trusted by CHOC & UCI Medical Center.",
+    title: "Keratoconus: Symptoms, Treatment & Scleral Lenses | Dr. Alexander Bonakdar",
+    description: "Keratoconus is a progressive eye condition where the cornea thins and bulges into a cone shape. Learn about symptoms, diagnosis, contact lens options, and ongoing management.",
     url: 'https://www.keratocones.com',
     siteName: 'Keratoconus Vision Center',
     locale: 'en_US',
@@ -51,8 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Keratoconus Specialist Orange County | Dr. Alexander Bonakdar",
-    description: "Expert keratoconus treatment without surgery. Advanced scleral lenses. 35+ years experience. Call (714) 558-0641.",
+    title: "Keratoconus: Symptoms, Treatment & Scleral Lenses | Dr. Alexander Bonakdar",
+    description: "Keratoconus is a progressive eye condition where the cornea thins and bulges. Learn about symptoms, contact lens options, and management.",
     images: ['https://www.keratocones.com/images/keratoconus-main.webp'],
   },
   robots: {
@@ -71,126 +72,53 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <LandingLayout>
+      {/* H1 Hero: Keratoconus + Above-the-fold definition */}
       <LandingHero
-        headline="Orange County's Leading Keratoconus Specialist"
-        subheadline="Expert Keratoconus Doctor & Scleral Lens Care. When Others Say No, We Say Yes. Trusted by CHOC & UCI Medical Center."
+        headline="Keratoconus"
+        subheadline="Keratoconus is a progressive eye condition in which the cornea thins and bulges into a cone shape, causing distorted vision. It is typically diagnosed in adolescence or early adulthood and managed with specialty contact lenses, corneal cross-linking, or both."
         benefits={[
-          "Advanced Scleral Lens Technology",
-          "Non-Surgical Vision Restoration",
-          "Complex Case Specialists",
-          "35+ Years Experience",
-          "Proven Results",
-          "Insurance Accepted"
+          "Scleral Lens Fitting",
+          "Corneal Topography",
+          "Post-Surgical Management",
+          "35+ Years Clinical Experience",
+          "Insurance Accepted",
+          "Referral Center for Complex Cases"
         ]}
-        ctaText="Book Consultation"
+        ctaText="Schedule Evaluation"
         ctaLink="#lead-form"
         imageSrc="/images/keratoconus-main.webp"
         phoneNumber="(714) 558-0641"
         priority={true}
       />
 
-      {/* Credentials & Authority Section */}
-      <section className="py-24 bg-gradient-to-br from-[#faf9f6] via-[#f0eadd] to-[#e6dfd1]">
-        <div className="container mx-auto px-4">
-          <FadeIn>
-            <div className="max-w-5xl mx-auto">
-              <div className="grid md:grid-cols-3 gap-12 items-center">
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-eyecare-navy mb-6 shadow-2xl">
-                    <img
-                      src="/images/drbonakdar.webp"
-                      alt="Dr. Alexander Bonakdar - Keratoconus Specialist Orange County"
-                      className="w-full h-full object-cover"
-                      style={{ objectPosition: 'center 30%' }}
-                    />
-                  </div>
-                  <p className="text-base md:text-sm text-eyecare-navy font-bold tracking-widest uppercase mb-2">Keratoconus Vision Center</p>
-                  <h3 className="text-2xl font-bold mb-1 font-serif text-eyecare-navy">Dr. Alexander Bonakdar</h3>
-                  <p className="text-base md:text-sm text-gray-700">Keratoconus Doctor - 35+ Years Experience</p>
-                </div>
+      {/* AEO-Optimized Educational Content */}
+      <KeratoconusContent />
 
-                <div className="md:col-span-2 space-y-6">
-                  <div className="flex items-start gap-3 md:gap-4">
-                    <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2 md:mt-2.5 shrink-0"></div>
-                    <p className="text-base md:text-lg text-gray-800 leading-relaxed"><span className="text-eyecare-navy font-bold">Trusted Keratoconus Specialist</span> - Referral source for CHOC (Children's Hospital of Orange County) and UCI Medical Center for complex keratoconus cases</p>
-                  </div>
-                  <div className="flex items-start gap-3 md:gap-4">
-                    <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2 md:mt-2.5 shrink-0"></div>
-                    <p className="text-base md:text-lg text-gray-800 leading-relaxed"><span className="text-eyecare-navy font-bold">Advanced Keratoconus Treatment Technology:</span> State-of-the-art corneal topography and diagnostic equipment for the most challenging keratoconus fits</p>
-                  </div>
-                  <div className="flex items-start gap-3 md:gap-4">
-                    <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2 md:mt-2.5 shrink-0"></div>
-                    <p className="text-base md:text-lg text-gray-800 leading-relaxed"><span className="text-eyecare-navy font-bold">Expert Keratoconus Doctor:</span> When other doctors say your keratoconus case is "too difficult," that's where our specialized expertise begins</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
-
-      {/* Problem/Agitation Section */}
-      <section id="learn-more" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <FadeIn>
-          <div className="lg:text-center mb-16">
-            <h2 className="text-xs md:text-sm text-red-600 font-bold tracking-widest uppercase mb-3">Looking for a Keratoconus Doctor Near You?</h2>
-            <p className="text-3xl md:text-4xl leading-tight font-bold text-eyecare-navy sm:text-5xl font-serif mb-4 md:mb-6">
-              Expert Keratoconus Treatment Without Surgery
-            </p>
-            <p className="max-w-3xl text-lg md:text-xl text-gray-600 lg:mx-auto leading-relaxed">
-              If you've been told "there's nothing more we can do" or "your corneas are too irregular," you've found the best keratoconus specialist near you. Our keratoconus doctor specializes in the cases other eye doctors turn away.
-            </p>
-          </div>
-
-          <div className="mt-16">
-            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-12">
-              <div className="relative bg-red-50 p-6 md:p-10 rounded-3xl border border-red-100 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <dt>
-                  <p className="text-xl md:text-2xl leading-8 font-bold text-eyecare-navy font-serif mb-3 md:mb-4">The Reality of Advanced Keratoconus</p>
-                </dt>
-                <dd className="text-base md:text-lg text-gray-600 leading-relaxed">
-                  Your cornea has thinned and bulged into a cone shape, scattering light and causing severe distortion. Regular contacts slide off. Glasses barely help. You may have been told by other doctors to "wait for a transplant." A keratoconus specialist can help.
-                </dd>
-              </div>
-              <div className="relative bg-eyecare-lighter-blue p-6 md:p-10 rounded-3xl border border-eyecare-blue/20 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <dt>
-                  <p className="text-xl md:text-2xl leading-8 font-bold text-eyecare-navy font-serif mb-3 md:mb-4">The Solution: Expert Keratoconus Treatment</p>
-                </dt>
-                <dd className="text-base md:text-lg text-gray-600 leading-relaxed">
-                  Custom scleral lenses vault over your irregular cornea, creating a perfectly smooth optical surface. With our keratoconus specialist's advanced fitting technology and expertise in difficult cases, we achieve clear vision even when other keratoconus doctors have failed.
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </FadeIn>
-      </section>
-
-      {/* Real Patient Stories - Video Placeholder */}
+      {/* Understanding Keratoconus - Video */}
       <Testimonials />
 
-      {/* Advanced Technology - Topography Placeholder */}
+      {/* How Keratoconus Is Diagnosed - Corneal Topography */}
       <section className="py-24 bg-eyecare-lighter-blue">
         <div className="container mx-auto px-4">
           <FadeIn>
             <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <div>
-                <h2 className="text-3xl font-bold text-eyecare-navy font-serif mb-6">Precision Mapping Technology</h2>
+                <h2 className="text-3xl font-bold text-eyecare-navy font-serif mb-6">How Keratoconus Is Diagnosed</h2>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  We don't guess. We map your cornea with microscopic precision using advanced topography. This allows us to design a lens that vaults over the irregular "cone" shape of your eye, providing a new, perfectly smooth optical surface.
+                  Keratoconus is diagnosed through corneal topography, a non-invasive imaging technique that creates a detailed map of the corneal surface. This map reveals irregularities in curvature, thickness, and elevation that are characteristic of keratoconus. Corneal tomography may also be used to evaluate the full thickness of the cornea and detect early changes before symptoms appear.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-eyecare-blue rounded-full"></div>
-                    <span className="text-gray-700 font-medium">Detailed Corneal Elevation Maps</span>
+                    <span className="text-gray-700 font-medium">Corneal Topography (Surface Curvature Mapping)</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-eyecare-blue rounded-full"></div>
-                    <span className="text-gray-700 font-medium">Custom Wavefront Optics</span>
+                    <span className="text-gray-700 font-medium">Corneal Tomography (Full Thickness Analysis)</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-eyecare-blue rounded-full"></div>
-                    <span className="text-gray-700 font-medium">Sub-Micron Fitting Accuracy</span>
+                    <span className="text-gray-700 font-medium">Pachymetry (Corneal Thickness Measurement)</span>
                   </li>
                 </ul>
               </div>
@@ -199,11 +127,11 @@ export default function LandingPage() {
                   <div className="aspect-[4/3] bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden relative">
                     <img
                       src="https://res.cloudinary.com/broadcastmed/image/fetch/q_auto,f_auto/dpr_auto/https://ophthalmologymanagement.com/media/bx5jmelz/omd_jun_6301.jpg"
-                      alt="Corneal Topography Map showing keratoconus diagnosis with elevation and curvature data"
+                      alt="Corneal topography map showing keratoconus with characteristic steepening patterns in curvature and elevation data"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <p className="text-center mt-4 text-sm font-bold text-eyecare-navy">Advanced Diagnostic Mapping</p>
+                  <p className="text-center mt-4 text-sm font-bold text-eyecare-navy">Corneal Topography: Diagnostic Mapping for Keratoconus</p>
                 </div>
               </div>
             </div>
@@ -211,43 +139,75 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Insurance Section */}
-      <InsuranceSection />
+      {/* Vision Comparison */}
+      <VisionSimulator />
 
-      {/* Why Choose Us / Medical Credibility */}
-      <section className="bg-gradient-to-r from-white to-eyecare-lighter-blue/30 py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* Practice Information - Brief and Professional */}
+      <section className="py-24 bg-gradient-to-br from-[#faf9f6] via-[#f0eadd] to-[#e6dfd1]">
+        <div className="container mx-auto px-4">
           <FadeIn>
-            <div className="lg:text-center mb-16">
-              <h2 className="text-4xl font-bold text-eyecare-navy font-serif mb-6">Why Choose Our Keratoconus Specialist</h2>
-              <p className="max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed">
-                Patients travel from across the country to see our keratoconus doctor. When CHOC and UCI Medical Center encounter complex keratoconus cases, they refer to us.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {[
-                { title: "Keratoconus Specialist for Difficult Cases", desc: "Our keratoconus doctor excels where others struggle. Severe keratoconus, post-surgical corneas, and irregular astigmatism—these 'impossible' cases are our specialty.", border: "border-eyecare-blue" },
-                { title: "Advanced Keratoconus Diagnostic Technology", desc: "State-of-the-art corneal topography and mapping systems provide microscopic precision for custom scleral lens design for keratoconus treatment.", border: "border-eyecare-blue" },
-                { title: "Trusted Keratoconus Doctor", desc: "Trusted by CHOC and UCI Medical Center. When their keratoconus patients need an expert keratoconus specialist for lens fitting, they send them to us.", border: "border-eyecare-blue" },
-                { title: "Proven Keratoconus Treatment Results", desc: "35+ years of successful keratoconus fittings. Patients who were told 'nothing more can be done' achieve 20/20 vision or better with our keratoconus treatment.", border: "border-green-600" },
-                { title: "Comprehensive Keratoconus Care", desc: "From initial keratoconus consultation to ongoing monitoring, we ensure long-term success and corneal health with every keratoconus treatment fit.", border: "border-green-600" },
-                { title: "Limited Availability", desc: "Due to the complexity of keratoconus cases we handle, we accept a limited number of new patients each month. Schedule your keratoconus consultation now.", border: "border-green-600", font: "font-semibold" }
-              ].map((item, idx) => (
-                <div key={idx} className={`bg-white overflow-hidden shadow-xl rounded-2xl border-t-4 ${item.border} hover:-translate-y-1 transition-transform duration-300`}>
-                  <div className="px-8 py-10">
-                    <h3 className="text-xl font-bold text-eyecare-navy mb-4 font-serif">{item.title}</h3>
-                    <p className={`text-base text-gray-600 leading-relaxed ${item.font || ''}`}>
-                      {item.desc}
-                    </p>
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl font-bold text-eyecare-navy font-serif mb-12 text-center">About This Practice</h2>
+              <div className="grid md:grid-cols-3 gap-12 items-center">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-eyecare-navy mb-6 shadow-2xl">
+                    <img
+                      src="/images/drbonakdar.webp"
+                      alt="Dr. Alexander Bonakdar, O.D. - Keratoconus Specialist, Orange County, California"
+                      className="w-full h-full object-cover"
+                      style={{ objectPosition: 'center 30%' }}
+                    />
                   </div>
+                  <h3 className="text-2xl font-bold mb-1 font-serif text-eyecare-navy">Dr. Alexander Bonakdar, O.D.</h3>
+                  <p className="text-base md:text-sm text-gray-700">Licensed Optometrist</p>
+                  <p className="text-base md:text-sm text-gray-700">35+ Years Clinical Experience</p>
                 </div>
-              ))}
+
+                <div className="md:col-span-2 space-y-6">
+                  <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+                    Dr. Bonakdar provides keratoconus evaluation and specialty contact lens management, including scleral lens fitting, at the Keratoconus Vision Center in Santa Ana, California. The practice receives referrals from CHOC (Children's Hospital of Orange County) and UCI Medical Center for complex corneal cases.
+                  </p>
+                  <div className="bg-white/60 rounded-xl p-6 border border-gray-200">
+                    <p className="text-gray-800 font-medium mb-2">Keratoconus Vision Center</p>
+                    <p className="text-gray-600">801 North Tustin Ave, Suite 401</p>
+                    <p className="text-gray-600">Santa Ana, CA 92705</p>
+                    <p className="text-gray-600 mt-2">Phone: <a href="tel:+17145580641" className="text-eyecare-blue hover:underline">(714) 558-0641</a></p>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2.5 shrink-0"></div>
+                      <span className="text-gray-700">Keratoconus evaluation and ongoing monitoring</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2.5 shrink-0"></div>
+                      <span className="text-gray-700">Scleral, RGP, and hybrid contact lens fitting</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2.5 shrink-0"></div>
+                      <span className="text-gray-700">Post-surgical corneal management (post-transplant, post-cross-linking)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-eyecare-navy rounded-full mt-2.5 shrink-0"></div>
+                      <span className="text-gray-700">Advanced corneal topography and tomography</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </FadeIn>
         </div>
       </section>
 
-      {/* Quiz Section - 10x Feature */}
+      {/* Patient Reviews */}
+      <GoogleReviews />
+
+      {/* Insurance Section */}
+      <InsuranceSection />
+
+      {/* Quiz Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <FadeIn>
@@ -255,9 +215,6 @@ export default function LandingPage() {
           </FadeIn>
         </div>
       </section>
-
-      {/* FAQ Section for SEO & User Value */}
-      <FAQSection />
 
       {/* Lead Form Section */}
       <section id="lead-form" className="py-12 md:py-24 bg-eyecare-lighter-blue">

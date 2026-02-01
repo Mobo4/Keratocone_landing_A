@@ -3,7 +3,7 @@ export const BUSINESS_INFO = {
     alternateName: "Dr. Alexander Bonakdar",
     legalName: "Alexander Bonakdar Optometry Corp",
     description: "Orange County's leading specialist in non-surgical vision restoration for Keratoconus using advanced Scleral Lenses. Trusted by CHOC and UCI Medical Center.",
-    url: "https://keratocones.com",
+    url: "https://www.keratocones.com",
     telephone: "(714) 558-0641",
     email: "info@keratocones.com",
     address: {

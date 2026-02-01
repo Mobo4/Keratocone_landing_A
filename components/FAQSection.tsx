@@ -7,40 +7,40 @@ import FadeIn from '@/components/FadeIn';
 export default function FAQSection() {
     const faqs = [
         {
-            question: "Can Keratoconus be cured?",
-            answer: "While there is currently no 'cure' for keratoconus that reverses the condition completely, it can be effectively managed by a keratoconus specialist. Keratoconus treatment options like Corneal Cross-Linking (CXL) can stop progression, and modern Scleral Lenses can restore vision to 20/20 in almost all cases, allowing patients to live normal lives.",
+            question: "Can keratoconus be cured?",
+            answer: "There is currently no cure that reverses keratoconus. However, the condition can be effectively managed. Corneal cross-linking can slow or halt progression, and specialty contact lenses such as scleral lenses can restore clear vision in most cases. With appropriate management, most patients maintain functional vision throughout their lives.",
             link: "/keratoconus-resources/can-keratoconus-be-cured",
-            linkText: "Learn more about keratoconus treatment options"
+            linkText: "Learn more about keratoconus management options"
         },
         {
-            question: "How are Scleral Lenses different from regular contacts?",
-            answer: "Regular contact lenses sit directly on the cornea, which is painful and unstable for keratoconus eyes. Scleral lenses are larger and vault over the entire cornea, resting gently on the white part of the eye (sclera). This creates a liquid reservoir that bathes the eye and provides a perfect new optical surface, correcting distortion.",
+            question: "How are scleral lenses different from regular contacts?",
+            answer: "Scleral lenses are larger than standard contact lenses and vault over the entire cornea without touching it. They rest on the sclera (the white part of the eye) and create a fluid reservoir between the lens and the corneal surface. This provides a smooth optical surface that corrects the irregular astigmatism caused by keratoconus, which standard soft lenses cannot adequately address.",
             link: "/keratoconus-resources/scleral-lenses-vs-corneal-transplant",
-            linkText: "Compare scleral lenses to other keratoconus treatments"
+            linkText: "Compare scleral lenses to other treatment options"
         },
         {
-            question: "Does insurance cover Scleral Lenses for keratoconus?",
-            answer: "Yes, in most cases involving keratoconus, Scleral Lenses are classified as 'medically necessary.' We accept most major vision plans including VSP, EyeMed, and others, which often cover the entire cost of the lenses. Our keratoconus specialist team specializes in obtaining prior authorizations for complex corneal conditions.",
+            question: "Does insurance cover scleral lenses for keratoconus?",
+            answer: "In most cases, scleral lenses for keratoconus are classified as medically necessary by insurance providers. Many major vision and medical plans, including VSP, EyeMed, Medicare, and others, cover medically necessary contact lenses. Prior authorization is typically required, and coverage varies by plan.",
             link: "/keratoconus-resources/living-with-keratoconus",
             linkText: "Read about insurance and living with keratoconus"
         },
         {
-            question: "What if I've had a corneal transplant?",
-            answer: "Our keratoconus doctor specializes in fitting post-surgical corneas. Even after a transplant, many patients still have irregular astigmatism. Scleral lenses are often the safest and most effective keratoconus treatment to protect a transplant and achieve sharp vision without needing further surgery.",
-            link: "/contact",
-            linkText: "Schedule a consultation with our keratoconus specialist"
+            question: "Can scleral lenses be worn after a corneal transplant?",
+            answer: "Yes, scleral lenses are frequently used after corneal transplant surgery. Many post-transplant patients have residual irregular astigmatism that glasses cannot correct. Scleral lenses provide a smooth optical surface over the graft and can protect the corneal surface while delivering improved visual acuity.",
+            link: "/keratoconus-resources/scleral-lenses-vs-corneal-transplant",
+            linkText: "Learn about post-surgical lens options"
         },
         {
             question: "What are the stages of keratoconus?",
-            answer: "Keratoconus progresses through 4 distinct stages, from early (Forme Fruste) to severe. Understanding your stage helps our keratoconus doctor determine the best keratoconus treatment plan. Early detection by a keratoconus specialist is crucial for preserving your vision.",
+            answer: "Keratoconus is generally classified into four stages based on corneal steepness and irregularity: early (forme fruste), moderate, advanced, and severe. Each stage corresponds to increasing corneal thinning and steepening. The stage of keratoconus influences which management approaches are appropriate and how frequently monitoring is needed.",
             link: "/keratoconus-resources/4-stages-of-keratoconus",
-            linkText: "Learn about the 4 stages of keratoconus"
+            linkText: "Learn about the four stages of keratoconus"
         },
         {
-            question: "How long does the keratoconus fitting process take?",
-            answer: "Using our advanced topography technology, our keratoconus specialist can often achieve an optimal fit in just 2-3 visits. Traditional methods used to take months of trial and error; we use microscopic mapping to get it right, often on the very first custom design.",
-            link: "/about",
-            linkText: "Learn about our keratoconus doctor's approach"
+            question: "How long does the scleral lens fitting process take?",
+            answer: "A scleral lens fitting for keratoconus typically requires two to three office visits. The process begins with corneal topography and tomography to map the corneal surface, followed by diagnostic lens trials and adjustments. Modern imaging technology has shortened this process compared to older trial-and-error methods.",
+            link: "/keratoconus-resources/ultimate-guide-to-keratoconus",
+            linkText: "Read the complete guide to keratoconus"
         }
     ];
 
@@ -50,10 +50,10 @@ export default function FAQSection() {
                 <FadeIn>
                     <div className="mx-auto max-w-4xl text-center mb-16">
                         <h2 className="text-3xl font-bold tracking-tight text-eyecare-navy sm:text-4xl font-serif">
-                            Common Questions About Keratoconus Treatment
+                            Frequently Asked Questions About Keratoconus
                         </h2>
                         <p className="mt-4 text-lg text-gray-600">
-                            Clear answers from your keratoconus specialist.
+                            Common questions about keratoconus diagnosis, treatment, and management.
                         </p>
                     </div>
                 </FadeIn>
