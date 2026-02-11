@@ -1,0 +1,66 @@
+feat(seo): Rewrite all meta titles/descriptions for CTR, add city silo anti-doorway system, FAQSchema, ReviewWidget
+
+This commit implements a comprehensive SEO overhaul of keratocones.com targeting three
+critical areas: meta tag CTR optimization across all pages, an anti-doorway city silo
+architecture for location pages, and structured data additions (FAQPage schema, review
+widget with AggregateRating markup).
+
+ALL meta titles and descriptions have been rewritten across 16 page files and 2 message
+files (en.json, es.json) using a consistent pain-point-first, credibility-backed formula.
+Previous titles were generic ("Keratoconus Vision Center | Dr. Alexander Bonakdar") and
+have been replaced with urgency-driven alternatives ("Keratoconus Specialist Orange County
+| See Us This Week"). Descriptions now follow the pattern: pain point + differentiator
+(500+ cases, 35+ yrs) + objection handler (not residents, insurance accepted) + CTA with
+phone number. This applies to both English and Spanish versions of all pages including
+homepage, about, contact, resources index, individual articles, landing page, city pages,
+and legal pages.
+
+Article data files (articles.ts, articles-es.ts) now support optional metaTitle and
+metaDescription fields, with 5 key articles receiving custom SEO-optimized meta tags in
+each language. Article pages fall back to the original title/description if custom meta
+is not provided.
+
+A new ReviewWidget component replaces the static GoogleReviews component on the homepage,
+providing dynamic review display with Schema.org AggregateRating markup from a JSON data
+source (public/data/reviews.json).
+
+A new FAQSchema component provides reusable FAQPage structured data markup. Pre-defined
+FAQ sets are exported for the homepage (HOMEPAGE_FAQS), about page (ABOUT_FAQS), and
+scleral lens landing page (LANDING_FAQS). This enables Google rich result eligibility
+across 3 high-value pages.
+
+The city locations page (app/locations/[city]/page.tsx) has been completely rewritten with
+an 11-section anti-doorway architecture. The system uses 10 city types to generate 800-1,200
+unique words per city page with 40-60% content differentiation. Nine new city-silo components
+handle different content dimensions: CityIntroSection, CityRiskFactors, CityScleralBenefits,
+CityTestimonials, CityCommuteSection, CityFAQSection, CityInsuranceSection, CityPrevalence,
+and KeratoconusEducationSnippet. Five supporting data files provide the content matrices:
+city-types.ts (10 city type definitions), city-content-kc.ts (keratoconus-specific city
+content), city-faqs-kc.ts (city-type-aware FAQ variations), city-testimonials.ts (city-type
+patient stories), and city-commute.ts (driving directions and distances). Three example
+full-page silo files (Irvine, Newport Beach, Tustin) demonstrate the complete integration.
+
+Changes by Category:
+- SEO Meta Tags: 16 page files + 2 message files rewritten with CTR-optimized titles/descriptions
+- Structured Data: FAQSchema component with 3 FAQ sets, ReviewWidget with AggregateRating
+- Anti-Doorway: 11-section city page template, 9 silo components, 5 data files, 3 example silos
+- Content: metaTitle/metaDescription fields added to Article interfaces (EN + ES)
+- Data: reviews.json for dynamic review display
+
+Impact:
+- 20 modified files, 18 new files (289 insertions, 262 deletions in modified files)
+- ~3,027 lines of new city silo components + ~1,206 lines of city data
+- All 48 city pages now eligible for anti-doorway differentiation
+- FAQPage rich results enabled on 3 high-traffic pages
+- AggregateRating markup on homepage
+- Bilingual meta optimization (EN + ES) covering ~30 unique page types
+- Every page now includes phone number (714) 558-0641 in description for SERP click-to-call
+
+Technical:
+- Article interface extended with optional metaTitle/metaDescription (backward compatible)
+- ReviewWidget reads from static JSON (public/data/reviews.json), no API dependency
+- City silo system is data-driven: adding new cities requires only data file updates
+- All Spanish pages maintain proper locale metadata and hreflang
+- No breaking changes to existing routes
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>

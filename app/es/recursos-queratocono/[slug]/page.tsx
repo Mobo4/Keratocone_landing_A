@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!article) return {};
 
     return {
-        title: `${article.title} | Centro de Visión para Queratocono`,
-        description: article.description,
+        title: `${article.metaTitle || article.title} | 500+ Casos`,
+        description: `${article.metaDescription || article.description} 500+ casos. Hablamos español. (714) 558-0641`,
         keywords: ['queratocono', 'lentes esclerales', 'tratamiento córnea', article.category.toLowerCase()],
         openGraph: {
-            title: article.title,
-            description: article.description,
+            title: article.metaTitle || article.title,
+            description: article.metaDescription || article.description,
             type: 'article',
             publishedTime: article.publishDate,
             locale: 'es_MX',

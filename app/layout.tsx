@@ -12,8 +12,8 @@ import { Analytics } from "@vercel/analytics/next";
 import BusinessSchema from "@/components/BusinessSchema";
 
 export const metadata: Metadata = {
-  title: "Keratoconus Vision Center | Dr. Alexander Bonakdar - Keratoconus Specialist",
-  description: "Orange County's leading keratoconus specialist and cornea doctor. Advanced scleral lens fitting and non-surgical vision restoration for keratoconus treatment.",
+  title: "Keratoconus Specialist Orange County | See Us This Week",
+  description: "Why wait 6 months at UCLA/UCI? 500+ keratoconus cases treated. Direct specialist access, not residents. Insurance accepted. Call (714) 558-0641",
   keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "cornea specialist", "keratoconus specialist near me", "best keratoconus doctor", "keratoconus treatment without surgery", "corneal disease specialist", "irregular astigmatism doctor"],
 };
 

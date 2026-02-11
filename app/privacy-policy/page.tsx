@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Privacy Policy | Keratoconus Vision Center',
-    description: 'Read our Privacy Policy to understand how Keratoconus Vision Center collects, uses, and protects your personal and medical information.',
+    description: 'HIPAA-compliant privacy practices at Keratoconus Vision Center, Santa Ana CA. Your data is protected. Questions? (714) 558-0641',
     alternates: {
         canonical: 'https://keratocones.com/privacy-policy',
     },

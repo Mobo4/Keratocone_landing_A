@@ -11,8 +11,8 @@ import TrackingScripts from "@/components/TrackingScripts";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-    title: "Centro de Visión para Queratocono | Dr. Alexander Bonakdar",
-    description: "Centro líder en Orange County para tratamiento de queratocono. Ajuste experto de lentes esclerales y restauración de visión sin cirugía.",
+    title: "Especialista Queratocono Orange County | Cita Esta Semana",
+    description: "No espere 6 meses en UCLA/UCI. 500+ casos de queratocono, acceso directo al especialista (no residentes). Seguro aceptado. (714) 558-0641",
     keywords: ["queratocono tratamiento", "lentes esclerales", "especialista queratocono", "doctor queratocono orange county", "córnea irregular", "lentes de contacto especializados"],
 };
 

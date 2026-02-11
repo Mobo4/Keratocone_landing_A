@@ -3,6 +3,8 @@ export interface ArticleEs {
     slug: string;
     title: string;
     description: string;
+    metaTitle?: string;
+    metaDescription?: string;
     publishDate: string;
     readTime: string;
     category: string;
@@ -14,6 +16,8 @@ export const articlesEs: ArticleEs[] = [
         slug: 'guia-definitiva-queratocono',
         title: 'La Guía Definitiva del Queratocono: Síntomas, Causas y Tratamientos (2025)',
         description: 'Todo lo que necesitas saber sobre el queratocono. Desde los primeros signos como el astigmatismo hasta tratamientos avanzados como CXL y lentes esclerales.',
+        metaTitle: 'Queratocono: Síntomas, Causas y Tratamiento (2025)',
+        metaDescription: 'Visión borrosa empeorando? Conozca los signos de alerta, causas reales y tratamientos modernos de un doctor con 500+ casos.',
         publishDate: '2024-12-08',
         readTime: '10 min de lectura',
         category: 'Educación',
@@ -57,6 +61,8 @@ export const articlesEs: ArticleEs[] = [
         slug: 'lentes-esclerales-vs-trasplante-cornea',
         title: 'Lentes Esclerales vs. Trasplante de Córnea: Evitando la Cirugía',
         description: 'Por qué el 90% de los pacientes con queratocono pueden evitar la cirugía con lentes esclerales. Una comparación detallada de riesgos, recuperación y resultados visuales.',
+        metaTitle: 'Lentes Esclerales vs Trasplante (La Verdad)',
+        metaDescription: 'Le dijeron que necesita trasplante? 90% de pacientes evitan cirugía con lentes esclerales. Segunda opinión esta semana.',
         publishDate: '2024-12-08',
         readTime: '8 min de lectura',
         category: 'Tratamiento',
@@ -101,6 +107,8 @@ export const articlesEs: ArticleEs[] = [
         slug: 'las-4-etapas-del-queratocono',
         title: 'Las 4 Etapas del Queratocono: Qué Esperar en Cada Fase',
         description: 'Comprende la progresión del queratocono desde la detección temprana hasta las etapas avanzadas. Aprende qué opciones de tratamiento están disponibles en cada etapa.',
+        metaTitle: '4 Etapas del Queratocono (Con Tratamiento)',
+        metaDescription: 'En qué etapa está? Queratocono temprano vs avanzado cambia su plan de tratamiento. Descubra dónde se encuentra hoy.',
         publishDate: '2024-12-08',
         readTime: '7 min de lectura',
         category: 'Educación',
@@ -172,6 +180,8 @@ export const articlesEs: ArticleEs[] = [
         slug: 'se-puede-curar-el-queratocono',
         title: '¿Se Puede Curar el Queratocono? Separando el Mito de la Realidad',
         description: 'La verdad sobre las "curas" del queratocono. Qué funciona, qué no, y qué significa realmente "detener la progresión".',
+        metaTitle: 'Se Puede Curar el Queratocono? (Doctor Explica)',
+        metaDescription: 'No hay cura, pero la progresión SÍ se puede detener. Un especialista con 500+ casos explica qué funciona y qué no.',
         publishDate: '2024-12-08',
         readTime: '6 min de lectura',
         category: 'Mitos',
@@ -217,6 +227,8 @@ export const articlesEs: ArticleEs[] = [
         slug: 'viviendo-con-queratocono',
         title: 'Viviendo con Queratocono: Consejos Prácticos para la Vida Diaria',
         description: 'Consejos del mundo real para manejar el queratocono en tu vida diaria. Desde conducir de noche hasta manejar el trabajo y los deportes.',
+        metaTitle: 'Vivir con Queratocono | Consejos Reales',
+        metaDescription: 'Conducir de noche, seguros, ojos secos -- consejos reales para la vida diaria con queratocono de un doctor con 500+ casos.',
         publishDate: '2024-12-08',
         readTime: '9 min de lectura',
         category: 'Estilo de Vida',

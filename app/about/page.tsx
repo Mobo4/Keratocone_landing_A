@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingLayout from '@/components/LandingLayout';
 import AboutPageContent from '@/components/AboutPageContent';
+import FAQSchema, { ABOUT_FAQS } from '@/components/FAQSchema';
 import { Metadata } from 'next';
 import enMessages from '@/messages/en.json';
 
@@ -50,6 +51,7 @@ export default function AboutPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <FAQSchema faqs={ABOUT_FAQS} />
             <AboutPageContent />
         </LandingLayout>
     );

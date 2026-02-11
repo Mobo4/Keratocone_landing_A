@@ -1,10 +1,11 @@
 import React from 'react';
 import { Metadata } from 'next';
 import KeratoconusScleralContent from '@/components/lp/KeratoconusScleralContent';
+import FAQSchema, { LANDING_FAQS } from '@/components/FAQSchema';
 
 export const metadata: Metadata = {
-    title: "Keratoconus Scleral Lenses | Expert Fitting in Orange County",
-    description: "Scleral lens specialists for difficult keratoconus cases. Non-surgical vision restoration when other contacts fail. Book your consultation.",
+    title: "Scleral Lenses for Keratoconus | 500+ Fits | OC",
+    description: "Other contacts failed you? We fit the cases others can't. 500+ scleral lens fits, same-week appointments, insurance accepted. (714) 558-0641",
     alternates: {
         canonical: 'https://keratocones.com/lp/keratoconus-scleral',
     },
@@ -30,6 +31,7 @@ export default function KeratoconusScleralPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <FAQSchema faqs={LANDING_FAQS} />
             <KeratoconusScleralContent />
         </>
     );

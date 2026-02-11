@@ -4,12 +4,12 @@ import { articlesEs } from '@/data/articles-es';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Recursos de Queratocono | Guías y Artículos en Español',
-    description: 'Artículos expertos, guías y recursos sobre queratocono, lentes esclerales y opciones de restauración de visión. Todo en español.',
+    title: 'Guías Queratocono en Español | 500+ Casos Tratados',
+    description: 'Etapas, tratamientos y cómo evitar cirugía. Guías escritas por un especialista con 500+ casos. En español. (714) 558-0641',
     keywords: ['queratocono información', 'lentes esclerales guía', 'tratamiento queratocono', 'recursos queratocono español'],
     openGraph: {
-        title: 'Recursos de Queratocono | En Español',
-        description: 'Guías y artículos expertos sobre queratocono y lentes esclerales.',
+        title: 'Guías Queratocono en Español | 500+ Casos Tratados',
+        description: 'Etapas, tratamientos y cómo evitar cirugía. Guías de un especialista con 500+ casos. En español.',
         locale: 'es_MX',
     },
     alternates: {

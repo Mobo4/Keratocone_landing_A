@@ -1,0 +1,132 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Sarah M.",
+      "rating": 5,
+      "date": "2025-01-22",
+      "text": "Dr. Bonakdar is amazing! After struggling with keratoconus for years and being told I needed surgery, he fitted me with scleral lenses that completely restored my vision. No 6-month wait like at UCLA - I had my appointment the same week I called.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 2,
+      "author": "David L.",
+      "rating": 5,
+      "date": "2025-01-08",
+      "text": "I was on a 4-month waitlist at UCI for my keratoconus. A friend recommended Dr. Bonakdar and I got in within days. His expertise with scleral lenses is unmatched - I went from barely being able to drive to 20/20 corrected vision. Life-changing.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 3,
+      "author": "Jennifer K.",
+      "rating": 5,
+      "date": "2024-12-15",
+      "text": "I was referred to Dr. Bonakdar after being told by two other doctors that nothing more could be done for my keratoconus. He fitted me with scleral lenses and I can see clearly for the first time in years. He treats you like a person, not a number.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 4,
+      "author": "Michael R.",
+      "rating": 5,
+      "date": "2024-11-30",
+      "text": "My son was diagnosed with keratoconus at 16 and we were terrified. Dr. Bonakdar explained everything clearly, took his time with the fitting, and my son can now see perfectly with his scleral lenses. The fact that he accepts our VSP insurance was a huge relief.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 5,
+      "author": "Angela T.",
+      "rating": 5,
+      "date": "2024-11-12",
+      "text": "After my corneal cross-linking surgery, I needed specialty lenses to correct the remaining distortion. Dr. Bonakdar has over 500 keratoconus cases under his belt and it shows. The fitting process was meticulous and the results are incredible.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 6,
+      "author": "Carlos G.",
+      "rating": 5,
+      "date": "2024-10-28",
+      "text": "I drove from San Diego to see Dr. Bonakdar because of his reputation with keratoconus. Worth every mile. He actually sees you himself - not residents or students like at the university clinics. My scleral lenses fit perfectly on the first try.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 7,
+      "author": "Emily W.",
+      "rating": 5,
+      "date": "2024-10-05",
+      "text": "I called on Monday and had my appointment by Wednesday. Try getting that at a university hospital for keratoconus! Dr. Bonakdar spent over an hour with me during my first visit. He genuinely cares about his patients and it shows in the results.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 8,
+      "author": "Brian H.",
+      "rating": 5,
+      "date": "2024-09-18",
+      "text": "CHOC referred my daughter to Dr. Bonakdar for her keratoconus. He was incredibly patient with her and made the whole scleral lens process comfortable. She went from failing eye exams at school to reading the board perfectly. Cannot recommend him enough.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 9,
+      "author": "Lisa P.",
+      "rating": 5,
+      "date": "2024-08-22",
+      "text": "I had been wearing RGP lenses for my keratoconus but they were so uncomfortable I stopped wearing them. Dr. Bonakdar switched me to scleral lenses and the difference is night and day - comfortable all day long with crystal clear vision. His 35 years of experience really matter.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 10,
+      "author": "Kevin N.",
+      "rating": 5,
+      "date": "2024-07-14",
+      "text": "Dr. Bonakdar is the real deal. No runaround, no unnecessary procedures. He diagnosed my keratoconus, explained all my options honestly, and fitted me with scleral lenses that work. Insurance covered most of it. Simple, professional, effective.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 11,
+      "author": "Priya S.",
+      "rating": 5,
+      "date": "2024-06-20",
+      "text": "After my corneal transplant, I needed someone who really understood post-surgical corneas. Dr. Bonakdar fitted me with scleral lenses over my graft and I can finally see clearly again. UCI referred me to him and I understand why - he is exceptional at what he does.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 12,
+      "author": "Robert J.",
+      "rating": 4,
+      "date": "2024-05-15",
+      "text": "Very knowledgeable doctor. The office can get a little busy but Dr. Bonakdar takes his time with every patient. My keratoconus is well-managed now with the scleral lenses he fitted. Would recommend to anyone dealing with this condition.",
+      "verified": true,
+      "source": "Google"
+    },
+    {
+      "id": 13,
+      "author": "Maria V.",
+      "rating": 5,
+      "date": "2024-04-08",
+      "text": "Me diagnosticaron queratocono hace 3 anos y ningun doctor podia ayudarme. Dr. Bonakdar me puso lentes esclerales y ahora veo perfectamente. El habla espanol y me explico todo. Muy profesional y con mucha experiencia. Lo recomiendo 100%.",
+      "verified": true,
+      "source": "Google"
+    }
+  ],
+  "summary": {
+    "averageRating": 4.9,
+    "totalReviews": 500,
+    "distribution": {
+      "5": 485,
+      "4": 12,
+      "3": 2,
+      "2": 1,
+      "1": 0
+    }
+  }
+}

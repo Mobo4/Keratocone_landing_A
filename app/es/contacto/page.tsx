@@ -3,11 +3,11 @@ import LandingLayout from '@/components/LandingLayout';
 import ContactoPageContent from '@/components/es/ContactoPageContent';
 
 export const metadata: Metadata = {
-    title: 'Contacto | Centro de Visión para Queratocono',
-    description: 'Agende su consulta de queratocono en Santa Ana, CA. Hablamos español. Llame al (714) 558-0641 para atención experta y recupere su visión hoy mismo.',
+    title: 'Agendar Cita Queratocono | Esta Semana | Español',
+    description: 'Cansado de esperar meses? Agende esta semana. 500+ casos, 35+ años experiencia, hablamos español. Seguro aceptado. (714) 558-0641',
     openGraph: {
-        title: 'Contacto | Centro de Visión para Queratocono',
-        description: 'Hablamos español. Agende su consulta de queratocono hoy.',
+        title: 'Agendar Cita Queratocono | Esta Semana | Español',
+        description: 'Agende esta semana. 500+ casos, 35+ años experiencia, hablamos español. (714) 558-0641',
         locale: 'es_MX',
     },
     alternates: {

@@ -9,20 +9,21 @@ import LandingLayout from '@/components/LandingLayout';
 import FadeIn from '@/components/FadeIn';
 import InsuranceSection from '@/components/InsuranceSection';
 import Testimonials from '@/components/Testimonials';
-import GoogleReviews from '@/components/GoogleReviews';
+import ReviewWidget from '@/components/ReviewWidget';
+import FAQSchema, { HOMEPAGE_FAQS } from '@/components/FAQSchema';
 
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Keratoconus: Symptoms, Treatment & Scleral Lenses | Dr. Alexander Bonakdar, Orange County",
-  description: "Keratoconus is a progressive eye condition where the cornea thins and bulges. Learn about symptoms, contact lens options including scleral lenses, and management from a keratoconus specialist in Orange County, CA.",
+  title: "Keratoconus Treatment Orange County | Book This Week",
+  description: "Stop living with blurry vision. 500+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted. (714) 558-0641",
   keywords: ["keratoconus", "keratoconus symptoms", "keratoconus treatment", "scleral lenses for keratoconus", "keratoconus specialist", "keratoconus doctor orange county", "cornea specialist", "keratoconus contact lenses", "is keratoconus progressive", "keratoconus vision loss"],
   alternates: {
     canonical: 'https://www.keratocones.com',
   },
   openGraph: {
-    title: "Keratoconus: Symptoms, Treatment & Scleral Lenses | Dr. Alexander Bonakdar",
-    description: "Keratoconus is a progressive eye condition where the cornea thins and bulges into a cone shape. Learn about symptoms, diagnosis, contact lens options, and ongoing management.",
+    title: "Keratoconus Treatment Orange County | Book This Week",
+    description: "Stop living with blurry vision. 500+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted. (714) 558-0641",
     url: 'https://www.keratocones.com',
     siteName: 'Keratoconus Vision Center',
     locale: 'en_US',
@@ -52,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Keratoconus: Symptoms, Treatment & Scleral Lenses | Dr. Alexander Bonakdar",
-    description: "Keratoconus is a progressive eye condition where the cornea thins and bulges. Learn about symptoms, contact lens options, and management.",
+    title: "Keratoconus Treatment Orange County | Book This Week",
+    description: "Stop living with blurry vision. 500+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted.",
     images: ['https://www.keratocones.com/images/keratoconus-main.webp'],
   },
   robots: {
@@ -72,6 +73,9 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <LandingLayout>
+      {/* FAQ Schema Markup for Google Rich Results */}
+      <FAQSchema faqs={HOMEPAGE_FAQS} />
+
       {/* H1 Hero: Keratoconus + Above-the-fold definition */}
       <LandingHero
         headline="Keratoconus"
@@ -201,8 +205,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Patient Reviews */}
-      <GoogleReviews />
+      {/* Patient Reviews - Dynamic Widget with Schema.org */}
+      <ReviewWidget />
 
       {/* Insurance Section */}
       <InsuranceSection />

@@ -6,8 +6,8 @@ import { articles } from '@/data/articles';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Keratoconus Resource Library | Dr. Bonakdar',
-    description: "Comprehensive resources for keratoconus patients. Learn about causes, symptoms, progression stages, and advanced scleral lens treatment options available in Orange County.",
+    title: 'Keratoconus Guides & Resources | 500+ Cases Treated',
+    description: 'Learn stages, treatments & how to avoid surgery from a specialist with 500+ keratoconus cases. Free guides. Book consult: (714) 558-0641',
     alternates: {
         canonical: 'https://keratocones.com/keratoconus-resources',
     },

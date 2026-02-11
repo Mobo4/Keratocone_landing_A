@@ -3,6 +3,8 @@ export interface Article {
     slug: string;
     title: string;
     description: string;
+    metaTitle?: string;
+    metaDescription?: string;
     publishDate: string;
     readTime: string;
     category: string;
@@ -14,6 +16,8 @@ export const articles: Article[] = [
         slug: 'ultimate-guide-to-keratoconus',
         title: 'The Ultimate Guide to Keratoconus: Symptoms, Causes, and Treatments (2025)',
         description: 'Everything you need to know about Keratoconus. From early signs like astigmatism to advanced treatments like CXL and Scleral Lenses.',
+        metaTitle: 'Keratoconus: Symptoms, Causes & Treatment (2025)',
+        metaDescription: 'Blurry vision worsening? Learn the warning signs, real causes & modern treatments from a doctor who has treated 500+ cases.',
         publishDate: '2024-12-08',
         readTime: '10 min read',
         category: 'Education',
@@ -57,6 +61,8 @@ export const articles: Article[] = [
         slug: 'scleral-lenses-vs-corneal-transplant',
         title: 'Scleral Lenses vs. Corneal Transplant: Avoiding the Knife',
         description: 'Why 90% of Keratoconus patients can avoid surgery with Scleral Lenses. A detailed comparison of risks, recovery, and visual outcomes.',
+        metaTitle: 'Scleral Lenses vs Corneal Transplant (Honest Take)',
+        metaDescription: 'Told you need a transplant? 90% of keratoconus patients avoid surgery with scleral lenses. Get a second opinion this week.',
         publishDate: '2024-12-08',
         readTime: '8 min read',
         category: 'Treatment',
@@ -110,6 +116,8 @@ export const articles: Article[] = [
         slug: '4-stages-of-keratoconus',
         title: 'The 4 Stages of Keratoconus: Where Do You Stand?',
         description: 'From "Forme Fruste" to severe Hydrops. Understanding the progression of Keratoconus helps you choose the right treatment at the right time.',
+        metaTitle: '4 Stages of Keratoconus Explained (With Treatment)',
+        metaDescription: 'Which stage are you? Early vs. advanced keratoconus changes your treatment plan completely. Find out where you stand today.',
         publishDate: '2024-12-08',
         readTime: '6 min read',
         category: 'Diagnosis',
@@ -139,6 +147,8 @@ export const articles: Article[] = [
         slug: 'can-keratoconus-be-cured',
         title: 'Can Keratoconus Be Cured? Separating Myth from Reality',
         description: 'There is no "cure," but there is a halt. Learn how Cross-Linking stops the disease and how typical eye exercises and holistic remedies rarely work.',
+        metaTitle: 'Can Keratoconus Be Cured? (Doctor Explains)',
+        metaDescription: 'No cure exists, but progression CAN be stopped. A 500+ case specialist explains what actually works and what is a waste of money.',
         publishDate: '2024-12-08',
         readTime: '5 min read',
         category: 'Myths',
@@ -160,6 +170,8 @@ export const articles: Article[] = [
         slug: 'living-with-keratoconus',
         title: 'Living with Keratoconus: A Survival Guide',
         description: 'Practical tips for daily life, mental health, and navigating insurance. You are not alone in this journey.',
+        metaTitle: 'Living with Keratoconus | Real Tips That Help',
+        metaDescription: 'Night driving, insurance battles, dry eyes -- real advice for daily life with keratoconus from a doctor with 500+ cases.',
         publishDate: '2024-12-08',
         readTime: '7 min read',
         category: 'Lifestyle',

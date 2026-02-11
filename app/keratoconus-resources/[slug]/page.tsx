@@ -28,11 +28,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!article) return {};
 
     return {
-        title: `${article.title} | Dr. Bonakdar`,
-        description: article.description,
+        title: article.metaTitle || article.title,
+        description: `${article.metaDescription || article.description} Call (714) 558-0641`,
         openGraph: {
-            title: article.title,
-            description: article.description,
+            title: article.metaTitle || article.title,
+            description: article.metaDescription || article.description,
             type: 'article',
             publishedTime: article.publishDate,
             authors: ['Dr. Alexander Bonakdar'],

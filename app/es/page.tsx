@@ -2,12 +2,12 @@ import { Metadata } from 'next';
 import SpanishHomeContent from '@/components/es/SpanishHomeContent';
 
 export const metadata: Metadata = {
-    title: 'Especialista en Queratocono OC | Dr. Bonakdar',
-    description: 'Líder en tratamiento de queratocono en Orange County. Lentes esclerales y restauración de visión sin cirugía. 20+ años exp. Hablamos español.',
+    title: 'Tratamiento Queratocono Orange County | Hablamos Español',
+    description: 'Deje de vivir con visión borrosa. 500+ casos, citas esta semana, acceso directo al especialista. Hablamos español. Seguro aceptado. (714) 558-0641',
     keywords: ['queratocono tratamiento', 'lentes esclerales', 'especialista queratocono', 'doctor queratocono orange county', 'córnea irregular', 'lentes de contacto especializados', 'queratocono en español', 'doctor ojos habla español'],
     openGraph: {
-        title: 'Especialista en Queratocono OC | Dr. Bonakdar',
-        description: 'Centro líder en tratamiento de queratocono. Lentes esclerales y restauración de visión sin cirugía. Hablamos español.',
+        title: 'Tratamiento Queratocono Orange County | Hablamos Español',
+        description: 'Deje de vivir con visión borrosa. 500+ casos, citas esta semana, hablamos español. Seguro aceptado. (714) 558-0641',
         locale: 'es_MX',
         type: 'website',
     },

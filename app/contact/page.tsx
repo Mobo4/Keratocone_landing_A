@@ -5,8 +5,8 @@ import ContactPageContent from '@/components/ContactPageContent';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Contact Us | Keratoconus Vision Center',
-    description: 'Book your consultation at the Keratoconus Vision Center in Santa Ana, CA. Serving Irvine, Newport Beach, and all Orange County.',
+    title: 'Book Keratoconus Appointment | See Us This Week',
+    description: 'Done waiting months for UCLA/UCI? Book this week. 500+ cases, 35+ yrs experience, direct specialist access. Insurance accepted. (714) 558-0641',
     alternates: {
         canonical: 'https://keratocones.com/contact',
     },
