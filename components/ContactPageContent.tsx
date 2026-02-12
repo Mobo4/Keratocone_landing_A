@@ -49,7 +49,7 @@ export default function ContactPageContent() {
                                     <div>
                                         <h3 className="font-bold text-gray-900">Phone</h3>
                                         <p className="text-gray-600">Call or Text us anytime.</p>
-                                        <a href="tel:7145580641" className="text-lg font-bold text-eyecare-navy hover:text-eyecare-blue transition-colors">
+                                        <a href="tel:7145580641" className="callrail-phone text-lg font-bold text-eyecare-navy hover:text-eyecare-blue transition-colors">
                                             (714) 558-0641
                                         </a>
                                     </div>

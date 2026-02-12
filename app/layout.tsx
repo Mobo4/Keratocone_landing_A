@@ -6,7 +6,7 @@ import enMessages from '@/messages/en.json';
 import "./globals.css";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
-import GoogleTag from "@/components/GoogleTag";
+import { GoogleTagManager } from '@next/third-parties/google';
 import TrackingScripts from "@/components/TrackingScripts";
 import { Analytics } from "@vercel/analytics/next";
 import BusinessSchema from "@/components/BusinessSchema";
@@ -38,10 +38,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-NS6QTKN" />
       <body className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}>
         <NextIntlClientProvider locale="en" messages={enMessages}>
           <BusinessSchema />
-          <GoogleTag />
           <TrackingScripts />
           <div className="flex flex-col min-h-screen">
             <main className="flex-grow">
