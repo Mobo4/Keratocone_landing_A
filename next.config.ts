@@ -7,6 +7,25 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 90]
   },
+  async redirects() {
+    return [
+      {
+        source: '/services/keratoconus-treatment',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/es/politica-privacidad',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/es/terminos-servicio',
+        destination: '/terms-of-service',
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       // IndexNow key file - rewrite to API route to bypass middleware
