@@ -38,6 +38,7 @@ import KeratoconusEducationSnippet from '@/components/city-silos/KeratoconusEduc
 
 // Existing components
 import LeadForm from '@/components/LeadForm';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 interface Props {
     params: Promise<{
@@ -115,6 +116,11 @@ export default async function CityPage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Locations', url: 'https://keratocones.com' },
+                { name: city.name },
+            ]} />
 
             {/* ================================================================ */}
             {/* SECTION 1: Hero + CityIntroSection                               */}

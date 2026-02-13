@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Clock, User } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock } from 'lucide-react';
 import { articlesEs } from '@/data/articles-es';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 interface Props {
     params: Promise<{
@@ -46,25 +47,34 @@ export default async function SpanishArticlePage({ params }: Props) {
         notFound();
     }
 
-    // Article Schema
+    // Article Schema — upgraded to MedicalScholarlyArticle for rich results
     const articleSchema = {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "MedicalScholarlyArticle",
         "headline": article.title,
+        "image": "https://keratocones.com/images/keratoconus-main.webp",
         "description": article.description,
         "datePublished": article.publishDate,
         "author": {
-            "@type": "Person",
+            "@type": "Physician",
             "name": "Dr. Alexander Bonakdar",
-            "jobTitle": "Especialista en Queratocono"
+            "jobTitle": "Especialista en Queratocono",
+            "url": "https://keratocones.com/es/acerca-de"
         },
         "publisher": {
             "@type": "Organization",
             "name": "Centro de Visión para Queratocono",
-            "url": "https://keratocones.com/es"
+            "url": "https://keratocones.com/es",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://keratocones.com/images/logo.png"
+            }
         },
         "inLanguage": "es-MX"
     };
+
+    // Related articles (exclude current, pick up to 3)
+    const relatedArticles = articlesEs.filter((a) => a.slug !== resolvedParams.slug).slice(0, 3);
 
     return (
         <>
@@ -72,6 +82,11 @@ export default async function SpanishArticlePage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Recursos', url: 'https://keratocones.com/es/recursos-queratocono' },
+                { name: article.title },
+            ]} />
 
             <div className="min-h-screen bg-gray-50">
                 {/* Header */}
@@ -122,6 +137,26 @@ export default async function SpanishArticlePage({ params }: Props) {
                             className="prose prose-lg prose-blue max-w-none mb-16"
                             dangerouslySetInnerHTML={{ __html: article.content }}
                         />
+
+                        {/* Related Articles */}
+                        <div className="mb-16">
+                            <h2 className="text-2xl font-bold text-eyecare-navy font-serif mb-8">Seguir Leyendo</h2>
+                            <div className="grid md:grid-cols-3 gap-6">
+                                {relatedArticles.map((related) => (
+                                    <Link key={related.slug} href={`/es/recursos-queratocono/${related.slug}`} className="group">
+                                        <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-eyecare-blue/30 hover:shadow-lg transition-all h-full flex flex-col">
+                                            <span className="text-xs text-eyecare-blue font-medium mb-2">{related.category}</span>
+                                            <h3 className="font-bold text-eyecare-navy group-hover:text-eyecare-blue transition-colors mb-3 text-sm leading-snug flex-1">
+                                                {related.title}
+                                            </h3>
+                                            <span className="inline-flex items-center text-xs font-bold text-eyecare-blue">
+                                                Leer <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
+                                            </span>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
 
                         {/* CTA */}
                         <div className="bg-eyecare-navy text-white rounded-3xl p-8 md:p-12 text-center">

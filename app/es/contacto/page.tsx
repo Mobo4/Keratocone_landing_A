@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import LandingLayout from '@/components/LandingLayout';
 import ContactoPageContent from '@/components/es/ContactoPageContent';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
     title: 'Agendar Cita Queratocono | Esta Semana | Español',
@@ -48,6 +49,10 @@ export default function ContactPageEs() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Contacto' },
+            ]} />
             <ContactoPageContent />
         </LandingLayout>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import KeratoconusScleralContent from '@/components/lp/KeratoconusScleralContent';
 import FAQSchema, { LANDING_FAQS } from '@/components/FAQSchema';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
     title: "Scleral Lenses for Keratoconus | 500+ Fits | OC",
@@ -31,6 +32,10 @@ export default function KeratoconusScleralPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Scleral Lenses for Keratoconus' },
+            ]} />
             <FAQSchema faqs={LANDING_FAQS} />
             <KeratoconusScleralContent />
         </>

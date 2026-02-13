@@ -8,6 +8,7 @@ import LandingLayout from '@/components/LandingLayout';
 import LeadForm from '@/components/LeadForm';
 import InsuranceSection from '@/components/InsuranceSection';
 import FadeIn from '@/components/FadeIn';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 interface Props {
     params: Promise<{
@@ -117,6 +118,11 @@ export default async function SpanishCityPage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Ubicaciones', url: 'https://keratocones.com/es' },
+                { name: city.name },
+            ]} />
 
             {/* City Hero */}
             <section className="relative bg-eyecare-navy text-white py-20 lg:py-32 overflow-hidden">

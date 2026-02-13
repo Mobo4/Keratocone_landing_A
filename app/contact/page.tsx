@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingLayout from '@/components/LandingLayout';
 import ContactPageContent from '@/components/ContactPageContent';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 import { Metadata } from 'next';
 
@@ -40,6 +41,10 @@ export default function ContactPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Contact' },
+            ]} />
             <ContactPageContent />
         </LandingLayout>
     );

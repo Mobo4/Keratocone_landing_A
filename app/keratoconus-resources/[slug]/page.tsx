@@ -5,8 +5,9 @@ import { articles } from '@/data/articles';
 import LandingHero from '@/components/Hero';
 import LeadForm from '@/components/LeadForm';
 import Link from 'next/link';
-import { ArrowLeft, Clock, Calendar, Tag } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Calendar, Tag } from 'lucide-react';
 import Script from 'next/script';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 interface Props {
     params: Promise<{
@@ -72,6 +73,9 @@ export default async function ArticlePage({ params }: Props) {
         "description": article.description
     };
 
+    // Related articles (exclude current, pick up to 3)
+    const relatedArticles = articles.filter((a) => a.slug !== slug).slice(0, 3);
+
     return (
         <main className="min-h-screen bg-white">
             <Script
@@ -79,6 +83,11 @@ export default async function ArticlePage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Resources', url: 'https://keratocones.com/keratoconus-resources' },
+                { name: article.title },
+            ]} />
 
             {/* Global Header/Nav is handled by Layout, but we want a Hero-like header here */}
             <div className="bg-eyecare-navy text-white pt-32 pb-16">
@@ -134,6 +143,28 @@ export default async function ArticlePage({ params }: Props) {
                     </div>
                 </div>
             </article>
+
+            {/* Related Articles */}
+            <section className="bg-white py-16 border-t border-gray-100">
+                <div className="container mx-auto px-4 max-w-4xl">
+                    <h2 className="text-2xl font-bold text-eyecare-navy font-serif mb-8">Continue Reading</h2>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {relatedArticles.map((related) => (
+                            <Link key={related.slug} href={`/keratoconus-resources/${related.slug}`} className="group">
+                                <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-eyecare-blue/30 hover:shadow-lg transition-all h-full flex flex-col">
+                                    <span className="text-xs text-eyecare-blue font-medium mb-2">{related.category}</span>
+                                    <h3 className="font-bold text-eyecare-navy group-hover:text-eyecare-blue transition-colors mb-3 text-sm leading-snug flex-1">
+                                        {related.title}
+                                    </h3>
+                                    <span className="inline-flex items-center text-xs font-bold text-eyecare-blue">
+                                        Read <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
+                                    </span>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* CTA Section */}
             <section className="bg-eyecare-lighter-blue py-24">

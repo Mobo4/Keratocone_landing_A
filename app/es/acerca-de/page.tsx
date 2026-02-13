@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import LandingLayout from '@/components/LandingLayout';
 import FadeIn from '@/components/FadeIn';
 import Link from 'next/link';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import esMessages from '@/messages/es.json';
 
 function t(key: string) {
@@ -56,6 +57,10 @@ export default function AboutPageEs() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Acerca del Dr. Bonakdar' },
+            ]} />
             <div className="bg-white py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto">
                     <FadeIn>

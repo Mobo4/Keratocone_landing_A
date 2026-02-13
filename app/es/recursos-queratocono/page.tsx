@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, BookOpen, Clock } from 'lucide-react';
 import { articlesEs } from '@/data/articles-es';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -49,6 +50,10 @@ export default function ResourcesPageEs() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Recursos de Queratocono' },
+            ]} />
             {/* Header */}
             <div className="bg-white border-b border-gray-100 py-16">
                 <div className="container mx-auto px-4">
