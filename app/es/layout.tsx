@@ -1,34 +1,13 @@
 
 import type { Metadata } from "next";
-import { Poppins, Playfair_Display } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import esMessages from '@/messages/es.json';
-import "../globals.css";
-import Footer from "@/components/Footer";
-import ChatWidget from "@/components/ChatWidget";
-import GoogleTag from "@/components/GoogleTag";
-import TrackingScripts from "@/components/TrackingScripts";
-import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
     title: "Especialista Queratocono Orange County | Cita Esta Semana",
     description: "No espere 6 meses en UCLA/UCI. 500+ casos de queratocono, acceso directo al especialista (no residentes). Seguro aceptado. (714) 558-0641",
     keywords: ["queratocono tratamiento", "lentes esclerales", "especialista queratocono", "doctor queratocono orange county", "córnea irregular", "lentes de contacto especializados"],
 };
-
-const poppins = Poppins({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700', '800'],
-    variable: '--font-poppins',
-    display: 'swap',
-});
-
-const playfair = Playfair_Display({
-    subsets: ['latin'],
-    weight: ['400', '500', '600', '700'],
-    variable: '--font-playfair',
-    display: 'swap',
-});
 
 export default function SpanishLayout({
     children,
