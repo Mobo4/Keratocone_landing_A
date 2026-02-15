@@ -18,6 +18,7 @@ export const BUSINESS_INFO = {
         longitude: -117.8359
     },
     sameAs: [
+        "https://www.eyecarecenteroc.com",
         "https://www.facebook.com/eyecarecenteroc",
         "https://www.instagram.com/eyecarecenteroc",
         "https://www.yelp.com/biz/alexander-bonakdar-od-santa-ana"

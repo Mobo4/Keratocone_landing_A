@@ -79,6 +79,11 @@ export default function BusinessSchema() {
             "credentialCategory": "Medical Specialty",
             "name": "Keratoconus Specialist"
         },
+        "parentOrganization": {
+            "@type": "MedicalBusiness",
+            "name": "Eye Care Center of Orange County",
+            "url": "https://www.eyecarecenteroc.com"
+        },
         "areaServed": {
             "@type": "GeoCircle",
             "geoMidpoint": {

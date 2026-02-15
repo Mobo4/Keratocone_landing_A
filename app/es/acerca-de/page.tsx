@@ -44,9 +44,16 @@ export default function AboutPageEs() {
             "name": "Dr. Alexander Bonakdar",
             "jobTitle": "Optometrista",
             "medicalSpecialty": "Especialista en Queratocono",
+            "url": "https://www.eyecarecenteroc.com/about",
             "worksFor": {
                 "@type": "MedicalBusiness",
-                "name": "Centro de Visión para Queratocono"
+                "name": "Centro de Visión para Queratocono",
+                "url": "https://www.keratocones.com/es",
+                "parentOrganization": {
+                    "@type": "MedicalBusiness",
+                    "name": "Eye Care Center of Orange County",
+                    "url": "https://www.eyecarecenteroc.com"
+                }
             },
             "description": "Especialista líder en Orange County en restauración de visión no quirúrgica para Queratocono con más de 20 años de experiencia."
         }

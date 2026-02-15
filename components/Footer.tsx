@@ -105,7 +105,7 @@ export default function Footer() {
 
             <div className="border-t border-white/10 bg-black/10">
                 <div className="container mx-auto px-4 py-6 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p>&copy; {currentYear} Keratoconus Vision Center. All rights reserved.</p>
+                    <p>&copy; {currentYear} Keratoconus Vision Center. Part of <a href="https://www.eyecarecenteroc.com" target="_blank" rel="noopener" className="text-gray-400 hover:text-white transition-colors">Eye Care Center of Orange County</a>.</p>
                     <div className="flex gap-6">
                         <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
