@@ -2,7 +2,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { articles } from '@/data/articles';
-import LandingHero from '@/components/Hero';
+import { articlesEs } from '@/data/articles-es';
 import LeadForm from '@/components/LeadForm';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, Clock, Calendar, Tag } from 'lucide-react';
@@ -28,9 +28,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const article = articles.find((a) => a.slug === slug);
     if (!article) return {};
 
+    // Map EN article slug to ES equivalent by index
+    const enIndex = articles.findIndex((a) => a.slug === slug);
+    const esSlug = enIndex >= 0 && enIndex < articlesEs.length ? articlesEs[enIndex].slug : null;
+
     return {
         title: article.metaTitle || article.title,
         description: `${article.metaDescription || article.description} Call (714) 558-0641`,
+        alternates: {
+            canonical: `https://www.keratocones.com/keratoconus-resources/${slug}`,
+            languages: {
+                'en': `https://www.keratocones.com/keratoconus-resources/${slug}`,
+                ...(esSlug ? { 'es': `https://www.keratocones.com/es/recursos-queratocono/${esSlug}` } : {}),
+                'x-default': `https://www.keratocones.com/keratoconus-resources/${slug}`,
+            },
+        },
         openGraph: {
             title: article.metaTitle || article.title,
             description: article.metaDescription || article.description,

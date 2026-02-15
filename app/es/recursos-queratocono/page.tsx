@@ -14,10 +14,11 @@ export const metadata: Metadata = {
         locale: 'es_MX',
     },
     alternates: {
-        canonical: 'https://keratocones.com/es/recursos-queratocono',
+        canonical: 'https://www.keratocones.com/es/recursos-queratocono',
         languages: {
-            'en': 'https://keratocones.com/keratoconus-resources',
-            'es': 'https://keratocones.com/es/recursos-queratocono',
+            'en': 'https://www.keratocones.com/keratoconus-resources',
+            'es': 'https://www.keratocones.com/es/recursos-queratocono',
+            'x-default': 'https://www.keratocones.com/keratoconus-resources',
         },
     },
 };

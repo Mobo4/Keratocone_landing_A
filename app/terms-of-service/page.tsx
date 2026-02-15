@@ -1,6 +1,7 @@
 
 import React from 'react';
 import LandingLayout from '@/components/LandingLayout';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 import { Metadata } from 'next';
 
@@ -8,7 +9,11 @@ export const metadata: Metadata = {
     title: 'Terms of Service | Keratoconus Vision Center',
     description: 'Terms of service for Keratoconus Vision Center in Santa Ana, CA. 500+ keratoconus cases treated. Questions? (714) 558-0641',
     alternates: {
-        canonical: 'https://keratocones.com/terms-of-service',
+        canonical: 'https://www.keratocones.com/terms-of-service',
+        languages: {
+            'en': 'https://www.keratocones.com/terms-of-service',
+            'x-default': 'https://www.keratocones.com/terms-of-service',
+        },
     },
 };
 
@@ -17,7 +22,7 @@ export default function TermsOfService() {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Terms of Service",
-        "url": "https://keratocones.com/terms-of-service"
+        "url": "https://www.keratocones.com/terms-of-service"
     };
 
     return (
@@ -26,6 +31,10 @@ export default function TermsOfService() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Home', url: 'https://www.keratocones.com' },
+                { name: 'Terms of Service' },
+            ]} />
             <div className="bg-white py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto prose prose-blue">
                     <h1>Terms of Service</h1>

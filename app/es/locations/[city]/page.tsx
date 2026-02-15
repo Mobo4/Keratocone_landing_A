@@ -135,7 +135,7 @@ export default async function CityPageEs({ params }: Props) {
                         <Link href="#appointment" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
                             Reservar Consulta en {city.name}
                         </Link>
-                        <Link href="tel:7145580641" className="inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
+                        <Link href="tel:7145580641" className="callrail-phone inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
                             Llamar (714) 558-0641
                         </Link>
                     </div>

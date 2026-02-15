@@ -24,10 +24,11 @@ export const metadata: Metadata = {
         locale: 'es_MX',
     },
     alternates: {
-        canonical: 'https://keratocones.com/es/acerca-de',
+        canonical: 'https://www.keratocones.com/es/acerca-de',
         languages: {
-            'en': 'https://keratocones.com/about',
-            'es': 'https://keratocones.com/es/acerca-de',
+            'en': 'https://www.keratocones.com/about',
+            'es': 'https://www.keratocones.com/es/acerca-de',
+            'x-default': 'https://www.keratocones.com/about',
         },
     },
 };

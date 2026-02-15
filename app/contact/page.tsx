@@ -9,7 +9,12 @@ export const metadata: Metadata = {
     title: 'Book Keratoconus Appointment | See Us This Week',
     description: 'Done waiting months for UCLA/UCI? Book this week. 500+ cases, 35+ yrs experience, direct specialist access. Insurance accepted. (714) 558-0641',
     alternates: {
-        canonical: 'https://keratocones.com/contact',
+        canonical: 'https://www.keratocones.com/contact',
+        languages: {
+            'en': 'https://www.keratocones.com/contact',
+            'es': 'https://www.keratocones.com/es/contacto',
+            'x-default': 'https://www.keratocones.com/contact',
+        },
     },
 };
 

@@ -12,10 +12,11 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://keratocones.com/es',
+        canonical: 'https://www.keratocones.com/es',
         languages: {
-            'en': 'https://keratocones.com',
-            'es': 'https://keratocones.com/es',
+            'en': 'https://www.keratocones.com',
+            'es': 'https://www.keratocones.com/es',
+            'x-default': 'https://www.keratocones.com',
         },
     },
 };

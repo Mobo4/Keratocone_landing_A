@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, Clock } from 'lucide-react';
 import { articlesEs } from '@/data/articles-es';
+import { articles } from '@/data/articles';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 interface Props {
@@ -22,6 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const article = articlesEs.find((a) => a.slug === resolvedParams.slug);
     if (!article) return {};
 
+    const esIndex = articlesEs.findIndex((a) => a.slug === resolvedParams.slug);
+    const enSlug = esIndex >= 0 && esIndex < articles.length ? articles[esIndex].slug : null;
+
     return {
         title: `${article.metaTitle || article.title} | 500+ Casos`,
         description: `${article.metaDescription || article.description} 500+ casos. Hablamos español. (714) 558-0641`,
@@ -34,7 +38,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             locale: 'es_MX',
         },
         alternates: {
-            canonical: `https://keratocones.com/es/recursos-queratocono/${article.slug}`,
+            canonical: `https://www.keratocones.com/es/recursos-queratocono/${article.slug}`,
+            languages: {
+                ...(enSlug ? { 'en': `https://www.keratocones.com/keratoconus-resources/${enSlug}` } : {}),
+                'es': `https://www.keratocones.com/es/recursos-queratocono/${article.slug}`,
+                ...(enSlug ? { 'x-default': `https://www.keratocones.com/keratoconus-resources/${enSlug}` } : {}),
+            },
         },
     };
 }

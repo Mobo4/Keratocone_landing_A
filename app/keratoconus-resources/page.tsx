@@ -10,7 +10,12 @@ export const metadata: Metadata = {
     title: 'Keratoconus Guides & Resources | 500+ Cases Treated',
     description: 'Learn stages, treatments & how to avoid surgery from a specialist with 500+ keratoconus cases. Free guides. Book consult: (714) 558-0641',
     alternates: {
-        canonical: 'https://keratocones.com/keratoconus-resources',
+        canonical: 'https://www.keratocones.com/keratoconus-resources',
+        languages: {
+            'en': 'https://www.keratocones.com/keratoconus-resources',
+            'es': 'https://www.keratocones.com/es/recursos-queratocono',
+            'x-default': 'https://www.keratocones.com/keratoconus-resources',
+        },
     },
 };
 

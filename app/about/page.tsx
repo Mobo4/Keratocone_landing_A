@@ -19,7 +19,12 @@ export const metadata: Metadata = {
     title: t('Metadata.title'),
     description: t('Metadata.description'),
     alternates: {
-        canonical: 'https://keratocones.com/about',
+        canonical: 'https://www.keratocones.com/about',
+        languages: {
+            'en': 'https://www.keratocones.com/about',
+            'es': 'https://www.keratocones.com/es/acerca-de',
+            'x-default': 'https://www.keratocones.com/about',
+        },
     },
 };
 

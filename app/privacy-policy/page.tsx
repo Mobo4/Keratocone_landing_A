@@ -1,6 +1,7 @@
 
 import React from 'react';
 import LandingLayout from '@/components/LandingLayout';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 import { Metadata } from 'next';
 
@@ -8,7 +9,11 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Keratoconus Vision Center',
     description: 'HIPAA-compliant privacy practices at Keratoconus Vision Center, Santa Ana CA. Your data is protected. Questions? (714) 558-0641',
     alternates: {
-        canonical: 'https://keratocones.com/privacy-policy',
+        canonical: 'https://www.keratocones.com/privacy-policy',
+        languages: {
+            'en': 'https://www.keratocones.com/privacy-policy',
+            'x-default': 'https://www.keratocones.com/privacy-policy',
+        },
     },
 };
 
@@ -17,7 +22,7 @@ export default function PrivacyPolicy() {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Privacy Policy",
-        "url": "https://keratocones.com/privacy-policy"
+        "url": "https://www.keratocones.com/privacy-policy"
     };
 
     return (
@@ -26,6 +31,10 @@ export default function PrivacyPolicy() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <BreadcrumbSchema items={[
+                { name: 'Home', url: 'https://www.keratocones.com' },
+                { name: 'Privacy Policy' },
+            ]} />
             <div className="bg-white py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto prose prose-blue">
                     <h1>Privacy Policy</h1>

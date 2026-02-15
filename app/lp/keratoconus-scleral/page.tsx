@@ -8,7 +8,11 @@ export const metadata: Metadata = {
     title: "Scleral Lenses for Keratoconus | 500+ Fits | OC",
     description: "Other contacts failed you? We fit the cases others can't. 500+ scleral lens fits, same-week appointments, insurance accepted. (714) 558-0641",
     alternates: {
-        canonical: 'https://keratocones.com/lp/keratoconus-scleral',
+        canonical: 'https://www.keratocones.com/lp/keratoconus-scleral',
+        languages: {
+            'en': 'https://www.keratocones.com/lp/keratoconus-scleral',
+            'x-default': 'https://www.keratocones.com/lp/keratoconus-scleral',
+        },
     },
 };
 

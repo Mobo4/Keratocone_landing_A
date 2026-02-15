@@ -12,10 +12,11 @@ export const metadata: Metadata = {
         locale: 'es_MX',
     },
     alternates: {
-        canonical: 'https://keratocones.com/es/contacto',
+        canonical: 'https://www.keratocones.com/es/contacto',
         languages: {
-            'en': 'https://keratocones.com/contact',
-            'es': 'https://keratocones.com/es/contacto',
+            'en': 'https://www.keratocones.com/contact',
+            'es': 'https://www.keratocones.com/es/contacto',
+            'x-default': 'https://www.keratocones.com/contact',
         },
     },
 };

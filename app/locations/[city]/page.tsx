@@ -63,7 +63,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,
         description: `${city.name}: skip the 6-month wait. 500+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
         alternates: {
-            canonical: `https://keratocones.com/locations/${city.slug}`,
+            canonical: `https://www.keratocones.com/locations/${city.slug}`,
+            languages: {
+                'en': `https://www.keratocones.com/locations/${city.slug}`,
+                'es': `https://www.keratocones.com/es/ubicaciones/${city.slug}`,
+                'x-default': `https://www.keratocones.com/locations/${city.slug}`,
+            },
         },
         openGraph: {
             title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,

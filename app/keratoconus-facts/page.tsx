@@ -20,7 +20,11 @@ export const metadata: Metadata = {
         'corneal transplant keratoconus',
     ],
     alternates: {
-        canonical: 'https://keratocones.com/keratoconus-facts',
+        canonical: 'https://www.keratocones.com/keratoconus-facts',
+        languages: {
+            'en': 'https://www.keratocones.com/keratoconus-facts',
+            'x-default': 'https://www.keratocones.com/keratoconus-facts',
+        },
     },
     openGraph: {
         title: 'Keratoconus Facts & Statistics | Peer-Reviewed Data',
