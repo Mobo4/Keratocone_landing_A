@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "Keratoconus Specialist Orange County | See Us This Week",
   description: "Why wait 6 months at UCLA/UCI? 500+ keratoconus cases treated. Direct specialist access, not residents. Insurance accepted. Call (714) 558-0641",
   keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "cornea specialist", "keratoconus specialist near me", "best keratoconus doctor", "keratoconus treatment without surgery", "corneal disease specialist", "irregular astigmatism doctor"],
+  other: {
+    'geo.region': 'US-CA',
+    'geo.placename': 'Irvine, California',
+    'geo.position': '33.6846;-117.8265',
+    'ICBM': '33.6846, -117.8265',
+  },
 };
 
 const poppins = Poppins({
