@@ -2,7 +2,9 @@
 import type { Metadata } from "next";
 import { Poppins, Playfair_Display } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
+import { headers } from 'next/headers';
 import enMessages from '@/messages/en.json';
+import esMessages from '@/messages/es.json';
 import "./globals.css";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
@@ -31,16 +33,22 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
-export default function RootLayout({
+const messagesMap = { en: enMessages, es: esMessages } as const;
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const locale = (headersList.get('x-locale') as 'en' | 'es') || 'en';
+  const messages = messagesMap[locale] || enMessages;
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <GoogleTagManager gtmId="GTM-NS6QTKN" />
       <body className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}>
-        <NextIntlClientProvider locale="en" messages={enMessages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <BusinessSchema />
           <TrackingScripts />
           <div className="flex flex-col min-h-screen">
