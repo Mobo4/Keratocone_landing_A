@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/radial-keratotomy-problems',
         '/scleral-lenses-post-lasik-rk',
         '/lp/keratoconus-scleral',
+        '/lp/cornea-specialist',
         '/privacy-policy',
         '/terms-of-service',
     ].map((route) => ({
