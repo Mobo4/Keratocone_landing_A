@@ -63,8 +63,8 @@ export default function CityIntroSection({ citySlug, cityName, county }: CityInt
                             Book {cityName} Consultation
                         </Link>
                         <Link
-                            href="tel:7145580641"
-                            className="inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors"
+                            href="tel:+17145580641"
+                            className="callrail-phone inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors"
                         >
                             Call (714) 558-0641
                         </Link>

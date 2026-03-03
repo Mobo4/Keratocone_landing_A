@@ -135,7 +135,7 @@ export default function CityInsuranceSection({ citySlug, cityName }: CityInsuran
                         {/* Verification note */}
                         <p className="text-center text-sm text-gray-500 mt-8">
                             We verify your insurance coverage before your first visit. Call{' '}
-                            <a href="tel:7145580641" className="text-eyecare-blue font-medium hover:underline">
+                            <a href="tel:+17145580641" className="callrail-phone text-eyecare-blue font-medium hover:underline">
                                 (714) 558-0641
                             </a>{' '}
                             with any questions about coverage for keratoconus treatment.

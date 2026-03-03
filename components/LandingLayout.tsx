@@ -23,7 +23,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
                     {/* Phone - Always Visible, prominent on mobile */}
                     <a
                         href={phoneHref}
-                        className="flex items-center hover:text-eyecare-lighter-blue transition-colors"
+                        className="callrail-phone flex items-center hover:text-eyecare-lighter-blue transition-colors"
                     >
                         <Phone className="h-3.5 w-3.5 mr-1.5" />
                         <span className="font-semibold">{phoneNumber}</span>
@@ -70,7 +70,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
                         <div className="flex items-center gap-2 md:gap-4">
                             <a
                                 href={phoneHref}
-                                className="hidden md:flex items-center text-eyecare-navy hover:text-eyecare-blue font-semibold transition-colors"
+                                className="callrail-phone hidden md:flex items-center text-eyecare-navy hover:text-eyecare-blue font-semibold transition-colors"
                             >
                                 <Phone className="w-4 h-4 lg:w-5 lg:h-5 mr-2 text-eyecare-blue" />
                                 <span className="text-sm lg:text-base">{phoneNumber}</span>
