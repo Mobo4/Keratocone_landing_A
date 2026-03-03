@@ -7,7 +7,6 @@ import enMessages from '@/messages/en.json';
 import esMessages from '@/messages/es.json';
 import "./globals.css";
 import Footer from "@/components/Footer";
-import ChatWidget from "@/components/ChatWidget";
 import { GoogleTagManager } from '@next/third-parties/google';
 import TrackingScripts from "@/components/TrackingScripts";
 import { Analytics } from "@vercel/analytics/next";
@@ -63,7 +62,6 @@ export default async function RootLayout({
             </main>
             <Footer />
           </div>
-          <ChatWidget />
           <Analytics />
         </NextIntlClientProvider>
       </body>
