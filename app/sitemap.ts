@@ -21,6 +21,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/scleral-lenses-post-lasik-rk',
         '/lp/keratoconus-scleral',
         '/lp/cornea-specialist',
+        '/corneal-crosslinking',
+        '/keratoconus-faq',
+        '/keratoconus-in-children',
+        '/scleral-lenses-cost',
         '/privacy-policy',
         '/terms-of-service',
     ].map((route) => ({

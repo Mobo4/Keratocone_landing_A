@@ -71,8 +71,11 @@ export default async function ArticlePage({ params }: Props) {
         "author": {
             "@type": "Physician",
             "name": "Dr. Alexander Bonakdar",
-            "url": "https://keratocones.com"
+            "url": "https://www.keratocones.com/about",
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "Illinois College of Optometry" },
+            "medicalSpecialty": "Corneal Disease"
         },
+        "dateModified": "2026-03-01",
         "publisher": {
             "@type": "Organization",
             "name": "Keratoconus Vision Center",
@@ -131,6 +134,15 @@ export default async function ArticlePage({ params }: Props) {
             </div>
 
             <article className="container mx-auto px-4 max-w-4xl py-16">
+                {/* Medical Review Badge */}
+                <div className="flex items-center gap-3 mb-8 pb-6 border-b border-gray-100">
+                    <img src="/images/drbonakdar.webp" alt="Dr. Alexander Bonakdar" className="w-10 h-10 rounded-full object-cover border-2 border-eyecare-blue/20" />
+                    <div className="text-sm">
+                        <p className="text-gray-500">Medically reviewed by <Link href="/about" className="text-eyecare-blue font-medium hover:underline">Dr. Alexander Bonakdar, O.D.</Link></p>
+                        <p className="text-gray-400">Keratoconus Specialist · Illinois College of Optometry · Last reviewed March 2026</p>
+                    </div>
+                </div>
+
                 {/* Content Body */}
                 <div
                     className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-headings:text-eyecare-navy prose-a:text-eyecare-blue hover:prose-a:text-eyecare-dark-blue"

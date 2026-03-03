@@ -36,8 +36,26 @@ export default function AboutPage() {
             "@type": "Physician",
             "name": "Dr. Alexander Bonakdar",
             "jobTitle": "Keratoconus Specialist",
-            "medicalSpecialty": ["Keratoconus Treatment", "Scleral Lens Fitting", "Corneal Disease"],
+            "medicalSpecialty": ["Keratoconus Treatment", "Scleral Lens Fitting", "Corneal Disease", "Corneal Cross-Linking Co-Management", "Post-Surgical Vision Correction"],
             "url": "https://www.eyecarecenteroc.com/about",
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Illinois College of Optometry"
+            },
+            "hasCredential": [
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Degree", "name": "Doctor of Optometry (O.D.)" },
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Board Certification", "name": "California State Board of Optometry" },
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Board Certification", "name": "National Board of Examiners in Optometry (NBEO)" },
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Fellowship", "name": "Advanced Contact Lens Fellowship" },
+                { "@type": "EducationalOccupationalCredential", "credentialCategory": "Fellowship", "name": "Corneal Disease Fellowship" }
+            ],
+            "memberOf": [
+                { "@type": "Organization", "name": "American Optometric Association (AOA)" },
+                { "@type": "Organization", "name": "California Optometric Association (COA)" },
+                { "@type": "Organization", "name": "American Academy of Optometry (AAO)" },
+                { "@type": "Organization", "name": "Scleral Lens Education Society" },
+                { "@type": "Organization", "name": "International Keratoconus Academy" }
+            ],
             "worksFor": {
                 "@type": "MedicalBusiness",
                 "name": "Keratoconus Vision Center",
@@ -48,8 +66,9 @@ export default function AboutPage() {
                     "url": "https://www.eyecarecenteroc.com"
                 }
             },
-            "description": "Orange County's leading keratoconus doctor specializing in non-surgical keratoconus treatment with 35+ years of experience. Trusted keratoconus specialist for complex corneal cases.",
-            "knowsAbout": ["Keratoconus", "Scleral Lenses", "Corneal Disease", "Non-surgical Vision Restoration"],
+            "description": "Orange County's leading keratoconus doctor specializing in non-surgical keratoconus treatment with 35+ years of experience. Trusted keratoconus specialist for complex corneal cases. Illinois College of Optometry graduate with fellowships in Advanced Contact Lens and Corneal Disease.",
+            "knowsAbout": ["Keratoconus", "Scleral Lenses", "Corneal Disease", "Corneal Cross-Linking", "Non-surgical Vision Restoration", "Pediatric Keratoconus", "Post-LASIK Ectasia"],
+            "award": ["Optometrist of the Year", "Excellence in Patient Care Award", "Top Doctor Recognition"],
             "areaServed": {
                 "@type": "State",
                 "name": "California"
