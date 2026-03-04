@@ -43,7 +43,7 @@ export default function SpanishHomeContent() {
                     "Aceptamos Seguros"
                 ]}
                 ctaText="Agendar Consulta"
-                ctaLink="#lead-form"
+                ctaLink="#contact-form"
                 imageSrc="/images/keratoconus-main.webp"
                 phoneNumber="(714) 558-0641"
                 priority={true}

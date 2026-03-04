@@ -42,7 +42,7 @@ export default function KeratoconusScleralContent() {
                     "Free Consultation Available"
                 ]}
                 ctaText="Book Consultation"
-                ctaLink="#lead-form"
+                ctaLink="#contact-form"
                 imageSrc="/images/keratoconus-main.webp" // Reusing working image for now
                 phoneNumber="(714) 558-0641"
             />

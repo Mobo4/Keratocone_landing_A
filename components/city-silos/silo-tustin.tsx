@@ -110,7 +110,7 @@ export default function SiloTustin() {
                             Keratoconus is most commonly diagnosed in teenagers and young adults, making family awareness and early detection particularly important for the Tustin community. Parents who notice their children squinting, complaining about night vision, or requiring frequent prescription changes should consider a corneal evaluation. The Keratoconus Vision Center is located directly adjacent to Tustin on North Tustin Avenue, making it one of the most accessible specialty eye care practices for Tustin families.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="#appointment" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
+                            <Link href="#contact-form" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
                                 Book Tustin Consultation
                             </Link>
                             <Link href="tel:+17145580641" className="callrail-phone inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
@@ -544,7 +544,7 @@ export default function SiloTustin() {
                                     <Phone className="w-5 h-5" />
                                     (714) 558-0641
                                 </a>
-                                <Link href="#appointment" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
+                                <Link href="#contact-form" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
                                     <Calendar className="w-5 h-5" />
                                     Book Online
                                 </Link>

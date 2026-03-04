@@ -134,7 +134,7 @@ export default function ScleralLensesPostLasikRkPage() {
                                 When refractive surgery leaves behind an irregular cornea, glasses and standard contacts cannot give you sharp, stable vision. Scleral lenses create a new optical surface — vaulting completely over the corneal irregularities that are making your vision blurry, distorted, or unstable.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <a href="#lead-form" className="bg-white text-eyecare-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
+                                <a href="#contact-form" className="bg-white text-eyecare-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                     Schedule Fitting Evaluation
                                 </a>
                                 <a href="tel:+17145580641" className="callrail-phone border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">

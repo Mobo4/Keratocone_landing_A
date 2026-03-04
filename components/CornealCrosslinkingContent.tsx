@@ -32,7 +32,7 @@ export default function CornealCrosslinkingContent() {
                     "Coordinated With Top Surgeons"
                 ]}
                 ctaText="Get Evaluated for CXL"
-                ctaLink="#lead-form"
+                ctaLink="#contact-form"
                 imageSrc="/images/keratoconus-main.webp"
                 phoneNumber="(714) 558-0641"
             />

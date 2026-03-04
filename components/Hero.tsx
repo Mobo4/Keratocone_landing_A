@@ -39,7 +39,7 @@ export default function Hero({
     subheadline,
     imageSrc,
     ctaText = "Book Consultation",
-    ctaLink = "#lead-form",
+    ctaLink = "#contact-form",
     benefits = [],
     phoneNumber = "(714) 558-0641",
     phoneHref = "tel:+17145580641",

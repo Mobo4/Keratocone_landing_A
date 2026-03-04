@@ -139,7 +139,7 @@ export default function AboutPageEs() {
                             <h2 className="text-2xl font-bold text-eyecare-navy mb-4 font-serif">{t('CTA.title')}</h2>
                             <p className="text-gray-600 mb-8">{t('CTA.description')}</p>
                             <Link
-                                href="/es#lead-form"
+                                href="/es#contact-form"
                                 className="inline-block bg-eyecare-blue hover:bg-eyecare-dark-blue text-white px-8 py-4 rounded-xl font-bold transition-colors"
                             >
                                 {t('CTA.button')}

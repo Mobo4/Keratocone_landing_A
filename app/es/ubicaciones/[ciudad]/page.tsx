@@ -143,7 +143,7 @@ export default async function SpanishCityPage({ params }: Props) {
                         No tienes que viajar lejos para recibir atención experta. El Dr. Bonakdar es un especialista reconocido a nivel nacional que trata casos complejos de córnea para pacientes de todo el {city.county}.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link href="#appointment" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
+                        <Link href="#contact-form" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
                             Agendar Consulta en {city.name}
                         </Link>
                         <Link href="tel:+17145580641" className="callrail-phone inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">

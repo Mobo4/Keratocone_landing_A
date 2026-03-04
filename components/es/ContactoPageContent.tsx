@@ -2,7 +2,8 @@
 
 import React from 'react';
 import FadeIn from '@/components/FadeIn';
-import LeadForm from '@/components/LeadForm';
+import ContactForm from '@/components/ContactForm';
+import TrustSignals from '@/components/TrustSignals';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function ContactoPageContent() {
@@ -97,11 +98,12 @@ export default function ContactoPageContent() {
                         </FadeIn>
                     </div>
 
-                    {/* Lead Form */}
+                    {/* Contact Form */}
                     <FadeIn delay={0.2}>
-                        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-eyecare-blue/10 p-8">
+                        <div id="contact-form" className="bg-white rounded-3xl shadow-xl overflow-hidden border border-eyecare-blue/10 p-8">
                             <h2 className="text-2xl font-bold text-eyecare-navy mb-6 font-serif">Solicitar Cita</h2>
-                            <LeadForm />
+                            <TrustSignals locale="es" />
+                            <ContactForm locale="es" />
                         </div>
                     </FadeIn>
                 </div>

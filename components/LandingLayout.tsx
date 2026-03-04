@@ -76,7 +76,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
                                 <span className="text-sm lg:text-base">{phoneNumber}</span>
                             </a>
                             <Link
-                                href="#lead-form"
+                                href="#contact-form"
                                 className="bg-eyecare-blue hover:bg-eyecare-dark-blue text-white px-3 md:px-5 lg:px-6 py-2 md:py-2.5 rounded-lg font-semibold text-xs md:text-sm transition-all shadow-md hover:shadow-lg"
                             >
                                 <span className="hidden sm:inline">Request </span>Appointment

@@ -108,7 +108,7 @@ export default function KeratoconusQuiz() {
                             </div>
 
                             <a
-                                href="#appointment"
+                                href="#contact-form"
                                 className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-eyecare-blue hover:bg-eyecare-dark-blue md:py-4 md:text-lg md:px-10 shadow-lg hover:shadow-xl transition-all"
                             >
                                 Schedule Your Expert Consultation

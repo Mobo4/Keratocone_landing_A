@@ -110,7 +110,7 @@ export default function SiloNewport() {
                             For residents who spend time sailing, surfing, playing golf, or simply enjoying the coastal environment, clear and reliable vision is not optional. Keratoconus can profoundly affect distance acuity, depth perception, and tolerance to bright light and glare, all of which are critical for the activities that define life in Newport Beach. The sun reflecting off water, the shifting light conditions along the coast, and the demand for sharp vision during recreation make proper keratoconus management especially important for this community.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="#appointment" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
+                            <Link href="#contact-form" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
                                 Book Newport Beach Consultation
                             </Link>
                             <Link href="tel:+17145580641" className="callrail-phone inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
@@ -537,7 +537,7 @@ export default function SiloNewport() {
                                     <Phone className="w-5 h-5" />
                                     (714) 558-0641
                                 </a>
-                                <Link href="#appointment" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
+                                <Link href="#contact-form" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
                                     <Calendar className="w-5 h-5" />
                                     Book Online
                                 </Link>

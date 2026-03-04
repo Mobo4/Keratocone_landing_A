@@ -110,7 +110,7 @@ export default function SiloIrvine() {
                             Keratoconus is typically diagnosed in the late teens to mid-twenties and can progress rapidly without intervention. For Irvine residents who depend on clear vision for screen-intensive work, academic study, or active lifestyles, even mild keratoconus can have a measurable impact on daily function. Many patients in Irvine first notice symptoms when their glasses prescriptions change repeatedly or when night driving becomes difficult due to halos and ghosting around headlights.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link href="#appointment" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
+                            <Link href="#contact-form" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
                                 Book Irvine Consultation
                             </Link>
                             <Link href="tel:+17145580641" className="callrail-phone inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
@@ -534,7 +534,7 @@ export default function SiloIrvine() {
                                     <Phone className="w-5 h-5" />
                                     (714) 558-0641
                                 </a>
-                                <Link href="#appointment" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
+                                <Link href="#contact-form" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
                                     <Calendar className="w-5 h-5" />
                                     Book Online
                                 </Link>

@@ -174,7 +174,7 @@ export default async function SpanishArticlePage({ params }: Props) {
                                 Agenda una consulta con el Dr. Bonakdar para discutir tus opciones de tratamiento.
                             </p>
                             <Link
-                                href="/es#lead-form"
+                                href="/es#contact-form"
                                 className="inline-block bg-white text-eyecare-navy px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-colors"
                             >
                                 Agendar Consulta

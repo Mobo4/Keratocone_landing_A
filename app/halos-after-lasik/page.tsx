@@ -132,7 +132,7 @@ export default function HalosAfterLasikPage() {
                                 You were promised crisp, clear vision. Now every headlight at night has a rainbow burst around it, street signs have ghost images, and driving after dark has become stressful. You were told it would go away. It didn't.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <a href="#lead-form" className="bg-white text-eyecare-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
+                                <a href="#contact-form" className="bg-white text-eyecare-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                     Get Evaluated
                                 </a>
                                 <a href="tel:+17145580641" className="callrail-phone border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">

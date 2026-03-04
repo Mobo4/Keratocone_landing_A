@@ -57,7 +57,7 @@ export default function CityIntroSection({ citySlug, cityName, county }: CityInt
 
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link
-                            href="#appointment"
+                            href="#contact-form"
                             className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors"
                         >
                             Book {cityName} Consultation

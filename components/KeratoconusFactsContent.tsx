@@ -137,7 +137,7 @@ export default function KeratoconusFactsContent() {
                                 Browse Articles <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                             </span>
                         </Link>
-                        <Link href="#lead-form" className="group block bg-eyecare-navy rounded-2xl p-6 text-white hover:shadow-lg transition-all">
+                        <Link href="#contact-form" className="group block bg-eyecare-navy rounded-2xl p-6 text-white hover:shadow-lg transition-all">
                             <h3 className="font-bold mb-2">Have Questions?</h3>
                             <p className="text-sm text-blue-100 mb-3">Schedule a consultation with a keratoconus specialist to discuss your specific case.</p>
                             <span className="inline-flex items-center text-sm font-bold text-white">

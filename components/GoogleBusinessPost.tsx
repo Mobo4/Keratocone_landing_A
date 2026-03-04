@@ -46,7 +46,7 @@ export default function GoogleBusinessPost() {
                     {/* <img src={post.image} alt="Clinic Update" className="w-full h-48 object-cover rounded-lg" /> */}
 
                     <a
-                        href="#appointment"
+                        href="#contact-form"
                         className="block w-full py-2 bg-blue-50 text-eyecare-blue text-center rounded-lg text-sm font-bold hover:bg-blue-100 transition-colors"
                     >
                         {post.cta}

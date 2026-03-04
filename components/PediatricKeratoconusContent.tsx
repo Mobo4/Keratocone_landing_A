@@ -34,7 +34,7 @@ export default function PediatricKeratoconusContent() {
                     "Insurance Accepted"
                 ]}
                 ctaText="Schedule Pediatric Evaluation"
-                ctaLink="#lead-form"
+                ctaLink="#contact-form"
                 imageSrc="/images/keratoconus-main.webp"
                 phoneNumber="(714) 558-0641"
             />

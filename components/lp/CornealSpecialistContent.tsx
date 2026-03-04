@@ -45,7 +45,7 @@ export default function CornealSpecialistContent() {
                     "Same-Week Appointments"
                 ]}
                 ctaText="See the Cornea Specialist"
-                ctaLink="#lead-form"
+                ctaLink="#contact-form"
                 imageSrc="/images/keratoconus-main.webp"
                 phoneNumber="(714) 558-0641"
             />

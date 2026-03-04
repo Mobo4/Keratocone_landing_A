@@ -94,7 +94,7 @@ export default function LandingPage() {
           "Referral Center for Complex Cases"
         ]}
         ctaText="Schedule Evaluation"
-        ctaLink="#lead-form"
+        ctaLink="#contact-form"
         imageSrc="/images/keratoconus-main.webp"
         phoneNumber="(714) 558-0641"
         priority={true}
