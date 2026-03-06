@@ -55,6 +55,12 @@ export async function POST(request: NextRequest) {
             tags: ['Website Form', 'Keratoconus Consultation'],
         };
 
+        // locationId required for Private Integration Tokens (pit-)
+        const locationId = process.env.GHL_LOCATION_ID;
+        if (locationId) {
+            ghlBody.locationId = locationId;
+        }
+
         // Add message as custom field if configured, otherwise skip
         const messageFieldId = process.env.GHL_MESSAGE_FIELD_ID;
         if (message && messageFieldId) {
