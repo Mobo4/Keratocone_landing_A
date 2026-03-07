@@ -7,6 +7,19 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 90]
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=60, stale-while-revalidate=3600'
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {
