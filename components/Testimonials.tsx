@@ -5,16 +5,16 @@ import FadeIn from './FadeIn';
 import Script from 'next/script';
 
 export default function Testimonials() {
-    const videoId = 'jGBsy13yk7c';
+    const videoId = 'p3SwILup6rE';
 
     // VideoObject schema for SEO
     const videoSchema = {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": "Understanding Your Keratoconus Diagnosis - What You Need to Know",
-        "description": "Dr. Alexander Bonakdar explains keratoconus diagnosis, treatment options, and how scleral lenses can restore clear vision. Learn what to expect from your keratoconus specialist in Orange County, CA.",
+        "name": "Keratoconus Explained - Optometric Eyecare Center of Orange County",
+        "description": "Dr. Alexander Bonakdar explains keratoconus — a progressive eye condition where the cornea thins and bulges into a cone shape — including causes, symptoms, diagnosis with corneal topography, and treatment options such as scleral lenses and corneal cross-linking. Keratoconus specialist in Orange County, CA.",
         "thumbnailUrl": `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
-        "uploadDate": "2024-01-01T00:00:00-08:00",
+        "uploadDate": "2025-03-10T00:00:00-07:00",
         "contentUrl": `https://www.youtube.com/watch?v=${videoId}`,
         "embedUrl": `https://www.youtube.com/embed/${videoId}`,
         "publisher": {
@@ -50,7 +50,7 @@ export default function Testimonials() {
                                 <iframe
                                     className="absolute top-0 left-0 w-full h-full"
                                     src={`https://www.youtube.com/embed/${videoId}?rel=0`}
-                                    title="Understanding Your Keratoconus Diagnosis - What You Need to Know"
+                                    title="Keratoconus Explained - Optometric Eyecare Center of Orange County"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
@@ -58,7 +58,7 @@ export default function Testimonials() {
                             </div>
                         </div>
                         <p className="text-center mt-4 text-gray-600 text-sm">
-                            Understanding Your Keratoconus Diagnosis: Causes, Symptoms & Treatment Options
+                            Keratoconus Explained: Causes, Symptoms & Treatment Options
                         </p>
                     </div>
                 </FadeIn>

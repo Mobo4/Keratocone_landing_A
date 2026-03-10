@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     ],
     videos: [
       {
-        url: 'https://www.youtube.com/watch?v=jGBsy13yk7c',
+        url: 'https://www.youtube.com/watch?v=p3SwILup6rE',
         width: 1280,
         height: 720,
         type: 'text/html',
