@@ -80,6 +80,50 @@ export default function InsuranceSection() {
                             </p>
                         </div>
                     </div>
+
+                    {/* CareCredit Financing */}
+                    <div className="max-w-4xl mx-auto mt-10">
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                            <div className="flex flex-col md:flex-row items-center gap-8">
+                                <div className="flex-shrink-0">
+                                    <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-4 rounded-2xl">
+                                        <svg className="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div className="flex-1 text-center md:text-left">
+                                    <h3 className="text-xl font-bold text-eyecare-navy mb-2">CareCredit Financing</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        Make keratoconus treatment affordable with CareCredit. We offer <strong>0% interest financing</strong> for 6- and 12-month plans on scleral lens fittings and other treatments. Apply in minutes — no impact to your credit score to check eligibility.
+                                    </p>
+                                    <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                                        <a
+                                            href="https://www.carecredit.com/apply/?sitecode=B5CCF0PL"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-700 transition-colors"
+                                        >
+                                            Apply for CareCredit
+                                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                        <div className="flex items-center gap-3 text-sm text-gray-500">
+                                            <span className="flex items-center gap-1">
+                                                <CheckCircle className="w-4 h-4 text-green-500" />
+                                                HSA/FSA Accepted
+                                            </span>
+                                            <span className="flex items-center gap-1">
+                                                <CheckCircle className="w-4 h-4 text-green-500" />
+                                                Major Credit Cards
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </FadeIn>
             </div>
         </section>
