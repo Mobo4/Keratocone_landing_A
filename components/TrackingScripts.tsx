@@ -6,12 +6,6 @@ import Script from 'next/script';
 export default function TrackingScripts() {
   return (
     <>
-      {/* CallRail Dynamic Number Insertion */}
-      <Script
-        src="//cdn.callrail.com/companies/484975895/cc1efe44e3700333f095/12/swap.js"
-        strategy="afterInteractive"
-      />
-
       {/*
         ------------------------------------------------------------
         Meta Pixel (Facebook)
