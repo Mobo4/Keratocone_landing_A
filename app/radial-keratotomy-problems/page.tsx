@@ -147,7 +147,7 @@ export default function RadialKeratotomyProblemsPage() {
                                 <a href="#contact-form" className="bg-white text-eyecare-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                     Schedule Evaluation
                                 </a>
-                                <a href="tel:+17145580641" className="callrail-phone border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
+                                <a href="tel:+17145580641" className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
                                     (714) 558-0641
                                 </a>
                             </div>

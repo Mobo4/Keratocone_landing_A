@@ -113,7 +113,7 @@ export default function SiloTustin() {
                             <Link href="#contact-form" className="inline-flex justify-center items-center px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
                                 Book Tustin Consultation
                             </Link>
-                            <Link href="tel:+17145580641" className="callrail-phone inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
+                            <Link href="tel:+17145580641" className="inline-flex justify-center items-center px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors">
                                 Call (714) 558-0641
                             </Link>
                         </div>
@@ -540,7 +540,7 @@ export default function SiloTustin() {
                                 Same-week appointments available for Tustin families. Whether you need a first-time evaluation for your teenager or ongoing management for an adult family member, we are here to help. Our office is less than 10 minutes from most Tustin neighborhoods.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                                <a href="tel:+17145580641" className="callrail-phone inline-flex justify-center items-center gap-2 px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
+                                <a href="tel:+17145580641" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">
                                     <Phone className="w-5 h-5" />
                                     (714) 558-0641
                                 </a>

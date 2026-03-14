@@ -124,7 +124,7 @@ export default function LasikComplicationsPage() {
                                 <a href="#contact-form" className="bg-white text-eyecare-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                     Schedule Evaluation
                                 </a>
-                                <a href="tel:+17145580641" className="callrail-phone border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
+                                <a href="tel:+17145580641" className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
                                     (714) 558-0641
                                 </a>
                             </div>
@@ -266,7 +266,7 @@ export default function LasikComplicationsPage() {
                         <p className="text-red-700 leading-relaxed">
                             Corneal ectasia is a progressive condition that can be stabilized with cross-linking if caught early. If your vision has been getting progressively worse since LASIK — with increasing distortion, irregular astigmatism on topography, or a bulging-shaped corneal map — please schedule urgently. Early intervention improves outcomes significantly.
                         </p>
-                        <a href="tel:+17145580641" className="callrail-phone mt-4 inline-block bg-red-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-800 transition-colors">
+                        <a href="tel:+17145580641" className="mt-4 inline-block bg-red-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-800 transition-colors">
                             Call (714) 558-0641 for Urgent Appointment
                         </a>
                     </FadeIn>

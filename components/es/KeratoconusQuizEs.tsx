@@ -115,7 +115,7 @@ export default function KeratoconusQuizEs() {
                                 Agendar Consulta
                             </Link>
                             <p className="mt-4 text-sm text-gray-500">
-                                O llámenos directamente: <a href="tel:+17145580641" className="callrail-phone text-eyecare-blue font-bold hover:underline">(714) 558-0641</a>
+                                O llámenos directamente: <a href="tel:+17145580641" className="text-eyecare-blue font-bold hover:underline">(714) 558-0641</a>
                             </p>
                         </div>
                     )}

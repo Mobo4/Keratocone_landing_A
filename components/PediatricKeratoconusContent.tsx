@@ -198,7 +198,7 @@ export default function PediatricKeratoconusContent() {
                                     Schedule a pediatric keratoconus evaluation. Corneal topography screening takes 15 minutes and can detect keratoconus before vision is significantly affected.
                                 </p>
                                 <p className="text-gray-300">
-                                    Call us: <a href="tel:+17145580641" className="callrail-phone text-white font-bold hover:text-eyecare-light-blue">(714) 558-0641</a>
+                                    Call us: <a href="tel:+17145580641" className="text-white font-bold hover:text-eyecare-light-blue">(714) 558-0641</a>
                                 </p>
                             </div>
                             <div className="p-8 md:p-12">

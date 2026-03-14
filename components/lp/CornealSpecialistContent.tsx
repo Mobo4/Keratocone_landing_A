@@ -211,7 +211,7 @@ export default function CornealSpecialistContent() {
                                     <p className="text-gray-800 font-medium mb-2">Keratoconus Vision Center</p>
                                     <p className="text-gray-600">801 North Tustin Ave, Suite 401</p>
                                     <p className="text-gray-600">Santa Ana, CA 92705</p>
-                                    <p className="text-gray-600 mt-2">Phone: <a href="tel:+17145580641" className="callrail-phone text-eyecare-blue hover:underline">(714) 558-0641</a></p>
+                                    <p className="text-gray-600 mt-2">Phone: <a href="tel:+17145580641" className="text-eyecare-blue hover:underline">(714) 558-0641</a></p>
                                 </div>
                             </div>
                         </div>

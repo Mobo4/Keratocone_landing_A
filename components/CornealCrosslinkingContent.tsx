@@ -236,7 +236,7 @@ export default function CornealCrosslinkingContent() {
                                     Schedule a keratoconus evaluation to determine if corneal cross-linking can stop your progression. Same-week appointments available.
                                 </p>
                                 <p className="text-gray-300">
-                                    Or call now: <a href="tel:+17145580641" className="callrail-phone text-white font-bold hover:text-eyecare-light-blue">(714) 558-0641</a>
+                                    Or call now: <a href="tel:+17145580641" className="text-white font-bold hover:text-eyecare-light-blue">(714) 558-0641</a>
                                 </p>
                             </div>
                             <div className="p-8 md:p-12">

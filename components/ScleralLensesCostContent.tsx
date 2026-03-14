@@ -217,7 +217,7 @@ export default function ScleralLensesCostContent() {
                                     We check your medical insurance benefits for scleral lens coverage before your first visit — no surprises.
                                 </p>
                                 <p className="text-gray-300">
-                                    Or call: <a href="tel:+17145580641" className="callrail-phone text-white font-bold hover:text-eyecare-light-blue">(714) 558-0641</a>
+                                    Or call: <a href="tel:+17145580641" className="text-white font-bold hover:text-eyecare-light-blue">(714) 558-0641</a>
                                 </p>
                             </div>
                             <div className="p-8 md:p-12">

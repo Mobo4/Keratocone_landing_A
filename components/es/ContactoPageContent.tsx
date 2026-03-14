@@ -56,7 +56,7 @@ export default function ContactoPageContent() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-eyecare-navy mb-2">Teléfono</h3>
-                                        <a href="tel:+17145580641" className="callrail-phone text-eyecare-blue font-bold text-lg hover:underline">
+                                        <a href="tel:+17145580641" className="text-eyecare-blue font-bold text-lg hover:underline">
                                             (714) 558-0641
                                         </a>
                                     </div>

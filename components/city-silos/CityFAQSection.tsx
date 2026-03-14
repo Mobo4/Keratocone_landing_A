@@ -210,7 +210,7 @@ export default function CityFAQSection({ citySlug, cityName, county }: CityFAQSe
                         </p>
                         <a
                             href="tel:+17145580641"
-                            className="callrail-phone inline-flex items-center gap-2 px-6 py-3 bg-eyecare-navy text-white rounded-full text-sm font-bold hover:bg-eyecare-blue transition-colors"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-eyecare-navy text-white rounded-full text-sm font-bold hover:bg-eyecare-blue transition-colors"
                         >
                             Call (714) 558-0641
                         </a>
