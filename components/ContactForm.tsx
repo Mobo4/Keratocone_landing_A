@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { trackFormSubmit } from '@/lib/tracking';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -65,6 +66,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
                 throw new Error(body.error || 'Submission failed');
             }
 
+            trackFormSubmit();
             setStatus('success');
         } catch (err) {
             setStatus('error');
