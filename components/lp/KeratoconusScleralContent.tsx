@@ -9,8 +9,15 @@ import InsuranceSection from '@/components/InsuranceSection';
 import LeadForm from '@/components/LeadForm';
 import KeratoconusQuiz from '@/components/KeratoconusQuiz';
 import FadeIn from '@/components/FadeIn';
+import GeoBadge from '@/components/GeoBadge';
 
-export default function KeratoconusScleralContent() {
+interface KeratoconusScleralContentProps {
+    geoHeadline?: string;
+    geoSubhead?: string;
+    geoBadge?: string;
+}
+
+export default function KeratoconusScleralContent({ geoHeadline, geoSubhead, geoBadge }: KeratoconusScleralContentProps) {
     const schema = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -30,10 +37,12 @@ export default function KeratoconusScleralContent() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            {/* Geo Badge */}
+            {geoBadge && <GeoBadge text={geoBadge} />}
             {/* 1. Hero Section */}
             <LandingHero
-                headline="Keratoconus Treatment in Orange County"
-                subheadline="Specialty Scleral Lenses & Expert Care. 35+ Years of Experience Helping Patients See Clearly Again."
+                headline={geoHeadline || "Keratoconus Treatment in Orange County"}
+                subheadline={geoSubhead || "Specialty Scleral Lenses & Expert Care. 35+ Years of Experience Helping Patients See Clearly Again."}
                 benefits={[
                     "Advanced Scleral Lens Technology",
                     "Non-Surgical Vision Restoration",

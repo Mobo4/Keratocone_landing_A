@@ -2,7 +2,10 @@ import React from 'react';
 import LandingLayout from '@/components/LandingLayout';
 import ContactPageContent from '@/components/ContactPageContent';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalization } from '@/lib/geo-personalization';
 
+import { headers } from 'next/headers';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,7 +21,10 @@ export const metadata: Metadata = {
     },
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const geo = getPersonalization(city);
     const schema = {
         "@context": "https://schema.org",
         "@type": "ContactPage",
@@ -50,7 +56,8 @@ export default function ContactPage() {
                 { name: 'Home', url: 'https://keratocones.com' },
                 { name: 'Contact' },
             ]} />
-            <ContactPageContent />
+            <GeoBadge text={geo.badge} />
+            <ContactPageContent geoSubhead={geo.competitorAngle} />
         </LandingLayout>
     );
 }

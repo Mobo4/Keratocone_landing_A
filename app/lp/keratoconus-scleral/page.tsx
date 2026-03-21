@@ -1,6 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import KeratoconusScleralContent from '@/components/lp/KeratoconusScleralContent';
+import { getPersonalization } from '@/lib/geo-personalization';
 import FAQSchema, { LANDING_FAQS } from '@/components/FAQSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
@@ -16,7 +18,10 @@ export const metadata: Metadata = {
     },
 };
 
-export default function KeratoconusScleralPage() {
+export default async function KeratoconusScleralPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const geo = getPersonalization(city);
     const schema = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -41,7 +46,7 @@ export default function KeratoconusScleralPage() {
                 { name: 'Scleral Lenses for Keratoconus' },
             ]} />
             <FAQSchema faqs={LANDING_FAQS} />
-            <KeratoconusScleralContent />
+            <KeratoconusScleralContent geoHeadline={geo.headline} geoSubhead={geo.subhead} geoBadge={geo.badge} />
         </>
     );
 }

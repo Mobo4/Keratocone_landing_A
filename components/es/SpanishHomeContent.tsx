@@ -9,8 +9,16 @@ import KeratoconusQuizEs from '@/components/es/KeratoconusQuizEs';
 import InsuranceSection from '@/components/InsuranceSection';
 import Testimonials from '@/components/Testimonials';
 import FadeIn from '@/components/FadeIn';
+import GeoBadge from '@/components/GeoBadge';
 
-export default function SpanishHomeContent() {
+interface SpanishHomeContentProps {
+    geoHeadline?: string;
+    geoSubhead?: string;
+    geoBadge?: string;
+    geoCta?: string;
+}
+
+export default function SpanishHomeContent({ geoHeadline, geoSubhead, geoBadge, geoCta }: SpanishHomeContentProps) {
     const schema = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -31,9 +39,10 @@ export default function SpanishHomeContent() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            {geoBadge && <GeoBadge text={geoBadge} />}
             <LandingHero
-                headline="Vuelve a Ver la Vida con Claridad"
-                subheadline="Atención Experta para Queratocono y Lentes Esclerales. Cuando Otros Dicen No, Nosotros Decimos Sí. Confianza de CHOC y UCI Medical Center."
+                headline={geoHeadline || "Vuelve a Ver la Vida con Claridad"}
+                subheadline={geoSubhead || "Atención Experta para Queratocono y Lentes Esclerales. Cuando Otros Dicen No, Nosotros Decimos Sí. Confianza de CHOC y UCI Medical Center."}
                 benefits={[
                     "Tecnología Avanzada de Lentes Esclerales",
                     "Restauración de Visión Sin Cirugía",
@@ -42,7 +51,7 @@ export default function SpanishHomeContent() {
                     "Resultados Comprobados",
                     "Aceptamos Seguros"
                 ]}
-                ctaText="Agendar Consulta"
+                ctaText={geoCta || "Agendar Consulta"}
                 ctaLink="#contact-form"
                 imageSrc="/images/keratoconus-main.webp"
                 phoneNumber="(714) 558-0641"

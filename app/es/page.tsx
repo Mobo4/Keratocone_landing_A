@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import SpanishHomeContent from '@/components/es/SpanishHomeContent';
+import { getPersonalizationEs } from '@/lib/geo-personalization-es';
 
 export const metadata: Metadata = {
     title: 'Tratamiento Queratocono Orange County | Hablamos Español',
@@ -21,7 +23,10 @@ export const metadata: Metadata = {
     },
 };
 
-export default function SpanishLandingPage() {
+export default async function SpanishLandingPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const geo = getPersonalizationEs(city);
     const schema = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -42,7 +47,7 @@ export default function SpanishLandingPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
-            <SpanishHomeContent />
+            <SpanishHomeContent geoHeadline={geo.headline} geoSubhead={geo.subhead} geoBadge={geo.badge} geoCta={geo.urgency} />
         </>
     );
 }

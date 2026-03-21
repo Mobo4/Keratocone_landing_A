@@ -9,6 +9,13 @@ import InsuranceSection from '@/components/InsuranceSection';
 import LeadForm from '@/components/LeadForm';
 import FadeIn from '@/components/FadeIn';
 import Link from 'next/link';
+import GeoBadge from '@/components/GeoBadge';
+
+interface CornealSpecialistContentProps {
+    geoHeadline?: string;
+    geoSubhead?: string;
+    geoBadge?: string;
+}
 
 const CONDITIONS = [
     {
@@ -29,13 +36,15 @@ const CONDITIONS = [
     },
 ];
 
-export default function CornealSpecialistContent() {
+export default function CornealSpecialistContent({ geoHeadline, geoSubhead, geoBadge }: CornealSpecialistContentProps) {
     return (
         <LandingLayout>
+            {/* Geo Badge */}
+            {geoBadge && <GeoBadge text={geoBadge} />}
             {/* Hero */}
             <LandingHero
-                headline="Cornea Specialist in Orange County"
-                subheadline="Dr. Alexander Bonakdar is an Orange County cornea specialist with 35+ years of experience treating keratoconus, corneal disease, and complex corneal conditions. Referral center for CHOC and UCI Medical Center."
+                headline={geoHeadline || "Cornea Specialist in Orange County"}
+                subheadline={geoSubhead || "Dr. Alexander Bonakdar is an Orange County cornea specialist with 35+ years of experience treating keratoconus, corneal disease, and complex corneal conditions. Referral center for CHOC and UCI Medical Center."}
                 benefits={[
                     "35+ Years Cornea Experience",
                     "500+ Complex Cases Treated",

@@ -1,6 +1,22 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
+function addGeoHeaders(response: NextResponse, request: NextRequest) {
+    // Vercel provides these headers automatically at the edge
+    response.headers.set('x-visitor-city', request.headers.get('x-vercel-ip-city') || '')
+    response.headers.set('x-visitor-region', request.headers.get('x-vercel-ip-country-region') || '')
+    response.headers.set('x-visitor-country', request.headers.get('x-vercel-ip-country') || '')
+
+    // Forward UTM parameters from URL
+    const url = request.nextUrl
+    response.headers.set('x-utm-source', url.searchParams.get('utm_source') || '')
+    response.headers.set('x-utm-campaign', url.searchParams.get('utm_campaign') || '')
+    response.headers.set('x-keyword', url.searchParams.get('keyword') || '')
+
+    // Tell CDN to vary cache by visitor city
+    response.headers.append('Vary', 'x-visitor-city')
+}
+
 export function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl
 
@@ -32,11 +48,13 @@ export function middleware(request: NextRequest) {
                 path: '/',
             })
         }
+        addGeoHeaders(response, request)
         return response
     }
 
     const response = NextResponse.next()
     response.headers.set('x-locale', locale)
+    addGeoHeaders(response, request)
     return response
 }
 

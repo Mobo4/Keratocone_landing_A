@@ -1,6 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import CornealSpecialistContent from '@/components/lp/CornealSpecialistContent';
+import { getPersonalization } from '@/lib/geo-personalization';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
@@ -15,7 +17,10 @@ export const metadata: Metadata = {
     },
 };
 
-export default function CorneaSpecialistPage() {
+export default async function CorneaSpecialistPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const geo = getPersonalization(city);
     const schema = {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
@@ -54,7 +59,7 @@ export default function CorneaSpecialistPage() {
                 { name: 'Home', url: 'https://www.keratocones.com' },
                 { name: 'Cornea Specialist Orange County' },
             ]} />
-            <CornealSpecialistContent />
+            <CornealSpecialistContent geoHeadline={geo.headline} geoSubhead={geo.subhead} geoBadge={geo.badge} />
         </>
     );
 }

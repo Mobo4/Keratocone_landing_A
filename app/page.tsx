@@ -11,7 +11,10 @@ import InsuranceSection from '@/components/InsuranceSection';
 import Testimonials from '@/components/Testimonials';
 import ReviewWidget from '@/components/ReviewWidget';
 import FAQSchema, { HOMEPAGE_FAQS } from '@/components/FAQSchema';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalization } from '@/lib/geo-personalization';
 
+import { headers } from 'next/headers';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -75,16 +78,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const headersList = await headers();
+  const city = headersList.get('x-visitor-city') || '';
+  const geo = getPersonalization(city);
+
   return (
     <LandingLayout>
       {/* FAQ Schema Markup for Google Rich Results */}
       <FAQSchema faqs={HOMEPAGE_FAQS} />
 
-      {/* H1 Hero: Keratoconus + Above-the-fold definition */}
+      {/* Geo-personalized badge */}
+      <GeoBadge text={geo.badge} />
+
+      {/* H1 Hero: Geo-personalized headline + subhead */}
       <LandingHero
-        headline="Keratoconus"
-        subheadline="Keratoconus is a progressive eye condition in which the cornea thins and bulges into a cone shape, causing distorted vision. It is typically diagnosed in adolescence or early adulthood and managed with specialty contact lenses, corneal cross-linking, or both."
+        headline={geo.headline}
+        subheadline={geo.subhead}
         benefits={[
           "Scleral Lens Fitting",
           "Corneal Topography",
@@ -93,7 +103,7 @@ export default function LandingPage() {
           "Insurance Accepted",
           "Referral Center for Complex Cases"
         ]}
-        ctaText="Schedule Evaluation"
+        ctaText={geo.urgency}
         ctaLink="#contact-form"
         imageSrc="/images/keratoconus-main.webp"
         phoneNumber="(714) 558-0641"

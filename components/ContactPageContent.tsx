@@ -6,7 +6,11 @@ import ContactForm from '@/components/ContactForm';
 import TrustSignals from '@/components/TrustSignals';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
-export default function ContactPageContent() {
+interface ContactPageContentProps {
+    geoSubhead?: string;
+}
+
+export default function ContactPageContent({ geoSubhead }: ContactPageContentProps) {
     return (
         <div className="bg-white min-h-screen">
             {/* Header */}
@@ -14,7 +18,7 @@ export default function ContactPageContent() {
                 <FadeIn>
                     <div className="container mx-auto px-4 text-center">
                         <h1 className="text-4xl text-white font-serif font-bold mb-4">Contact & Location</h1>
-                        <p className="text-blue-200">Conveniently located in Central Orange County</p>
+                        <p className="text-blue-200">{geoSubhead || "Conveniently located in Central Orange County"}</p>
                     </div>
                 </FadeIn>
             </div>
