@@ -1,5 +1,8 @@
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import LandingLayout from '@/components/LandingLayout';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalization } from '@/lib/geo-personalization';
 import KeratoconusFactsContent from '@/components/KeratoconusFactsContent';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import LeadForm from '@/components/LeadForm';
@@ -41,7 +44,14 @@ export const metadata: Metadata = {
     },
 };
 
-export default function KeratoconusFactsPage() {
+export default async function KeratoconusFactsPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const keyword = headersList.get('x-keyword') || '';
+    const utmCampaign = headersList.get('x-utm-campaign') || '';
+    const utmSource = headersList.get('x-utm-source') || '';
+    const geo = getPersonalization(city, keyword || undefined, utmCampaign || undefined, utmSource || undefined);
+
     const schema = {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
@@ -104,6 +114,7 @@ export default function KeratoconusFactsPage() {
 
     return (
         <LandingLayout>
+            <GeoBadge text={geo.badge} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

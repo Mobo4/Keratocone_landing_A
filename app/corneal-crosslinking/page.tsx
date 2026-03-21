@@ -1,8 +1,11 @@
 import React from 'react';
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import CornealCrosslinkingContent from '@/components/CornealCrosslinkingContent';
 import FAQSchema from '@/components/FAQSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalization } from '@/lib/geo-personalization';
 
 const CROSSLINKING_FAQS = [
     {
@@ -52,7 +55,14 @@ export const metadata: Metadata = {
     },
 };
 
-export default function CornealCrosslinkingPage() {
+export default async function CornealCrosslinkingPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const keyword = headersList.get('x-keyword') || '';
+    const utmCampaign = headersList.get('x-utm-campaign') || '';
+    const utmSource = headersList.get('x-utm-source') || '';
+    const geo = getPersonalization(city, keyword || undefined, utmCampaign || undefined, utmSource || undefined);
+
     const schema = {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
@@ -101,6 +111,7 @@ export default function CornealCrosslinkingPage() {
 
     return (
         <>
+            <GeoBadge text={geo.badge} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

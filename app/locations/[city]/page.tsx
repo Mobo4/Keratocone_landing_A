@@ -39,6 +39,9 @@ import KeratoconusEducationSnippet from '@/components/city-silos/KeratoconusEduc
 // Existing components
 import LeadForm from '@/components/LeadForm';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalization } from '@/lib/geo-personalization';
+import { headers } from 'next/headers';
 
 interface Props {
     params: Promise<{
@@ -114,8 +117,13 @@ export default async function CityPage({ params }: Props) {
         "url": `https://keratocones.com/locations/${city.slug}`
     };
 
+    const headersList = await headers();
+    const visitorCity = headersList.get('x-visitor-city') || '';
+    const geo = getPersonalization(visitorCity);
+
     return (
         <>
+            <GeoBadge text={geo.badge} />
             <Script
                 id="city-schema"
                 type="application/ld+json"

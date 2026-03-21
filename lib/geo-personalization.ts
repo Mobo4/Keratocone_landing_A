@@ -31,7 +31,6 @@ export type GeoPersonalization = {
   subhead: string;
   urgency: string;
   socialProof: string;
-  competitorAngle: string;
 };
 
 function cityMatch(city: string, list: string[]): string | null {
@@ -39,18 +38,82 @@ function cityMatch(city: string, list: string[]): string | null {
   return list.find(c => lower.includes(c.toLowerCase())) || null;
 }
 
-export function getPersonalization(city: string): GeoPersonalization {
+export function getPersonalization(
+  city: string,
+  keyword?: string,
+  utmCampaign?: string,
+  utmSource?: string,
+): GeoPersonalization {
+
+  // 1. Keyword intent (highest priority — visitor searched for something specific)
+  if (keyword) {
+    const kw = keyword.toLowerCase();
+    if (kw.includes('scleral'))
+      return {
+        badge: 'Scleral Lens Expert',
+        headline: 'Custom Scleral Lens Fitting for Keratoconus',
+        subhead: '500+ fittings — restore clear, comfortable vision.',
+        urgency: 'Book Your Scleral Lens Consultation',
+        socialProof: 'Patients travel from across California for our scleral expertise',
+      };
+    if (kw.includes('cross') || kw.includes('cxl'))
+      return {
+        badge: 'Cross-Linking Center',
+        headline: 'Stop Keratoconus Progression with Cross-Linking',
+        subhead: 'CXL coordination + scleral lens fitting — one specialist center.',
+        urgency: 'Ask About Cross-Linking',
+        socialProof: 'Referred by CHOC & UCI for complex KC cases',
+      };
+    if (kw.includes('child') || kw.includes('kid') || kw.includes('pediatric'))
+      return {
+        badge: 'Pediatric KC Care',
+        headline: 'Keratoconus Treatment for Children & Teens',
+        subhead: 'CHOC referral center — gentle scleral fitting for ages 10+.',
+        urgency: 'Schedule a Pediatric Consultation',
+        socialProof: 'Trusted by parents across Orange County',
+      };
+    if (kw.includes('second opinion') || kw.includes('alternative'))
+      return {
+        badge: 'Second Opinion Center',
+        headline: 'Get a Keratoconus Second Opinion This Week',
+        subhead: 'Not satisfied with your current care? 500+ cases, Bascom Palmer trained.',
+        urgency: 'Book Your Second Opinion',
+        socialProof: 'Many of our patients came for a second opinion and stayed',
+      };
+  }
+
+  // 2. UTM campaign intent (visitor came from a specific ad)
+  if (utmCampaign) {
+    const camp = utmCampaign.toLowerCase();
+    if (camp.includes('kc_maxclicks') || camp.includes('keratoconus'))
+      return {
+        badge: '',
+        headline: "You Searched for Keratoconus — You're in the Right Place",
+        subhead: '500+ cases treated. Same-week appointments. Direct specialist access.',
+        urgency: 'Book Your Consultation Today',
+        socialProof: 'Bascom Palmer trained, referred by CHOC & UCI doctors',
+      };
+  }
+  if (utmSource === 'facebook')
+    return {
+      badge: '',
+      headline: "Here's What Every Keratoconus Patient Needs to Know",
+      subhead: '500+ cases treated by a Bascom Palmer trained specialist. Insurance accepted.',
+      urgency: 'Learn More — Book a Consultation',
+      socialProof: 'Trusted by CHOC and UCI Medical Center for complex cases',
+    };
+
+  // 3. Geo personalization (visitor location)
   if (!city) return getDefault();
 
   const ocMatch = cityMatch(city, OC_CITIES);
   if (ocMatch) {
     return {
-      badge: `Serving ${ocMatch} Patients`,
-      headline: `Keratoconus Specialist Near ${ocMatch}`,
-      subhead: "We're minutes from your location — same-week appointments, easy parking, insurance accepted.",
-      urgency: "Book This Week — We Have Openings",
-      socialProof: `Join 500+ keratoconus patients from ${ocMatch} and Orange County`,
-      competitorAngle: "Skip the 6-month wait at UCI/UCLA — see a specialist this week",
+      badge: `Serving ${ocMatch}`,
+      headline: `Keratoconus Specialist in ${ocMatch}`,
+      subhead: "Same-week appointments — we're minutes from you.",
+      urgency: 'Book This Week',
+      socialProof: `500+ keratoconus patients from ${ocMatch} and Orange County`,
     };
   }
 
@@ -58,35 +121,32 @@ export function getPersonalization(city: string): GeoPersonalization {
   if (laMatch) {
     return {
       badge: `${laMatch} → Orange County`,
-      headline: `${laMatch} Patients Choose Us Over UCLA`,
-      subhead: "A short drive beats a 6-month wait — direct specialist access, not residents.",
-      urgency: "Same-Week Appointments Available",
-      socialProof: "Patients drive from across LA County for direct specialist access",
-      competitorAngle: "No residents, no rotating doctors — you see the specialist directly",
+      headline: `Why ${laMatch} Patients Choose Us Over UCLA`,
+      subhead: "A short drive beats a 6-month wait — see the specialist directly, not residents.",
+      urgency: 'Same-Week Appointments Available',
+      socialProof: 'Patients drive from across LA County for direct specialist access',
     };
   }
 
   const ieMatch = cityMatch(city, IE_CITIES);
   if (ieMatch) {
     return {
-      badge: `Patients Travel from ${ieMatch}`,
+      badge: `Patients from ${ieMatch}`,
       headline: `Keratoconus Patients from ${ieMatch} Trust Our Care`,
-      subhead: "500+ cases treated — worth the drive for specialized expertise.",
-      urgency: "Same-Week Appointments — Insurance Accepted",
-      socialProof: "Referred by CHOC and UCI doctors for complex keratoconus cases",
-      competitorAngle: "Bascom Palmer trained specialist with 35+ years of corneal expertise",
+      subhead: '500+ cases treated — specialized expertise worth the drive.',
+      urgency: 'Insurance Accepted — Book This Week',
+      socialProof: 'Referred by CHOC and UCI doctors for complex cases',
     };
   }
 
   const sdMatch = cityMatch(city, SD_CITIES);
   if (sdMatch) {
     return {
-      badge: "Southern California's KC Expert",
+      badge: "SoCal's KC Expert",
       headline: `Patients Travel from ${sdMatch} for Our Keratoconus Care`,
-      subhead: "When your vision matters, distance doesn't — 500+ cases treated.",
-      urgency: "We Coordinate Your Visits to Minimize Trips",
-      socialProof: "Scleral lens fitting + cross-linking coordination in one center",
-      competitorAngle: "Direct specialist access — not a teaching hospital",
+      subhead: 'When your vision matters — 500+ cases, Bascom Palmer trained.',
+      urgency: 'We Coordinate Visits to Minimize Trips',
+      socialProof: 'Scleral lenses + cross-linking coordination in one center',
     };
   }
 
@@ -96,10 +156,9 @@ export function getPersonalization(city: string): GeoPersonalization {
 function getDefault(): GeoPersonalization {
   return {
     badge: '',
-    headline: "Orange County's Keratoconus Specialist",
-    subhead: "500+ keratoconus cases treated. Same-week appointments. Direct specialist access — not residents. Insurance accepted.",
-    urgency: "Book Your Consultation — (714) 558-0641",
-    socialProof: "Referred by CHOC & UCI doctors, Bascom Palmer trained",
-    competitorAngle: "Direct specialist access — skip the 6-month university wait",
+    headline: "California's Leading Keratoconus Specialist",
+    subhead: '500+ cases, same-week appointments, direct specialist access.',
+    urgency: 'Book Your Consultation — (714) 558-0641',
+    socialProof: 'Bascom Palmer trained, referred by CHOC & UCI doctors',
   };
 }

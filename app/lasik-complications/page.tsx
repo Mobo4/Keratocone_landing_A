@@ -1,5 +1,8 @@
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import LandingLayout from '@/components/LandingLayout';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalization } from '@/lib/geo-personalization';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import LeadForm from '@/components/LeadForm';
 import FadeIn from '@/components/FadeIn';
@@ -99,9 +102,17 @@ const complications = [
     },
 ];
 
-export default function LasikComplicationsPage() {
+export default async function LasikComplicationsPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const keyword = headersList.get('x-keyword') || '';
+    const utmCampaign = headersList.get('x-utm-campaign') || '';
+    const utmSource = headersList.get('x-utm-source') || '';
+    const geo = getPersonalization(city, keyword || undefined, utmCampaign || undefined, utmSource || undefined);
+
     return (
         <LandingLayout>
+            <GeoBadge text={geo.badge} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
             <BreadcrumbSchema items={[
                 { name: 'Home', url: 'https://keratocones.com' },

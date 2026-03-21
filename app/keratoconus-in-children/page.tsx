@@ -1,8 +1,11 @@
 import React from 'react';
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import PediatricKeratoconusContent from '@/components/PediatricKeratoconusContent';
 import FAQSchema from '@/components/FAQSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalization } from '@/lib/geo-personalization';
 
 const PEDIATRIC_FAQS = [
     { question: "At what age should children be screened for keratoconus?", answer: "Children with a family history of keratoconus should begin corneal topography screening by age 10. For the general population, screening is recommended during adolescence (ages 12–15) when keratoconus most commonly begins. Signs that warrant earlier screening include frequent prescription changes, chronic eye rubbing, allergies, and complaints of blurry vision that glasses do not fully correct." },
@@ -27,7 +30,14 @@ export const metadata: Metadata = {
     },
 };
 
-export default function PediatricKeratoconusPage() {
+export default async function PediatricKeratoconusPage() {
+    const headersList = await headers();
+    const city = headersList.get('x-visitor-city') || '';
+    const keyword = headersList.get('x-keyword') || '';
+    const utmCampaign = headersList.get('x-utm-campaign') || '';
+    const utmSource = headersList.get('x-utm-source') || '';
+    const geo = getPersonalization(city, keyword || undefined, utmCampaign || undefined, utmSource || undefined);
+
     const schema = {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
@@ -70,6 +80,7 @@ export default function PediatricKeratoconusPage() {
 
     return (
         <>
+            <GeoBadge text={geo.badge} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

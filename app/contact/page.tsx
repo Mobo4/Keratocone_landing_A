@@ -24,7 +24,10 @@ export const metadata: Metadata = {
 export default async function ContactPage() {
     const headersList = await headers();
     const city = headersList.get('x-visitor-city') || '';
-    const geo = getPersonalization(city);
+    const keyword = headersList.get('x-keyword') || '';
+    const utmCampaign = headersList.get('x-utm-campaign') || '';
+    const utmSource = headersList.get('x-utm-source') || '';
+    const geo = getPersonalization(city, keyword || undefined, utmCampaign || undefined, utmSource || undefined);
     const schema = {
         "@context": "https://schema.org",
         "@type": "ContactPage",
@@ -57,7 +60,7 @@ export default async function ContactPage() {
                 { name: 'Contact' },
             ]} />
             <GeoBadge text={geo.badge} />
-            <ContactPageContent geoSubhead={geo.competitorAngle} />
+            <ContactPageContent geoSubhead={geo.subhead} />
         </LandingLayout>
     );
 }

@@ -26,7 +26,9 @@ export const metadata: Metadata = {
 export default async function SpanishLandingPage() {
     const headersList = await headers();
     const city = headersList.get('x-visitor-city') || '';
-    const geo = getPersonalizationEs(city);
+    const keyword = headersList.get('x-keyword') || '';
+    const utmSource = headersList.get('x-utm-source') || '';
+    const geo = getPersonalizationEs(city, keyword || undefined, utmSource || undefined);
     const schema = {
         "@context": "https://schema.org",
         "@type": "WebPage",

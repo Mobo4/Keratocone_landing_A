@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
@@ -9,6 +10,8 @@ import LeadForm from '@/components/LeadForm';
 import InsuranceSection from '@/components/InsuranceSection';
 import FadeIn from '@/components/FadeIn';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import GeoBadge from '@/components/GeoBadge';
+import { getPersonalizationEs } from '@/lib/geo-personalization-es';
 
 interface Props {
     params: Promise<{
@@ -112,8 +115,13 @@ export default async function SpanishCityPage({ params }: Props) {
 
     const combinedSchema = [localBusinessSchema, faqSchema];
 
+    const headersList = await headers();
+    const visitorCity = headersList.get('x-visitor-city') || '';
+    const geo = getPersonalizationEs(visitorCity);
+
     return (
         <>
+            <GeoBadge text={geo.badge} />
             <Script
                 id="city-schema"
                 type="application/ld+json"
