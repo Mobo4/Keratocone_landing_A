@@ -110,7 +110,7 @@ export function getPersonalization(
   if (ocMatch) {
     return {
       badge: `Serving ${ocMatch}`,
-      headline: `Keratoconus Specialist in ${ocMatch}`,
+      headline: `Keratoconus Specialist Near ${ocMatch}`,
       subhead: "Same-week appointments — we're minutes from you.",
       urgency: 'Book This Week',
       socialProof: `5,000+ keratoconus patients from ${ocMatch} and Orange County`,
@@ -132,8 +132,8 @@ export function getPersonalization(
   if (ieMatch) {
     return {
       badge: `Patients from ${ieMatch}`,
-      headline: `Keratoconus Patients from ${ieMatch} Trust Our Care`,
-      subhead: '5,000+ cases treated — specialized expertise worth the drive.',
+      headline: `Keratoconus Specialist Near ${ieMatch} — Worth the Drive`,
+      subhead: '5,000+ cases treated — specialized expertise near you.',
       urgency: 'Insurance Accepted — Book This Week',
       socialProof: 'Referred by CHOC and UCI doctors for complex cases',
     };
@@ -157,7 +157,7 @@ function getDefault(): GeoPersonalization {
   return {
     badge: '',
     headline: "California's Leading Keratoconus Specialist",
-    subhead: '5,000+ cases, same-week appointments, direct specialist access.',
+    subhead: 'Most clinics see 10 keratoconus patients a year. We\u2019ve treated 5,000+. Same-week appointments near you.',
     urgency: 'Book Your Consultation — (714) 558-0641',
     socialProof: 'Bascom Palmer trained, referred by CHOC & UCI doctors',
   };
