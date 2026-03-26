@@ -145,11 +145,7 @@ export async function POST(request: NextRequest) {
                     }
                 }
 
-                return NextResponse.json({
-                    success: true,
-                    returning: true,
-                    contactId: existingId,
-                });
+                return NextResponse.json({ success: true, returning: true });
             }
 
             console.error('GHL API error:', ghlResponse.status, ghlErrorText);
@@ -197,11 +193,7 @@ export async function POST(request: NextRequest) {
             ).catch((err) => console.error('Failed to update tags:', err));
         }
 
-        return NextResponse.json({
-            success: true,
-            returning: false,
-            contactId: newContactId,
-        });
+        return NextResponse.json({ success: true, returning: false });
     } catch (err) {
         if (err instanceof SyntaxError) {
             return NextResponse.json(

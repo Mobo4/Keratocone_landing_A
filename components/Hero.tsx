@@ -103,9 +103,9 @@ export default function Hero({
                     <TrustBadge darkText={true} centered />
                     <StarBadge darkText={true} centered />
 
-                    <span className="block text-3xl font-bold text-eyecare-navy leading-tight mb-4 font-serif text-center drop-shadow-sm" aria-hidden="true">
+                    <h1 className="text-3xl font-bold text-eyecare-navy leading-tight mb-4 font-serif text-center drop-shadow-sm">
                         {headline}
-                    </span>
+                    </h1>
 
                     <p className="text-lg text-gray-600 leading-relaxed mb-6 text-center font-light">
                         {subheadline}

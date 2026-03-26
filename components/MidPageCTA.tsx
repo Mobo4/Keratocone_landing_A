@@ -24,7 +24,7 @@ export default function MidPageCTA({
     phoneNumber = "(714) 558-0641",
     variant = 'navy',
 }: MidPageCTAProps) {
-    const phoneHref = `tel:${phoneNumber.replace(/\D/g, '')}`;
+    const phoneHref = `tel:+1${phoneNumber.replace(/\D/g, '')}`;
 
     return (
         <section className={`w-full ${variantStyles[variant]} py-10`}>
