@@ -93,15 +93,7 @@ export default function BusinessSchema() {
             },
             "geoRadius": "50 miles"
         },
-        "knowsAbout": ["Keratoconus", "Scleral Lenses", "Corneal Disease", "Irregular Astigmatism", "Post-Surgical Corneas"],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "worstRating": "1",
-            "ratingCount": "127",
-            "reviewCount": "89"
-        }
+        "knowsAbout": ["Keratoconus", "Scleral Lenses", "Corneal Disease", "Irregular Astigmatism", "Post-Surgical Corneas"]
     };
 
     return (

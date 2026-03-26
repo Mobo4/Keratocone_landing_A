@@ -137,7 +137,7 @@ export default async function SpanishArticlePage({ params }: Props) {
                             </div>
                             <div>
                                 <p className="font-bold text-eyecare-navy">Dr. Alexander Bonakdar</p>
-                                <p className="text-sm text-gray-600">Especialista en Queratocono • Más de 20 años de experiencia</p>
+                                <p className="text-sm text-gray-600">Especialista en Queratocono • Más de 35+ años de experiencia</p>
                             </div>
                         </div>
 

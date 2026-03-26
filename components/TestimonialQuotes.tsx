@@ -73,7 +73,7 @@ export default function TestimonialQuotes() {
                             href="#reviews"
                             className="text-eyecare-blue font-medium text-sm hover:underline"
                         >
-                            Read all 5,000+ reviews &rarr;
+                            Read all 500+ reviews &rarr;
                         </a>
                     </div>
                 </div>

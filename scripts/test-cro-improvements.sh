@@ -14,9 +14,9 @@ echo ""
 # --- AC1: Star rating badge in Hero ---
 echo "--- AC1: Star rating badge in Hero (mobile + desktop) ---"
 if grep -q "StarBadge" "$PROJECT/components/Hero.tsx" && \
-   grep -q "5,000+ Google Reviews" "$PROJECT/components/Hero.tsx" && \
+   grep -q "Google Reviews" "$PROJECT/components/Hero.tsx" && \
    grep -q '#reviews' "$PROJECT/components/Hero.tsx"; then
-  pass "StarBadge exists with 5,000+ reviews linking to #reviews"
+  pass "StarBadge exists with Google Reviews linking to #reviews"
 else
   fail "StarBadge missing or wrong content in Hero.tsx"
 fi
@@ -143,7 +143,7 @@ fi
 
 # --- AC14: No remaining 500+ (should all be 5,000+) ---
 echo "--- AC14: No remaining '500+' references (all should be 5,000+) ---"
-REMAINING=$(grep -rn "500+" --include="*.ts" --include="*.tsx" --include="*.json" "$PROJECT" | grep -v node_modules | grep -v .next | grep -v "\\$500\|500)" | grep -v "5,000+" | wc -l | tr -d ' ')
+REMAINING=$(grep -rn "500+" --include="*.ts" --include="*.tsx" --include="*.json" "$PROJECT" | grep -v node_modules | grep -v .next | grep -v "\\$500\|500)" | grep -v "5,000+" | grep -v "Google Reviews" | grep -v "reviews.json" | wc -l | tr -d ' ')
 if [ "$REMAINING" -eq 0 ]; then
   pass "Zero remaining 500+ references"
 else

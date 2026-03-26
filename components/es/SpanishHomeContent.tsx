@@ -47,7 +47,7 @@ export default function SpanishHomeContent({ geoHeadline, geoSubhead, geoBadge, 
                     "Tecnología Avanzada de Lentes Esclerales",
                     "Restauración de Visión Sin Cirugía",
                     "Especialistas en Casos Complejos",
-                    "Más de 20 Años de Experiencia",
+                    "Más de 35+ Años de Experiencia",
                     "Resultados Comprobados",
                     "Aceptamos Seguros"
                 ]}
@@ -75,7 +75,7 @@ export default function SpanishHomeContent({ geoHeadline, geoSubhead, geoBadge, 
                                     </div>
                                     <p className="text-base md:text-sm text-eyecare-navy font-bold tracking-widest uppercase mb-2">Centro de Visión para Queratocono</p>
                                     <h3 className="text-2xl font-bold mb-1 font-serif text-eyecare-navy">Dr. Alexander Bonakdar</h3>
-                                    <p className="text-base md:text-sm text-gray-700">Más de 20 Años de Experiencia</p>
+                                    <p className="text-base md:text-sm text-gray-700">Más de 35+ Años de Experiencia</p>
                                 </div>
 
                                 <div className="md:col-span-2 space-y-6">
@@ -197,7 +197,7 @@ export default function SpanishHomeContent({ geoHeadline, geoSubhead, geoBadge, 
                                 { title: "Especialista en Ajustes Difíciles", desc: "Sobresalimos donde otros luchan. Queratocono severo, córneas post-quirúrgicas y astigmatismo irregular—estos casos 'imposibles' son nuestra especialidad.", border: "border-eyecare-blue" },
                                 { title: "Tecnología de Diagnóstico Avanzada", desc: "Sistemas de topografía y mapeo corneal de última generación proporcionan precisión microscópica para el diseño de lentes esclerales personalizados.", border: "border-eyecare-blue" },
                                 { title: "Red de Referencia Médica", desc: "Confianza de CHOC y UCI Medical Center. Cuando sus pacientes con queratocono necesitan ajuste experto de lentes, nos los envían.", border: "border-eyecare-blue" },
-                                { title: "Historial Comprobado", desc: "Más de 20 años de ajustes exitosos. Pacientes a quienes se les dijo 'no hay nada más que hacer' logran visión 20/20 o mejor.", border: "border-green-600" },
+                                { title: "Historial Comprobado", desc: "Más de 35+ años de ajustes exitosos. Pacientes a quienes se les dijo 'no hay nada más que hacer' logran visión 20/20 o mejor.", border: "border-green-600" },
                                 { title: "Atención Integral", desc: "Desde la consulta inicial hasta el monitoreo continuo, aseguramos el éxito a largo plazo y la salud corneal con cada ajuste.", border: "border-green-600" },
                                 { title: "⚠️ Disponibilidad Limitada", desc: "Debido a la complejidad de los casos que manejamos, aceptamos un número limitado de nuevos pacientes cada mes. Agenda tu consulta ahora.", border: "border-green-600", font: "font-semibold" }
                             ].map((item, idx) => (
@@ -230,7 +230,7 @@ export default function SpanishHomeContent({ geoHeadline, geoSubhead, geoBadge, 
                     <FadeIn>
                         <div className="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden border border-eyecare-blue/10 max-w-3xl mx-auto">
                             <div className="p-6 md:p-12 lg:p-16">
-                                <LeadForm />
+                                <LeadForm locale="es" />
                             </div>
                         </div>
                     </FadeIn>

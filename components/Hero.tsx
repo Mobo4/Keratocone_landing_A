@@ -28,7 +28,7 @@ const StarBadge = ({ darkText = false, centered = false }: { darkText?: boolean,
             ))}
         </div>
         <span className={`text-sm font-semibold ${darkText ? 'text-eyecare-navy' : 'text-white'}`}>4.9</span>
-        <span className={`text-xs ${darkText ? 'text-gray-500' : 'text-blue-100'} group-hover:underline`}>5,000+ Google Reviews</span>
+        <span className={`text-xs ${darkText ? 'text-gray-500' : 'text-blue-100'} group-hover:underline`}>500+ Google Reviews</span>
     </a>
 );
 
@@ -103,9 +103,9 @@ export default function Hero({
                     <TrustBadge darkText={true} centered />
                     <StarBadge darkText={true} centered />
 
-                    <h1 className="text-3xl font-bold text-eyecare-navy leading-tight mb-4 font-serif text-center drop-shadow-sm">
+                    <p role="heading" aria-level={1} className="text-3xl font-bold text-eyecare-navy leading-tight mb-4 font-serif text-center drop-shadow-sm">
                         {headline}
-                    </h1>
+                    </p>
 
                     <p className="text-lg text-gray-600 leading-relaxed mb-6 text-center font-light">
                         {subheadline}

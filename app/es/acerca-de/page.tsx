@@ -55,7 +55,7 @@ export default function AboutPageEs() {
                     "url": "https://www.eyecarecenteroc.com"
                 }
             },
-            "description": "Especialista líder en Orange County en restauración de visión no quirúrgica para Queratocono con más de 20 años de experiencia."
+            "description": "Especialista líder en Orange County en restauración de visión no quirúrgica para Queratocono con más de 35+ años de experiencia."
         }
     };
 

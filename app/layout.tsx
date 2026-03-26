@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "cornea specialist", "keratoconus specialist near me", "best keratoconus doctor", "keratoconus treatment without surgery", "corneal disease specialist", "irregular astigmatism doctor"],
   other: {
     'geo.region': 'US-CA',
-    'geo.placename': 'Irvine, California',
-    'geo.position': '33.6846;-117.8265',
-    'ICBM': '33.6846, -117.8265',
+    'geo.placename': 'Santa Ana, California',
+    'geo.position': '33.7599;-117.8359',
+    'ICBM': '33.7599, -117.8359',
   },
 };
 

@@ -78,7 +78,7 @@ export default function ResourcesPageEs() {
                         para empoderarte con el conocimiento que necesitas para tomar decisiones informadas sobre tu cuidado visual.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                        Cada artículo en esta biblioteca está escrito basándose en los más de 20 años de experiencia clínica del Dr. Bonakdar
+                        Cada artículo en esta biblioteca está escrito basándose en los más de 35+ años de experiencia clínica del Dr. Bonakdar
                         ajustando casos corneales complejos. Encontrarás información basada en evidencia sobre todo, desde entender las 4 etapas
                         de la progresión del queratocono hasta navegar la cobertura de seguros para lentes de contacto médicamente necesarios.
                     </p>

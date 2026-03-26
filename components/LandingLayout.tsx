@@ -87,9 +87,9 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
             </header>
 
             {/* Main Content */}
-            <main className="flex-grow">
+            <div className="flex-grow">
                 {children}
-            </main>
+            </div>
 
             {/* Footer - Compact on mobile */}
             {/* Footer removed found in RootLayout */}
