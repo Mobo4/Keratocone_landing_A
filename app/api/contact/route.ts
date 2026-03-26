@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
             phone,
             email,
             source: 'keratocones.com',
-            tags: ['Website Form', 'Keratoconus Consultation'],
+            tags: ['keratoconus lead'],
         };
 
         // locationId required for Private Integration Tokens (pit-)
