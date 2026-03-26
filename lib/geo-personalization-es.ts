@@ -41,7 +41,7 @@ export function getPersonalizationEs(
       return {
         badge: 'Experto en Lentes Esclerales',
         headline: 'Ajuste de Lentes Esclerales para Queratocono',
-        subhead: '500+ ajustes — restaure su visión clara y cómoda.',
+        subhead: '5,000+ ajustes — restaure su visión clara y cómoda.',
         urgency: 'Reserve su Consulta de Lentes Esclerales',
         socialProof: 'Pacientes viajan desde toda California por nuestra experiencia',
       };

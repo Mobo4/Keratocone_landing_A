@@ -148,7 +148,7 @@ export const articles: Article[] = [
         title: 'Can Keratoconus Be Cured? Separating Myth from Reality',
         description: 'There is no "cure," but there is a halt. Learn how Cross-Linking stops the disease and how typical eye exercises and holistic remedies rarely work.',
         metaTitle: 'Can Keratoconus Be Cured? (Doctor Explains)',
-        metaDescription: 'No cure exists, but progression CAN be stopped. A 500+ case specialist explains what actually works and what is a waste of money.',
+        metaDescription: 'No cure exists, but progression CAN be stopped. A 5,000+ case specialist explains what actually works and what is a waste of money.',
         publishDate: '2024-12-08',
         readTime: '5 min read',
         category: 'Myths',

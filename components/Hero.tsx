@@ -28,7 +28,7 @@ const StarBadge = ({ darkText = false, centered = false }: { darkText?: boolean,
             ))}
         </div>
         <span className={`text-sm font-semibold ${darkText ? 'text-eyecare-navy' : 'text-white'}`}>4.9</span>
-        <span className={`text-xs ${darkText ? 'text-gray-500' : 'text-blue-100'} group-hover:underline`}>500+ Google Reviews</span>
+        <span className={`text-xs ${darkText ? 'text-gray-500' : 'text-blue-100'} group-hover:underline`}>5,000+ Google Reviews</span>
     </a>
 );
 

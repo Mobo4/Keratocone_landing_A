@@ -52,7 +52,7 @@ export function getPersonalization(
       return {
         badge: 'Scleral Lens Expert',
         headline: 'Custom Scleral Lens Fitting for Keratoconus',
-        subhead: '500+ fittings — restore clear, comfortable vision.',
+        subhead: '5,000+ fittings — restore clear, comfortable vision.',
         urgency: 'Book Your Scleral Lens Consultation',
         socialProof: 'Patients travel from across California for our scleral expertise',
       };
