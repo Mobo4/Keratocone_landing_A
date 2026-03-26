@@ -11,6 +11,7 @@ import { GoogleTagManager } from '@next/third-parties/google';
 import TrackingScripts from "@/components/TrackingScripts";
 import { Analytics } from "@vercel/analytics/next";
 import BusinessSchema from "@/components/BusinessSchema";
+import ChatWidget from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
   title: "Keratoconus Specialist Orange County | See Us This Week",
@@ -63,6 +64,7 @@ export default async function RootLayout({
             <Footer />
           </div>
           <Analytics />
+          <ChatWidget />
         </NextIntlClientProvider>
       </body>
     </html>
