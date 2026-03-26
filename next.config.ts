@@ -37,6 +37,72 @@ const nextConfig: NextConfig = {
         destination: '/terms-of-service',
         permanent: true,
       },
+      // Broken backlink redirects (52 backlinks from Shopify migration)
+      {
+        source: '/pages/privacy',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/blogs/news',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/collections/frontpage',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/products/keratoconus-consultation-service',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/products/unique-ph-4-fl-oz-120ml',
+        destination: '/scleral-lenses-cost',
+        permanent: true,
+      },
+      {
+        source: '/products/progent-large-diameter-scleral-lens-case',
+        destination: '/scleral-lenses-cost',
+        permanent: true,
+      },
+      {
+        source: '/products/lacripure-saline-solution-3-month-supply',
+        destination: '/scleral-lenses-cost',
+        permanent: true,
+      },
+      {
+        source: '/pages/avada-sitemap',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/pages/avada-sitemap-articles',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/pages/avada-sitemap-blogs',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/pages/avada-sitemap-collections',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/pages/avada-sitemap-pages',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/pages/avada-sitemap-products',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

@@ -9,6 +9,7 @@ interface ContactPayload {
     phone: string;
     email: string;
     message?: string;
+    smsConsent: boolean;
 }
 
 function validatePayload(body: unknown): ContactPayload {
@@ -19,6 +20,7 @@ function validatePayload(body: unknown): ContactPayload {
     const phone = typeof b.phone === 'string' ? b.phone.trim() : '';
     const email = typeof b.email === 'string' ? b.email.trim() : '';
     const message = typeof b.message === 'string' ? b.message.trim().slice(0, 200) : '';
+    const smsConsent = b.smsConsent === true;
 
     if (!firstName || !lastName || !phone || !email) {
         throw new Error('firstName, lastName, phone, and email are required');
@@ -28,7 +30,7 @@ function validatePayload(body: unknown): ContactPayload {
         throw new Error('Invalid email address');
     }
 
-    return { firstName, lastName, phone, email, message };
+    return { firstName, lastName, phone, email, message, smsConsent };
 }
 
 export async function POST(request: NextRequest) {
@@ -43,16 +45,25 @@ export async function POST(request: NextRequest) {
         }
 
         const body = await request.json();
-        const { firstName, lastName, phone, email, message } = validatePayload(body);
+        const { firstName, lastName, phone, email, message, smsConsent } = validatePayload(body);
 
         // Build GHL contact payload
+        const tags = ['keratoconus lead'];
+        if (smsConsent) tags.push('sms-consent');
+
         const ghlBody: Record<string, unknown> = {
             firstName,
             lastName,
             phone,
             email,
             source: 'keratocones.com',
-            tags: ['keratoconus lead'],
+            tags,
+            // If no SMS consent, set DND for SMS to respect TCPA
+            ...(smsConsent ? {} : {
+                dndSettings: {
+                    SMS: { status: 'active', message: 'No SMS consent given on website form' },
+                },
+            }),
         };
 
         // locationId required for Private Integration Tokens (pit-)
@@ -82,24 +93,63 @@ export async function POST(request: NextRequest) {
             let ghlError;
             try { ghlError = JSON.parse(ghlErrorText); } catch { ghlError = { message: ghlErrorText }; }
 
-            // Handle duplicate contact — GHL rejects but the contact exists, so treat as success
+            // Handle duplicate contact — patient already exists in system
             if (ghlResponse.status === 400 && ghlError.message?.includes('duplicated contacts') && ghlError.meta?.contactId) {
-                // Contact already exists — add message as note on existing contact
-                if (message) {
-                    await fetch(
-                        `https://services.leadconnectorhq.com/contacts/${ghlError.meta.contactId}/notes`,
-                        {
-                            method: 'POST',
-                            headers: {
-                                'Authorization': `Bearer ${apiKey}`,
-                                'Version': GHL_API_VERSION,
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify({ body: `Website form message: ${message}` }),
-                        }
-                    ).catch((err) => console.error('Failed to add note to existing contact:', err));
+                const existingId = ghlError.meta.contactId;
+
+                // Add note with form submission details
+                await fetch(
+                    `https://services.leadconnectorhq.com/contacts/${existingId}/notes`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${apiKey}`,
+                            'Version': GHL_API_VERSION,
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            body: `Returning patient form submission from keratocones.com\nMessage: ${message || '(none)'}\nSubmitted: ${new Date().toISOString()}`,
+                        }),
+                    }
+                ).catch((err) => console.error('Failed to add note to existing contact:', err));
+
+                // Add returning-patient tag + update tags
+                const contactResp = await fetch(
+                    `https://services.leadconnectorhq.com/contacts/${existingId}`,
+                    {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': `Bearer ${apiKey}`,
+                            'Version': GHL_API_VERSION,
+                        },
+                    }
+                ).catch(() => null);
+
+                if (contactResp?.ok) {
+                    const contactData = await contactResp.json();
+                    const currentTags: string[] = contactData.contact?.tags || [];
+                    if (!currentTags.includes('returning-patient')) {
+                        const updatedTags = [...new Set([...currentTags, 'returning-patient', 'website form'])];
+                        await fetch(
+                            `https://services.leadconnectorhq.com/contacts/${existingId}`,
+                            {
+                                method: 'PUT',
+                                headers: {
+                                    'Authorization': `Bearer ${apiKey}`,
+                                    'Version': GHL_API_VERSION,
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({ tags: updatedTags }),
+                            }
+                        ).catch((err) => console.error('Failed to update tags:', err));
+                    }
                 }
-                return NextResponse.json({ success: true });
+
+                return NextResponse.json({
+                    success: true,
+                    returning: true,
+                    contactId: existingId,
+                });
             }
 
             console.error('GHL API error:', ghlResponse.status, ghlErrorText);
@@ -109,11 +159,14 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // If message exists but no custom field configured, add as a note
+        // New contact created
         const ghlData = await ghlResponse.json();
-        if (message && !messageFieldId && ghlData.contact?.id) {
+        const newContactId = ghlData.contact?.id;
+
+        // Add note with form message
+        if (newContactId) {
             await fetch(
-                `https://services.leadconnectorhq.com/contacts/${ghlData.contact.id}/notes`,
+                `https://services.leadconnectorhq.com/contacts/${newContactId}/notes`,
                 {
                     method: 'POST',
                     headers: {
@@ -121,12 +174,34 @@ export async function POST(request: NextRequest) {
                         'Version': GHL_API_VERSION,
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ body: `Website form message: ${message}` }),
+                    body: JSON.stringify({
+                        body: `New patient form submission from keratocones.com\nMessage: ${message || '(none)'}\nSubmitted: ${new Date().toISOString()}`,
+                    }),
                 }
             ).catch((err) => console.error('Failed to add note:', err));
+
+            // Add new-patient + website form tags
+            await fetch(
+                `https://services.leadconnectorhq.com/contacts/${newContactId}`,
+                {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`,
+                        'Version': GHL_API_VERSION,
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        tags: ['keratoconus lead', 'new-patient', 'website form', 'keratoconus consultation'],
+                    }),
+                }
+            ).catch((err) => console.error('Failed to update tags:', err));
         }
 
-        return NextResponse.json({ success: true });
+        return NextResponse.json({
+            success: true,
+            returning: false,
+            contactId: newContactId,
+        });
     } catch (err) {
         if (err instanceof SyntaxError) {
             return NextResponse.json(

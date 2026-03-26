@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { trackFormSubmit } from '@/lib/tracking';
 
-type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
+type FormStatus = 'idle' | 'submitting' | 'success' | 'success-returning' | 'error';
 
 export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' }) {
     const [status, setStatus] = useState<FormStatus>('idle');
@@ -25,6 +25,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
         optional: 'Opcional',
         charLimit: 'caracteres restantes',
         consentLabel: 'Acepto recibir mensajes de texto y correos electrónicos sobre mi cita y atención. Se pueden aplicar tarifas de mensajes y datos. Responda STOP para cancelar.',
+        smsConsentLabel: 'Acepto recibir recordatorios de citas y mensajes de seguimiento por mensaje de texto. Frecuencia de mensajes variable. Responda STOP para cancelar en cualquier momento.',
         hipaaNotice: 'Sus datos están protegidos conforme a HIPAA. Nunca compartimos su información de salud sin su consentimiento.',
     } : {
         firstName: 'First Name',
@@ -40,7 +41,8 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
         required: 'Required',
         optional: 'Optional',
         charLimit: 'characters remaining',
-        consentLabel: 'I agree to receive text messages and emails regarding my appointment and care. Message and data rates may apply. Reply STOP to opt out.',
+        consentLabel: 'I agree to receive emails regarding my appointment and care.',
+        smsConsentLabel: 'I agree to receive appointment reminders and follow-up messages via text message. Message frequency varies. Reply STOP to opt out anytime. Msg & data rates may apply.',
         hipaaNotice: 'Your information is protected under HIPAA. We never share your health information without your consent.',
     };
 
@@ -56,6 +58,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
             phone: (form.elements.namedItem('phone') as HTMLInputElement).value.trim(),
             email: (form.elements.namedItem('email') as HTMLInputElement).value.trim(),
             message: (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim(),
+            smsConsent: (form.elements.namedItem('smsConsent') as HTMLInputElement).checked,
         };
 
         try {
@@ -70,8 +73,9 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
                 throw new Error(body.error || 'Submission failed');
             }
 
+            const body = await res.json();
             trackFormSubmit();
-            setStatus('success');
+            setStatus(body.returning ? 'success-returning' : 'success');
         } catch (err) {
             setStatus('error');
             setErrorMsg(err instanceof Error ? err.message : t.errorMsg);
@@ -86,6 +90,29 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
                 </div>
                 <h3 className="text-2xl font-bold text-eyecare-navy mb-2">{t.successTitle}</h3>
                 <p className="text-gray-600">{t.successMsg}</p>
+            </div>
+        );
+    }
+
+    if (status === 'success-returning') {
+        return (
+            <div className="text-center py-12 px-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle className="w-8 h-8 text-blue-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-eyecare-navy mb-2">
+                    {locale === 'es' ? '¡Bienvenido de nuevo!' : 'Welcome Back!'}
+                </h3>
+                <p className="text-gray-600">
+                    {locale === 'es'
+                        ? 'Ya tenemos su información en nuestro sistema. Nuestro equipo ha recibido su mensaje y se comunicará con usted pronto.'
+                        : "We already have your information on file. Our team has received your message and will reach out shortly to help with your request."}
+                </p>
+                <p className="text-sm text-gray-500 mt-3">
+                    {locale === 'es'
+                        ? '¿Necesita atención inmediata? Llame al (714) 558-0641'
+                        : 'Need immediate help? Call (714) 558-0641'}
+                </p>
             </div>
         );
     }
@@ -177,6 +204,16 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
                     />
                     <span className="text-xs text-gray-600 leading-relaxed">
                         {t.consentLabel}
+                    </span>
+                </label>
+                <label className="flex items-start gap-3 cursor-pointer">
+                    <input
+                        type="checkbox"
+                        name="smsConsent"
+                        className="mt-1 w-4 h-4 rounded border-gray-300 text-eyecare-blue focus:ring-eyecare-blue shrink-0"
+                    />
+                    <span className="text-xs text-gray-600 leading-relaxed">
+                        {t.smsConsentLabel}
                     </span>
                 </label>
                 <p className="text-xs text-gray-500 flex items-start gap-1.5">
