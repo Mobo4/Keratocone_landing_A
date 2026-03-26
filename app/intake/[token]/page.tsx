@@ -70,10 +70,10 @@ export default async function IntakePage({ params }: PageProps) {
                 : 'This link is not valid. Please contact our office.'}
           </p>
           <a
-            href="tel:7145581182"
+            href="tel:+17145580641"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium"
           >
-            Call (714) 558-1182
+            Call (714) 558-0641
           </a>
         </div>
       </div>

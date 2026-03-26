@@ -31,17 +31,17 @@ export default function ResourcesLayout({
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="flex items-center justify-between text-sm py-2 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-eyecare-blue transition-colors">
+                                        <Link href="/keratoconus-resources/ultimate-guide-to-keratoconus" className="flex items-center justify-between text-sm py-2 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-eyecare-blue transition-colors">
                                             What is Keratoconus?
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="flex items-center justify-between text-sm py-2 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-eyecare-blue transition-colors">
+                                        <Link href="/keratoconus-resources/can-keratoconus-be-cured" className="flex items-center justify-between text-sm py-2 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-eyecare-blue transition-colors">
                                             Treatment Options
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="flex items-center justify-between text-sm py-2 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-eyecare-blue transition-colors">
+                                        <Link href="/keratoconus-resources/scleral-lenses-vs-corneal-transplant" className="flex items-center justify-between text-sm py-2 px-3 rounded-lg text-gray-600 hover:bg-gray-50 hover:text-eyecare-blue transition-colors">
                                             Scleral Lenses 101
                                         </Link>
                                     </li>
