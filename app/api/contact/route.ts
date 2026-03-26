@@ -78,8 +78,31 @@ export async function POST(request: NextRequest) {
         });
 
         if (!ghlResponse.ok) {
-            const ghlError = await ghlResponse.text();
-            console.error('GHL API error:', ghlResponse.status, ghlError);
+            const ghlErrorText = await ghlResponse.text();
+            let ghlError;
+            try { ghlError = JSON.parse(ghlErrorText); } catch { ghlError = { message: ghlErrorText }; }
+
+            // Handle duplicate contact — GHL rejects but the contact exists, so treat as success
+            if (ghlResponse.status === 400 && ghlError.message?.includes('duplicated contacts') && ghlError.meta?.contactId) {
+                // Contact already exists — add message as note on existing contact
+                if (message) {
+                    await fetch(
+                        `https://services.leadconnectorhq.com/contacts/${ghlError.meta.contactId}/notes`,
+                        {
+                            method: 'POST',
+                            headers: {
+                                'Authorization': `Bearer ${apiKey}`,
+                                'Version': GHL_API_VERSION,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({ body: `Website form message: ${message}` }),
+                        }
+                    ).catch((err) => console.error('Failed to add note to existing contact:', err));
+                }
+                return NextResponse.json({ success: true });
+            }
+
+            console.error('GHL API error:', ghlResponse.status, ghlErrorText);
             return NextResponse.json(
                 { success: false, error: 'Failed to submit. Please call us directly.' },
                 { status: 502 }
