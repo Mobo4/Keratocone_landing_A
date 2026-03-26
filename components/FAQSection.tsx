@@ -1,10 +1,57 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import { ChevronDown } from 'lucide-react';
 import FadeIn from '@/components/FadeIn';
 
+function AccordionPanel({ isOpen, children }: { isOpen: boolean; children: React.ReactNode }) {
+    const contentRef = useRef<HTMLDivElement>(null);
+    const [maxHeight, setMaxHeight] = useState<string>(isOpen ? 'none' : '0px');
+
+    useEffect(() => {
+        if (isOpen) {
+            const el = contentRef.current;
+            if (el) {
+                setMaxHeight(`${el.scrollHeight}px`);
+                const timer = setTimeout(() => setMaxHeight('none'), 300);
+                return () => clearTimeout(timer);
+            }
+        } else {
+            // Force a reflow so the browser registers the current height before transitioning to 0
+            const el = contentRef.current;
+            if (el) {
+                setMaxHeight(`${el.scrollHeight}px`);
+                // Use rAF to ensure the explicit height is painted before collapsing
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        setMaxHeight('0px');
+                    });
+                });
+            }
+        }
+    }, [isOpen]);
+
+    return (
+        <div
+            ref={contentRef}
+            style={{ maxHeight }}
+            className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
+        >
+            <div className="pt-3">
+                {children}
+            </div>
+        </div>
+    );
+}
+
 export default function FAQSection() {
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+    const toggle = useCallback((index: number) => {
+        setOpenIndex((prev) => (prev === index ? null : index));
+    }, []);
+
     const faqs = [
         {
             question: "Can keratoconus be cured?",
@@ -58,27 +105,48 @@ export default function FAQSection() {
                     </div>
                 </FadeIn>
                 <div className="mx-auto max-w-4xl mt-8">
-                    <dl className="space-y-8">
-                        {faqs.map((faq, index) => (
-                            <FadeIn key={index} delay={index * 0.1}>
-                                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-eyecare-blue/30 transition-colors">
-                                    <dt className="text-lg font-bold text-eyecare-navy mb-3">
-                                        {faq.question}
-                                    </dt>
-                                    <dd className="text-base text-gray-600 leading-relaxed">
-                                        {faq.answer}
-                                        {faq.link && (
-                                            <Link
-                                                href={faq.link}
-                                                className="block mt-3 text-eyecare-blue hover:text-eyecare-dark-blue font-medium transition-colors"
+                    <dl className="space-y-4">
+                        {faqs.map((faq, index) => {
+                            const isOpen = openIndex === index;
+                            return (
+                                <FadeIn key={index} delay={index * 0.1}>
+                                    <div className="bg-gray-50 rounded-2xl border border-gray-100 hover:border-eyecare-blue/30 transition-colors">
+                                        <dt>
+                                            <button
+                                                type="button"
+                                                onClick={() => toggle(index)}
+                                                aria-expanded={isOpen}
+                                                className="flex w-full items-center justify-between p-6 sm:p-8 text-left cursor-pointer"
                                             >
-                                                {faq.linkText} &rarr;
-                                            </Link>
-                                        )}
-                                    </dd>
-                                </div>
-                            </FadeIn>
-                        ))}
+                                                <span className="text-lg font-bold text-eyecare-navy pr-4">
+                                                    {faq.question}
+                                                </span>
+                                                <ChevronDown
+                                                    className={`h-5 w-5 flex-shrink-0 text-eyecare-blue transition-transform duration-300 ${
+                                                        isOpen ? 'rotate-180' : ''
+                                                    }`}
+                                                />
+                                            </button>
+                                        </dt>
+                                        <dd className="px-6 sm:px-8">
+                                            <AccordionPanel isOpen={isOpen}>
+                                                <p className="text-base text-gray-600 leading-relaxed pb-6 sm:pb-8">
+                                                    {faq.answer}
+                                                    {faq.link && (
+                                                        <Link
+                                                            href={faq.link}
+                                                            className="block mt-3 text-eyecare-blue hover:text-eyecare-dark-blue font-medium transition-colors"
+                                                        >
+                                                            {faq.linkText} &rarr;
+                                                        </Link>
+                                                    )}
+                                                </p>
+                                            </AccordionPanel>
+                                        </dd>
+                                    </div>
+                                </FadeIn>
+                            );
+                        })}
                     </dl>
                 </div>
             </div>

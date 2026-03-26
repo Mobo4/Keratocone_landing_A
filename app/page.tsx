@@ -12,6 +12,9 @@ import Testimonials from '@/components/Testimonials';
 import ReviewWidget from '@/components/ReviewWidget';
 import FAQSchema, { HOMEPAGE_FAQS } from '@/components/FAQSchema';
 import GeoBadge from '@/components/GeoBadge';
+import TestimonialQuotes from '@/components/TestimonialQuotes';
+import WaitTimeComparison from '@/components/WaitTimeComparison';
+import MidPageCTA from '@/components/MidPageCTA';
 import { getPersonalization } from '@/lib/geo-personalization';
 
 import { headers } from 'next/headers';
@@ -113,6 +116,31 @@ export default async function LandingPage() {
         priority={true}
       />
 
+      {/* Social Proof — Patient Testimonial Quotes */}
+      <TestimonialQuotes />
+
+      {/* Wait Time Comparison — University vs Us */}
+      <WaitTimeComparison />
+
+      {/* Interactive Quiz — Moved up for engagement */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <FadeIn>
+            <KeratoconusQuiz />
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Vision Comparison — Emotional peak */}
+      <VisionSimulator />
+
+      {/* CTA Strip — Capture intent after simulator */}
+      <MidPageCTA
+        headline="Ready to See Clearly Again?"
+        subtext="Same-week appointments available. Insurance accepted."
+        variant="navy"
+      />
+
       {/* AEO-Optimized Educational Content */}
       <KeratoconusContent />
 
@@ -161,13 +189,20 @@ export default async function LandingPage() {
         </div>
       </section>
 
-      {/* Vision Comparison */}
-      <VisionSimulator />
-
       {/* FAQ Section */}
       <FAQSection />
 
-      {/* Practice Information - Brief and Professional */}
+      {/* CTA Strip — After FAQ */}
+      <MidPageCTA
+        headline="Have More Questions? Let's Talk."
+        subtext="5,000+ keratoconus patients treated. Scleral lens specialists."
+        variant="blue"
+      />
+
+      {/* Patient Reviews - Dynamic Widget with Schema.org */}
+      <ReviewWidget />
+
+      {/* Practice Information */}
       <section className="py-24 bg-gradient-to-br from-[#faf9f6] via-[#f0eadd] to-[#e6dfd1]">
         <div className="container mx-auto px-4">
           <FadeIn>
@@ -223,20 +258,8 @@ export default async function LandingPage() {
         </div>
       </section>
 
-      {/* Patient Reviews - Dynamic Widget with Schema.org */}
-      <ReviewWidget />
-
       {/* Insurance Section */}
       <InsuranceSection />
-
-      {/* Quiz Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <FadeIn>
-            <KeratoconusQuiz />
-          </FadeIn>
-        </div>
-      </section>
 
       {/* Lead Form Section */}
       <section id="lead-form" className="py-12 md:py-24 bg-eyecare-lighter-blue">
