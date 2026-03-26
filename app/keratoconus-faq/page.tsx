@@ -28,7 +28,7 @@ const COMPREHENSIVE_FAQS = [
 
 export const metadata: Metadata = {
     title: "Keratoconus FAQ | 16 Questions Answered by a Specialist",
-    description: "Can keratoconus cause blindness? Is it hereditary? Can you drive? Get definitive answers from a specialist with 500+ cases. Evidence-based, not generic advice.",
+    description: "Can keratoconus cause blindness? Is it hereditary? Can you drive? Get definitive answers from a specialist with 5,000+ cases. Evidence-based, not generic advice.",
     keywords: ["keratoconus faq", "can keratoconus cause blindness", "is keratoconus hereditary", "keratoconus disability", "can you drive with keratoconus", "keratoconus questions", "keratoconus answers"],
     alternates: {
         canonical: 'https://www.keratocones.com/keratoconus-faq',
@@ -51,7 +51,7 @@ export default async function KeratoconusFAQPage() {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "name": "Keratoconus Frequently Asked Questions",
-        "description": "Comprehensive answers to the most common keratoconus questions, reviewed by a specialist with 500+ cases treated.",
+        "description": "Comprehensive answers to the most common keratoconus questions, reviewed by a specialist with 5,000+ cases treated.",
         "url": "https://www.keratocones.com/keratoconus-faq",
         "lastReviewed": "2026-03-01",
         "reviewedBy": {

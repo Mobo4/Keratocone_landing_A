@@ -99,7 +99,7 @@ export default function ScleralLensesCostContent() {
                                     Standard soft contacts are mass-produced — millions of identical lenses stamped from the same mold for $200–$500 per year. Scleral lenses are the opposite: each lens is <strong>custom-manufactured for your specific eye</strong> based on micron-level corneal topography measurements.
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                                    The fitting process itself requires specialized expertise that most general optometrists do not have. Dr. Bonakdar has 35+ years of experience and has fitted 500+ keratoconus patients — the precision required to vault a scleral lens over an irregular cornea while maintaining comfort for 14+ hours of daily wear demands this level of specialization.
+                                    The fitting process itself requires specialized expertise that most general optometrists do not have. Dr. Bonakdar has 35+ years of experience and has fitted 5,000+ keratoconus patients — the precision required to vault a scleral lens over an irregular cornea while maintaining comfort for 14+ hours of daily wear demands this level of specialization.
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed">
                                     Think of it this way: the cost of scleral lenses is comparable to a quality pair of prescription eyeglasses — but scleral lenses provide vision that glasses <em>cannot</em> achieve for keratoconus patients.

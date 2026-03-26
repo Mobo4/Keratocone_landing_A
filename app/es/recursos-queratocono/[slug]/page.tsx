@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const enSlug = esIndex >= 0 && esIndex < articles.length ? articles[esIndex].slug : null;
 
     return {
-        title: `${article.metaTitle || article.title} | 500+ Casos`,
-        description: `${article.metaDescription || article.description} 500+ casos. Hablamos español. (714) 558-0641`,
+        title: `${article.metaTitle || article.title} | 5,000+ Casos`,
+        description: `${article.metaDescription || article.description} 5,000+ casos. Hablamos español. (714) 558-0641`,
         keywords: ['queratocono', 'lentes esclerales', 'tratamiento córnea', article.category.toLowerCase()],
         openGraph: {
             title: article.metaTitle || article.title,

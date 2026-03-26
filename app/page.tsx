@@ -19,7 +19,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Keratoconus Treatment Orange County | Book This Week",
-  description: "Stop living with blurry vision. 500+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted. (714) 558-0641",
+  description: "Stop living with blurry vision. 5,000+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted. (714) 558-0641",
   keywords: ["keratoconus", "keratoconus symptoms", "keratoconus treatment", "scleral lenses for keratoconus", "keratoconus specialist", "keratoconus doctor orange county", "cornea specialist", "keratoconus contact lenses", "is keratoconus progressive", "keratoconus vision loss"],
   alternates: {
     canonical: 'https://www.keratocones.com',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Keratoconus Treatment Orange County | Book This Week",
-    description: "Stop living with blurry vision. 500+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted. (714) 558-0641",
+    description: "Stop living with blurry vision. 5,000+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted. (714) 558-0641",
     url: 'https://www.keratocones.com',
     siteName: 'Keratoconus Vision Center',
     locale: 'en_US',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Keratoconus Treatment Orange County | Book This Week",
-    description: "Stop living with blurry vision. 500+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted.",
+    description: "Stop living with blurry vision. 5,000+ keratoconus cases, same-week appointments, direct specialist (not residents). Insurance accepted.",
     images: ['https://www.keratocones.com/images/keratoconus-main.webp'],
   },
   robots: {

@@ -5,10 +5,10 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
     title: 'Agendar Cita Queratocono | Esta Semana | Español',
-    description: 'Cansado de esperar meses? Agende esta semana. 500+ casos, 35+ años experiencia, hablamos español. Seguro aceptado. (714) 558-0641',
+    description: 'Cansado de esperar meses? Agende esta semana. 5,000+ casos, 35+ años experiencia, hablamos español. Seguro aceptado. (714) 558-0641',
     openGraph: {
         title: 'Agendar Cita Queratocono | Esta Semana | Español',
-        description: 'Agende esta semana. 500+ casos, 35+ años experiencia, hablamos español. (714) 558-0641',
+        description: 'Agende esta semana. 5,000+ casos, 35+ años experiencia, hablamos español. (714) 558-0641',
         locale: 'es_MX',
     },
     alternates: {

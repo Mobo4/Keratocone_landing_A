@@ -76,7 +76,7 @@ export function getPersonalization(
       return {
         badge: 'Second Opinion Center',
         headline: 'Get a Keratoconus Second Opinion This Week',
-        subhead: 'Not satisfied with your current care? 500+ cases, Bascom Palmer trained.',
+        subhead: 'Not satisfied with your current care? 5,000+ cases, Bascom Palmer trained.',
         urgency: 'Book Your Second Opinion',
         socialProof: 'Many of our patients came for a second opinion and stayed',
       };
@@ -89,7 +89,7 @@ export function getPersonalization(
       return {
         badge: '',
         headline: "You Searched for Keratoconus — You're in the Right Place",
-        subhead: '500+ cases treated. Same-week appointments. Direct specialist access.',
+        subhead: '5,000+ cases treated. Same-week appointments. Direct specialist access.',
         urgency: 'Book Your Consultation Today',
         socialProof: 'Bascom Palmer trained, referred by CHOC & UCI doctors',
       };
@@ -98,7 +98,7 @@ export function getPersonalization(
     return {
       badge: '',
       headline: "Here's What Every Keratoconus Patient Needs to Know",
-      subhead: '500+ cases treated by a Bascom Palmer trained specialist. Insurance accepted.',
+      subhead: '5,000+ cases treated by a Bascom Palmer trained specialist. Insurance accepted.',
       urgency: 'Learn More — Book a Consultation',
       socialProof: 'Trusted by CHOC and UCI Medical Center for complex cases',
     };
@@ -113,7 +113,7 @@ export function getPersonalization(
       headline: `Keratoconus Specialist in ${ocMatch}`,
       subhead: "Same-week appointments — we're minutes from you.",
       urgency: 'Book This Week',
-      socialProof: `500+ keratoconus patients from ${ocMatch} and Orange County`,
+      socialProof: `5,000+ keratoconus patients from ${ocMatch} and Orange County`,
     };
   }
 
@@ -133,7 +133,7 @@ export function getPersonalization(
     return {
       badge: `Patients from ${ieMatch}`,
       headline: `Keratoconus Patients from ${ieMatch} Trust Our Care`,
-      subhead: '500+ cases treated — specialized expertise worth the drive.',
+      subhead: '5,000+ cases treated — specialized expertise worth the drive.',
       urgency: 'Insurance Accepted — Book This Week',
       socialProof: 'Referred by CHOC and UCI doctors for complex cases',
     };
@@ -144,7 +144,7 @@ export function getPersonalization(
     return {
       badge: "SoCal's KC Expert",
       headline: `Patients Travel from ${sdMatch} for Our Keratoconus Care`,
-      subhead: 'When your vision matters — 500+ cases, Bascom Palmer trained.',
+      subhead: 'When your vision matters — 5,000+ cases, Bascom Palmer trained.',
       urgency: 'We Coordinate Visits to Minimize Trips',
       socialProof: 'Scleral lenses + cross-linking coordination in one center',
     };
@@ -157,7 +157,7 @@ function getDefault(): GeoPersonalization {
   return {
     badge: '',
     headline: "California's Leading Keratoconus Specialist",
-    subhead: '500+ cases, same-week appointments, direct specialist access.',
+    subhead: '5,000+ cases, same-week appointments, direct specialist access.',
     urgency: 'Book Your Consultation — (714) 558-0641',
     socialProof: 'Bascom Palmer trained, referred by CHOC & UCI doctors',
   };

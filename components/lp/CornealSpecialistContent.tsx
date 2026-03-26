@@ -20,7 +20,7 @@ interface CornealSpecialistContentProps {
 const CONDITIONS = [
     {
         name: "Keratoconus",
-        description: "Progressive corneal thinning and steepening that distorts vision. Our cornea specialist has treated 500+ keratoconus cases with scleral lenses.",
+        description: "Progressive corneal thinning and steepening that distorts vision. Our cornea specialist has treated 5,000+ keratoconus cases with scleral lenses.",
     },
     {
         name: "Pellucid Marginal Degeneration",
@@ -47,7 +47,7 @@ export default function CornealSpecialistContent({ geoHeadline, geoSubhead, geoB
                 subheadline={geoSubhead || "Dr. Alexander Bonakdar is an Orange County cornea specialist with 35+ years of experience treating keratoconus, corneal disease, and complex corneal conditions. Referral center for CHOC and UCI Medical Center."}
                 benefits={[
                     "35+ Years Cornea Experience",
-                    "500+ Complex Cases Treated",
+                    "5,000+ Complex Cases Treated",
                     "Advanced Corneal Imaging",
                     "Scleral Lens Specialist",
                     "Insurance Accepted",

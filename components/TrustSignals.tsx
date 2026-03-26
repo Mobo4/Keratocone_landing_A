@@ -3,13 +3,13 @@ import { CheckCircle } from 'lucide-react';
 const signals = {
     en: [
         'Same-week appointments available',
-        '500+ keratoconus patients treated',
+        '5,000+ keratoconus patients treated',
         'Bascom Palmer trained',
         'Most insurance accepted',
     ],
     es: [
         'Citas disponibles esta semana',
-        '500+ pacientes con queratocono tratados',
+        '5,000+ pacientes con queratocono tratados',
         'Entrenado en Bascom Palmer',
         'Aceptamos la mayoría de seguros',
     ],

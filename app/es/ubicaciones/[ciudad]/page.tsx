@@ -34,11 +34,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: `Queratocono ${city.name} | Cita Esta Semana`,
-        description: `${city.name}: no espere 6 meses. 500+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
+        description: `${city.name}: no espere 6 meses. 5,000+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
         keywords: [`queratocono ${city.name.toLowerCase()}`, `lentes esclerales ${city.name.toLowerCase()}`, `doctor ojos ${city.name.toLowerCase()}`, `especialista córnea ${city.county.toLowerCase()}`],
         openGraph: {
             title: `Queratocono ${city.name} | Cita Esta Semana`,
-            description: `${city.name}: no espere 6 meses. 500+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
+            description: `${city.name}: no espere 6 meses. 5,000+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
             locale: 'es_MX',
         },
         alternates: {

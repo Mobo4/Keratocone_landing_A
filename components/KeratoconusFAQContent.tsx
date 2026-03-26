@@ -21,7 +21,7 @@ export default function KeratoconusFAQContent({ faqs }: { faqs: FAQ[] }) {
                         <p className="text-eyecare-light-blue font-bold text-sm tracking-widest uppercase mb-4">Medically Reviewed by Dr. Alexander Bonakdar, O.D.</p>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Keratoconus: Your Questions Answered</h1>
                         <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                            Definitive answers to the 16 most-searched keratoconus questions — from a specialist who has treated 500+ cases. Evidence-based, not generic.
+                            Definitive answers to the 16 most-searched keratoconus questions — from a specialist who has treated 5,000+ cases. Evidence-based, not generic.
                         </p>
                     </FadeIn>
                 </div>

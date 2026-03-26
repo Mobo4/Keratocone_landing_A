@@ -7,8 +7,8 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Keratoconus Guides & Resources | 500+ Cases Treated',
-    description: 'Learn stages, treatments & how to avoid surgery from a specialist with 500+ keratoconus cases. Free guides. Book consult: (714) 558-0641',
+    title: 'Keratoconus Guides & Resources | 5,000+ Cases Treated',
+    description: 'Learn stages, treatments & how to avoid surgery from a specialist with 5,000+ keratoconus cases. Free guides. Book consult: (714) 558-0641',
     alternates: {
         canonical: 'https://www.keratocones.com/keratoconus-resources',
         languages: {

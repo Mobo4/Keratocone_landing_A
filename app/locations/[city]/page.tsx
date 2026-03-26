@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,
-        description: `${city.name}: skip the 6-month wait. 500+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
+        description: `${city.name}: skip the 6-month wait. 5,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
         alternates: {
             canonical: `https://www.keratocones.com/locations/${city.slug}`,
             languages: {
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
         openGraph: {
             title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,
-            description: `${city.name}: skip the 6-month wait. 500+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
+            description: `${city.name}: skip the 6-month wait. 5,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
         },
     };
 }
@@ -218,7 +218,7 @@ export default async function CityPage({ params }: Props) {
                             {[
                                 {
                                     icon: <Star className="w-6 h-6" />,
-                                    title: "500+ Keratoconus Cases",
+                                    title: "5,000+ Keratoconus Cases",
                                     desc: "Dr. Bonakdar has successfully fitted scleral and specialty lenses for over 500 keratoconus patients, including many of the most complex cases in the region."
                                 },
                                 {

@@ -151,7 +151,7 @@ export default function SiloNewport() {
                                         <p className="text-sm text-gray-600 mt-1">Week Appointments</p>
                                     </div>
                                     <div className="bg-eyecare-lighter-blue/50 p-4 rounded-xl text-center">
-                                        <p className="text-3xl font-bold text-eyecare-blue">500+</p>
+                                        <p className="text-3xl font-bold text-eyecare-blue">5,000+</p>
                                         <p className="text-sm text-gray-600 mt-1">Keratoconus Cases</p>
                                     </div>
                                     <div className="bg-eyecare-lighter-blue/50 p-4 rounded-xl text-center">
@@ -387,7 +387,7 @@ export default function SiloNewport() {
                             {[
                                 {
                                     icon: <Star className="w-6 h-6" />,
-                                    title: "500+ Keratoconus Cases Treated",
+                                    title: "5,000+ Keratoconus Cases Treated",
                                     desc: "More than 500 successful keratoconus cases over 35+ years. Many of the most complex corneal cases in Orange County are referred to Dr. Bonakdar's practice."
                                 },
                                 {
@@ -530,7 +530,7 @@ export default function SiloNewport() {
                                 Schedule Your Keratoconus Consultation
                             </h2>
                             <p className="text-lg text-gray-300 mb-4 leading-relaxed">
-                                Same-week appointments available for Newport Beach residents. Experience the difference that 35+ years of keratoconus expertise and 500+ successful cases make in your visual outcome.
+                                Same-week appointments available for Newport Beach residents. Experience the difference that 35+ years of keratoconus expertise and 5,000+ successful cases make in your visual outcome.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                                 <a href="tel:+17145580641" className="inline-flex justify-center items-center gap-2 px-8 py-4 bg-white text-eyecare-navy rounded-full font-bold hover:bg-blue-50 transition-colors">

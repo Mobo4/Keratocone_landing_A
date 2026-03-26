@@ -240,7 +240,7 @@ export const cityTypeMetadata: Record<CityType, CityTypeMetadata> = {
       'Diverse professional demographics',
     ],
     keratoconusRelevance:
-      'LA patients have many ophthalmology options but few true scleral lens specialists. Differentiation through 500+ keratoconus cases and 35+ years experience. Freeway proximity makes Santa Ana accessible.',
+      'LA patients have many ophthalmology options but few true scleral lens specialists. Differentiation through 5,000+ keratoconus cases and 35+ years experience. Freeway proximity makes Santa Ana accessible.',
   },
 };
 

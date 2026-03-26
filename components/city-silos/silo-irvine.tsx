@@ -148,7 +148,7 @@ export default function SiloIrvine() {
                                         <p className="text-sm text-gray-600 mt-1">Week Appointments</p>
                                     </div>
                                     <div className="bg-eyecare-lighter-blue/50 p-4 rounded-xl text-center">
-                                        <p className="text-3xl font-bold text-eyecare-blue">500+</p>
+                                        <p className="text-3xl font-bold text-eyecare-blue">5,000+</p>
                                         <p className="text-sm text-gray-600 mt-1">Keratoconus Cases</p>
                                     </div>
                                     <div className="bg-eyecare-lighter-blue/50 p-4 rounded-xl text-center">
@@ -384,7 +384,7 @@ export default function SiloIrvine() {
                             {[
                                 {
                                     icon: <Star className="w-6 h-6" />,
-                                    title: "500+ Keratoconus Cases",
+                                    title: "5,000+ Keratoconus Cases",
                                     desc: "Dr. Bonakdar has successfully fitted scleral and specialty lenses for over 500 keratoconus patients, including many of the most complex cases in Orange County."
                                 },
                                 {
