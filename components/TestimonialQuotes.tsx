@@ -73,7 +73,7 @@ export default function TestimonialQuotes() {
                             href="#reviews"
                             className="text-eyecare-blue font-medium text-sm hover:underline"
                         >
-                            Read all 500+ reviews &rarr;
+                            Read more Google Reviews &rarr;
                         </a>
                     </div>
                 </div>
