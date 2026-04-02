@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Script from 'next/script';
 import { MapPin, CheckCircle, Phone, Clock, CreditCard } from 'lucide-react';
 import { soCalCitiesEs } from '@/data/cities-es';
 import LandingLayout from '@/components/LandingLayout';
@@ -34,11 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: `Queratocono ${city.name} | Cita Esta Semana`,
-        description: `${city.name}: no espere 6 meses. 5,000+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
+        description: `${city.name}: no espere 6 meses. 2,000+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
         keywords: [`queratocono ${city.name.toLowerCase()}`, `lentes esclerales ${city.name.toLowerCase()}`, `doctor ojos ${city.name.toLowerCase()}`, `especialista córnea ${city.county.toLowerCase()}`],
         openGraph: {
             title: `Queratocono ${city.name} | Cita Esta Semana`,
-            description: `${city.name}: no espere 6 meses. 5,000+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
+            description: `${city.name}: no espere 6 meses. 2,000+ casos, 35+ años, acceso directo al especialista. Hablamos español. (714) 558-0641`,
             locale: 'es_MX',
         },
         alternates: {
@@ -122,8 +121,7 @@ export default async function SpanishCityPage({ params }: Props) {
     return (
         <>
             <GeoBadge text={geo.badge} />
-            <Script
-                id="city-schema"
+            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
             />

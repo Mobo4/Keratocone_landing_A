@@ -22,7 +22,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { soCalCities } from '@/data/cities';
-import Script from 'next/script';
 import { MapPin, CheckCircle, Star, Shield, Clock, Eye } from 'lucide-react';
 
 // City Silo Components (8 anti-doorway sections)
@@ -64,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,
-        description: `${city.name}: skip the 6-month wait. 5,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
+        description: `${city.name}: skip the 6-month wait. 2,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
         alternates: {
             canonical: `https://www.keratocones.com/locations/${city.slug}`,
             languages: {
@@ -75,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
         openGraph: {
             title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,
-            description: `${city.name}: skip the 6-month wait. 5,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
+            description: `${city.name}: skip the 6-month wait. 2,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
         },
     };
 }
@@ -124,8 +123,7 @@ export default async function CityPage({ params }: Props) {
     return (
         <>
             <GeoBadge text={geo.badge} />
-            <Script
-                id="city-schema"
+            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
             />
@@ -218,7 +216,7 @@ export default async function CityPage({ params }: Props) {
                             {[
                                 {
                                     icon: <Star className="w-6 h-6" />,
-                                    title: "5,000+ Keratoconus Cases",
+                                    title: "2,000+ Keratoconus Cases",
                                     desc: "Dr. Bonakdar has successfully fitted scleral and specialty lenses for over 500 keratoconus patients, including many of the most complex cases in the region."
                                 },
                                 {

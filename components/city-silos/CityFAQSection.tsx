@@ -22,7 +22,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Script from 'next/script';
 import { ChevronDown } from 'lucide-react';
 import FadeIn from '@/components/FadeIn';
 import { getCityType, CityType } from '@/data/city-types';
@@ -92,14 +91,14 @@ function getCityFAQs(cityType: CityType, cityName: string): FAQItem[] {
         ],
         'inland-growing': [
             { question: `Can you combine evaluation and fitting in one visit for ${cityName} patients?`, answer: `Yes. We understand that ${cityName} patients factor travel distance into their care decisions. Whenever clinically appropriate, we combine comprehensive evaluation, corneal mapping, and initial diagnostic lens fitting into a single extended visit to minimize the total number of trips required.` },
-            { question: 'Why should I travel to Santa Ana instead of seeing a local doctor?', answer: `Keratoconus scleral lens fitting requires specialized equipment and high case volume to achieve optimal results. Dr. Bonakdar's 5,000+ keratoconus cases and 35+ years of experience provide a level of fitting expertise that most general practices cannot match. The improved vision outcome justifies the drive.` },
+            { question: 'Why should I travel to Santa Ana instead of seeing a local doctor?', answer: `Keratoconus scleral lens fitting requires specialized equipment and high case volume to achieve optimal results. Dr. Bonakdar's 2,000+ keratoconus cases and 35+ years of experience provide a level of fitting expertise that most general practices cannot match. The improved vision outcome justifies the drive.` },
         ],
         'north-county-sd': [
             { question: `How do you accommodate patients traveling from ${cityName}?`, answer: `We consolidate appointments whenever possible -- initial consultation, topography, and trial fitting are combined into your first visit. Follow-up adjustments are strategically scheduled, and we offer telehealth check-ins between in-person visits to reduce unnecessary trips while maintaining quality of care.` },
             { question: `Why travel from San Diego County for keratoconus care?`, answer: 'While San Diego has excellent general ophthalmology, very few practices focus specifically on scleral lens fitting for keratoconus. This subspecialty requires dedicated equipment and high case volume. Dr. Bonakdar has treated over 500 keratoconus patients -- experience that produces measurably better vision outcomes.' },
         ],
         'la-gateway': [
-            { question: `Why choose Dr. Bonakdar over LA-area specialists?`, answer: `Most LA ophthalmology practices prioritize high-volume procedures like cataract surgery and LASIK. Keratoconus scleral lens fitting is a niche skill that requires dedicated equipment, specific training, and hundreds of fitted cases. Dr. Bonakdar's 5,000+ keratoconus cases and 35+ years of focused corneal experience represent a level of subspecialty expertise that most multi-specialty LA practices cannot match.` },
+            { question: `Why choose Dr. Bonakdar over LA-area specialists?`, answer: `Most LA ophthalmology practices prioritize high-volume procedures like cataract surgery and LASIK. Keratoconus scleral lens fitting is a niche skill that requires dedicated equipment, specific training, and hundreds of fitted cases. Dr. Bonakdar's 2,000+ keratoconus cases and 35+ years of focused corneal experience represent a level of subspecialty expertise that most multi-specialty LA practices cannot match.` },
             { question: `How long is the drive from ${cityName} to your office?`, answer: `Our Santa Ana office is directly accessible via the I-5, I-405, or SR-55 freeways. Most ${cityName} patients find the drive comparable to or shorter than crossing LA to reach a Westside specialist. Free parking is available at the building, and same-week appointments mean no long wait to be seen.` },
         ],
     };
@@ -133,8 +132,7 @@ export default function CityFAQSection({ citySlug, cityName, county }: CityFAQSe
     return (
         <section className="py-16 md:py-20 bg-white">
             {/* FAQPage JSON-LD schema */}
-            <Script
-                id={`faq-schema-${citySlug}`}
+            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />

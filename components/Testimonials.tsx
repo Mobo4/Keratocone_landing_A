@@ -2,7 +2,6 @@
 
 import React from 'react';
 import FadeIn from './FadeIn';
-import Script from 'next/script';
 
 export default function Testimonials() {
     const videoId = 'p3SwILup6rE';
@@ -29,8 +28,7 @@ export default function Testimonials() {
 
     return (
         <section className="py-24 bg-white overflow-hidden">
-            <Script
-                id="video-schema"
+            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
             />

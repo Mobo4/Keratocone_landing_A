@@ -6,7 +6,6 @@ import { articlesEs } from '@/data/articles-es';
 import LeadForm from '@/components/LeadForm';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, Clock, Calendar, Tag } from 'lucide-react';
-import Script from 'next/script';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 interface Props {
@@ -93,8 +92,7 @@ export default async function ArticlePage({ params }: Props) {
 
     return (
         <main className="min-h-screen bg-white">
-            <Script
-                id="article-schema"
+            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />

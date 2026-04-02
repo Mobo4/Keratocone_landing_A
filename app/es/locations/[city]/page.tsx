@@ -5,7 +5,6 @@ import { soCalCities } from '@/data/cities';
 import LeadForm from '@/components/LeadForm';
 import { MapPin, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
-import Script from 'next/script';
 
 interface Props {
     params: Promise<{
@@ -108,8 +107,7 @@ export default async function CityPageEs({ params }: Props) {
 
     return (
         <>
-            <Script
-                id="city-schema-es"
+            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
             />

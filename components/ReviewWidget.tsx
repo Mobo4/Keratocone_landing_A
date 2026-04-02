@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import FadeIn from './FadeIn';
-import Script from 'next/script';
 
 interface Review {
   id: number;
@@ -207,8 +206,7 @@ export default function ReviewWidget() {
 
   return (
     <>
-      <Script
-        id="review-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />

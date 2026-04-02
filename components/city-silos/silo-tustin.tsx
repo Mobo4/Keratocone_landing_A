@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Script from 'next/script';
 import { MapPin, CheckCircle, Clock, Phone, Shield, Star, Eye, ArrowRight, Calendar, CreditCard, Users } from 'lucide-react';
 import FadeIn from '@/components/FadeIn';
 import LeadForm from '@/components/LeadForm';
@@ -80,8 +79,7 @@ export default function SiloTustin() {
 
     return (
         <>
-            <Script
-                id="tustin-silo-schema"
+            <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
@@ -151,7 +149,7 @@ export default function SiloTustin() {
                                         <p className="text-sm text-gray-600 mt-1">Week Appointments</p>
                                     </div>
                                     <div className="bg-eyecare-lighter-blue/50 p-4 rounded-xl text-center">
-                                        <p className="text-3xl font-bold text-eyecare-blue">5,000+</p>
+                                        <p className="text-3xl font-bold text-eyecare-blue">2,000+</p>
                                         <p className="text-sm text-gray-600 mt-1">Keratoconus Cases</p>
                                     </div>
                                     <div className="bg-eyecare-lighter-blue/50 p-4 rounded-xl text-center">
@@ -394,7 +392,7 @@ export default function SiloTustin() {
                             {[
                                 {
                                     icon: <Star className="w-6 h-6" />,
-                                    title: "5,000+ Keratoconus Cases",
+                                    title: "2,000+ Keratoconus Cases",
                                     desc: "Over 500 keratoconus patients successfully treated with specialty contact lenses, including many of the most complex pediatric and adult cases in Orange County."
                                 },
                                 {
