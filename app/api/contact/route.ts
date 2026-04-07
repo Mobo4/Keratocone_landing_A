@@ -10,6 +10,9 @@ interface ContactPayload {
     email: string;
     message?: string;
     smsConsent: boolean;
+    utmSource?: string;
+    utmMedium?: string;
+    utmCampaign?: string;
 }
 
 function validatePayload(body: unknown): ContactPayload {
@@ -21,6 +24,9 @@ function validatePayload(body: unknown): ContactPayload {
     const email = typeof b.email === 'string' ? b.email.trim() : '';
     const message = typeof b.message === 'string' ? b.message.trim().slice(0, 200) : '';
     const smsConsent = b.smsConsent === true;
+    const utmSource = typeof b.utmSource === 'string' ? b.utmSource.slice(0, 100) : '';
+    const utmMedium = typeof b.utmMedium === 'string' ? b.utmMedium.slice(0, 100) : '';
+    const utmCampaign = typeof b.utmCampaign === 'string' ? b.utmCampaign.slice(0, 200) : '';
 
     if (!firstName || !lastName || !phone || !email) {
         throw new Error('firstName, lastName, phone, and email are required');
@@ -30,7 +36,7 @@ function validatePayload(body: unknown): ContactPayload {
         throw new Error('Invalid email address');
     }
 
-    return { firstName, lastName, phone, email, message, smsConsent };
+    return { firstName, lastName, phone, email, message, smsConsent, utmSource, utmMedium, utmCampaign };
 }
 
 export async function POST(request: NextRequest) {
@@ -45,7 +51,7 @@ export async function POST(request: NextRequest) {
         }
 
         const body = await request.json();
-        const { firstName, lastName, phone, email, message, smsConsent } = validatePayload(body);
+        const { firstName, lastName, phone, email, message, smsConsent, utmSource, utmMedium, utmCampaign } = validatePayload(body);
 
         // Build GHL contact payload
         const tags = ['keratoconus lead'];
@@ -72,11 +78,14 @@ export async function POST(request: NextRequest) {
             ghlBody.locationId = locationId;
         }
 
-        // Add message as custom field if configured, otherwise skip
+        // Build custom fields: UTM params + optional message field
+        const customFields: { id: string; field_value: string }[] = [];
+        if (utmSource) customFields.push({ id: '6sdXreQxbnVymcrOOvHU', field_value: utmSource });
+        if (utmMedium) customFields.push({ id: '3if5VqRIHGXkjDspuNgs', field_value: utmMedium });
+        if (utmCampaign) customFields.push({ id: 'cZiraewtlWoRya9HTpoD', field_value: utmCampaign });
         const messageFieldId = process.env.GHL_MESSAGE_FIELD_ID;
-        if (message && messageFieldId) {
-            ghlBody.customFields = [{ id: messageFieldId, field_value: message }];
-        }
+        if (message && messageFieldId) customFields.push({ id: messageFieldId, field_value: message });
+        if (customFields.length > 0) ghlBody.customFields = customFields;
 
         const ghlResponse = await fetch(GHL_API_URL, {
             method: 'POST',

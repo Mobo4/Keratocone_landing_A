@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { trackFormSubmit } from '@/lib/tracking';
 
@@ -9,6 +9,16 @@ type FormStatus = 'idle' | 'submitting' | 'success' | 'success-returning' | 'err
 export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' }) {
     const [status, setStatus] = useState<FormStatus>('idle');
     const [errorMsg, setErrorMsg] = useState('');
+    const [utms, setUtms] = useState({ source: '', medium: '', campaign: '' });
+
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        setUtms({
+            source: params.get('utm_source') || '',
+            medium: params.get('utm_medium') || '',
+            campaign: params.get('utm_campaign') || '',
+        });
+    }, []);
 
     const t = locale === 'es' ? {
         firstName: 'Nombre',
@@ -59,6 +69,9 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
             email: (form.elements.namedItem('email') as HTMLInputElement).value.trim(),
             message: (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim(),
             smsConsent: (form.elements.namedItem('smsConsent') as HTMLInputElement).checked,
+            utmSource: utms.source,
+            utmMedium: utms.medium,
+            utmCampaign: utms.campaign,
         };
 
         try {
