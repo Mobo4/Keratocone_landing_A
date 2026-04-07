@@ -3,6 +3,46 @@ import { NextRequest, NextResponse } from 'next/server';
 const GHL_API_URL = 'https://services.leadconnectorhq.com/contacts/';
 const GHL_API_VERSION = '2021-07-28';
 
+async function sendLeadNotification(params: {
+    firstName: string; lastName: string; phone: string; email: string;
+    message: string; utmSource: string; utmMedium: string; utmCampaign: string;
+    returning: boolean;
+}) {
+    const resendKey = process.env.RESEND_API_KEY;
+    const notifyEmail = process.env.LEAD_NOTIFY_EMAIL || 'eyecarecenteroc@gmail.com';
+    if (!resendKey) return;
+
+    const { firstName, lastName, phone, email, message, utmSource, utmCampaign, returning } = params;
+    const subject = returning
+        ? `↩️ Returning Patient Form — ${firstName} ${lastName}`
+        : `🆕 New KC Lead — ${firstName} ${lastName}`;
+
+    const body = `
+${returning ? 'RETURNING PATIENT — already in GHL' : 'NEW PATIENT — added to GHL'}
+
+Name:     ${firstName} ${lastName}
+Phone:    ${phone}
+Email:    ${email}
+${message ? `Message:  ${message}\n` : ''}
+Source:   ${utmSource || 'direct'} / ${utmCampaign || 'unknown'}
+Time:     ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} PT
+`.trim();
+
+    await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${resendKey}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            from: 'Henry (Dr. Bonakdar) <henry@refract.ing>',
+            to: [notifyEmail],
+            subject,
+            text: body,
+        }),
+    });
+}
+
 interface ContactPayload {
     firstName: string;
     lastName: string;
@@ -154,6 +194,7 @@ export async function POST(request: NextRequest) {
                     }
                 }
 
+                sendLeadNotification({ firstName, lastName, phone, email, message, utmSource, utmMedium, utmCampaign, returning: true }).catch(() => {});
                 return NextResponse.json({ success: true, returning: true });
             }
 
@@ -167,6 +208,10 @@ export async function POST(request: NextRequest) {
         // New contact created
         const ghlData = await ghlResponse.json();
         const newContactId = ghlData.contact?.id;
+
+        // Email notification — fire and forget
+        sendLeadNotification({ firstName, lastName, phone, email, message, utmSource, utmMedium, utmCampaign, returning: false }).catch(() => {});
+
 
         // Add note with form message
         if (newContactId) {
