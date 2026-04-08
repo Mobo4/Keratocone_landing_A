@@ -5,7 +5,7 @@ const GHL_API_VERSION = '2021-07-28';
 
 async function sendLeadNotification(params: {
     firstName: string; lastName: string; phone: string; email: string;
-    message: string; utmSource: string; utmMedium: string; utmCampaign: string;
+    message: string; utmSource?: string; utmMedium?: string; utmCampaign?: string;
     returning: boolean;
 }) {
     const resendKey = process.env.RESEND_API_KEY;
