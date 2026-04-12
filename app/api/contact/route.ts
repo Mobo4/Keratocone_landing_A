@@ -50,6 +50,7 @@ interface ContactPayload {
     email: string;
     message?: string;
     smsConsent: boolean;
+    gclid?: string;
     utmSource?: string;
     utmMedium?: string;
     utmCampaign?: string;
@@ -64,6 +65,8 @@ function validatePayload(body: unknown): ContactPayload {
     const email = typeof b.email === 'string' ? b.email.trim() : '';
     const message = typeof b.message === 'string' ? b.message.trim().slice(0, 200) : '';
     const smsConsent = b.smsConsent === true;
+    // gclid: GHL standard field — pass directly in contact body (not as customField)
+    const gclid = typeof b.gclid === 'string' ? b.gclid.replace(/[^A-Za-z0-9_\-]/g, '').slice(0, 100) : '';
     const utmSource = typeof b.utmSource === 'string' ? b.utmSource.slice(0, 100) : '';
     const utmMedium = typeof b.utmMedium === 'string' ? b.utmMedium.slice(0, 100) : '';
     const utmCampaign = typeof b.utmCampaign === 'string' ? b.utmCampaign.slice(0, 200) : '';
@@ -76,7 +79,7 @@ function validatePayload(body: unknown): ContactPayload {
         throw new Error('Invalid email address');
     }
 
-    return { firstName, lastName, phone, email, message, smsConsent, utmSource, utmMedium, utmCampaign };
+    return { firstName, lastName, phone, email, message, smsConsent, gclid, utmSource, utmMedium, utmCampaign };
 }
 
 export async function POST(request: NextRequest) {
@@ -91,7 +94,7 @@ export async function POST(request: NextRequest) {
         }
 
         const body = await request.json();
-        const { firstName, lastName, phone, email, message, smsConsent, utmSource, utmMedium, utmCampaign } = validatePayload(body);
+        const { firstName, lastName, phone, email, message, smsConsent, gclid, utmSource, utmMedium, utmCampaign } = validatePayload(body);
 
         // Build GHL contact payload
         const tags = ['keratoconus lead'];
@@ -104,6 +107,8 @@ export async function POST(request: NextRequest) {
             email,
             source: 'keratocones.com',
             tags,
+            // gclid: GHL standard field — populates contact.gclid for Google Ads offline conversions
+            ...(gclid ? { gclid } : {}),
             // If no SMS consent, set DND for SMS to respect TCPA
             ...(smsConsent ? {} : {
                 dndSettings: {
@@ -177,21 +182,22 @@ export async function POST(request: NextRequest) {
                 if (contactResp?.ok) {
                     const contactData = await contactResp.json();
                     const currentTags: string[] = contactData.contact?.tags || [];
-                    if (!currentTags.includes('returning-patient')) {
-                        const updatedTags = [...new Set([...currentTags, 'returning-patient', 'website form'])];
-                        await fetch(
-                            `https://services.leadconnectorhq.com/contacts/${existingId}`,
-                            {
-                                method: 'PUT',
-                                headers: {
-                                    'Authorization': `Bearer ${apiKey}`,
-                                    'Version': GHL_API_VERSION,
-                                    'Content-Type': 'application/json',
-                                },
-                                body: JSON.stringify({ tags: updatedTags }),
-                            }
-                        ).catch((err) => console.error('Failed to update tags:', err));
-                    }
+                    const updatedTags = [...new Set([...currentTags, 'returning-patient', 'website form'])];
+                    const updateBody: Record<string, unknown> = { tags: updatedTags };
+                    // Backfill gclid on existing contact if we now have it
+                    if (gclid && !contactData.contact?.gclid) updateBody.gclid = gclid;
+                    await fetch(
+                        `https://services.leadconnectorhq.com/contacts/${existingId}`,
+                        {
+                            method: 'PUT',
+                            headers: {
+                                'Authorization': `Bearer ${apiKey}`,
+                                'Version': GHL_API_VERSION,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(updateBody),
+                        }
+                    ).catch((err) => console.error('Failed to update returning contact:', err));
                 }
 
                 sendLeadNotification({ firstName, lastName, phone, email, message, utmSource, utmMedium, utmCampaign, returning: true }).catch(() => {});

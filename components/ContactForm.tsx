@@ -10,6 +10,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
     const [status, setStatus] = useState<FormStatus>('idle');
     const [errorMsg, setErrorMsg] = useState('');
     const [utms, setUtms] = useState({ source: '', medium: '', campaign: '' });
+    const [gclid, setGclid] = useState('');
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
@@ -18,6 +19,15 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
             medium: params.get('utm_medium') || '',
             campaign: params.get('utm_campaign') || '',
         });
+        // Capture gclid from URL param; fall back to sessionStorage so it survives
+        // multi-page navigation before the user submits the form
+        const gclidParam = params.get('gclid') || '';
+        if (gclidParam) {
+            sessionStorage.setItem('gclid', gclidParam);
+            setGclid(gclidParam);
+        } else {
+            setGclid(sessionStorage.getItem('gclid') || '');
+        }
     }, []);
 
     const t = locale === 'es' ? {
@@ -69,6 +79,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
             email: (form.elements.namedItem('email') as HTMLInputElement).value.trim(),
             message: (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim(),
             smsConsent: (form.elements.namedItem('smsConsent') as HTMLInputElement).checked,
+            gclid,
             utmSource: utms.source,
             utmMedium: utms.medium,
             utmCampaign: utms.campaign,
