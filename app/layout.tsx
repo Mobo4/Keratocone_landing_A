@@ -15,7 +15,7 @@ import ChatWidget from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
   title: "Keratoconus Specialist Orange County | See Us This Week",
-  description: "Why wait 6 months at UCLA/UCI? 5,000+ keratoconus cases treated. Direct specialist access, not residents. Insurance accepted. Call (714) 558-0641",
+  description: "Why wait 6 months at UCLA/UCI? 2,000+ keratoconus cases treated. Direct specialist access, not residents. Insurance accepted. Call (714) 558-0641",
   keywords: ["keratoconus specialist", "keratoconus doctor", "keratoconus treatment", "scleral lenses", "cornea specialist", "keratoconus specialist near me", "best keratoconus doctor", "keratoconus treatment without surgery", "corneal disease specialist", "irregular astigmatism doctor"],
   other: {
     'geo.region': 'US-CA',
@@ -53,6 +53,9 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <GoogleTagManager gtmId="GTM-NS6QTKN" />
+      <head>
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+      </head>
       <body className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <BusinessSchema />

@@ -54,6 +54,18 @@ interface ContactPayload {
     utmSource?: string;
     utmMedium?: string;
     utmCampaign?: string;
+    // First-touch attribution (what originally brought them to the site)
+    firstTouchSource?: string;
+    firstTouchMedium?: string;
+    firstTouchCampaign?: string;
+    firstTouchGclid?: string;
+    // Visitor context (from utm-tracking.ts cookies)
+    visitorId?: string;
+    visitCount?: number;
+}
+
+function sanitizeUtm(v: unknown, max = 100): string {
+    return typeof v === 'string' ? v.slice(0, max) : '';
 }
 
 function validatePayload(body: unknown): ContactPayload {
@@ -67,9 +79,15 @@ function validatePayload(body: unknown): ContactPayload {
     const smsConsent = b.smsConsent === true;
     // gclid: GHL standard field — pass directly in contact body (not as customField)
     const gclid = typeof b.gclid === 'string' ? b.gclid.replace(/[^A-Za-z0-9_\-]/g, '').slice(0, 100) : '';
-    const utmSource = typeof b.utmSource === 'string' ? b.utmSource.slice(0, 100) : '';
-    const utmMedium = typeof b.utmMedium === 'string' ? b.utmMedium.slice(0, 100) : '';
-    const utmCampaign = typeof b.utmCampaign === 'string' ? b.utmCampaign.slice(0, 200) : '';
+    const utmSource = sanitizeUtm(b.utmSource);
+    const utmMedium = sanitizeUtm(b.utmMedium);
+    const utmCampaign = sanitizeUtm(b.utmCampaign, 200);
+    const firstTouchSource = sanitizeUtm(b.firstTouchSource);
+    const firstTouchMedium = sanitizeUtm(b.firstTouchMedium);
+    const firstTouchCampaign = sanitizeUtm(b.firstTouchCampaign, 200);
+    const firstTouchGclid = typeof b.firstTouchGclid === 'string' ? b.firstTouchGclid.replace(/[^A-Za-z0-9_\-]/g, '').slice(0, 100) : '';
+    const visitorId = typeof b.visitorId === 'string' ? b.visitorId.replace(/[^A-Za-z0-9\-]/g, '').slice(0, 40) : '';
+    const visitCount = typeof b.visitCount === 'number' && b.visitCount > 0 ? Math.min(b.visitCount, 9999) : 0;
 
     if (!firstName || !lastName || !phone || !email) {
         throw new Error('firstName, lastName, phone, and email are required');
@@ -79,7 +97,12 @@ function validatePayload(body: unknown): ContactPayload {
         throw new Error('Invalid email address');
     }
 
-    return { firstName, lastName, phone, email, message, smsConsent, gclid, utmSource, utmMedium, utmCampaign };
+    return {
+        firstName, lastName, phone, email, message, smsConsent,
+        gclid, utmSource, utmMedium, utmCampaign,
+        firstTouchSource, firstTouchMedium, firstTouchCampaign, firstTouchGclid,
+        visitorId, visitCount,
+    };
 }
 
 export async function POST(request: NextRequest) {
@@ -94,7 +117,12 @@ export async function POST(request: NextRequest) {
         }
 
         const body = await request.json();
-        const { firstName, lastName, phone, email, message, smsConsent, gclid, utmSource, utmMedium, utmCampaign } = validatePayload(body);
+        const {
+            firstName, lastName, phone, email, message, smsConsent,
+            gclid, utmSource, utmMedium, utmCampaign,
+            firstTouchSource, firstTouchMedium, firstTouchCampaign, firstTouchGclid,
+            visitorId, visitCount,
+        } = validatePayload(body);
 
         // Build GHL contact payload
         const tags = ['keratoconus lead'];
@@ -162,7 +190,15 @@ export async function POST(request: NextRequest) {
                             'Content-Type': 'application/json',
                         },
                         body: JSON.stringify({
-                            body: `Returning patient form submission from keratocones.com\nMessage: ${message || '(none)'}\nSubmitted: ${new Date().toISOString()}`,
+                            body: [
+                                    `Returning patient form submission from keratocones.com`,
+                                    `Message:     ${message || '(none)'}`,
+                                    `Last touch:  ${utmSource || 'direct'} / ${utmMedium || '-'} / ${utmCampaign || '-'}${gclid ? ` (gclid: ${gclid})` : ''}`,
+                                    firstTouchSource ? `First touch: ${firstTouchSource} / ${firstTouchMedium || '-'} / ${firstTouchCampaign || '-'}${firstTouchGclid ? ` (gclid: ${firstTouchGclid})` : ''}` : null,
+                                    visitCount ? `Visits: ${visitCount}` : null,
+                                    visitorId ? `Visitor ID: ${visitorId}` : null,
+                                    `Submitted:   ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} PT`,
+                                ].filter(Boolean).join('\n'),
                         }),
                     }
                 ).catch((err) => console.error('Failed to add note to existing contact:', err));
@@ -231,7 +267,15 @@ export async function POST(request: NextRequest) {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        body: `New patient form submission from keratocones.com\nMessage: ${message || '(none)'}\nSubmitted: ${new Date().toISOString()}`,
+                        body: [
+                                `New patient form submission from keratocones.com`,
+                                `Message:     ${message || '(none)'}`,
+                                `Last touch:  ${utmSource || 'direct'} / ${utmMedium || '-'} / ${utmCampaign || '-'}${gclid ? ` (gclid: ${gclid})` : ''}`,
+                                firstTouchSource ? `First touch: ${firstTouchSource} / ${firstTouchMedium || '-'} / ${firstTouchCampaign || '-'}${firstTouchGclid ? ` (gclid: ${firstTouchGclid})` : ''}` : null,
+                                visitCount ? `Visits: ${visitCount}` : null,
+                                visitorId ? `Visitor ID: ${visitorId}` : null,
+                                `Submitted:   ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} PT`,
+                            ].filter(Boolean).join('\n'),
                     }),
                 }
             ).catch((err) => console.error('Failed to add note:', err));

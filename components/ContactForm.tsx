@@ -1,33 +1,22 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { trackFormSubmit } from '@/lib/tracking';
+import { trackFormSubmit, trackFormStarted, trackEmailEntered, trackPhoneEntered } from '@/lib/tracking';
+import { captureAndGetTracking, getStoredTracking } from '@/lib/utm-tracking';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'success-returning' | 'error';
 
 export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' }) {
     const [status, setStatus] = useState<FormStatus>('idle');
     const [errorMsg, setErrorMsg] = useState('');
-    const [utms, setUtms] = useState({ source: '', medium: '', campaign: '' });
-    const [gclid, setGclid] = useState('');
+    const hasStartedRef = useRef(false);
 
+    // Capture UTMs/gclid from URL into cookies on mount, then read back from cookies.
+    // Replaces sessionStorage approach — persists across tabs, page reloads, and
+    // multi-visit journeys (sessionStorage dies when tab closes).
     useEffect(() => {
-        const params = new URLSearchParams(window.location.search);
-        setUtms({
-            source: params.get('utm_source') || '',
-            medium: params.get('utm_medium') || '',
-            campaign: params.get('utm_campaign') || '',
-        });
-        // Capture gclid from URL param; fall back to sessionStorage so it survives
-        // multi-page navigation before the user submits the form
-        const gclidParam = params.get('gclid') || '';
-        if (gclidParam) {
-            sessionStorage.setItem('gclid', gclidParam);
-            setGclid(gclidParam);
-        } else {
-            setGclid(sessionStorage.getItem('gclid') || '');
-        }
+        captureAndGetTracking();
     }, []);
 
     const t = locale === 'es' ? {
@@ -66,23 +55,62 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
         hipaaNotice: 'Your information is protected under HIPAA. We never share your health information without your consent.',
     };
 
+    // ── Partial form capture events ──────────────────────────────────────────
+    // These fire GTM events that build remarketing audiences:
+    //   form_started     → "people who began the form" (weaker signal)
+    //   form_email_entered → also used for Enhanced Conversions (Google hashes it)
+    //   form_phone_entered → intent signal
+
+    function handleAnyFocus() {
+        if (hasStartedRef.current) return;
+        hasStartedRef.current = true;
+        trackFormStarted();
+    }
+
+    function handleEmailBlur(e: React.FocusEvent<HTMLInputElement>) {
+        const val = e.currentTarget.value.trim();
+        if (val && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+            // Pass email for GTM Enhanced Conversions — Google hashes it server-side
+            trackEmailEntered(val);
+        }
+    }
+
+    function handlePhoneBlur(e: React.FocusEvent<HTMLInputElement>) {
+        if (e.currentTarget.value.trim().length >= 7) {
+            trackPhoneEntered();
+        }
+    }
+
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setStatus('submitting');
         setErrorMsg('');
 
         const form = e.currentTarget;
+        const tracking = getStoredTracking();
+        const lt = tracking.lastTouch;
+        const ft = tracking.firstTouch;
+
         const data = {
             firstName: (form.elements.namedItem('firstname') as HTMLInputElement).value.trim(),
-            lastName: (form.elements.namedItem('lastname') as HTMLInputElement).value.trim(),
-            phone: (form.elements.namedItem('phone') as HTMLInputElement).value.trim(),
-            email: (form.elements.namedItem('email') as HTMLInputElement).value.trim(),
-            message: (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim(),
+            lastName:  (form.elements.namedItem('lastname')  as HTMLInputElement).value.trim(),
+            phone:     (form.elements.namedItem('phone')     as HTMLInputElement).value.trim(),
+            email:     (form.elements.namedItem('email')     as HTMLInputElement).value.trim(),
+            message:   (form.elements.namedItem('message')   as HTMLTextAreaElement).value.trim(),
             smsConsent: (form.elements.namedItem('smsConsent') as HTMLInputElement).checked,
-            gclid,
-            utmSource: utms.source,
-            utmMedium: utms.medium,
-            utmCampaign: utms.campaign,
+            // Attribution — last touch preferred, first touch as fallback
+            gclid:       lt.gclid    || ft.gclid,
+            utmSource:   lt.source   || ft.source,
+            utmMedium:   lt.medium   || ft.medium,
+            utmCampaign: lt.campaign || ft.campaign,
+            // First touch sent separately for the GHL note
+            firstTouchSource:   ft.source,
+            firstTouchMedium:   ft.medium,
+            firstTouchCampaign: ft.campaign,
+            firstTouchGclid:    ft.gclid,
+            // Visitor context
+            visitorId:  tracking.visitorId,
+            visitCount: tracking.visitCount,
         };
 
         try {
@@ -142,7 +170,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
     }
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4" onFocus={handleAnyFocus}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstname" className="block text-sm font-medium text-gray-700 mb-1">
@@ -186,6 +214,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
                     autoComplete="tel"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-eyecare-blue focus:border-eyecare-blue transition-colors text-gray-900"
                     placeholder="(555) 555-5555"
+                    onBlur={handlePhoneBlur}
                 />
             </div>
 
@@ -201,6 +230,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: 'en' | 'es' })
                     autoComplete="email"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-eyecare-blue focus:border-eyecare-blue transition-colors text-gray-900"
                     placeholder="you@example.com"
+                    onBlur={handleEmailBlur}
                 />
             </div>
 
