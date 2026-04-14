@@ -19,18 +19,25 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
         <div className="min-h-screen flex flex-col bg-white font-sans">
             {/* Top Utility Bar - Simplified on mobile */}
             <div className="bg-eyecare-blue text-white text-xs md:text-sm py-1.5 md:py-2 border-b border-eyecare-dark-blue">
-                <div className="container mx-auto px-4 flex justify-between md:justify-end items-center gap-3 md:gap-4">
-                    {/* Phone - Always Visible, prominent on mobile */}
-                    <a
-                        href={phoneHref}
-                        className="flex items-center hover:text-eyecare-lighter-blue transition-colors"
-                    >
-                        <Phone className="h-3.5 w-3.5 mr-1.5" />
-                        <span className="font-semibold">{phoneNumber}</span>
-                    </a>
-                    {/* Language Switcher */}
-                    <div className="text-eyecare-navy">
-                        <LanguageSwitcher />
+                <div className="container mx-auto px-4 flex justify-between items-center gap-3 md:gap-4">
+                    {/* Se Habla Español */}
+                    <span className="flex items-center gap-1.5 font-semibold">
+                        <Globe className="h-3.5 w-3.5 shrink-0" />
+                        Se Habla Español
+                    </span>
+                    {/* Right: Phone + Language Switcher */}
+                    <div className="flex items-center gap-3 md:gap-4">
+                        <a
+                            href={phoneHref}
+                            className="flex items-center hover:text-eyecare-lighter-blue transition-colors"
+                        >
+                            <Phone className="h-3.5 w-3.5 mr-1.5" />
+                            <span className="font-semibold">{phoneNumber}</span>
+                        </a>
+                        {/* Language Switcher */}
+                        <div className="text-eyecare-navy">
+                            <LanguageSwitcher />
+                        </div>
                     </div>
                 </div>
             </div>
