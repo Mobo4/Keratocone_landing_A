@@ -7,6 +7,10 @@
 
 ## Session Log
 
+| Date | Session | Work Done |
+|------|---------|-----------|
+| 2026-04-14 | lead-magnet-quiz-nurture | **Governed build: Added scored KC + OrthoK lead-capture quiz funnel to keratocones.com. 5 files: `app/api/quiz/route.ts` (server-side scoring, GHL integration, honeypot, duplicate handling), `app/quiz/page.tsx` (KC 6Q quiz), `app/quiz/ortho-k/page.tsx` (OrthoK 5Q quiz), `app/quiz/results/[tier]/page.tsx` (shared tier results with KC+OrthoK copy), `KeratoconusQuiz.tsx` CTA → /quiz. 45/45 tests, 2x pass. 8 PRD bugs fixed in cold review.** |
+
 ### Session 2026-03-25/26 (GHL Chat + CRO Overhaul + LPO)
 **Session Name**: `ghl-chat-cro-lpo`
 **Date**: March 25-26, 2026

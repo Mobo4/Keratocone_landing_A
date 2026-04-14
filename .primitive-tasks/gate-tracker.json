@@ -1,0 +1,21 @@
+{
+  "task": "lead-magnet-quiz-nurture",
+  "started_at": "2026-04-14T02:02:39.344309+00:00",
+  "gates": {
+    "1_constitutional_check": "2026-04-14T02:02:39.368202+00:00",
+    "2_diagnose": "2026-04-14T02:02:39.397351+00:00",
+    "3_three_prds": "2026-04-14T02:02:39.422146+00:00",
+    "4_synthesize": "2026-04-14T02:02:39.458606+00:00",
+    "4b_cold_review_prd": "2026-04-14T02:02:39.484850+00:00",
+    "5_write_tests": "2026-04-14T02:02:39.517596+00:00",
+    "5b_cold_review_tests": "2026-04-14T02:02:39.541824+00:00",
+    "5c_red_phase": "2026-04-14T02:02:39.570190+00:00",
+    "6_summary": "2026-04-14T02:02:39.596607+00:00",
+    "7_execute": null,
+    "7b_cold_review_implementation": null,
+    "8_green_phase": null,
+    "8c_regression": null,
+    "8d_final_qa": null,
+    "9_complete": null
+  }
+}

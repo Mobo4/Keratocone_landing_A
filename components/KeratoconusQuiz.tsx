@@ -108,10 +108,10 @@ export default function KeratoconusQuiz() {
                             </div>
 
                             <a
-                                href="#contact-form"
+                                href="/quiz"
                                 className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-eyecare-blue hover:bg-eyecare-dark-blue md:py-4 md:text-lg md:px-10 shadow-lg hover:shadow-xl transition-all"
                             >
-                                Schedule Your Expert Consultation
+                                Get My Full Assessment (2 min)
                             </a>
                             <p className="mt-4 text-sm text-gray-500">
                                 Or call us directly: <a href="tel:+17145580641" className="text-eyecare-blue font-bold hover:underline">(714) 558-0641</a>
