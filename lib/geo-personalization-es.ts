@@ -41,7 +41,7 @@ export function getPersonalizationEs(
       return {
         badge: 'Experto en Lentes Esclerales',
         headline: 'Ajuste de Lentes Esclerales para Queratocono',
-        subhead: '5,000+ ajustes — restaure su visión clara y cómoda.',
+        subhead: '2,000+ ajustes — restaure su visión clara y cómoda.',
         urgency: 'Reserve su Consulta de Lentes Esclerales',
         socialProof: 'Pacientes viajan desde toda California por nuestra experiencia',
       };
@@ -68,7 +68,7 @@ export function getPersonalizationEs(
     return {
       badge: '',
       headline: 'Lo Que Todo Paciente de Queratocono Necesita Saber',
-      subhead: '5,000+ casos tratados por un especialista entrenado en Bascom Palmer. Seguro aceptado.',
+      subhead: '2,000+ casos tratados por un especialista entrenado en Bascom Palmer. Seguro aceptado.',
       urgency: 'Aprenda Más — Reserve una Consulta',
       socialProof: 'Confianza de CHOC y UCI Medical Center',
     };
@@ -83,7 +83,7 @@ export function getPersonalizationEs(
       headline: `Especialista en Queratocono en ${ocMatch}`,
       subhead: 'Citas esta semana — estamos a minutos de su ubicación.',
       urgency: 'Reserve esta semana — (714) 558-0641',
-      socialProof: `5,000+ pacientes de queratocono en Orange County`,
+      socialProof: `2,000+ pacientes de queratocono en Orange County`,
     };
   }
 
@@ -103,7 +103,7 @@ export function getPersonalizationEs(
     return {
       badge: `Pacientes viajan desde ${ieMatch}`,
       headline: `Pacientes de ${ieMatch} confían en nosotros`,
-      subhead: '5,000+ casos tratados — experiencia especializada que vale el viaje.',
+      subhead: '2,000+ casos tratados — experiencia especializada que vale el viaje.',
       urgency: 'Seguro aceptado — Reserve esta semana',
       socialProof: 'Referidos por doctores de CHOC y UCI',
     };
@@ -114,7 +114,7 @@ export function getPersonalizationEs(
     return {
       badge: 'Experto en Queratocono del Sur de California',
       headline: `Pacientes viajan desde ${sdMatch} para nuestra atención`,
-      subhead: 'Cuando su visión importa — 5,000+ casos, entrenado en Bascom Palmer.',
+      subhead: 'Cuando su visión importa — 2,000+ casos, entrenado en Bascom Palmer.',
       urgency: 'Coordinamos sus visitas para minimizar viajes',
       socialProof: 'Lentes esclerales + coordinación de cross-linking en un centro',
     };
@@ -127,7 +127,7 @@ function getDefaultEs(): GeoPersonalization {
   return {
     badge: '',
     headline: 'Especialista Líder en Queratocono en California',
-    subhead: '5,000+ casos, citas esta semana, acceso directo al especialista. Seguro aceptado.',
+    subhead: '2,000+ casos, citas esta semana, acceso directo al especialista. Seguro aceptado.',
     urgency: 'Reserve su consulta — (714) 558-0641',
     socialProof: 'Entrenado en Bascom Palmer, referidos por CHOC y UCI',
   };

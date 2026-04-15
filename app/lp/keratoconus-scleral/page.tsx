@@ -7,8 +7,8 @@ import FAQSchema, { LANDING_FAQS } from '@/components/FAQSchema';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-    title: "Scleral Lenses for Keratoconus | 5,000+ Fits | OC",
-    description: "Other contacts failed you? We fit the cases others can't. 5,000+ scleral lens fits, same-week appointments, insurance accepted. (714) 558-0641",
+    title: "Scleral Lenses for Keratoconus | 2,000+ Fits | OC",
+    description: "Other contacts failed you? We fit the cases others can't. 2,000+ scleral lens fits, same-week appointments, insurance accepted. (714) 558-0641",
     alternates: {
         canonical: 'https://www.keratocones.com/lp/keratoconus-scleral',
         languages: {

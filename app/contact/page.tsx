@@ -10,7 +10,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Book Keratoconus Appointment | See Us This Week',
-    description: 'Done waiting months for UCLA/UCI? Book this week. 5,000+ cases, 35+ yrs experience, direct specialist access. Insurance accepted. (714) 558-0641',
+    description: 'Done waiting months for UCLA/UCI? Book this week. 2,000+ cases, 35+ yrs experience, direct specialist access. Insurance accepted. (714) 558-0641',
     alternates: {
         canonical: 'https://www.keratocones.com/contact',
         languages: {

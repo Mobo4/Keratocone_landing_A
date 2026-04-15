@@ -29,11 +29,11 @@ export const CORE_FAQS: Record<string, FAQItem> = {
     },
     experience: {
         question: "How many keratoconus patients has Dr. Bonakdar treated?",
-        answer: "Dr. Bonakdar has successfully treated over 5,000 keratoconus patients with specialty contact lenses and corneal management over his 35+ years of practice in Orange County.",
+        answer: "Dr. Bonakdar has successfully treated over 2,000 keratoconus patients with specialty contact lenses and corneal management over his 35+ years of practice in Orange County.",
     },
     differentiator: {
         question: "What makes Dr. Bonakdar different from university eye centers?",
-        answer: "Direct specialist access with no 3-6 month wait, over 5,000 successful keratoconus cases, same-week appointments, personalized care from one doctor (not rotating residents), and 35+ years of corneal specialty experience.",
+        answer: "Direct specialist access with no 3-6 month wait, over 2,000 successful keratoconus cases, same-week appointments, personalized care from one doctor (not rotating residents), and 35+ years of corneal specialty experience.",
     },
     treatments: {
         question: "What keratoconus treatments do you offer?",

@@ -5,7 +5,7 @@ import esMessages from '@/messages/es.json';
 
 export const metadata: Metadata = {
     title: "Especialista Queratocono Orange County | Cita Esta Semana",
-    description: "No espere 6 meses en UCLA/UCI. 5,000+ casos de queratocono, acceso directo al especialista (no residentes). Seguro aceptado. (714) 558-0641",
+    description: "No espere 6 meses en UCLA/UCI. 2,000+ casos de queratocono, acceso directo al especialista (no residentes). Seguro aceptado. (714) 558-0641",
     keywords: ["queratocono tratamiento", "lentes esclerales", "especialista queratocono", "doctor queratocono orange county", "córnea irregular", "lentes de contacto especializados"],
 };
 

@@ -107,9 +107,9 @@ function getExperiences(cityType: CityType, cityName: string): ExperienceItem[] 
             { quote: 'Worth the drive. Period. My vision with scleral lenses is better than it has been in 15 years. Dr. Bonakdar understands keratoconus at a level that most doctors simply do not.', initial: 'K', name: 'Kevin N.', context: `${cityName} patient` },
         ],
         'la-gateway': [
-            { quote: 'LA has plenty of eye doctors, but very few who actually specialize in keratoconus scleral lens fitting. Dr. Bonakdar is the real deal -- 5,000+ cases and it shows in the precision of his work.', initial: 'J', name: 'James W.', context: `${cityName} patient` },
+            { quote: 'LA has plenty of eye doctors, but very few who actually specialize in keratoconus scleral lens fitting. Dr. Bonakdar is the real deal -- 2,000+ cases and it shows in the precision of his work.', initial: 'J', name: 'James W.', context: `${cityName} patient` },
             { quote: 'The drive to Santa Ana from LA County was actually shorter than getting to my previous specialist on the Westside. Free parking and same-week appointments made it painless.', initial: 'C', name: 'Christine M.', context: `${cityName} resident` },
-            { quote: 'I chose Dr. Bonakdar over several LA practices because of his keratoconus case volume. 5,000+ cases means he has seen corneas like mine before and knows exactly what to do.', initial: 'A', name: 'Alex P.', context: `${cityName} professional` },
+            { quote: 'I chose Dr. Bonakdar over several LA practices because of his keratoconus case volume. 2,000+ cases means he has seen corneas like mine before and knows exactly what to do.', initial: 'A', name: 'Alex P.', context: `${cityName} professional` },
         ],
     };
 

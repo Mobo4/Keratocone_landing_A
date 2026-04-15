@@ -5,12 +5,12 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Guías Queratocono en Español | 5,000+ Casos Tratados',
-    description: 'Etapas, tratamientos y cómo evitar cirugía. Guías escritas por un especialista con 5,000+ casos. En español. (714) 558-0641',
+    title: 'Guías Queratocono en Español | 2,000+ Casos Tratados',
+    description: 'Etapas, tratamientos y cómo evitar cirugía. Guías escritas por un especialista con 2,000+ casos. En español. (714) 558-0641',
     keywords: ['queratocono información', 'lentes esclerales guía', 'tratamiento queratocono', 'recursos queratocono español'],
     openGraph: {
-        title: 'Guías Queratocono en Español | 5,000+ Casos Tratados',
-        description: 'Etapas, tratamientos y cómo evitar cirugía. Guías de un especialista con 5,000+ casos. En español.',
+        title: 'Guías Queratocono en Español | 2,000+ Casos Tratados',
+        description: 'Etapas, tratamientos y cómo evitar cirugía. Guías de un especialista con 2,000+ casos. En español.',
         locale: 'es_MX',
     },
     alternates: {

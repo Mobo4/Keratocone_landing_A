@@ -1,4 +1,4 @@
-import ContactForm from '@/components/ContactForm';
+import ContactForm from '@/components/ContactFormV2';
 import TrustSignals from '@/components/TrustSignals';
 
 export default function LeadForm({ locale = 'en' }: { locale?: 'en' | 'es' }) {

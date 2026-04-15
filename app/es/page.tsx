@@ -5,11 +5,11 @@ import { getPersonalizationEs } from '@/lib/geo-personalization-es';
 
 export const metadata: Metadata = {
     title: 'Tratamiento Queratocono Orange County | Hablamos Español',
-    description: 'Deje de vivir con visión borrosa. 5,000+ casos, citas esta semana, acceso directo al especialista. Hablamos español. Seguro aceptado. (714) 558-0641',
+    description: 'Deje de vivir con visión borrosa. 2,000+ casos, citas esta semana, acceso directo al especialista. Hablamos español. Seguro aceptado. (714) 558-0641',
     keywords: ['queratocono tratamiento', 'lentes esclerales', 'especialista queratocono', 'doctor queratocono orange county', 'córnea irregular', 'lentes de contacto especializados', 'queratocono en español', 'doctor ojos habla español'],
     openGraph: {
         title: 'Tratamiento Queratocono Orange County | Hablamos Español',
-        description: 'Deje de vivir con visión borrosa. 5,000+ casos, citas esta semana, hablamos español. Seguro aceptado. (714) 558-0641',
+        description: 'Deje de vivir con visión borrosa. 2,000+ casos, citas esta semana, hablamos español. Seguro aceptado. (714) 558-0641',
         locale: 'es_MX',
         type: 'website',
     },

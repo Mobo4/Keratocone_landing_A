@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Terms of Service | Keratoconus Vision Center',
-    description: 'Terms of service for Keratoconus Vision Center in Santa Ana, CA. 5,000+ keratoconus cases treated. Questions? (714) 558-0641',
+    description: 'Terms of service for Keratoconus Vision Center in Santa Ana, CA. 2,000+ keratoconus cases treated. Questions? (714) 558-0641',
     alternates: {
         canonical: 'https://www.keratocones.com/terms-of-service',
         languages: {
