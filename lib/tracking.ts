@@ -31,3 +31,8 @@ export function trackEmailEntered(email: string) {
 export function trackPhoneEntered() {
   sendGTMEvent({ event: 'form_phone_entered', form_location: 'contact' });
 }
+
+/** Fires when any tel: link is clicked anywhere on the site. */
+export function trackPhoneClick(location?: string) {
+  sendGTMEvent({ event: 'phone_click', click_location: location || 'unknown' });
+}

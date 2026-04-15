@@ -1,10 +1,28 @@
 'use client';
 
 import Script from 'next/script';
+import { useEffect } from 'react';
+import { trackPhoneClick } from '@/lib/tracking';
 
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || '';
 
 export default function TrackingScripts() {
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      const target = (e.target as HTMLElement).closest('a[href^="tel:"]');
+      if (!target) return;
+      // Derive a location label from the nearest landmark for GTM reporting
+      const section =
+        target.closest('[data-track]')?.getAttribute('data-track') ||
+        target.closest('header') ? 'header' :
+        target.closest('footer') ? 'footer' :
+        target.closest('[id]')?.id || 'page';
+      trackPhoneClick(section as string);
+    }
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, []);
+
   return (
     <>
       {/* Meta Pixel — ID: 395306154557054 */}
