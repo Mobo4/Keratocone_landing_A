@@ -108,8 +108,8 @@ function validatePayload(body: unknown): ContactPayload {
 
     // Service/insurance fields from form step 2
     const VALID_SERVICE_TAGS = new Set([
-        'interest-keratoconus', 'interest-ortho-k', 'interest-dry-eye',
-        'interest-headache', 'interest-other',
+        'form-keratoconus', 'form-ortho-k', 'ipl dry eye lead',
+        'headache-lead', 'form-general',
     ]);
     const rawServiceTags = Array.isArray(b._serviceTags) ? b._serviceTags : [];
     const _serviceTags = rawServiceTags

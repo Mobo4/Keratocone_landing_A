@@ -30,7 +30,7 @@ const SERVICES = [
         label: { en: 'Keratoconus', es: 'Queratocono' },
         desc: { en: 'Blurry or distorted vision', es: 'Visión borrosa o distorsionada' },
         color: 'blue',
-        ghlTag: 'interest-keratoconus',
+        ghlTag: 'form-keratoconus',
     },
     {
         id: 'ortho-k',
@@ -38,7 +38,7 @@ const SERVICES = [
         label: { en: "Ortho-K / Child's Myopia", es: 'Orto-K / Miopía en Niños' },
         desc: { en: 'Night lenses, no glasses by day', es: 'Lentes nocturnos, sin gafas de día' },
         color: 'indigo',
-        ghlTag: 'interest-ortho-k',
+        ghlTag: 'form-ortho-k',
     },
     {
         id: 'dry-eye',
@@ -46,7 +46,7 @@ const SERVICES = [
         label: { en: 'Dry Eye', es: 'Ojo Seco' },
         desc: { en: 'Irritation, burning, redness', es: 'Irritación, ardor, enrojecimiento' },
         color: 'teal',
-        ghlTag: 'interest-dry-eye',
+        ghlTag: 'ipl dry eye lead',
     },
     {
         id: 'headache',
@@ -54,7 +54,7 @@ const SERVICES = [
         label: { en: 'Headaches / Eye Strain', es: 'Dolores de Cabeza / Vista' },
         desc: { en: 'Vision-related headaches', es: 'Dolores de cabeza visuales' },
         color: 'amber',
-        ghlTag: 'interest-headache',
+        ghlTag: 'headache-lead',
     },
     {
         id: 'other',
@@ -62,7 +62,7 @@ const SERVICES = [
         label: { en: 'Not Sure', es: 'No Estoy Seguro' },
         desc: { en: "Tell us more in the box below", es: 'Cuéntenos más abajo' },
         color: 'slate',
-        ghlTag: 'interest-other',
+        ghlTag: 'form-general',
     },
 ] as const;
 
