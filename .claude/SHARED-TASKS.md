@@ -1,7 +1,7 @@
 # Shared Tasks - Keratocones.com
 
 **Purpose**: Track tasks across sessions for keratocones.com website
-**Last Updated**: March 26, 2026
+**Last Updated**: April 14, 2026
 
 ---
 
@@ -10,6 +10,9 @@
 | Date | Session | Work Done |
 |------|---------|-----------|
 | 2026-04-14 | lead-magnet-quiz-nurture | **Governed build: Added scored KC + OrthoK lead-capture quiz funnel to keratocones.com. 5 files: `app/api/quiz/route.ts` (server-side scoring, GHL integration, honeypot, duplicate handling), `app/quiz/page.tsx` (KC 6Q quiz), `app/quiz/ortho-k/page.tsx` (OrthoK 5Q quiz), `app/quiz/results/[tier]/page.tsx` (shared tier results with KC+OrthoK copy), `KeratoconusQuiz.tsx` CTA → /quiz. 45/45 tests, 2x pass. 8 PRD bugs fixed in cold review.** |
+| 2026-04-14 | post-quiz-infra | **Cloudflare WAF rate limit deployed on /api/quiz (rule e922541776964b899bc39a2eebeff398, zone 1be082fcc0da4d64e1c7798f719db0d0): 9 req/10s per IP on free plan. Full task backlog added to SHARED-TASKS.md (11 code tasks, 7 manual UI tasks, 6 monitoring items).** |
+| 2026-04-14 | enhanced-lead-capture | **Built ContactFormV2 — 2-step wizard (Step 1: name+phone+email with auto-format; Step 2: service chips, insurance dropdown, drag-drop insurance card upload, consent). Partial GHL lead capture fires on phone/email blur even without submit. New API routes: `/api/partial-lead` (GHL contact + partial-form-lead tag, handles duplicates), `/api/upload` (Resend email with base64 attachment, no storage needed). LeadForm.tsx updated to use ContactFormV2. TypeScript clean. All files committed — pending Vercel deploy.** |
+| 2026-04-14 | full-attribution-wiring | **Created 6 GHL custom fields (first_touch_source/medium/campaign, service_interest, insurance_type, visitor_id). Updated all 3 API routes (/api/contact, /api/quiz, /api/partial-lead) to: (1) read x-vercel-ip-city + x-vercel-ip-region headers → store city/state as standard GHL contact fields, (2) store first-touch UTMs as custom fields, (3) read _serviceTags + _insuranceTags + _insurance from ContactFormV2 POST body and apply as GHL tags + custom fields. ContactFormV2.tsx updated to also send _insurance plan name. TypeScript clean. All 5 gaps from audit now closed.** |
 
 ### Session 2026-03-25/26 (GHL Chat + CRO Overhaul + LPO)
 **Session Name**: `ghl-chat-cro-lpo`
@@ -134,26 +137,81 @@
 
 ## Active Tasks
 
-### 📋 Todo (Remaining from audits)
-- Add MedicalWebPage + Physician schema to homepage, contact, scleral LP
-- Fix duplicate WebPage schema on scleral LP (remove from KeratoconusScleralContent.tsx)
-- Add OG + Twitter tags to /contact and /lp/keratoconus-scleral
-- Fix www vs non-www in schema URLs (BreadcrumbList, ContactPage)
-- Add medical review byline to core pages
-- Convert 2 raw `<img>` tags on homepage to Next.js `<Image>`
-- Port CRO components to Spanish /es page (TestimonialQuotes, WaitTimeComparison, MidPageCTA, ReviewWidget)
-- KeratoconusContent mobile accordion (educational wall still full-length on mobile)
-- Add rate limiting to /api/contact endpoint
-- Host external topography image locally (currently Cloudinary)
-- Fix rAF cleanup in FAQ AccordionPanel
+### 🚨 DEPLOY NOW — Uncommitted changes pending Vercel deploy (2026-04-14)
 
-### ⏳ Pending
-- GHL Workflow: Set up "Contact Created" trigger for form submission notifications
-- Monitor Google Ads for form conversions appearing
-- After 2-4 weeks: evaluate Smart Bidding switch (need conversion data)
-- After 90 days: recalculate form value ($500) using actual CRM form-to-patient rate
-- Consider re-enabling qualified call tracking (CallRail or alternative) — currently DISCONNECTED
-- Test geo-personalization with VPN (LA, SD, IE locations)
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 1 | `npx tsc --noEmit` — TypeScript check | ✅ Pre-verified clean | Re-run if any files edited before commit |
+| 2 | `components/ContactFormV2.tsx` — 2-step wizard, service chips, insurance upload, partial capture, bilingual | ✅ Built | Untracked — needs commit |
+| 3 | `app/api/partial-lead/route.ts` — GHL contact on phone/email blur, `partial-form-lead` tag, handles duplicates | ✅ Built | Untracked — needs commit |
+| 4 | `app/api/upload/route.ts` — insurance card file → Resend email to office, returns ref | ✅ Built | Untracked — needs commit |
+| 5 | `components/LeadForm.tsx` — 1 import changed to ContactFormV2 | ✅ Updated | Modified — needs commit |
+| 6 | Commit: `git add -A && git commit -m "Add ContactFormV2, full attribution: city/first-touch/service/insurance in GHL"` | ❌ TODO | ~30 other modified files included |
+| 7 | `git push origin main` — Vercel auto-deploys | ❌ TODO | Wait ~90s for deploy |
+| 8 | Verify live: `agent-browser open "https://www.keratocones.com"` → snapshot → confirm 2-step form visible | ❌ TODO | Step 1 = name / phone / email |
+| 9 | Confirm Vercel env vars: `RESEND_API_KEY`, `GHL_LEAD_API_KEY`, `GHL_LOCATION_ID`, `LEAD_NOTIFY_EMAIL` | ❌ TODO | Same vars as `/api/contact` — should already be set |
+
+### 🔧 Manual Actions After Deploy
+
+| Task | Status | Where |
+|------|--------|-------|
+| GHL workflow: `partial-form-lead` tag added → wait 1h → check `has-upcoming-appointment` → SMS "Hi, we noticed you started booking — still need a time?" | ❌ MANUAL | GHL → Workflows → New |
+| Enable OrthoK_Español ad group once Google approves RSA + keywords (24-48h from Apr 13) | ❌ MANUAL | Google Ads → Ortho-K Elite Search → OrthoK_Español |
+| Test insurance card upload end-to-end on live site — upload photo, confirm email arrives at `eyecarecenteroc@gmail.com` | ❌ MANUAL | Live site after deploy |
+
+### 📋 Code Tasks (Can Be Done Automatically)
+
+#### SEO / Schema
+- [ ] Add MedicalWebPage + Physician schema to homepage, contact, scleral LP
+- [ ] Fix duplicate WebPage schema on scleral LP (remove from KeratoconusScleralContent.tsx)
+- [ ] Add OG + Twitter tags to /contact and /lp/keratoconus-scleral
+- [ ] Fix www vs non-www in schema URLs (BreadcrumbList, ContactPage)
+- [ ] Add medical review byline to core pages
+
+#### Performance / Code Quality
+- [ ] Convert 2 raw `<img>` tags on homepage to Next.js `<Image>`
+- [ ] Host external topography image locally (currently Cloudinary)
+- [ ] Fix rAF cleanup in FAQ AccordionPanel
+
+#### UX / CRO
+- [ ] KeratoconusContent mobile accordion (educational wall still full-length on mobile)
+- [ ] Port CRO components to Spanish /es page (TestimonialQuotes, WaitTimeComparison, MidPageCTA, ReviewWidget)
+
+#### Security / API
+- [ ] Add Cloudflare WAF rate limit to /api/contact (same as /api/quiz — done 2026-04-14)
+
+#### Quiz Follow-Up
+- [ ] Wire quiz send-tracking event to GTM dataLayer (same pattern as ghl_form_submit) so quiz leads show as conversions in Google Ads
+
+### ❌ Manual / UI-Only Tasks (Cannot Be Automated)
+
+#### Google Ads (UI required)
+- [ ] Re-import `ghl_form_submit` from GA4 — Google Ads UI → Tools → Conversions → Import → GA4 (ID 7517891899 was REMOVED, needs re-import)
+- [ ] Demote "Chat Received" + "Form Capture" conversion actions to Secondary
+- [ ] Set up auction insights weekly email — Google Ads → Reports → Auction Insights → Schedule email
+
+#### GHL (API is read-only for workflows)
+- [ ] Build KC 90-day email/SMS nurture sequence in GHL workflow builder
+- [ ] Build OrthoK 60-day parent nurture sequence in GHL workflow builder
+- [ ] Set up "Contact Created" trigger for form submission notifications
+- [ ] Set up "Quiz Lead Created" trigger for quiz submission notifications
+
+#### Google Business Profile
+- [ ] Enable GBP v4 API in Cloud Console — https://console.developers.google.com/apis/api/mybusiness.googleapis.com/overview?project=504716795358 (blocks all GBP posts/reviews/media until done)
+
+### ⏳ Monitoring / Time-Gated
+
+- [ ] Monitor Google Ads form conversions appearing (check daily for 2 weeks post quiz launch)
+- [ ] After 2-4 weeks: evaluate Smart Bidding switch for KC_MaxClicks (need conversion data first)
+- [ ] After 90 days (2026-07-14): recalculate form value from $500 using actual CRM form-to-patient rate
+- [ ] Consider re-enabling qualified call tracking (CallRail or GHL number pools) — currently DISCONNECTED
+- [ ] Test geo-personalization with VPN (verify LA, SD, IE copy variants render correctly)
+- [ ] Cloudflare WAF rate limit on /api/quiz: monitor for false positives (rule ID e922541776964b899bc39a2eebeff398, zone 1be082fcc0da4d64e1c7798f719db0d0)
+
+### ✅ Done (2026-04-14)
+- Quiz funnel: KC 6Q + OrthoK 5Q with GHL, server-side scoring, honeypot, TCPA DND. 45/45 tests. ✅
+- Cloudflare WAF rate limit on /api/quiz — 9 req/10s per IP (free plan, rule e9225417) ✅
+- Full task backlog catalogued in SHARED-TASKS.md ✅
 
 ### ✅ Done (2026-03-25/26)
 - GHL chat widget enabled + working (widget ID 69c4a1e3, dashboard-controlled) ✅

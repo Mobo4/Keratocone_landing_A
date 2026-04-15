@@ -3,6 +3,17 @@ import { NextRequest, NextResponse } from 'next/server';
 const GHL_API_URL = 'https://services.leadconnectorhq.com/contacts/';
 const GHL_API_VERSION = '2021-07-28';
 
+// GHL custom field IDs (created 2026-04-14)
+const CF = {
+    utmSource:           '6sdXreQxbnVymcrOOvHU',
+    utmMedium:           '3if5VqRIHGXkjDspuNgs',
+    utmCampaign:         'cZiraewtlWoRya9HTpoD',
+    firstTouchSource:    'QoGS6IY4CnI6zkweqWL5',
+    firstTouchMedium:    'pj56WnUOOZma58h5drEy',
+    firstTouchCampaign:  'eQlXBQoWYb8mMNKX3F3D',
+    visitorId:           'M4rocza6tWrZuvDneTTo',
+};
+
 // ─── Scoring tables ──────────────────────────────────────────────────────────
 // KC: 6 questions, max score 24, min 7 (Q5 has no 1-pt option)
 const KC_ALLOWED_POINTS: number[][] = [
@@ -196,6 +207,12 @@ export async function POST(request: NextRequest) {
             );
         }
 
+        // Vercel edge geo headers
+        const cityRaw = request.headers.get('x-vercel-ip-city') ?? '';
+        const stateRaw = request.headers.get('x-vercel-ip-region') ?? '';
+        const city = decodeURIComponent(cityRaw).slice(0, 100);
+        const state = stateRaw.slice(0, 100);
+
         const body = await request.json();
         const {
             firstName, lastName, phone, email, quizType, answers, smsConsent, website,
@@ -230,6 +247,8 @@ export async function POST(request: NextRequest) {
             source: 'keratocones.com',
             tags,
             ...(gclid ? { gclid } : {}),
+            ...(city ? { city } : {}),
+            ...(state ? { state } : {}),
             ...(smsConsent ? {} : {
                 dndSettings: {
                     SMS: { status: 'active', message: 'No SMS consent on quiz form' },
@@ -240,11 +259,15 @@ export async function POST(request: NextRequest) {
         const locationId = process.env.GHL_LOCATION_ID;
         if (locationId) ghlBody.locationId = locationId;
 
-        // Custom fields: UTM params
+        // Custom fields: last-touch + first-touch UTMs + visitor context
         const customFields: { id: string; field_value: string }[] = [];
-        if (utmSource) customFields.push({ id: '6sdXreQxbnVymcrOOvHU', field_value: utmSource });
-        if (utmMedium) customFields.push({ id: '3if5VqRIHGXkjDspuNgs', field_value: utmMedium });
-        if (utmCampaign) customFields.push({ id: 'cZiraewtlWoRya9HTpoD', field_value: utmCampaign });
+        if (utmSource)          customFields.push({ id: CF.utmSource,          field_value: utmSource });
+        if (utmMedium)          customFields.push({ id: CF.utmMedium,          field_value: utmMedium });
+        if (utmCampaign)        customFields.push({ id: CF.utmCampaign,        field_value: utmCampaign });
+        if (firstTouchSource)   customFields.push({ id: CF.firstTouchSource,   field_value: firstTouchSource });
+        if (firstTouchMedium)   customFields.push({ id: CF.firstTouchMedium,   field_value: firstTouchMedium });
+        if (firstTouchCampaign) customFields.push({ id: CF.firstTouchCampaign, field_value: firstTouchCampaign });
+        if (visitorId)          customFields.push({ id: CF.visitorId,          field_value: visitorId });
         if (customFields.length > 0) ghlBody.customFields = customFields;
 
         // ── Build note body (for both new and returning contacts) ──
@@ -257,6 +280,7 @@ export async function POST(request: NextRequest) {
             '',
             ...answerLines,
             '',
+            city ? `Location:    ${city}${state ? `, ${state}` : ''}` : null,
             `Last touch:  ${utmSource || 'direct'} / ${utmMedium || '-'} / ${utmCampaign || '-'}${gclid ? ` (gclid: ${gclid})` : ''}`,
             firstTouchSource ? `First touch: ${firstTouchSource} / ${firstTouchMedium || '-'} / ${firstTouchCampaign || '-'}${firstTouchGclid ? ` (gclid: ${firstTouchGclid})` : ''}` : null,
             visitCount ? `Visits: ${visitCount}` : null,

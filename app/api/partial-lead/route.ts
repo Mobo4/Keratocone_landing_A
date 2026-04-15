@@ -16,6 +16,16 @@ import { NextRequest, NextResponse } from 'next/server';
 const GHL_API_URL = 'https://services.leadconnectorhq.com/contacts/';
 const GHL_API_VERSION = '2021-07-28';
 
+// GHL custom field IDs (created 2026-04-14)
+const CF = {
+    utmSource:           '6sdXreQxbnVymcrOOvHU',
+    utmCampaign:         'cZiraewtlWoRya9HTpoD',
+    firstTouchSource:    'QoGS6IY4CnI6zkweqWL5',
+    firstTouchMedium:    'pj56WnUOOZma58h5drEy',
+    firstTouchCampaign:  'eQlXBQoWYb8mMNKX3F3D',
+    visitorId:           'M4rocza6tWrZuvDneTTo',
+};
+
 function sanitize(v: unknown, max = 100): string {
     return typeof v === 'string' ? v.trim().slice(0, max) : '';
 }
@@ -24,6 +34,12 @@ export async function POST(request: NextRequest) {
     try {
         const apiKey = process.env.GHL_LEAD_API_KEY;
         if (!apiKey) return NextResponse.json({ ok: false }, { status: 500 });
+
+        // Vercel edge geo headers
+        const cityRaw = request.headers.get('x-vercel-ip-city') ?? '';
+        const stateRaw = request.headers.get('x-vercel-ip-region') ?? '';
+        const city = decodeURIComponent(cityRaw).slice(0, 100);
+        const state = stateRaw.slice(0, 100);
 
         const body = await request.json().catch(() => ({})) as Record<string, unknown>;
 
@@ -34,6 +50,10 @@ export async function POST(request: NextRequest) {
         const utmSource = sanitize(body.utmSource);
         const utmCampaign = sanitize(body.utmCampaign, 200);
         const gclid = typeof body.gclid === 'string' ? body.gclid.replace(/[^A-Za-z0-9_\-]/g, '').slice(0, 100) : '';
+        const firstTouchSource   = sanitize(body.firstTouchSource, 100);
+        const firstTouchMedium   = sanitize(body.firstTouchMedium, 100);
+        const firstTouchCampaign = sanitize(body.firstTouchCampaign, 200);
+        const visitorId = typeof body.visitorId === 'string' ? body.visitorId.replace(/[^A-Za-z0-9\-]/g, '').slice(0, 40) : '';
 
         // Need at least phone or email to create a contact
         if (!phone && !email) {
@@ -50,13 +70,19 @@ export async function POST(request: NextRequest) {
             ...(firstName ? { firstName } : {}),
             ...(lastName ? { lastName } : {}),
             ...(gclid ? { gclid } : {}),
+            ...(city ? { city } : {}),
+            ...(state ? { state } : {}),
             ...(locationId ? { locationId } : {}),
         };
 
-        // UTM custom fields (same IDs as main form)
+        // Custom fields: last-touch UTMs + first-touch UTMs + visitor context
         const customFields: { id: string; field_value: string }[] = [];
-        if (utmSource) customFields.push({ id: '6sdXreQxbnVymcrOOvHU', field_value: utmSource });
-        if (utmCampaign) customFields.push({ id: 'cZiraewtlWoRya9HTpoD', field_value: utmCampaign });
+        if (utmSource)          customFields.push({ id: CF.utmSource,          field_value: utmSource });
+        if (utmCampaign)        customFields.push({ id: CF.utmCampaign,        field_value: utmCampaign });
+        if (firstTouchSource)   customFields.push({ id: CF.firstTouchSource,   field_value: firstTouchSource });
+        if (firstTouchMedium)   customFields.push({ id: CF.firstTouchMedium,   field_value: firstTouchMedium });
+        if (firstTouchCampaign) customFields.push({ id: CF.firstTouchCampaign, field_value: firstTouchCampaign });
+        if (visitorId)          customFields.push({ id: CF.visitorId,          field_value: visitorId });
         if (customFields.length > 0) ghlBody.customFields = customFields;
 
         const ghlRes = await fetch(GHL_API_URL, {
@@ -93,9 +119,11 @@ export async function POST(request: NextRequest) {
                             body: [
                                 `Partial form interaction on keratocones.com`,
                                 `Field filled: ${phone ? 'phone' : ''}${phone && email ? ' + ' : ''}${email ? 'email' : ''}`,
+                                city ? `Location:    ${city}${state ? `, ${state}` : ''}` : null,
                                 `Source: ${utmSource || 'direct'} / ${utmCampaign || '-'}`,
+                                firstTouchSource ? `First touch: ${firstTouchSource} / ${firstTouchMedium || '-'} / ${firstTouchCampaign || '-'}` : null,
                                 `Time: ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} PT`,
-                            ].join('\n'),
+                            ].filter(Boolean).join('\n'),
                         }),
                     }),
                     fetch(`${GHL_API_URL}${existingId}`, {

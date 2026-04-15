@@ -342,9 +342,10 @@ export default function ContactFormV2({ locale = 'en' }: { locale?: Locale }) {
             firstTouchGclid: ft.gclid,
             visitorId: tracking.visitorId,
             visitCount: tracking.visitCount,
-            // Extra fields surfaced in GHL note via message
+            // Extra fields → GHL custom fields + tags
             _serviceTags: serviceTags,
             _insuranceTags: insuranceTags,
+            _insurance: insurance || '',   // selected plan name e.g. "VSP", "EyeMed"
         };
 
         try {

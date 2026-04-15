@@ -3,6 +3,19 @@ import { NextRequest, NextResponse } from 'next/server';
 const GHL_API_URL = 'https://services.leadconnectorhq.com/contacts/';
 const GHL_API_VERSION = '2021-07-28';
 
+// GHL custom field IDs (created 2026-04-14)
+const CF = {
+    utmSource:           '6sdXreQxbnVymcrOOvHU',
+    utmMedium:           '3if5VqRIHGXkjDspuNgs',
+    utmCampaign:         'cZiraewtlWoRya9HTpoD',
+    firstTouchSource:    'QoGS6IY4CnI6zkweqWL5',
+    firstTouchMedium:    'pj56WnUOOZma58h5drEy',
+    firstTouchCampaign:  'eQlXBQoWYb8mMNKX3F3D',
+    serviceInterest:     'aZ5MKXBJ0ahkCbR4IhNH',
+    insuranceType:       'fSUH2Js6dfxRlkXbrwBi',
+    visitorId:           'M4rocza6tWrZuvDneTTo',
+};
+
 async function sendLeadNotification(params: {
     firstName: string; lastName: string; phone: string; email: string;
     message?: string; utmSource?: string; utmMedium?: string; utmCampaign?: string;
@@ -62,6 +75,10 @@ interface ContactPayload {
     // Visitor context (from utm-tracking.ts cookies)
     visitorId?: string;
     visitCount?: number;
+    // Form step 2 — service interest + insurance
+    _serviceTags?: string[];   // e.g. ['interest-keratoconus']
+    _insuranceTags?: string[]; // e.g. ['no-insurance']
+    _insurance?: string;       // selected plan name e.g. 'VSP'
 }
 
 function sanitizeUtm(v: unknown, max = 100): string {
@@ -89,6 +106,21 @@ function validatePayload(body: unknown): ContactPayload {
     const visitorId = typeof b.visitorId === 'string' ? b.visitorId.replace(/[^A-Za-z0-9\-]/g, '').slice(0, 40) : '';
     const visitCount = typeof b.visitCount === 'number' && b.visitCount > 0 ? Math.min(b.visitCount, 9999) : 0;
 
+    // Service/insurance fields from form step 2
+    const VALID_SERVICE_TAGS = new Set([
+        'interest-keratoconus', 'interest-ortho-k', 'interest-dry-eye',
+        'interest-headache', 'interest-other',
+    ]);
+    const rawServiceTags = Array.isArray(b._serviceTags) ? b._serviceTags : [];
+    const _serviceTags = rawServiceTags
+        .filter((t): t is string => typeof t === 'string' && VALID_SERVICE_TAGS.has(t));
+
+    const rawInsuranceTags = Array.isArray(b._insuranceTags) ? b._insuranceTags : [];
+    const _insuranceTags = rawInsuranceTags
+        .filter((t): t is string => typeof t === 'string' && /^[a-z0-9\-]{1,50}$/.test(t));
+
+    const _insurance = typeof b._insurance === 'string' ? b._insurance.trim().slice(0, 80) : '';
+
     if (!firstName || !lastName || !phone || !email) {
         throw new Error('firstName, lastName, phone, and email are required');
     }
@@ -102,6 +134,7 @@ function validatePayload(body: unknown): ContactPayload {
         gclid, utmSource, utmMedium, utmCampaign,
         firstTouchSource, firstTouchMedium, firstTouchCampaign, firstTouchGclid,
         visitorId, visitCount,
+        _serviceTags, _insuranceTags, _insurance,
     };
 }
 
@@ -116,16 +149,24 @@ export async function POST(request: NextRequest) {
             );
         }
 
+        // Read Vercel geo headers (populated at the edge on every request)
+        const cityRaw = request.headers.get('x-vercel-ip-city') ?? '';
+        const stateRaw = request.headers.get('x-vercel-ip-region') ?? '';
+        // Vercel URL-encodes city names (e.g. "Los%20Angeles")
+        const city = decodeURIComponent(cityRaw).slice(0, 100);
+        const state = stateRaw.slice(0, 100);
+
         const body = await request.json();
         const {
             firstName, lastName, phone, email, message, smsConsent,
             gclid, utmSource, utmMedium, utmCampaign,
             firstTouchSource, firstTouchMedium, firstTouchCampaign, firstTouchGclid,
             visitorId, visitCount,
+            _serviceTags = [], _insuranceTags = [], _insurance = '',
         } = validatePayload(body);
 
         // Build GHL contact payload
-        const tags = ['keratoconus lead'];
+        const tags = ['keratoconus lead', ..._serviceTags, ..._insuranceTags];
         if (smsConsent) tags.push('sms-consent');
 
         const ghlBody: Record<string, unknown> = {
@@ -135,6 +176,9 @@ export async function POST(request: NextRequest) {
             email,
             source: 'keratocones.com',
             tags,
+            // Standard GHL location fields (populated from Vercel edge headers)
+            ...(city ? { city } : {}),
+            ...(state ? { state } : {}),
             // gclid: GHL standard field — populates contact.gclid for Google Ads offline conversions
             ...(gclid ? { gclid } : {}),
             // If no SMS consent, set DND for SMS to respect TCPA
@@ -151,11 +195,25 @@ export async function POST(request: NextRequest) {
             ghlBody.locationId = locationId;
         }
 
-        // Build custom fields: UTM params + optional message field
+        // Build custom fields: last-touch UTMs + first-touch UTMs + service/insurance + visitor context
         const customFields: { id: string; field_value: string }[] = [];
-        if (utmSource) customFields.push({ id: '6sdXreQxbnVymcrOOvHU', field_value: utmSource });
-        if (utmMedium) customFields.push({ id: '3if5VqRIHGXkjDspuNgs', field_value: utmMedium });
-        if (utmCampaign) customFields.push({ id: 'cZiraewtlWoRya9HTpoD', field_value: utmCampaign });
+        // Last-touch (searchable in GHL, used for workflow triggers)
+        if (utmSource)   customFields.push({ id: CF.utmSource,   field_value: utmSource });
+        if (utmMedium)   customFields.push({ id: CF.utmMedium,   field_value: utmMedium });
+        if (utmCampaign) customFields.push({ id: CF.utmCampaign, field_value: utmCampaign });
+        // First-touch (the channel that originally brought them to the site)
+        if (firstTouchSource)   customFields.push({ id: CF.firstTouchSource,   field_value: firstTouchSource });
+        if (firstTouchMedium)   customFields.push({ id: CF.firstTouchMedium,   field_value: firstTouchMedium });
+        if (firstTouchCampaign) customFields.push({ id: CF.firstTouchCampaign, field_value: firstTouchCampaign });
+        // Service interest (e.g. "interest-keratoconus") — comma-joined if somehow multiple
+        const serviceInterest = _serviceTags.join(', ');
+        if (serviceInterest) customFields.push({ id: CF.serviceInterest, field_value: serviceInterest });
+        // Insurance type (plan name from dropdown, or 'no-insurance' if declined)
+        const insuranceValue = _insurance || (_insuranceTags.includes('no-insurance') ? 'no-insurance' : '');
+        if (insuranceValue) customFields.push({ id: CF.insuranceType, field_value: insuranceValue });
+        // Visitor ID (for cross-session deduplication)
+        if (visitorId) customFields.push({ id: CF.visitorId, field_value: visitorId });
+        // Optional message field
         const messageFieldId = process.env.GHL_MESSAGE_FIELD_ID;
         if (message && messageFieldId) customFields.push({ id: messageFieldId, field_value: message });
         if (customFields.length > 0) ghlBody.customFields = customFields;
@@ -193,6 +251,9 @@ export async function POST(request: NextRequest) {
                             body: [
                                     `Returning patient form submission from keratocones.com`,
                                     `Message:     ${message || '(none)'}`,
+                                    serviceInterest ? `Service:     ${serviceInterest}` : null,
+                                    insuranceValue ? `Insurance:   ${insuranceValue}` : null,
+                                    city ? `Location:    ${city}${state ? `, ${state}` : ''}` : null,
                                     `Last touch:  ${utmSource || 'direct'} / ${utmMedium || '-'} / ${utmCampaign || '-'}${gclid ? ` (gclid: ${gclid})` : ''}`,
                                     firstTouchSource ? `First touch: ${firstTouchSource} / ${firstTouchMedium || '-'} / ${firstTouchCampaign || '-'}${firstTouchGclid ? ` (gclid: ${firstTouchGclid})` : ''}` : null,
                                     visitCount ? `Visits: ${visitCount}` : null,
@@ -270,6 +331,9 @@ export async function POST(request: NextRequest) {
                         body: [
                                 `New patient form submission from keratocones.com`,
                                 `Message:     ${message || '(none)'}`,
+                                serviceInterest ? `Service:     ${serviceInterest}` : null,
+                                insuranceValue ? `Insurance:   ${insuranceValue}` : null,
+                                city ? `Location:    ${city}${state ? `, ${state}` : ''}` : null,
                                 `Last touch:  ${utmSource || 'direct'} / ${utmMedium || '-'} / ${utmCampaign || '-'}${gclid ? ` (gclid: ${gclid})` : ''}`,
                                 firstTouchSource ? `First touch: ${firstTouchSource} / ${firstTouchMedium || '-'} / ${firstTouchCampaign || '-'}${firstTouchGclid ? ` (gclid: ${firstTouchGclid})` : ''}` : null,
                                 visitCount ? `Visits: ${visitCount}` : null,
@@ -280,7 +344,11 @@ export async function POST(request: NextRequest) {
                 }
             ).catch((err) => console.error('Failed to add note:', err));
 
-            // Add new-patient + website form tags
+            // Add new-patient + website form tags (service tags already in initial contact create)
+            const finalTags = [
+                'keratoconus lead', 'new-patient', 'website form', 'keratoconus consultation',
+                ..._serviceTags, ..._insuranceTags,
+            ];
             await fetch(
                 `https://services.leadconnectorhq.com/contacts/${newContactId}`,
                 {
@@ -290,9 +358,7 @@ export async function POST(request: NextRequest) {
                         'Version': GHL_API_VERSION,
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({
-                        tags: ['keratoconus lead', 'new-patient', 'website form', 'keratoconus consultation'],
-                    }),
+                    body: JSON.stringify({ tags: [...new Set(finalTags)] }),
                 }
             ).catch((err) => console.error('Failed to update tags:', err));
         }
