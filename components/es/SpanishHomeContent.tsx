@@ -220,6 +220,15 @@ export default function SpanishHomeContent({ geoHeadline, geoSubhead, geoBadge, 
                 <div className="container mx-auto px-4">
                     <FadeIn>
                         <KeratoconusQuizEs />
+                        <div className="text-center mt-8">
+                            <a
+                                href="/es/quiz"
+                                className="inline-block bg-eyecare-navy hover:bg-eyecare-dark-blue text-white font-semibold px-8 py-3.5 rounded-xl transition-colors text-sm shadow-md hover:shadow-lg"
+                            >
+                                Hacer la evaluación completa de 6 preguntas →
+                            </a>
+                            <p className="text-xs text-gray-500 mt-2">Solo 2 minutos · Sin costo · Se Habla Español</p>
+                        </div>
                     </FadeIn>
                 </div>
             </section>
