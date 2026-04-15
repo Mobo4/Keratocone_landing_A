@@ -11,7 +11,45 @@ import { NextRequest, NextResponse } from 'next/server';
  *   "Hi, we noticed you started booking — still need a time?"
  *
  * Fire-and-forget from the client. Errors are swallowed silently.
+ * Sends a Resend email notification for NEW partial contacts only.
  */
+
+async function sendPartialLeadNotification(params: {
+    firstName: string; lastName: string; phone: string; email: string;
+    city: string; state: string; utmSource: string; utmCampaign: string;
+}) {
+    const resendKey = process.env.RESEND_API_KEY;
+    const notifyEmail = process.env.LEAD_NOTIFY_EMAIL || 'eyecarecenteroc@gmail.com';
+    if (!resendKey) return;
+
+    const { firstName, lastName, phone, email, city, state, utmSource, utmCampaign } = params;
+    const name = [firstName, lastName].filter(Boolean).join(' ') || '(name not entered)';
+
+    const body = `PARTIAL FORM CAPTURE — contact entered phone/email but did not submit
+
+Name:     ${name}
+Phone:    ${phone || '(not entered)'}
+Email:    ${email || '(not entered)'}
+Location: ${city ? `${city}${state ? `, ${state}` : ''}` : '(unknown)'}
+Source:   ${utmSource || 'direct'} / ${utmCampaign || 'unknown'}
+Time:     ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} PT
+
+This lead is tagged "partial-form-lead" in GHL. Consider a follow-up SMS.`.trim();
+
+    await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${resendKey}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            from: 'Henry (Dr. Bonakdar) <henry@refract.ing>',
+            to: [notifyEmail],
+            subject: `⚡ Partial Lead — ${name} (${phone || email})`,
+            text: body,
+        }),
+    }).catch(() => { /* swallow — notification is non-critical */ });
+}
 
 const GHL_API_URL = 'https://services.leadconnectorhq.com/contacts/';
 const GHL_API_VERSION = '2021-07-28';
@@ -144,6 +182,10 @@ export async function POST(request: NextRequest) {
             console.error('partial-lead GHL error:', ghlRes.status, errText.slice(0, 200));
             return NextResponse.json({ ok: false }, { status: 502 });
         }
+
+        // Notify on new contacts only (returning visitors skip — avoid noise)
+        sendPartialLeadNotification({ firstName, lastName, phone, email, city, state, utmSource, utmCampaign })
+            .catch(() => {});
 
         return NextResponse.json({ ok: true, existing: false });
     } catch (err) {
