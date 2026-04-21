@@ -60,12 +60,12 @@ const schema = {
         "@type": "Physician",
         "name": "Dr. Alexander Bonakdar",
         "jobTitle": "Corneal & Specialty Lens Specialist",
-        "url": "https://keratocones.com/about"
+        "url": "https://www.keratocones.com/about"
     },
     "publisher": {
         "@type": "Organization",
         "name": "Keratoconus Vision Center",
-        "url": "https://keratocones.com"
+        "url": "https://www.keratocones.com"
     },
     "datePublished": "2026-02-28",
     "dateModified": "2026-02-28",
@@ -115,7 +115,7 @@ export default async function LasikComplicationsPage() {
             <GeoBadge text={geo.badge} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
                 { name: 'LASIK Complications' },
             ]} />
 

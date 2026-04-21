@@ -141,13 +141,13 @@ else
   fail "ContactForm missing HIPAA consent"
 fi
 
-# --- AC14: No remaining 500+ (should all be 5,000+) ---
-echo "--- AC14: No remaining '500+' references (all should be 5,000+) ---"
-REMAINING=$(grep -rn "500+" --include="*.ts" --include="*.tsx" --include="*.json" "$PROJECT" | grep -v node_modules | grep -v .next | grep -v "\\$500\|500)" | grep -v "5,000+" | grep -v "Google Reviews" | grep -v "reviews.json" | wc -l | tr -d ' ')
+# --- AC14: No remaining 500+ (should all be 2,000+) ---
+echo "--- AC14: No remaining '500+' references (all should be 2,000+) ---"
+REMAINING=$(grep -rn "500+" --include="*.ts" --include="*.tsx" --include="*.json" "$PROJECT" | grep -v node_modules | grep -v .next | grep -v "\\$500\|500)" | grep -v "2,000+" | grep -v "Google Reviews" | grep -v "reviews.json" | wc -l | tr -d ' ')
 if [ "$REMAINING" -eq 0 ]; then
   pass "Zero remaining 500+ references"
 else
-  fail "$REMAINING files still have 500+ instead of 5,000+"
+  fail "$REMAINING files still have 500+ instead of 2,000+"
 fi
 
 # --- AC15: Build passes ---

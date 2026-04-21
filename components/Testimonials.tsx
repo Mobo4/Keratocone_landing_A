@@ -35,9 +35,9 @@ export default function Testimonials() {
             <div className="container mx-auto px-4">
                 <FadeIn>
                     <div className="lg:text-center mb-12">
-                        <h2 className="text-4xl font-bold text-eyecare-navy font-serif mb-6">Understanding Keratoconus</h2>
+                        <h2 className="text-4xl font-bold text-eyecare-navy font-serif mb-6">Understanding Keratoconus: Diagnosis &amp; Scleral Lens Treatment</h2>
                         <p className="max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed">
-                            Learn about keratoconus diagnosis, treatment options, and what to expect from specialty contact lens management.
+                            Learn about keratoconus diagnosis, scleral lens treatment options, and what to expect from specialty contact lens management at an Orange County keratoconus specialist.
                         </p>
                     </div>
 

@@ -6,21 +6,20 @@ import Link from 'next/link';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import esMessages from '@/messages/es.json';
 
-function t(key: string) {
-    const keys = ('About.' + key).split('.');
-    let value: any = esMessages;
-    for (const k of keys) {
-        value = value?.[k as keyof typeof value];
-    }
-    return (value as string) || key;
-}
+const aboutEs = esMessages.About;
+const aboutMetaEs = aboutEs.Metadata;
+const heroEs = aboutEs.Hero;
+const bioEs = aboutEs.Bio;
+const statsEs = aboutEs.Stats;
+const travelEs = aboutEs.Travel;
+const ctaEs = aboutEs.CTA;
 
 export const metadata: Metadata = {
-    title: t('Metadata.title'),
-    description: t('Metadata.description'),
+    title: aboutMetaEs.title,
+    description: aboutMetaEs.description,
     openGraph: {
-        title: t('Metadata.title'),
-        description: t('Metadata.description'),
+        title: aboutMetaEs.title,
+        description: aboutMetaEs.description,
         locale: 'es_MX',
     },
     alternates: {
@@ -44,7 +43,7 @@ export default function AboutPageEs() {
             "name": "Dr. Alexander Bonakdar",
             "jobTitle": "Optometrista",
             "medicalSpecialty": "Especialista en Queratocono",
-            "url": "https://www.eyecarecenteroc.com/about",
+            "url": "https://www.keratocones.com/es/acerca-de",
             "worksFor": {
                 "@type": "MedicalBusiness",
                 "name": "Centro de Visión para Queratocono",
@@ -66,7 +65,7 @@ export default function AboutPageEs() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Inicio', url: 'https://www.keratocones.com/es' },
                 { name: 'Acerca del Dr. Bonakdar' },
             ]} />
             <div className="bg-white py-24 px-4 sm:px-6 lg:px-8">
@@ -74,12 +73,12 @@ export default function AboutPageEs() {
                     <FadeIn>
                         {/* Hero Section */}
                         <div className="text-center mb-16">
-                            <span className="text-eyecare-blue font-bold tracking-widest uppercase text-sm mb-4 block">{t('Hero.label')}</span>
+                            <span className="text-eyecare-blue font-bold tracking-widest uppercase text-sm mb-4 block">{heroEs.label}</span>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold text-eyecare-navy mb-6">
-                                {t('Hero.headline')}
+                                {heroEs.headline}
                             </h1>
                             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                                {t('Hero.subheadline')}
+                                {heroEs.subheadline}
                             </p>
                         </div>
 
@@ -94,16 +93,16 @@ export default function AboutPageEs() {
                                         style={{ objectPosition: 'center 30%' }}
                                     />
                                 </div>
-                                <h2 className="text-2xl font-bold mb-2 font-serif text-eyecare-navy">{t('Bio.name')}</h2>
-                                <p className="text-eyecare-blue font-medium">{t('Bio.title')}</p>
+                                <h2 className="text-2xl font-bold mb-2 font-serif text-eyecare-navy">{bioEs.name}</h2>
+                                <p className="text-eyecare-blue font-medium">{bioEs.title}</p>
                             </div>
 
                             <div className="md:col-span-2 space-y-6">
                                 <p className="text-lg text-gray-700 leading-relaxed">
-                                    {t('Bio.p1')}
+                                    {bioEs.p1}
                                 </p>
                                 <p className="text-lg text-gray-700 leading-relaxed">
-                                    {t('Bio.p2')}
+                                    {bioEs.p2}
                                 </p>
                             </div>
                         </div>
@@ -111,10 +110,10 @@ export default function AboutPageEs() {
                         {/* Credentials */}
                         <div className="grid md:grid-cols-4 gap-6 mb-16">
                             {[
-                                { stat: t('Stats.experienceStat'), label: t('Stats.experienceLabel') },
-                                { stat: t('Stats.referralStat'), label: t('Stats.referralLabel') },
-                                { stat: t('Stats.consultantStat'), label: t('Stats.consultantLabel') },
-                                { stat: t('Stats.successStat'), label: t('Stats.successLabel') },
+                                { stat: statsEs.experienceStat, label: statsEs.experienceLabel },
+                                { stat: statsEs.referralStat, label: statsEs.referralLabel },
+                                { stat: statsEs.consultantStat, label: statsEs.consultantLabel },
+                                { stat: statsEs.successStat, label: statsEs.successLabel },
                             ].map((item, idx) => (
                                 <div key={idx} className="text-center p-6 bg-eyecare-lighter-blue rounded-2xl">
                                     <p className="text-3xl font-bold text-eyecare-navy mb-2">{item.stat}</p>
@@ -125,24 +124,24 @@ export default function AboutPageEs() {
 
                         {/* Why Patients Travel */}
                         <div className="bg-gradient-to-r from-eyecare-navy to-blue-900 text-white rounded-3xl p-8 md:p-12 mb-16">
-                            <h2 className="text-2xl font-bold mb-6 font-serif">{t('Travel.title')}</h2>
+                            <h2 className="text-2xl font-bold mb-6 font-serif">{travelEs.title}</h2>
                             <p className="text-lg text-blue-100 mb-6 leading-relaxed">
-                                {t('Travel.p1')}
+                                {travelEs.p1}
                             </p>
                             <p className="text-lg text-blue-100 leading-relaxed">
-                                {t('Travel.p2')}
+                                {travelEs.p2}
                             </p>
                         </div>
 
                         {/* CTA */}
                         <div className="text-center">
-                            <h2 className="text-2xl font-bold text-eyecare-navy mb-4 font-serif">{t('CTA.title')}</h2>
-                            <p className="text-gray-600 mb-8">{t('CTA.description')}</p>
+                            <h2 className="text-2xl font-bold text-eyecare-navy mb-4 font-serif">{ctaEs.title}</h2>
+                            <p className="text-gray-600 mb-8">{ctaEs.description}</p>
                             <Link
                                 href="/es#contact-form"
                                 className="inline-block bg-eyecare-blue hover:bg-eyecare-dark-blue text-white px-8 py-4 rounded-xl font-bold transition-colors"
                             >
-                                {t('CTA.button')}
+                                {ctaEs.button}
                             </Link>
                         </div>
                     </FadeIn>

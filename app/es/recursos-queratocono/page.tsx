@@ -32,14 +32,14 @@ export default function ResourcesPageEs() {
         "@type": "CollectionPage",
         "name": "Recursos de Queratocono",
         "description": "Biblioteca completa de artículos sobre Queratocono, Lentes Esclerales y opciones de tratamiento.",
-        "url": "https://keratocones.com/es/recursos-queratocono",
+        "url": "https://www.keratocones.com/es/recursos-queratocono",
         "inLanguage": "es-MX",
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": articlesEs.slice(0, 5).map((article, index) => ({
                 "@type": "ListItem",
                 "position": index + 1,
-                "url": `https://keratocones.com/es/recursos-queratocono/${article.slug}`,
+                "url": `https://www.keratocones.com/es/recursos-queratocono/${article.slug}`,
                 "name": article.title
             }))
         }
@@ -52,7 +52,7 @@ export default function ResourcesPageEs() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Inicio', url: 'https://www.keratocones.com/es' },
                 { name: 'Recursos de Queratocono' },
             ]} />
             {/* Header */}

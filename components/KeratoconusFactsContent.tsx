@@ -53,7 +53,7 @@ const SECTIONS = [
 ];
 
 export default function KeratoconusFactsContent() {
-    const embedCode = `<blockquote cite="https://keratocones.com/keratoconus-facts"><p><strong>Keratoconus affects approximately 1 in 375 people</strong> — far more common than previously estimated. 90% of patients achieve functional vision with scleral lenses and avoid corneal transplant surgery.</p><footer>— <a href="https://keratocones.com/keratoconus-facts">Keratoconus Facts &amp; Statistics</a>, Keratoconus Vision Center</footer></blockquote>`;
+    const embedCode = `<blockquote cite="https://www.keratocones.com/keratoconus-facts"><p><strong>Keratoconus affects approximately 1 in 375 people</strong> — far more common than previously estimated. 90% of patients achieve functional vision with scleral lenses and avoid corneal transplant surgery.</p><footer>— <a href="https://www.keratocones.com/keratoconus-facts">Keratoconus Facts &amp; Statistics</a>, Keratoconus Vision Center</footer></blockquote>`;
 
     return (
         <div className="min-h-screen bg-gray-50">

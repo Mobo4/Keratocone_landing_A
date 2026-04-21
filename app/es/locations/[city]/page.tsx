@@ -29,10 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `Especialista en Queratocono en ${city.name}, CA | Lentes Esclerales`,
         description: `Tratamiento experto de queratocono en ${city.name}, CA. El Dr. Bonakdar se especializa en lentes esclerales para pacientes en ${city.name} y ${city.county}.`,
         alternates: {
-            canonical: `https://keratocones.com/es/locations/${city.slug}`,
+            canonical: `https://www.keratocones.com/es/locations/${city.slug}`,
             languages: {
-                'en': `https://keratocones.com/locations/${city.slug}`,
-                'es': `https://keratocones.com/es/locations/${city.slug}`,
+                'en': `https://www.keratocones.com/locations/${city.slug}`,
+                'es': `https://www.keratocones.com/es/locations/${city.slug}`,
             },
         },
         openGraph: {
@@ -59,7 +59,7 @@ export default async function CityPageEs({ params }: Props) {
             {
                 "@type": "MedicalBusiness",
                 "name": "Centro de Visión para Queratocono | Dr. Alexander Bonakdar",
-                "image": "https://keratocones.com/images/drbonakdar.webp",
+                "image": "https://www.keratocones.com/images/drbonakdar.webp",
                 "priceRange": "$$",
                 "telephone": "(714) 558-0641",
                 "address": {
@@ -79,7 +79,7 @@ export default async function CityPageEs({ params }: Props) {
                         "addressCountry": "US"
                     }
                 },
-                "url": `https://keratocones.com/es/locations/${city.slug}`
+                "url": `https://www.keratocones.com/es/locations/${city.slug}`
             },
             {
                 "@type": "FAQPage",

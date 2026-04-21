@@ -33,7 +33,7 @@ export default async function ContactPage() {
         "@type": "ContactPage",
         "name": "Contact Keratoconus Vision Center",
         "description": "Contact information, location, and hours for Dr. Alexander Bonakdar in Santa Ana, CA.",
-        "url": "https://keratocones.com/contact",
+        "url": "https://www.keratocones.com/contact",
         "mainEntity": {
             "@type": "MedicalBusiness",
             "name": "Keratoconus Vision Center",
@@ -56,7 +56,7 @@ export default async function ContactPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
                 { name: 'Contact' },
             ]} />
             <GeoBadge text={geo.badge} />

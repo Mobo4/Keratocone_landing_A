@@ -27,7 +27,7 @@ export default function ContactPageEs() {
         "@type": "ContactPage",
         "name": "Contacto Centro de Visión para Queratocono",
         "description": "Información de contacto, ubicación y horarios del Dr. Alexander Bonakdar en Santa Ana, CA.",
-        "url": "https://keratocones.com/es/contacto",
+        "url": "https://www.keratocones.com/es/contacto",
         "inLanguage": "es-MX",
         "mainEntity": {
             "@type": "MedicalBusiness",
@@ -51,7 +51,7 @@ export default function ContactPageEs() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Inicio', url: 'https://keratocones.com/es' },
+                { name: 'Inicio', url: 'https://www.keratocones.com/es' },
                 { name: 'Contacto' },
             ]} />
             <ContactoPageContent />

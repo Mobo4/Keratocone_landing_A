@@ -40,7 +40,7 @@ export default function SiloTustin() {
             {
                 "@type": "MedicalBusiness",
                 "name": "Keratoconus Vision Center | Dr. Alexander Bonakdar",
-                "image": "https://keratocones.com/images/drbonakdar.webp",
+                "image": "https://www.keratocones.com/images/drbonakdar.webp",
                 "priceRange": "$$",
                 "telephone": "(714) 558-0641",
                 "address": {
@@ -61,7 +61,7 @@ export default function SiloTustin() {
                         "addressCountry": "US"
                     }
                 },
-                "url": "https://keratocones.com/locations/tustin"
+                "url": "https://www.keratocones.com/locations/tustin"
             },
             {
                 "@type": "FAQPage",

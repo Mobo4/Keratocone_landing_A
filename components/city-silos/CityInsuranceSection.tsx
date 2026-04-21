@@ -60,7 +60,7 @@ export default function CityInsuranceSection({ citySlug, cityName }: CityInsuran
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center mb-10">
                             <h2 className="text-3xl font-serif font-bold text-eyecare-navy mb-4">
-                                Insurance & Payment Options for {cityName} Patients
+                                Keratoconus Insurance &amp; Scleral Lens Coverage for {cityName} Patients
                             </h2>
                             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
                                 We work with most major insurance providers to maximize your keratoconus treatment benefits.

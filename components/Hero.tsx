@@ -92,7 +92,7 @@ export default function Hero({
                 >
                     <Image
                         src={imageSrc}
-                        alt="Keratoconus Treatment"
+                        alt="Keratoconus specialist Dr. Bonakdar fitting scleral lenses at Orange County keratoconus center"
                         fill
                         className="object-cover transition-transform duration-700"
                         style={{ objectPosition: '80% 35%' }}
@@ -171,7 +171,7 @@ export default function Hero({
                 <div className="absolute inset-0 z-0">
                     <Image
                         src={imageSrc}
-                        alt="Keratoconus Treatment"
+                        alt="Orange County keratoconus specialist - scleral lens fitting for vision restoration"
                         fill
                         className="object-cover animate-slow-zoom"
                         style={{ objectPosition: '80% center' }}

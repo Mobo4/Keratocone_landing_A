@@ -34,7 +34,7 @@ export default async function SpanishLandingPage() {
         "@type": "WebPage",
         "name": "Centro de Visión para Queratocono",
         "description": "Especialista líder en queratocono en Orange County. Ajuste avanzado de lentes esclerales y restauración de visión no quirúrgica.",
-        "url": "https://keratocones.com/es",
+        "url": "https://www.keratocones.com/es",
         "inLanguage": "es-MX",
         "mainEntity": {
             "@type": "MedicalSpecialty",

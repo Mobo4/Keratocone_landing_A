@@ -65,9 +65,9 @@ export default async function SpanishCityPage({ params }: Props) {
         "@type": "MedicalBusiness",
         "name": `Centro de Visión para Queratocono - ${city.name}`,
         "description": `Especialista en queratocono sirviendo a pacientes de ${city.name}, ${city.county}. Ajuste experto de lentes esclerales y restauración de visión.`,
-        "url": `https://keratocones.com/es/ubicaciones/${city.slug}`,
+        "url": `https://www.keratocones.com/es/ubicaciones/${city.slug}`,
         "telephone": "+1-714-558-0641",
-        "image": "https://keratocones.com/images/drbonakdar.webp",
+        "image": "https://www.keratocones.com/images/drbonakdar.webp",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
@@ -126,8 +126,8 @@ export default async function SpanishCityPage({ params }: Props) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Inicio', url: 'https://keratocones.com/es' },
-                { name: 'Ubicaciones', url: 'https://keratocones.com/es' },
+                { name: 'Inicio', url: 'https://www.keratocones.com/es' },
+                { name: 'Ubicaciones', url: 'https://www.keratocones.com/es' },
                 { name: city.name },
             ]} />
 

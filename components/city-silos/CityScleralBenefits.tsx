@@ -50,7 +50,7 @@ export default function CityScleralBenefits({ citySlug, cityName }: CityScleralB
                             <Eye className="w-7 h-7" />
                         </div>
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-eyecare-navy mb-4">
-                            How Scleral Lenses Help {cityName} Patients
+                            How Scleral Lenses Help {cityName} Keratoconus Patients
                         </h2>
                     </div>
                 </FadeIn>

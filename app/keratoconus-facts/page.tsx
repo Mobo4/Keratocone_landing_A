@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Keratoconus Facts & Statistics | Peer-Reviewed Data',
         description: 'Evidence-based keratoconus statistics: prevalence, risk factors, treatment outcomes, and prognosis from published research.',
-        url: 'https://keratocones.com/keratoconus-facts',
+        url: 'https://www.keratocones.com/keratoconus-facts',
         siteName: 'Keratoconus Vision Center',
         locale: 'en_US',
         type: 'article',
@@ -57,7 +57,7 @@ export default async function KeratoconusFactsPage() {
         "@type": "MedicalWebPage",
         "name": "Keratoconus Facts & Statistics",
         "description": "Peer-reviewed prevalence data, risk factors, treatment outcomes, and prognosis for keratoconus.",
-        "url": "https://keratocones.com/keratoconus-facts",
+        "url": "https://www.keratocones.com/keratoconus-facts",
         "inLanguage": "en-US",
         "about": {
             "@type": "MedicalCondition",
@@ -73,15 +73,15 @@ export default async function KeratoconusFactsPage() {
             "@type": "Physician",
             "name": "Dr. Alexander Bonakdar",
             "jobTitle": "Keratoconus Specialist",
-            "url": "https://keratocones.com/about"
+            "url": "https://www.keratocones.com/about"
         },
         "publisher": {
             "@type": "Organization",
             "name": "Keratoconus Vision Center",
-            "url": "https://keratocones.com",
+            "url": "https://www.keratocones.com",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://keratocones.com/images/logo.png"
+                "url": "https://www.keratocones.com/images/logo.png"
             }
         },
         "datePublished": "2025-01-15",
@@ -97,7 +97,7 @@ export default async function KeratoconusFactsPage() {
         "@type": "Dataset",
         "name": "Keratoconus Prevalence and Treatment Statistics",
         "description": "Aggregated keratoconus statistics from peer-reviewed ophthalmology journals including prevalence rates, age of onset, risk factors, and treatment outcomes.",
-        "url": "https://keratocones.com/keratoconus-facts",
+        "url": "https://www.keratocones.com/keratoconus-facts",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "creator": {
             "@type": "Organization",
@@ -124,7 +124,7 @@ export default async function KeratoconusFactsPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
                 { name: 'Keratoconus Facts & Statistics' },
             ]} />
             <KeratoconusFactsContent />

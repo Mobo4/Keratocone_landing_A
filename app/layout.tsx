@@ -55,6 +55,9 @@ export default async function RootLayout({
       <GoogleTagManager gtmId="GTM-NS6QTKN" />
       <head>
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        {/* AI assistant / LLM discoverability - AEO */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site summary" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM-friendly knowledge index" />
       </head>
       <body className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}>
         <NextIntlClientProvider locale={locale} messages={messages}>

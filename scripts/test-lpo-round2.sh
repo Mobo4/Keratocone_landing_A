@@ -36,12 +36,12 @@ else
   fail "YouTube iframe missing loading='lazy'"
 fi
 
-# --- VC4: 5,000+ number contextualized ---
-echo "--- VC4: Default subhead contextualizes 5,000+ ---"
+# --- VC4: 2,000+ number contextualized ---
+echo "--- VC4: Default subhead contextualizes 2,000+ ---"
 if grep -q "Most clinics" "$PROJECT/lib/geo-personalization.ts"; then
-  pass "Default subhead has 'Most clinics' context for 5,000+"
+  pass "Default subhead has 'Most clinics' context for 2,000+"
 else
-  fail "Default subhead missing context for 5,000+"
+  fail "Default subhead missing context for 2,000+"
 fi
 
 # --- VC5: Build passes ---

@@ -23,7 +23,7 @@ export default function KeratoconusScleralContent({ geoHeadline, geoSubhead, geo
         "@type": "WebPage",
         "name": "Keratoconus Scleral Lens Treatment",
         "description": "Specialized scleral lens fitting for keratoconus patients in Orange County.",
-        "url": "https://keratocones.com/lp/keratoconus-scleral",
+        "url": "https://www.keratocones.com/lp/keratoconus-scleral",
         "mainEntity": {
             "@type": "MedicalSpecialty",
             "name": "Scleral Lenses",

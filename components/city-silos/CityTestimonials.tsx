@@ -126,7 +126,7 @@ export default function CityTestimonials({ citySlug, cityName }: CityTestimonial
                 <FadeIn>
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-eyecare-navy mb-4">
-                            Patient Experiences from {cityName}
+                            Keratoconus Patient Reviews from {cityName}
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                             Hear from patients in the {cityName} area who have restored their vision

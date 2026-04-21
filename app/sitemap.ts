@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/keratoconus-faq',
         '/keratoconus-in-children',
         '/scleral-lenses-cost',
+        '/quiz',
+        '/quiz/ortho-k',
         '/privacy-policy',
         '/terms-of-service',
     ].map((route) => ({
@@ -40,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/es/acerca-de',
         '/es/contacto',
         '/es/recursos-queratocono',
+        '/es/quiz',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),

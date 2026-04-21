@@ -61,22 +61,22 @@ export default async function SpanishArticlePage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "MedicalScholarlyArticle",
         "headline": article.title,
-        "image": "https://keratocones.com/images/keratoconus-main.webp",
+        "image": "https://www.keratocones.com/images/keratoconus-main.webp",
         "description": article.description,
         "datePublished": article.publishDate,
         "author": {
             "@type": "Physician",
             "name": "Dr. Alexander Bonakdar",
             "jobTitle": "Especialista en Queratocono",
-            "url": "https://keratocones.com/es/acerca-de"
+            "url": "https://www.keratocones.com/es/acerca-de"
         },
         "publisher": {
             "@type": "Organization",
             "name": "Centro de Visión para Queratocono",
-            "url": "https://keratocones.com/es",
+            "url": "https://www.keratocones.com/es",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://keratocones.com/images/logo.png"
+                "url": "https://www.keratocones.com/images/logo.png"
             }
         },
         "inLanguage": "es-MX"
@@ -92,8 +92,8 @@ export default async function SpanishArticlePage({ params }: Props) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Inicio', url: 'https://keratocones.com/es' },
-                { name: 'Recursos', url: 'https://keratocones.com/es/recursos-queratocono' },
+                { name: 'Inicio', url: 'https://www.keratocones.com/es' },
+                { name: 'Recursos', url: 'https://www.keratocones.com/es/recursos-queratocono' },
                 { name: article.title },
             ]} />
 

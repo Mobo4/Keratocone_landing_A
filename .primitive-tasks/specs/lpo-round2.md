@@ -46,11 +46,11 @@ Not in Hero.tsx (it's dynamic from geo-personalization).
 load iframe on click). Next.js Script component already supports lazy strategies.
 **Visual impact:** NONE — video still appears, just loads when scrolled into view.
 
-### 4. Contextualize the 5,000+ number
+### 4. Contextualize the 2,000+ number
 **File:** `lib/geo-personalization.ts` (subhead templates)
-**Problem:** "5,000+ cases" is a raw number with no context. Doesn't convey specialization.
-**Fix:** Change default subhead from "5,000+ cases, same-week appointments, direct specialist access."
-to "Most clinics see 10 keratoconus patients a year. We've treated 5,000+. Same-week appointments."
+**Problem:** "2,000+ cases" is a raw number with no context. Doesn't convey specialization.
+**Fix:** Change default subhead from "2,000+ cases, same-week appointments, direct specialist access."
+to "Most clinics see 10 keratoconus patients a year. We've treated 2,000+. Same-week appointments."
 **Visual impact:** Copy change only — no layout change.
 
 ### 5. Add insurance reassurance to form area
@@ -78,7 +78,7 @@ to "Most clinics see 10 keratoconus patients a year. We've treated 5,000+. Same-
 - [ ] VC1: FadeIn wrapper has opacity:1 in initial HTML (view-source check)
 - [ ] VC2: "near" keyword appears in geo-personalization default subhead
 - [ ] VC3: YouTube iframe has loading="lazy" or loads on interaction
-- [ ] VC4: Default subhead contextualizes 5,000+ with comparison
+- [ ] VC4: Default subhead contextualizes 2,000+ with comparison
 - [ ] VC5: TrustSignals has insurance verification line
 - [ ] VC6: Facebook Pixel loads with lazyOnload or afterInteractive strategy
 - [ ] VC7: Build passes

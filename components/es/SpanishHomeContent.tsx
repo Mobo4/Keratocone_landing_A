@@ -24,7 +24,7 @@ export default function SpanishHomeContent({ geoHeadline, geoSubhead, geoBadge, 
         "@type": "WebPage",
         "name": "Centro de Visión para Queratocono",
         "description": "Centro líder en tratamiento de queratocono en Orange County. Lentes esclerales, restauración de visión sin cirugía.",
-        "url": "https://keratocones.com/es",
+        "url": "https://www.keratocones.com/es",
         "inLanguage": "es-MX",
         "mainEntity": {
             "@type": "MedicalSpecialty",

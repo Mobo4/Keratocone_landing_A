@@ -146,7 +146,7 @@ export default function CityCommuteSection({ citySlug, cityName, coordinates }: 
                     <FadeIn>
                         <div>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-eyecare-navy mb-6">
-                                Getting Here from {cityName}
+                                Driving to Our Keratoconus Center from {cityName}
                             </h2>
 
                             {/* Commute stats cards */}

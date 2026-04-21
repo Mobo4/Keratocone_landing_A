@@ -40,7 +40,7 @@ export default function SiloNewport() {
             {
                 "@type": "MedicalBusiness",
                 "name": "Keratoconus Vision Center | Dr. Alexander Bonakdar",
-                "image": "https://keratocones.com/images/drbonakdar.webp",
+                "image": "https://www.keratocones.com/images/drbonakdar.webp",
                 "priceRange": "$$",
                 "telephone": "(714) 558-0641",
                 "address": {
@@ -61,7 +61,7 @@ export default function SiloNewport() {
                         "addressCountry": "US"
                     }
                 },
-                "url": "https://keratocones.com/locations/newport-beach"
+                "url": "https://www.keratocones.com/locations/newport-beach"
             },
             {
                 "@type": "FAQPage",

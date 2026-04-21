@@ -66,7 +66,7 @@ export default async function ArticlePage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "MedicalScholarlyArticle",
         "headline": article.title,
-        "image": "https://keratocones.com/images/keratoconus-main.webp",
+        "image": "https://www.keratocones.com/images/keratoconus-main.webp",
         "author": {
             "@type": "Physician",
             "name": "Dr. Alexander Bonakdar",
@@ -80,7 +80,7 @@ export default async function ArticlePage({ params }: Props) {
             "name": "Keratoconus Vision Center",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://keratocones.com/images/logo.png"
+                "url": "https://www.keratocones.com/images/logo.png"
             }
         },
         "datePublished": article.publishDate,
@@ -97,8 +97,8 @@ export default async function ArticlePage({ params }: Props) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
-                { name: 'Resources', url: 'https://keratocones.com/keratoconus-resources' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
+                { name: 'Resources', url: 'https://www.keratocones.com/keratoconus-resources' },
                 { name: article.title },
             ]} />
 

@@ -30,7 +30,7 @@ export default async function KeratoconusScleralPage() {
         "@type": "WebPage",
         "name": "Keratoconus Scleral Lenses Center",
         "description": "Specialized scleral lens fitting for keratoconus patients in Orange County.",
-        "url": "https://keratocones.com/lp/keratoconus-scleral",
+        "url": "https://www.keratocones.com/lp/keratoconus-scleral",
         "mainEntity": {
             "@type": "MedicalSpecialty",
             "name": "Keratoconus Treatment",
@@ -45,7 +45,7 @@ export default async function KeratoconusScleralPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
                 { name: 'Scleral Lenses for Keratoconus' },
             ]} />
             <FAQSchema faqs={LANDING_FAQS} />

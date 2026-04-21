@@ -4,7 +4,7 @@
 **Cold Review:** Completed — 1 CRITICAL + 3 HIGH issues found and fixed below
 **Date:** 2026-03-26
 **For:** Claude working in keratocones_website project
-**Research basis:** 28+ cited sources, 15,000+ account QS study, Unbounce benchmark, PubMed KC patient study
+**Research basis:** 28+ cited sources, 12,000+ account QS study, Unbounce benchmark, PubMed KC patient study
 
 ## ⚠️ COLD REVIEW FIXES (Applied 2026-03-26)
 
@@ -68,7 +68,7 @@ keratocones.com converts Google Ads clicks at ~2-3%. Healthcare median is 5.1-7.
 | Add pricing | Works for fixed-price, NOT variable specialist care | Mixed — dental study was fixed-price | **DON'T** (cost varies too much) |
 | Page too long | Long pages convert BETTER for medical education | Aetna 638% lift going long | **KEEP long** (but reorder) |
 | "X appointments left" urgency | Trust damage up to 45% in healthcare | FTC warnings, healthcare trust studies | **DON'T** (use real "same-week" instead) |
-| Contextualize 5,000+ cases | Specific proof > raw numbers | 5/6 conversion studies | **DO IT** |
+| Contextualize 2,000+ cases | Specific proof > raw numbers | 5/6 conversion studies | **DO IT** |
 | "Lenses Before Surgery" section | KC patients have 34.6% avg knowledge | PubMed 40273450 KC patient study | **DO IT** |
 | Fix page load speed | LPE worth 3.5/10 QS points; speed is #1 factor | Google Ads Blog Feb 2025, SEL 15K accounts | **DO IT** |
 | Add "near me" to page copy | "keratoconus near me" QS=4, zero occurrences on page | Google QS keyword relevance docs | **DO IT** |
@@ -112,7 +112,7 @@ useEffect(() => setMounted(true), []);
 Current page has 0 occurrences of "near me", "orange county keratoconus specialist", or "cornea specialist." These are bidded keywords with low QS.
 
 Add naturally (not keyword-stuffed):
-- Hero subhead: "Orange County's leading keratoconus specialist — 5,000+ cases, same-week appointments, direct specialist access **near you**."
+- Hero subhead: "Orange County's leading keratoconus specialist — 2,000+ cases, same-week appointments, direct specialist access **near you**."
 - About section: "Dr. Bonakdar is a **keratoconus specialist near** Santa Ana, serving patients across **Orange County** and Southern California."
 - Add city mention: "Located in Santa Ana, minutes from Irvine, Costa Mesa, Tustin, and Newport Beach."
 
@@ -196,17 +196,17 @@ KC patients' top concern (PubMed study): "Will I need surgery?" Many are referre
 
 **Heading:** "Do I Need Surgery for Keratoconus?"
 **Content (3-4 sentences):**
-"Surgery isn't always the first step. For many keratoconus patients, custom scleral lenses restore clear vision without any surgical procedure. Dr. Bonakdar evaluates each patient individually — in over 5,000 cases, the majority achieved excellent vision with specialty lenses alone. Cross-linking may be recommended to stop progression, but lenses come first for vision restoration."
+"Surgery isn't always the first step. For many keratoconus patients, custom scleral lenses restore clear vision without any surgical procedure. Dr. Bonakdar evaluates each patient individually — in over 2,000 cases, the majority achieved excellent vision with specialty lenses alone. Cross-linking may be recommended to stop progression, but lenses come first for vision restoration."
 
 This directly addresses the #1 patient fear and differentiates from surgeons pushing CXL as the first option.
 
-#### 2.5 Contextualize the 5,000+ number
+#### 2.5 Contextualize the 2,000+ number
 **File:** `components/Hero.tsx` or testimonials section
 
-Current: "5,000+ cases" (raw number, no context).
-Better: "Most eye clinics fit 10 keratoconus patients per year. **Dr. Bonakdar has fitted over 5,000.**"
+Current: "2,000+ cases" (raw number, no context).
+Better: "Most eye clinics fit 10 keratoconus patients per year. **Dr. Bonakdar has fitted over 2,000.**"
 
-Add this as a callout or badge near the testimonials section. The context makes the number meaningful — 5,000 alone could mean 5,000 over 50 years (100/year). With context, it shows massive specialization.
+Add this as a callout or badge near the testimonials section. The context makes the number meaningful — 2,000 alone could mean 2,000 over 50 years (100/year). With context, it shows massive specialization.
 
 ---
 
@@ -283,7 +283,7 @@ Add `BreadcrumbList` and `SiteNavigationElement` schema. These help Google under
 6. [ ] FadeIn component renders content with opacity:1 for non-JS crawlers
 7. [ ] Educational content collapsible on mobile, full on desktop
 8. [ ] "Lenses Before Surgery" section present
-9. [ ] "5,000+" number has context ("most clinics fit 10/year")
+9. [ ] "2,000+" number has context ("most clinics fit 10/year")
 10. [ ] In-page navigation with anchor links functional
 11. [ ] All existing content preserved (no deletions — reorder only)
 12. [ ] Desktop layout unchanged except section reorder + new components
@@ -310,7 +310,7 @@ Add `BreadcrumbList` and `SiteNavigationElement` schema. These help Google under
 ## Research Sources (Key Citations)
 
 - Unbounce Q4 2024 Conversion Benchmark Report (41,000 healthcare pages)
-- Search Engine Land QS Formula Study (15,000+ accounts)
+- Search Engine Land QS Formula Study (12,000+ accounts)
 - Google Ads Blog Feb 2025 — navigation prediction model update
 - PubMed 40273450 — Keratoconus patient Reddit sentiment analysis
 - Tebra/PatientPop — physician photo A/B test (38-95% conversion lift)

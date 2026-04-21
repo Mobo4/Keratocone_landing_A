@@ -62,8 +62,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!city) return {};
 
     return {
-        title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,
-        description: `${city.name}: skip the 6-month wait. 2,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
+        title: `Keratoconus Doctor ${city.name} | Scleral Lens Specialist`,
+        description: `${city.name} keratoconus specialist: skip the 6-month wait. 2,000+ cases, scleral lens fitting, 35+ yrs experience, direct specialist access. Insurance accepted. (714) 558-0641`,
+        keywords: [
+            `keratoconus doctor ${city.name}`,
+            `keratoconus specialist ${city.name}`,
+            `scleral lenses ${city.name}`,
+            `corneal specialist ${city.name}`,
+            `keratoconus treatment ${city.name}`,
+            'scleral lens fitting orange county',
+            'keratoconus near me'
+        ],
         alternates: {
             canonical: `https://www.keratocones.com/locations/${city.slug}`,
             languages: {
@@ -73,8 +82,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: `Keratoconus Doctor ${city.name} | Same-Week Appts`,
-            description: `${city.name}: skip the 6-month wait. 2,000+ keratoconus cases, 35+ yrs, direct specialist access. Insurance accepted. (714) 558-0641`,
+            title: `Keratoconus Doctor ${city.name} | Scleral Lens Specialist`,
+            description: `${city.name} keratoconus specialist: skip the 6-month wait. 2,000+ cases, scleral lens fitting, 35+ yrs experience, direct specialist access. Insurance accepted. (714) 558-0641`,
+            url: `https://www.keratocones.com/locations/${city.slug}`,
+            images: [
+                {
+                    url: 'https://www.keratocones.com/images/drbonakdar.webp',
+                    width: 800,
+                    height: 800,
+                    alt: `Dr. Alexander Bonakdar - Keratoconus Specialist serving ${city.name}, ${city.county}`,
+                },
+            ],
         },
     };
 }
@@ -93,7 +111,7 @@ export default async function CityPage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "name": "Keratoconus Vision Center | Dr. Alexander Bonakdar",
-        "image": "https://keratocones.com/images/drbonakdar.webp",
+        "image": "https://www.keratocones.com/images/drbonakdar.webp",
         "priceRange": "$$",
         "telephone": "(714) 558-0641",
         "address": {
@@ -113,7 +131,7 @@ export default async function CityPage({ params }: Props) {
                 "addressCountry": "US"
             }
         },
-        "url": `https://keratocones.com/locations/${city.slug}`
+        "url": `https://www.keratocones.com/locations/${city.slug}`
     };
 
     const headersList = await headers();
@@ -128,8 +146,8 @@ export default async function CityPage({ params }: Props) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
-                { name: 'Locations', url: 'https://keratocones.com' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
+                { name: 'Locations', url: 'https://www.keratocones.com' },
                 { name: city.name },
             ]} />
 
@@ -170,18 +188,18 @@ export default async function CityPage({ params }: Props) {
                 <section className="py-16 bg-white border-t border-gray-100">
                     <div className="container mx-auto px-4">
                         <h2 className="text-3xl font-serif font-bold text-eyecare-navy mb-6 text-center">
-                            Serving Neighborhoods Throughout {city.name}
+                            Keratoconus &amp; Scleral Lens Care Across {city.name} Neighborhoods
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
-                            Whether you live in {city.neighborhoods[0]}, {city.neighborhoods[1]}, or anywhere else in {city.name}, our specialized keratoconus care is just a short drive away.
-                            We understand that finding a true scleral lens specialist can be challenging—many patients from {city.name} have been told to &ldquo;just live with it&rdquo; by general optometrists.
-                            Dr. Bonakdar&apos;s practice exists specifically for complex corneal cases, and patients from across {city.county} trust us with their vision restoration journey.
+                            Whether you live in {city.neighborhoods[0]}, {city.neighborhoods[1]}, or anywhere else in {city.name}, specialized keratoconus treatment and scleral lens fitting are just a short drive away.
+                            Finding a true scleral lens specialist can be challenging—many {city.name} patients with keratoconus have been told to &ldquo;just live with it&rdquo; by general optometrists.
+                            Dr. Bonakdar&apos;s practice exists specifically for complex corneal disease cases, and keratoconus patients from across {city.county} trust us with their vision restoration journey.
                         </p>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
                             {city.neighborhoods.map((neighborhood) => (
                                 <div key={neighborhood} className="bg-eyecare-lighter-blue/30 p-5 rounded-xl border border-eyecare-blue/10 text-center hover:border-eyecare-blue/30 hover:shadow-md transition-all">
-                                    <h3 className="font-bold text-eyecare-navy text-sm">{neighborhood}</h3>
-                                    <p className="text-xs text-gray-500 mt-1">Keratoconus care available</p>
+                                    <h3 className="font-bold text-eyecare-navy text-sm">{neighborhood} Keratoconus Patients</h3>
+                                    <p className="text-xs text-gray-500 mt-1">Scleral lens fitting available</p>
                                 </div>
                             ))}
                         </div>
@@ -206,10 +224,10 @@ export default async function CityPage({ params }: Props) {
                 <div className="container mx-auto px-4">
                     <div className="max-w-5xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-eyecare-navy mb-6 text-center">
-                            Why {city.name} Patients Choose Dr. Bonakdar
+                            Why {city.name} Keratoconus Patients Choose Dr. Bonakdar
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
-                            When it comes to keratoconus, experience matters. Many patients arrive at our office after being told to &ldquo;just live with it&rdquo; or after failing lens fits at general optometry practices.
+                            When it comes to keratoconus and scleral lens fitting, experience matters. Many {city.name} patients arrive at our Orange County keratoconus center after being told to &ldquo;just live with it&rdquo; or after failing lens fits at general optometry practices.
                         </p>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -217,7 +235,7 @@ export default async function CityPage({ params }: Props) {
                                 {
                                     icon: <Star className="w-6 h-6" />,
                                     title: "2,000+ Keratoconus Cases",
-                                    desc: "Dr. Bonakdar has successfully fitted scleral and specialty lenses for over 500 keratoconus patients, including many of the most complex cases in the region."
+                                    desc: "Dr. Bonakdar has successfully fitted scleral lenses and specialty contact lenses for over 2,000 keratoconus patients, including many of the most complex corneal disease cases in Orange County."
                                 },
                                 {
                                     icon: <Shield className="w-6 h-6" />,

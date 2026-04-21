@@ -178,7 +178,7 @@
 - [ ] Port CRO components to Spanish /es page (TestimonialQuotes, WaitTimeComparison, MidPageCTA, ReviewWidget)
 
 #### Security / API
-- [ ] Add Cloudflare WAF rate limit to /api/contact (same as /api/quiz — done 2026-04-14)
+- [x] ~~Add Cloudflare WAF rate limit to /api/contact~~ — rule updated 2026-04-15 to cover all `/api/*` routes (starts_with expression, rule e9225417) ✅
 
 #### Quiz Follow-Up
 - [ ] Wire quiz send-tracking event to GTM dataLayer (same pattern as ghl_form_submit) so quiz leads show as conversions in Google Ads

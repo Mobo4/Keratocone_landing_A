@@ -6,18 +6,11 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import { Metadata } from 'next';
 import enMessages from '@/messages/en.json';
 
-function t(key: string) {
-    const keys = ('About.' + key).split('.');
-    let value: any = enMessages;
-    for (const k of keys) {
-        value = value?.[k as keyof typeof value];
-    }
-    return (value as string) || key;
-}
+const aboutMeta = enMessages.About.Metadata;
 
 export const metadata: Metadata = {
-    title: t('Metadata.title'),
-    description: t('Metadata.description'),
+    title: aboutMeta.title,
+    description: aboutMeta.description,
     alternates: {
         canonical: 'https://www.keratocones.com/about',
         languages: {
@@ -34,10 +27,11 @@ export default function AboutPage() {
         "@type": "ProfilePage",
         "mainEntity": {
             "@type": "Physician",
-            "name": "Dr. Alexander Bonakdar",
-            "jobTitle": "Keratoconus Specialist",
+            "name": "Dr. Alexander Bonakdar, O.D.",
+            "jobTitle": "Keratoconus Specialist - Scleral Lens Expert",
+            "image": "https://www.keratocones.com/images/drbonakdar.webp",
             "medicalSpecialty": ["Keratoconus Treatment", "Scleral Lens Fitting", "Corneal Disease", "Corneal Cross-Linking Co-Management", "Post-Surgical Vision Correction"],
-            "url": "https://www.eyecarecenteroc.com/about",
+            "url": "https://www.keratocones.com/about",
             "alumniOf": {
                 "@type": "CollegeOrUniversity",
                 "name": "Illinois College of Optometry"
@@ -83,8 +77,8 @@ export default function AboutPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
-                { name: 'About Dr. Bonakdar' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
+                { name: 'About Dr. Bonakdar - Keratoconus Specialist' },
             ]} />
             <FAQSchema faqs={ABOUT_FAQS} />
             <AboutPageContent />

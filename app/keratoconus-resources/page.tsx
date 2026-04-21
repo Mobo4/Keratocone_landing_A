@@ -25,13 +25,13 @@ export default function ResourcesPage() {
         "@type": "CollectionPage",
         "name": "Keratoconus Resources & Articles",
         "description": "Comprehensive library of articles about Keratoconus, Scleral Lenses, and non-surgical treatment options.",
-        "url": "https://keratocones.com/keratoconus-resources",
+        "url": "https://www.keratocones.com/keratoconus-resources",
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": articles.slice(0, 5).map((article, index) => ({
                 "@type": "ListItem",
                 "position": index + 1,
-                "url": `https://keratocones.com/keratoconus-resources/${article.slug}`,
+                "url": `https://www.keratocones.com/keratoconus-resources/${article.slug}`,
                 "name": article.title
             }))
         }
@@ -48,7 +48,7 @@ export default function ResourcesPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <BreadcrumbSchema items={[
-                { name: 'Home', url: 'https://keratocones.com' },
+                { name: 'Home', url: 'https://www.keratocones.com' },
                 { name: 'Keratoconus Resources' },
             ]} />
             {/* Header */}
